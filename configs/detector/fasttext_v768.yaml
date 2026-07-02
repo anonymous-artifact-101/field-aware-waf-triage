@@ -1,0 +1,28 @@
+# fasttext_v768.yaml -- 768-dim FastText embedding for the capacity-matched control.
+#
+# This config exists ONLY to train a SECOND FastText model at vector_size=768 so
+# that a FLAT (1-block) encoding reaches the SAME feature dimensionality as the
+# proposed 6-field representation (6 blocks x 128 = 768). It is the embedding
+# behind the "capacity-matched dense control" (R4-B-M2):
+#
+#   proposed 6-field : 6 blocks x vector_size=128 -> 768-dim feature
+#   flat (current)   : 1 block  x vector_size=128 -> 128-dim feature  (lower-dim)
+#   flat @768 (THIS) : 1 block  x vector_size=768 -> 768-dim feature  (capacity-matched)
+#
+# So the flat-vs-6-field gap can be decomposed into a CAPACITY component (128->768
+# dims) and a STRUCTURE component (typed concatenation). Everything else -- the
+# benign pretrain corpus, char n-grams, window, epochs, seed, determinism
+# (workers=1) -- is held IDENTICAL to fasttext_base.yaml; ONLY vector_size differs,
+# which is the whole point of a capacity match.
+#
+# NOTE: at vector_size=768 the saved .model is ~6x larger on disk (the ngram
+# matrix dominates). models/ is gitignored; reproduce by re-running
+#   python scripts/10_train_fasttext.py --config configs/detector/fasttext_v768.yaml --seed 42
+extends: configs/detector/fasttext_base.yaml
+
+fasttext:
+  vector_size: 768
+  # Distinct artifact path so this does NOT overwrite the proposed 128-dim model
+  # (models/detector/fasttext/weblog_fasttext.model). The 6-field proposed model
+  # is unchanged; this is an auxiliary embedding for the control only.
+  model_path: models/detector/fasttext/weblog_fasttext_v768.model

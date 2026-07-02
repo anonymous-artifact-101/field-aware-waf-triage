@@ -1,0 +1,117 @@
+{
+  "audit_type": "single_human_expert",
+  "crs_label_audit": {
+    "benign_by_crs_stratum": {},
+    "benign_fp_rate_weighted_pct": 0.0,
+    "crs_accuracy_raw_pct": 97.83,
+    "crs_accuracy_weighted_pct": 97.98,
+    "per_class_crs_precision": {
+      "lfi": {
+        "ci95": [
+          98.29,
+          99.95
+        ],
+        "crs_precision": 99.69,
+        "human_eq_crs": 326,
+        "n_decidable": 327,
+        "undecidable": 0
+      },
+      "path_traversal": {
+        "ci95": [
+          53.53,
+          87.45
+        ],
+        "crs_precision": 73.91,
+        "human_eq_crs": 17,
+        "n_decidable": 23,
+        "undecidable": 0
+      },
+      "php_injection": {
+        "ci95": [
+          91.79,
+          99.73
+        ],
+        "crs_precision": 98.46,
+        "human_eq_crs": 64,
+        "n_decidable": 65,
+        "undecidable": 0
+      },
+      "protocol": {
+        "ci95": [
+          0.0,
+          39.03
+        ],
+        "crs_precision": 0.0,
+        "human_eq_crs": 0,
+        "n_decidable": 6,
+        "undecidable": 354
+      },
+      "rce": {
+        "ci95": [
+          95.25,
+          100.0
+        ],
+        "crs_precision": 100.0,
+        "human_eq_crs": 77,
+        "n_decidable": 77,
+        "undecidable": 0
+      },
+      "scanner": {
+        "ci95": [
+          94.17,
+          100.0
+        ],
+        "crs_precision": 100.0,
+        "human_eq_crs": 62,
+        "n_decidable": 62,
+        "undecidable": 0
+      },
+      "sql_injection": {
+        "ci95": [
+          94.34,
+          100.0
+        ],
+        "crs_precision": 100.0,
+        "human_eq_crs": 64,
+        "n_decidable": 64,
+        "undecidable": 0
+      },
+      "xss": {
+        "ci95": [
+          85.13,
+          100.0
+        ],
+        "crs_precision": 100.0,
+        "human_eq_crs": 22,
+        "n_decidable": 22,
+        "undecidable": 0
+      }
+    },
+    "undecidable_by_crs_stratum": {
+      "protocol": 354
+    },
+    "undecidable_rate_raw_pct": 35.4,
+    "undecidable_rate_weighted_pct": 49.45
+  },
+  "human_label_distribution": {
+    "lfi": 333,
+    "normal": 354,
+    "path_traversal": 17,
+    "php_injection": 64,
+    "rce": 78,
+    "scanner": 68,
+    "sql_injection": 64,
+    "xss": 22
+  },
+  "metadata": {
+    "commit": "11b9822",
+    "date": "2026-06-04",
+    "note": "Single web-application security reviewer hand-labelled all 1000 records. 'normal'/'unsure' = undecidable from the anonymized log (payload hashed); excluded from the CRS-precision denominator and reported as the evidence-availability ceiling. Weighted figures use sample_weight to undo rare-class over-sampling.",
+    "single_run_measured": true,
+    "worksheet": "<REPO>/data/manual_verification/owasp_1k_subset_human.xlsx"
+  },
+  "n_decidable": 646,
+  "n_sample": 1000,
+  "n_undecidable": 354,
+  "table": "manual_verification"
+}

@@ -1,0 +1,37 @@
+{
+  "col": "p99",
+  "metadata": {
+    "baseline": "ocsvm",
+    "ci95_halfwidth": 0.846788,
+    "commit": "9bb51e5",
+    "dataset_version": "3ce0e30a2e51",
+    "eval_capped": false,
+    "fit_budget": 0.1,
+    "gpu": "cpu",
+    "hardware": "12th Gen Intel(R) Core(TM) i7-12700",
+    "metric": "latency_ms",
+    "n_runs": 10,
+    "note": "per-record baseline latency over 10 independent runs; DeepLog/LogBERT excluded (windowed / not CPU-runnable).",
+    "num_threads": 1,
+    "run_std_ms": 0.58964,
+    "single_run_measured": false,
+    "split": "owasp_test",
+    "stages_featurize": {
+      "mean": 0.932141,
+      "p50": 0.913,
+      "p95": 1.1811,
+      "p99": 1.4027
+    },
+    "stages_score": {
+      "mean": 4.002025,
+      "p50": 3.9832,
+      "p95": 4.7875,
+      "p99": 5.1713
+    },
+    "unit": "milliseconds"
+  },
+  "row": "One-Class SVM (latency)",
+  "seed": 42,
+  "table": "table_08_latency",
+  "value": 6.65751
+}

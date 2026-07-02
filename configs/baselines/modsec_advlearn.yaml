@@ -1,0 +1,41 @@
+# modsec_advlearn.yaml -- ModSec-AdvLearn baseline (paper Table 3 / Table 6).
+#
+# ModSec-AdvLearn (Nunes et al.): the adversarially-trained variant of
+# ModSec-Learn. Same CRS-rule-firing representation, but the classifier weights
+# are learned with adversarial training against evasion perturbations of the
+# firing vector, yielding a more robust CRS-rule weighting. Tests whether
+# adversarial robustness on CRS firings closes the gap to the proposed model.
+#
+# Consumed by src/baselines/modsec_advlearn.py via scripts/20_run_baseline.py.
+baseline: modsec_advlearn
+family: crs_rule_classifier_adversarial
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  label_budget: 0.05
+
+features:
+  representation: crs_rule_firings
+  rule_firing_source: crs_rule_ids
+  tag_map: configs/labels/crs_tag_map.yaml
+  binary_firings: true
+
+model:
+  classifier: linear_svm
+  C: 1.0
+  class_weight: balanced
+  num_classes: 8   # len(SUBTYPES).
+
+adversarial:
+  enabled: true
+  # Bounded perturbations on the CRS-firing vector during training.
+  attack: rule_flip
+  epsilon: 0.1          # max fraction of firings flippable per record.
+  n_steps: 7           # PGD-style inner iterations.
+  train_ratio: 0.5     # fraction of each batch adversarially perturbed.
+
+seed: 42
+results_path: results/table_03_rq1_baselines/modsec_advlearn.json
+output_dir: models/baselines/modsec_advlearn/

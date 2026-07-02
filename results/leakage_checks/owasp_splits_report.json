@@ -1,0 +1,141 @@
+{
+  "config": "configs/data/owasp_modsec.yaml",
+  "leakage": {
+    "no_overlap": {
+      "duplicates_within_split": {},
+      "n_overlapping_ids": 0,
+      "overlaps": {},
+      "passed": true
+    },
+    "status_shortcut": {
+      "feature": "status",
+      "gate": {
+        "reason": "Skipped logistic regression: need both classes present (n_attack=151011, n_benign=0).",
+        "skipped": true,
+        "threshold_f1": 0.7
+      },
+      "logreg": null,
+      "logreg_note": "Skipped logistic regression: need both classes present (n_attack=151011, n_benign=0).",
+      "n": 151011,
+      "n_attack": 151011,
+      "n_benign": 0,
+      "passed": true,
+      "per_status": {
+        "301": {
+          "attack": 22675,
+          "attack_rate": 1.0,
+          "n": 22675
+        },
+        "302": {
+          "attack": 927,
+          "attack_rate": 1.0,
+          "n": 927
+        },
+        "304": {
+          "attack": 1709,
+          "attack_rate": 1.0,
+          "n": 1709
+        },
+        "307": {
+          "attack": 30,
+          "attack_rate": 1.0,
+          "n": 30
+        },
+        "400": {
+          "attack": 270,
+          "attack_rate": 1.0,
+          "n": 270
+        },
+        "401": {
+          "attack": 74,
+          "attack_rate": 1.0,
+          "n": 74
+        },
+        "403": {
+          "attack": 48493,
+          "attack_rate": 1.0,
+          "n": 48493
+        },
+        "404": {
+          "attack": 65008,
+          "attack_rate": 1.0,
+          "n": 65008
+        },
+        "405": {
+          "attack": 348,
+          "attack_rate": 1.0,
+          "n": 348
+        },
+        "500": {
+          "attack": 2102,
+          "attack_rate": 1.0,
+          "n": 2102
+        },
+        "503": {
+          "attack": 9375,
+          "attack_rate": 1.0,
+          "n": 9375
+        }
+      },
+      "rule_confusion": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 151011
+      },
+      "rule_f1": 1.0,
+      "rule_predict_attack_statuses": [
+        301,
+        302,
+        304,
+        307,
+        400,
+        401,
+        403,
+        404,
+        405,
+        500,
+        503
+      ]
+    },
+    "temporal_order": {
+      "bounds": {
+        "test": {
+          "max": "2025-08-25T23:59:41+02:00",
+          "min": "2025-08-20T00:01:09+02:00",
+          "n": 19646
+        },
+        "train": {
+          "max": "2025-08-16T00:00:07+02:00",
+          "min": "2025-07-27T00:00:22+02:00",
+          "n": 110005
+        },
+        "val": {
+          "max": "2025-08-19T23:58:37+02:00",
+          "min": "2025-08-16T00:00:17+02:00",
+          "n": 21360
+        }
+      },
+      "comparisons": [
+        {
+          "earlier": "train",
+          "earlier_max": "2025-08-16T00:00:07+02:00",
+          "later": "val",
+          "later_min": "2025-08-16T00:00:17+02:00",
+          "ok": true
+        },
+        {
+          "earlier": "val",
+          "earlier_max": "2025-08-19T23:58:37+02:00",
+          "later": "test",
+          "later_min": "2025-08-20T00:01:09+02:00",
+          "ok": true
+        }
+      ],
+      "passed": true,
+      "violations": []
+    }
+  },
+  "note": "Rebuilt READ-ONLY from existing splits during a live run (splits not rewritten); includes the status-shortcut gate added 2026-06-03.",
+  "output_prefix": "owasp",
+  "splits_dir": "<REPO>/data\\splits"
+}

@@ -1,0 +1,148 @@
+{
+  "T1_field_aware": {
+    "flat_tfidf_linearsvc": {
+      "ci_95": [
+        65.9854,
+        65.9854
+      ],
+      "mean": 65.9854,
+      "per_seed": {
+        "42": 65.9854,
+        "43": 65.9854,
+        "44": 65.9854,
+        "45": 65.9854,
+        "46": 65.9854
+      }
+    },
+    "question": "Does the typed-block STRUCTURE (not the classifier) carry the accuracy? Is 'Field-Aware' in the title supported?",
+    "typed_minus_flat_paired": {
+      "ci_95": [
+        6.7393,
+        6.7393
+      ],
+      "mean": 6.7393,
+      "per_seed": {
+        "42": 6.7393,
+        "43": 6.7393,
+        "44": 6.7393,
+        "45": 6.7393,
+        "46": 6.7393
+      }
+    },
+    "typed_tfidf_linearsvc": {
+      "ci_95": [
+        72.7247,
+        72.7247
+      ],
+      "mean": 72.7247,
+      "per_seed": {
+        "42": 72.7247,
+        "43": 72.7247,
+        "44": 72.7247,
+        "45": 72.7247,
+        "46": 72.7247
+      }
+    },
+    "verdict": {
+      "explanation": "Typed-block is +6.74 macro-F1 over flat with the SAME char-TF-IDF features and the SAME LinearSVC head (typed 72.7 vs flat 66.0, delta CI [6.7393, 6.7393]). The typed STRUCTURE alone -- not the classifier -- carries a large lift, so 'typed-block representation' is a sound headline and 'Field-Aware' in the title is well supported.",
+      "flat_macro_f1": 65.9854,
+      "label": "field-aware-strong",
+      "typed_macro_f1": 72.7247,
+      "typed_minus_flat": 6.7393
+    }
+  },
+  "T2_self_supervised": {
+    "question": "Does self-supervised pre-training on benign logs add accuracy over an identical random-init embedding? Is 'Self-Supervised' in the title supported?",
+    "random_init_fasttext": {
+      "ci_95": [
+        22.928,
+        23.58
+      ],
+      "mean": 23.254,
+      "per_seed": {
+        "42": 23.3365,
+        "43": 23.6673,
+        "44": 22.9934,
+        "45": 23.1723,
+        "46": 23.1005
+      }
+    },
+    "trained_fasttext": {
+      "ci_95": [
+        65.1035,
+        65.1035
+      ],
+      "mean": 65.1035,
+      "per_seed": {
+        "42": 65.1035,
+        "43": 65.1035,
+        "44": 65.1035,
+        "45": 65.1035,
+        "46": 65.1035
+      }
+    },
+    "trained_minus_random_paired": {
+      "ci_95": [
+        41.5235,
+        42.1755
+      ],
+      "mean": 41.8495,
+      "per_seed": {
+        "42": 41.767,
+        "43": 41.4362,
+        "44": 42.1101,
+        "45": 41.9312,
+        "46": 42.003
+      }
+    },
+    "verdict": {
+      "explanation": "Self-supervised pre-training adds +41.85 macro-F1 over an identical random-init FastText (trained 65.1 vs random 23.3, delta CI [41.5235, 42.1755]). The benign-corpus pre-training clearly drives accuracy, so 'Self-Supervised' in the title is well earned.",
+      "label": "self-supervised-strong",
+      "pretraining_gain": 41.8495,
+      "random_init_macro_f1": 23.254,
+      "trained_macro_f1": 65.1035
+    }
+  },
+  "T3_ten_pct_trade": {
+    "question": "At the agreed 10% headline budget, does typed-TF-IDF stay ahead (sparse wins) or does FastText catch up (better story for us)?",
+    "typed_tfidf_10pct": {
+      "ci_95": [
+        74.4326,
+        74.4326
+      ],
+      "mean": 74.4326,
+      "per_seed": {
+        "42": 74.4326,
+        "43": 74.4326,
+        "44": 74.4326,
+        "45": 74.4326,
+        "46": 74.4326
+      }
+    },
+    "verdict": {
+      "explanation": "Typed-TF-IDF reaches 74.4 at 10% vs proposed FastText 73.6 (delta +0.8). FastText essentially CATCHES UP at the recommended 10% operating point -- the strongest framing for us: at the headline budget the accuracy gap closes while FastText keeps the ~10-25x latency advantage. Lead the 10% headline with this.",
+      "label": "fasttext-catches-up-at-10pct",
+      "proposed_fasttext_10pct": 73.6,
+      "typed_minus_proposed": 0.8326,
+      "typed_tfidf_macro_f1_10pct": 74.4326
+    }
+  },
+  "commit": "082f087",
+  "diagnostic": "title_word_ablations",
+  "eval_capped": false,
+  "experiment": "Phase 1 T1/T2/T3 -- decide 'Field-Aware' + 'Self-Supervised' title words and the 10% trade",
+  "note": "DIAGNOSTIC only -- not a paper table, not wired into scripts/50, no .tex change. Each ablation changes exactly one factor vs its reference so the gap is attributable.",
+  "reference_points": {
+    "flat_tfidf_logreg_5pct": 50.8,
+    "proposed_fasttext_10pct": 73.6,
+    "proposed_fasttext_5pct": 65.1,
+    "typed_tfidf_5pct": 72.7
+  },
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ]
+}

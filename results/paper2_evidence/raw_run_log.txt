@@ -1,0 +1,47 @@
+[spike-v3] loading (end-to-end DP + baselines + resource)...
+[spike-v3] train=40000 test=19646 seeds=(42, 43, 44, 45, 46)
+
+[spike-v3] UPPER (real train)    macro-F1 = 0.713
+[spike-v3] LOWER (label shuffle) macro-F1 = 0.095
+
+[spike-v3] === TABLE 1: proposed count mechanism, 5 seeds ===
+[spike-v3]  epsilon |     mean +/- std | % real |   rec/s
+[spike-v3]      inf | 0.318 +/- 0.005  |    45 |   33254
+[spike-v3]       10 | 0.318 +/- 0.006  |    45 |   32663
+[spike-v3]        1 | 0.333 +/- 0.023  |    47 |   32468
+[spike-v3]      0.1 | 0.327 +/- 0.026  |    46 |   31964
+
+[spike-v3] === BASELINES (macro-F1, 5 seeds) ===
+[spike-v3] Marginal-only (no subtype), eps=1 : 0.086 +/- 0.003  (12% real)
+[spike-v3] Bootstrap real (non-private)      : 0.707 +/- 0.010  (99% real)
+[spike-v3] Pairwise (method x status), eps=1 : 0.338 +/- 0.008  (47% real)
+
+[spike-v3] per-class F1 at eps=1 (seed 42):
+[spike-v3]   lfi              F1=0.944  (support=8790)
+[spike-v3]   path_traversal   F1=0.000  (support=23)
+[spike-v3]   php_injection    F1=0.011  (support=182)
+[spike-v3]   protocol         F1=0.910  (support=9879)
+[spike-v3]   rce              F1=0.158  (support=546)
+[spike-v3]   scanner          F1=0.087  (support=63)
+[spike-v3]   sql_injection    F1=0.487  (support=141)
+[spike-v3]   xss              F1=0.000  (support=22)
+
+[spike-v3] CONFUSION (row-normalized, true=row pred=col), eps=1 seed42:
+[spike-v3] true\pred    lfi path_t php_in protoc    rce scanne sql_in    xss
+[spike-v3] lfi              0.99   0.00   0.00   0.01   0.00   0.00   0.00   0.00
+[spike-v3] path_traversal   0.43   0.00   0.00   0.57   0.00   0.00   0.00   0.00
+[spike-v3] php_injection    0.00   0.00   0.01   0.60   0.07   0.00   0.33   0.00
+[spike-v3] protocol         0.09   0.00   0.00   0.90   0.00   0.00   0.00   0.00
+[spike-v3] rce              0.00   0.00   0.00   0.91   0.09   0.00   0.00   0.00
+[spike-v3] scanner          0.29   0.00   0.00   0.67   0.00   0.05   0.00   0.00
+[spike-v3] sql_injection    0.00   0.00   0.00   0.45   0.00   0.00   0.55   0.00
+[spike-v3] xss              0.14   0.00   0.00   0.45   0.00   0.00   0.41   0.00
+
+[spike-v3] === TABLE 3: resource, mean+/-std over 5 runs (1 warmup discarded) ===
+[spike-v3] Proposed DP (eps=1)    fit=93+/-2ms gen=32408+/-240rec/s mem=5.7+/-0.1MB GPU=No
+[spike-v3] Non-private count      fit=92+/-2ms gen=31639+/-763rec/s mem=5.7+/-0.0MB GPU=No
+[spike-v3] Marginal-only (eps=1)  fit=121+/-62ms gen=26997+/-10974rec/s mem=5.7+/-0.0MB GPU=No
+[spike-v3] Pairwise DP (eps=1)    fit=167+/-82ms gen=26358+/-16271rec/s mem=5.7+/-0.0MB GPU=No
+
+[spike-v3] model footprint ~ 2 KB. done.
+[spike-v3] evidence written -> <REPO>/results\paper2_evidence\evidence.json

@@ -1,0 +1,22 @@
+{
+  "col": "macro_f1",
+  "metadata": {
+    "commit": "c042449",
+    "eval_capped": false,
+    "footprint_mb": 66.175,
+    "gpu": "cpu",
+    "hardware": "12th Gen Intel(R) Core(TM) i7-12700",
+    "latency_ms": 0.399961,
+    "max_n": 8,
+    "metric": "macro_f1",
+    "min_n": 2,
+    "note": "FastText efficiency sweep; base model (v64_n36) is the deployed config.",
+    "single_run_measured": true,
+    "vector_size": 64,
+    "weighted_f1": 93.9764
+  },
+  "row": "v64_n28",
+  "seed": 42,
+  "table": "table_10_fasttext_sweep",
+  "value": 62.9809
+}

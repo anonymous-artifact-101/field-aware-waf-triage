@@ -1,0 +1,48 @@
+{
+  "col": "10%",
+  "metadata": {
+    "accuracy": 59.6763,
+    "baseline": "status_only",
+    "commit": "082f087",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-06",
+    "embedding_version": "7769ea2c62c8",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "fallback_subtype": "protocol",
+    "family": "shortcut_probe",
+    "gpu": "cpu",
+    "label_budget": 0.1,
+    "metric": "macro_f1",
+    "n_test": 19646,
+    "n_train_labeled": 11000,
+    "note": "Status-code-only shortcut baseline: majority subtype per HTTP status, no content. Reported to quantify the status shortcut on Table 6.",
+    "per_class_f1": {
+      "lfi": 0.799109,
+      "path_traversal": 0.0,
+      "php_injection": 0.0,
+      "protocol": 0.536159,
+      "rce": 0.0,
+      "scanner": 0.086957,
+      "sql_injection": 0.03748,
+      "xss": 0.0
+    },
+    "status_rule": {
+      "301": "protocol",
+      "302": "sql_injection",
+      "304": "protocol",
+      "307": "scanner",
+      "400": "sql_injection",
+      "401": "protocol",
+      "403": "sql_injection",
+      "404": "lfi",
+      "405": "protocol",
+      "500": "protocol",
+      "503": "sql_injection"
+    }
+  },
+  "row": "Status-only (shortcut)",
+  "seed": 46,
+  "table": "table_03_rq1_baselines",
+  "value": 18.2463
+}

@@ -1,0 +1,55 @@
+{
+  "figure": "figure_04_learning_curve",
+  "note": "Single seed (42); the supervised detector is deterministic in the seed (earliest-prefix budget + linear head), so the curve is exact, not seed-averaged -- consistent with the deterministic flag on the Table 3 cells. Train is re-substitution macro-F1 on the labeled fit prefix; the train-test gap is the label-budget generalization gap and narrows as the budget grows.",
+  "points": [
+    {
+      "budget": "1%",
+      "budget_frac": 0.01,
+      "gap": 49.2578,
+      "n_train_labeled": 1100,
+      "test_macro_f1": 38.2422,
+      "train_macro_f1": 87.5
+    },
+    {
+      "budget": "5%",
+      "budget_frac": 0.05,
+      "gap": 34.8902,
+      "n_train_labeled": 5500,
+      "test_macro_f1": 65.1035,
+      "train_macro_f1": 99.9937
+    },
+    {
+      "budget": "10%",
+      "budget_frac": 0.1,
+      "gap": 25.9797,
+      "n_train_labeled": 11000,
+      "test_macro_f1": 73.6091,
+      "train_macro_f1": 99.5888
+    },
+    {
+      "budget": "20%",
+      "budget_frac": 0.2,
+      "gap": 25.3587,
+      "n_train_labeled": 22001,
+      "test_macro_f1": 72.1568,
+      "train_macro_f1": 97.5155
+    },
+    {
+      "budget": "50%",
+      "budget_frac": 0.5,
+      "gap": 16.1823,
+      "n_train_labeled": 55002,
+      "test_macro_f1": 78.189,
+      "train_macro_f1": 94.3713
+    }
+  ],
+  "series": {
+    "test": "macro-F1 on the full OWASP test split",
+    "train": "re-substitution macro-F1 on the labeled fit prefix"
+  },
+  "source": {
+    "per_budget_cells": "results/table_03_rq1_baselines/cells/proposed-fasttext-field-aware__<budget>__seed42.json"
+  },
+  "x_col": "label budget (% of time-ordered train prefix)",
+  "y_col": "macro_f1 (%)"
+}

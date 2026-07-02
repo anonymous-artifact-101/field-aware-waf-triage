@@ -1,0 +1,68 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        0.2878,
+        0.2878
+      ],
+      "col": "FPR@p95",
+      "row": "Proposed (zero-shot benign FPR)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.2878
+    },
+    {
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "col": "FPR@p99.9",
+      "row": "Proposed (zero-shot benign FPR)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.0
+    },
+    {
+      "ci_95": [
+        0.084,
+        0.084
+      ],
+      "col": "FPR@p99",
+      "row": "Proposed (zero-shot benign FPR)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.084
+    }
+  ],
+  "metadata": {
+    "ci_method": "student_t",
+    "commit": "c042449",
+    "dataset": "apache_indo_2020",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "",
+    "embedding_version": "2c37c7f64455",
+    "gpu": "cpu",
+    "headline_percentile": 99.0,
+    "n_benign": 29778,
+    "n_cell_files": 15,
+    "n_flagged_excluded": 7909,
+    "note": "Zero-shot benign FPR on Apache-Indo AMAN subset. Scorer AND operating threshold fit on the benign Kaggle weblog (no Apache-Indo fit); FPR = fraction of AMAN records above the weblog Pth-percentile threshold. Labels are heuristic, so only AMAN (benign) is used; BAHAYA/DICURIGAI are excluded, never an attack class. Deterministic in seed -> zero-width CI.",
+    "single_run_measured": false
+  },
+  "table": "table_11_benign_fpr_apache_indo"
+}

@@ -1,0 +1,41 @@
+{
+  "accuracy": 96.6762,
+  "class_support": {
+    "lfi": 8790,
+    "path_traversal": 23,
+    "php_injection": 182,
+    "protocol": 9879,
+    "rce": 546,
+    "scanner": 63,
+    "sql_injection": 141,
+    "xss": 22
+  },
+  "col": "10%",
+  "commit": "3843f64",
+  "deterministic": true,
+  "macro_f1": 73.6091,
+  "note": "per-class at 10% budget; backs the rare-class recovery claim (path_traversal 0->14.8, SQLi 26->61.5)",
+  "per_class_f1": {
+    "lfi": 97.3627,
+    "path_traversal": 14.8148,
+    "php_injection": 69.7819,
+    "protocol": 97.1177,
+    "rce": 98.4446,
+    "scanner": 96.9231,
+    "sql_injection": 61.4865,
+    "xss": 52.9412
+  },
+  "per_class_recall": {
+    "lfi": 96.5984,
+    "path_traversal": 8.6957,
+    "php_injection": 61.5385,
+    "protocol": 98.0565,
+    "rce": 98.5348,
+    "scanner": 100.0,
+    "sql_injection": 64.539,
+    "xss": 40.9091
+  },
+  "row": "Proposed (FastText field-aware)",
+  "seed": 42,
+  "weighted_f1": 96.6088
+}

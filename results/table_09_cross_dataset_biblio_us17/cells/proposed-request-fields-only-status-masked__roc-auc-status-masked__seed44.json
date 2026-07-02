@@ -1,0 +1,37 @@
+{
+  "col": "ROC-AUC (status-masked)",
+  "metadata": {
+    "attack_stride": 6,
+    "benign_stride": 777,
+    "checkpoint_loaded": true,
+    "commit": "dcf5e62",
+    "dataset_version": "3ce0e30a2e51",
+    "deterministic": true,
+    "deterministic_seed_replicated": true,
+    "embedding_version": "7769ea2c62c8",
+    "eval_capped": false,
+    "gpu": "cpu",
+    "max_field_chars": 2048,
+    "metric": "roc_auc",
+    "mode": "unsupervised_zero_shot_transfer",
+    "n_attack": 54651,
+    "n_benign": 54663,
+    "n_total": 109314,
+    "note": "Zero-shot transfer, STATUS-MASKED control: detector trained on OWASP/Kaggle, NO Biblio-US17 fit; the response-code field is blanked so this AUC reflects ONLY request-field (method/path/query/ua/timing) transfer, not the Biblio benign=200 / attack=non-200 status giveaway.",
+    "pr_auc": 0.5061,
+    "sampling": "systematic",
+    "status_masked": true,
+    "threshold_metrics": {
+      "fp": 26031,
+      "fpr": 0.4762,
+      "precision": 0.6234,
+      "threshold": 5.2258,
+      "tp": 43090,
+      "tpr": 0.7885
+    }
+  },
+  "row": "Proposed (request-fields only, status-masked)",
+  "seed": 44,
+  "table": "table_09_cross_dataset_biblio_us17",
+  "value": 0.5658
+}

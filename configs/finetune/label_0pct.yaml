@@ -1,0 +1,27 @@
+# label_0pct.yaml -- Table 3 column 1 (UNSUPERVISED, 0% labels).
+#
+# label_budget = 0.0 is the unsupervised anomaly-score setting: NO subtype
+# classifier is trained. The FastText field-aware detector flips to unsupervised
+# mode -- the anomaly scorer (distance-to-benign-centroid by default; or
+# IsolationForest) is fitted on the embeddings and emits a per-record anomaly
+# score (higher == more anomalous). See src.detector.classifier.FieldAwareDetector.
+#
+# Inherits the FastText embedding + encoder from _base.yaml (-> fasttext_base.yaml);
+# overrides ONLY the detector mode, the label budget, and the output dir.
+extends: configs/finetune/_base.yaml
+
+detector:
+  mode: unsupervised
+  scorer: centroid          # centroid | isolation_forest
+
+data:
+  label_budget: 0.0
+  # Unsupervised mode fits the anomaly scorer on a BENIGN reference corpus, not on
+  # the all-attack owasp_train. weblog_pretrain is the Kaggle benign weblog stream
+  # (label=benign), so "distance-to-benign-centroid" is literally true and the
+  # proposed detector matches the isolation_forest / ocsvm baselines. Resolved by
+  # src/detector/evaluate.py::_train_split_for_mode.
+  normal_train_split: weblog_pretrain
+
+output_dir: models/detector/finetuned/label_0pct/
+results_path: results/table_03_rq1_baselines/proposed_fasttext.json

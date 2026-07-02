@@ -1,0 +1,82 @@
+{
+  "cells": [
+    {
+      "ci_95": null,
+      "col": "major_minor",
+      "row": "Python",
+      "seeds": [],
+      "value": 3.13
+    },
+    {
+      "ci_95": null,
+      "col": "major_minor",
+      "row": "gensim",
+      "seeds": [],
+      "value": 4.4
+    },
+    {
+      "ci_95": null,
+      "col": "major_minor",
+      "row": "scikit-learn",
+      "seeds": [],
+      "value": 1.8
+    },
+    {
+      "ci_95": null,
+      "col": "major_minor",
+      "row": "numpy",
+      "seeds": [],
+      "value": 2.4
+    },
+    {
+      "ci_95": null,
+      "col": "major_minor",
+      "row": "scipy",
+      "seeds": [],
+      "value": 1.17
+    },
+    {
+      "ci_95": null,
+      "col": "major_minor",
+      "row": "PyYAML",
+      "seeds": [],
+      "value": 6.0
+    },
+    {
+      "ci_95": null,
+      "col": "major_minor",
+      "row": "torch",
+      "seeds": [],
+      "value": 2.12
+    }
+  ],
+  "metadata": {
+    "commit": "9bb51e5",
+    "date": "2026-07-01",
+    "hardware": {
+      "cpu": "12th Gen Intel(R) Core(TM) i7-12700",
+      "logical_cores": 20,
+      "machine": "AMD64",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "power_plan": "High performance (8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c)",
+      "thread_caps": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      }
+    },
+    "note": "Backs manuscript hardware/software-environment statements. Version cells store major.minor numeric values so the number auditor can trace version numbers in the paper.",
+    "software": {
+      "packages": {
+        "PyYAML": "6.0.3",
+        "gensim": "4.4.0",
+        "numpy": "2.4.6",
+        "scikit-learn": "1.8.0",
+        "scipy": "1.17.1",
+        "torch": "2.12.0+cpu"
+      },
+      "python": "3.13.13"
+    }
+  },
+  "table": "environment"
+}

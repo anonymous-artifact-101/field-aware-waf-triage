@@ -1,0 +1,2460 @@
+{
+  "examples": [
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120843,
+      "margin": 0.930634,
+      "method": "GET",
+      "path": "/....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5Cwindows%5Cwin.ini",
+      "query": "",
+      "rank": 1,
+      "request_id": "aKE0JImIHDtChD8bPqMZGwAAAAU",
+      "self_confidence": 8.5e-05,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.930719,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120938,
+      "margin": 0.984028,
+      "method": "GET",
+      "path": "/...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5Cwindows%5Cwin.ini",
+      "query": "",
+      "rank": 2,
+      "request_id": "aKE3bph5u66zsQPAf3B7gwAAAA0",
+      "self_confidence": 0.000148,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.984176,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120942,
+      "margin": 0.954576,
+      "method": "GET",
+      "path": "/....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5Cwindows%5Cwin.ini",
+      "query": "",
+      "rank": 3,
+      "request_id": "aKE3ggvkXzJczQ7hj9Q89gAAAAg",
+      "self_confidence": 0.000162,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.954738,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-en) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120939,
+      "margin": 0.990577,
+      "method": "GET",
+      "path": "/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 4,
+      "request_id": "aKE3eMw2ZvtYx-GghgTfGQAAAAE",
+      "self_confidence": 0.000184,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.990761,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Debian; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120842,
+      "margin": 0.978838,
+      "method": "GET",
+      "path": "/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_deaada13/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 5,
+      "request_id": "aKE0GvLvmwY2N12RZiewHQAAAAM",
+      "self_confidence": 0.000241,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.979078,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120841,
+      "margin": 0.936034,
+      "method": "GET",
+      "path": "/...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5Cwindows%5Cwin.ini",
+      "query": "",
+      "rank": 6,
+      "request_id": "aKE0EAhDQI@qZMhoNvOiRAAAAAY",
+      "self_confidence": 0.000241,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.936275,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Safari/101.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 119500,
+      "margin": 0.997235,
+      "method": "GET",
+      "path": "/d_9efb10a4/d_aa07e113/d_b43afdb2/%5Cwindows%5Cwin.ini",
+      "query": "",
+      "rank": 7,
+      "request_id": "aKEF7AYf-JNMrY5k5nk5lwAAAA4",
+      "self_confidence": 0.000428,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.997663,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Kubuntu; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 119404,
+      "margin": 0.995586,
+      "method": "GET",
+      "path": "/d_9efb10a4/d_aa07e113/d_b43afdb2/%5Cwindows%5Cwin.ini",
+      "query": "",
+      "rank": 8,
+      "request_id": "aKEEDAic4DaFsNHoH-jmLQAAAAY",
+      "self_confidence": 0.000632,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.996217,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Mac OS X 13_2) AppleWebKit/537.36 (KHTML, like Gecko) Safari/103.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "932115"
+      ],
+      "given_label": "protocol",
+      "index": 11048,
+      "margin": 0.968435,
+      "method": "POST",
+      "path": "/d_ba10ae99/wp-comments-post.php",
+      "query": "",
+      "rank": 9,
+      "request_id": "aIg9grEN9wWBAw9k-ckPqQAAAAc",
+      "self_confidence": 0.000784,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.969219,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "930120"
+      ],
+      "given_label": "lfi",
+      "index": 119693,
+      "margin": 0.967701,
+      "method": "GET",
+      "path": "/d_d74f9b1f/d_652b1af4/d_af17c68a/d_4d802976/download.asp",
+      "query": "filename=/c6/web.config",
+      "rank": 10,
+      "request_id": "aKEOX@-P8bEGUiYU7gXi7QAAAAM",
+      "self_confidence": 0.001221,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.968922,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (SS; Linux i686; rv:132.0) Gecko/20100101 Firefox/132.0"
+    },
+    {
+      "crs_rule_ids": [
+        "932105"
+      ],
+      "given_label": "protocol",
+      "index": 39454,
+      "margin": 0.965598,
+      "method": "POST",
+      "path": "/d_ba10ae99/wp-comments-post.php",
+      "query": "",
+      "rank": 11,
+      "request_id": "aJCIwJYPAgfC4CzosSU9BgAAABc",
+      "self_confidence": 0.001231,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.96683,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942140",
+        "942190"
+      ],
+      "given_label": "protocol",
+      "index": 39434,
+      "margin": 0.985401,
+      "method": "GET",
+      "path": "/d_5a789123/search.php",
+      "query": "keyword=as&typeArr%5B111%3D@%60%5C'%60)+and+(SELECT+1+FROM+(select+count(*),concat(floor(rand(0)*2),(substring((select+CONCAT(0x7c,userid,0x7c,pwd)+from+%60%23@",
+      "rank": 12,
+      "request_id": "aJCFpy08EeESEGGae5X-AgAAACw",
+      "self_confidence": 0.001486,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.986886,
+      "suggested_label": "sql_injection",
+      "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; ."
+    },
+    {
+      "crs_rule_ids": [
+        "920420"
+      ],
+      "given_label": "protocol",
+      "index": 119051,
+      "margin": 0.877647,
+      "method": "POST",
+      "path": "/d_3c55925f/d_99ef6660/fileupload.php",
+      "query": "uploadDir=upload&name=dThJuQ.php",
+      "rank": 13,
+      "request_id": "aKDzgSAVmULK@uqmQ91UagAAAA4",
+      "self_confidence": 0.00174,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.879387,
+      "suggested_label": "php_injection",
+      "ua": "Mozilla/5.0 (CentOS; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0"
+    },
+    {
+      "crs_rule_ids": [
+        "932105"
+      ],
+      "given_label": "rce",
+      "index": 97162,
+      "margin": 0.983656,
+      "method": "POST",
+      "path": "/d_ba10ae99/wp-comments-post.php",
+      "query": "",
+      "rank": 14,
+      "request_id": "aJ7adSapLreY4U@e1XEGKAAAAAE",
+      "self_confidence": 0.001898,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.985555,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 CCleaner/130.0.0.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920420"
+      ],
+      "given_label": "protocol",
+      "index": 118987,
+      "margin": 0.913421,
+      "method": "POST",
+      "path": "/d_3c55925f/d_99ef6660/fileupload.php",
+      "query": "uploadDir=upload&name=dThJuQ.php",
+      "rank": 15,
+      "request_id": "aKDwNA7crWssPGqj3WCOkgAAAAM",
+      "self_confidence": 0.002241,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.915662,
+      "suggested_label": "php_injection",
+      "ua": "Mozilla/5.0 (Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 38304,
+      "margin": 0.977576,
+      "method": "POST",
+      "path": "/d_ba10ae99/wp-comments-post.php",
+      "query": "",
+      "rank": 16,
+      "request_id": "aJBBJTmhj17d56glBfAr2QAAAB0",
+      "self_confidence": 0.002662,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.980238,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "932115"
+      ],
+      "given_label": "protocol",
+      "index": 18901,
+      "margin": 0.957657,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 17,
+      "request_id": "aIt-asnY3ds-aLz@o@BYugAAAAQ",
+      "self_confidence": 0.002717,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.960374,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 CCleaner/130.0.0.0"
+    },
+    {
+      "crs_rule_ids": [
+        "930120"
+      ],
+      "given_label": "lfi",
+      "index": 119671,
+      "margin": 0.942482,
+      "method": "GET",
+      "path": "/d_d74f9b1f/d_652b1af4/d_af17c68a/d_4d802976/download.asp",
+      "query": "filename=/c6/web.config",
+      "rank": 18,
+      "request_id": "aKENesA80ZiaTWcEtF44ZgAAAAY",
+      "self_confidence": 0.003345,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.945826,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 77034,
+      "margin": 0.960192,
+      "method": "POST",
+      "path": "/d_ba10ae99/wp-comments-post.php",
+      "query": "",
+      "rank": 19,
+      "request_id": "aJvHyhQ4z3JkOfqOV@-jrAAAAE0",
+      "self_confidence": 0.00361,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.963802,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 Herring/95.1.8810.11"
+    },
+    {
+      "crs_rule_ids": [
+        "933160"
+      ],
+      "given_label": "protocol",
+      "index": 71513,
+      "margin": 0.936075,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 20,
+      "request_id": "aJld8X@1syNatHg12jOP6AAAAA8",
+      "self_confidence": 0.003644,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.939719,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 116963,
+      "margin": 0.991157,
+      "method": "GET",
+      "path": "/config.env",
+      "query": "",
+      "rank": 21,
+      "request_id": "aKCbW-HYs6@dxYVJIHMh-wAAAAA",
+      "self_confidence": 0.003849,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.995005,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 48878,
+      "margin": 0.991481,
+      "method": "GET",
+      "path": "/config.env",
+      "query": "",
+      "rank": 22,
+      "request_id": "aJGRSVHDOPAPmZ977uIxgwAAAAk",
+      "self_confidence": 0.003867,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.995349,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 95869,
+      "margin": 0.987743,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 23,
+      "request_id": "aJ6ei0DbDMHIc3ar-b0QiAAAAAc",
+      "self_confidence": 0.004532,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.992275,
+      "suggested_label": "lfi",
+      "ua": "Go-http-client/1.1"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 122967,
+      "margin": 0.986956,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 24,
+      "request_id": "aKIR1DgxQ0rEluS2ONQ0VwAAAB8",
+      "self_confidence": 0.005156,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.992112,
+      "suggested_label": "lfi",
+      "ua": "Go-http-client/1.1"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120768,
+      "margin": 0.961785,
+      "method": "GET",
+      "path": "/d_fa26a5e0/d_317bc571/d_59b0f75a/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 25,
+      "request_id": "aKEw5Lqm7Jt02gMOS7brLAAAAAQ",
+      "self_confidence": 0.005709,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.967495,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Kubuntu; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120698,
+      "margin": 0.979939,
+      "method": "GET",
+      "path": "/d_05ea2860/d_0aa77154/d_d583bc9d/d_87478d6a/win.ini",
+      "query": "windows",
+      "rank": 26,
+      "request_id": "aKEudvOAWD6Oi-cTc5EeyAAAAAI",
+      "self_confidence": 0.00637,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.986309,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Fedora; Linux i686; rv:124.0) Gecko/20100101 Firefox/124.0"
+    },
+    {
+      "crs_rule_ids": [
+        "942190",
+        "942270"
+      ],
+      "given_label": "protocol",
+      "index": 39433,
+      "margin": 0.916419,
+      "method": "GET",
+      "path": "/d_5a789123/search.php",
+      "query": "keyword=as&typeArr%5B111%3D@%60%5C'%60)+UnIon+seleCt+1,2,3,4,5,6,7,8,9,10,userid,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,pwd,28,29,30,31,32,33,34,35,36,37,",
+      "rank": 27,
+      "request_id": "aJCFpxE5I-p3M306IGVsZQAAAC0",
+      "self_confidence": 0.006551,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.92297,
+      "suggested_label": "sql_injection",
+      "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; ."
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120695,
+      "margin": 0.966314,
+      "method": "GET",
+      "path": "/d_d764c91d/d_317bc571/d_59b0f75a/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 28,
+      "request_id": "aKEuWefKMy5n9eCfDhbmAAAAABA",
+      "self_confidence": 0.00723,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.973544,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 8950,
+      "margin": 0.980639,
+      "method": "POST",
+      "path": "/d_ba10ae99/wp-comments-post.php",
+      "query": "",
+      "rank": 29,
+      "request_id": "aIeHwMUOvvv-QGAS68S7eAAAABQ",
+      "self_confidence": 0.007245,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.987884,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 CCleaner/130.0.0.0"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 5582,
+      "margin": 0.978446,
+      "method": "POST",
+      "path": "/d_ba10ae99/wp-comments-post.php",
+      "query": "",
+      "rank": 30,
+      "request_id": "aIcUub12lSk3H1ELeaNWNAAAAAM",
+      "self_confidence": 0.007538,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.985984,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 CCleaner/130.0.0.0"
+    },
+    {
+      "crs_rule_ids": [
+        "911100"
+      ],
+      "given_label": "protocol",
+      "index": 116369,
+      "margin": 0.846392,
+      "method": "PATCH",
+      "path": "/d_bc5f4c8c/d_a8bc8afb/d_54e455c7/d_6bc96a7f/d_1daf5fd8",
+      "query": "",
+      "rank": 31,
+      "request_id": "aKCTV7uT5hE7p@j9qyxwjQAAAAE",
+      "self_confidence": 0.007583,
+      "split": "owasp_val",
+      "status": 403,
+      "suggested_confidence": 0.853974,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (ZZ; Linux i686; rv:125.0) Gecko/20100101 Firefox/125.0"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 14348,
+      "margin": 0.974799,
+      "method": "POST",
+      "path": "/d_ba10ae99/wp-comments-post.php",
+      "query": "",
+      "rank": 32,
+      "request_id": "aIncmYPq@Bq0cSy1R2TXRQAAABY",
+      "self_confidence": 0.007711,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.98251,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 CCleaner/130.0.0.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 122979,
+      "margin": 0.980691,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 33,
+      "request_id": "aKISCR3pIi2qcIcwod5VPwAAABg",
+      "self_confidence": 0.008301,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.988992,
+      "suggested_label": "lfi",
+      "ua": "Go-http-client/1.1"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 119707,
+      "margin": 0.962486,
+      "method": "GET",
+      "path": "/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 34,
+      "request_id": "aKEO7lal28yU1HpppFeX6AAAAAk",
+      "self_confidence": 0.009348,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.971834,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Fedora; Linux i686; rv:123.0) Gecko/20100101 Firefox/123.0"
+    },
+    {
+      "crs_rule_ids": [
+        "932105"
+      ],
+      "given_label": "rce",
+      "index": 135085,
+      "margin": 0.931449,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 35,
+      "request_id": "aKaowadK587T73L5s@sMGAAAAA0",
+      "self_confidence": 0.009607,
+      "split": "owasp_test",
+      "status": 302,
+      "suggested_confidence": 0.941056,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 119593,
+      "margin": 0.94974,
+      "method": "GET",
+      "path": "/d_90a2602e/d_9d62e7af/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 36,
+      "request_id": "aKEJ29B9qldoyXPZ@aoUYwAAABA",
+      "self_confidence": 0.009859,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.959599,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120936,
+      "margin": 0.956281,
+      "method": "GET",
+      "path": "/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 37,
+      "request_id": "aKE3ZJz53etn0LVPBxitjgAAAAM",
+      "self_confidence": 0.01013,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.966412,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Knoppix; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 119750,
+      "margin": 0.957951,
+      "method": "GET",
+      "path": "/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 38,
+      "request_id": "aKEQtLLLZ9gRnRcD7AhuuwAAAAo",
+      "self_confidence": 0.010585,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.968535,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Knoppix; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 119621,
+      "margin": 0.971956,
+      "method": "GET",
+      "path": "/d_90a2602e/d_9d62e7af/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 39,
+      "request_id": "aKELs-JmysOJQwJoZiiVxgAAAAc",
+      "self_confidence": 0.010619,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.982575,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120662,
+      "margin": 0.94201,
+      "method": "GET",
+      "path": "/d_b721959b/d_454b482e/d_d43efb07/C:%5CWindows%5Cwin.ini",
+      "query": "",
+      "rank": 40,
+      "request_id": "aKEs67qm7Jt02gMOS7bquwAAAAQ",
+      "self_confidence": 0.010803,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.952813,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Debian; Linux i686; rv:127.0) Gecko/20100101 Firefox/127.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120693,
+      "margin": 0.950087,
+      "method": "GET",
+      "path": "/d_fa26a5e0/d_317bc571/d_59b0f75a/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 41,
+      "request_id": "aKEuTxi-XsQullpXRyGsVQAAAAw",
+      "self_confidence": 0.011526,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.961613,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920420"
+      ],
+      "given_label": "protocol",
+      "index": 39776,
+      "margin": 0.94249,
+      "method": "GET",
+      "path": "/d_a160a55d/d_432c7a79/d_c7ed7a98/d_49e4a751",
+      "query": "",
+      "rank": 42,
+      "request_id": "aJCTNejQSeaPlZTyrr0V8wAAAA0",
+      "self_confidence": 0.014319,
+      "split": "owasp_train",
+      "status": 301,
+      "suggested_confidence": 0.956809,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120771,
+      "margin": 0.94737,
+      "method": "GET",
+      "path": "/d_9441f56f/d_317bc571/d_59b0f75a/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 43,
+      "request_id": "aKEw@bADWF0xQD6hl34cuQAAAAE",
+      "self_confidence": 0.014821,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.962191,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.7 Safari/605.1.15"
+    },
+    {
+      "crs_rule_ids": [
+        "932130"
+      ],
+      "given_label": "rce",
+      "index": 43019,
+      "margin": 0.74364,
+      "method": "POST",
+      "path": "/d_21316fde/post.php",
+      "query": "",
+      "rank": 44,
+      "request_id": "aJDryx8rr4mnXxjmXIrlSAAAAAo",
+      "self_confidence": 0.015058,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.758698,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 61301,
+      "margin": 0.964534,
+      "method": "GET",
+      "path": "/d_b721959b/config.env",
+      "query": "",
+      "rank": 45,
+      "request_id": "aJbzMt7kEARjUBaY6rwsPgAAAA8",
+      "self_confidence": 0.015575,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.980108,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 36797,
+      "margin": 0.959825,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 46,
+      "request_id": "aI-CFJh7LQsie3xb1WmojQAAAAA",
+      "self_confidence": 0.015749,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.975574,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 116762,
+      "margin": 0.962474,
+      "method": "GET",
+      "path": "/d_b721959b/config.env",
+      "query": "",
+      "rank": 47,
+      "request_id": "aKCbEVFVUAU9yelNHam5JAAAAAw",
+      "self_confidence": 0.015963,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.978437,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120497,
+      "margin": 0.950611,
+      "method": "GET",
+      "path": "/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 48,
+      "request_id": "aKEmoqo-BHmALBOuWuMPjgAAAAo",
+      "self_confidence": 0.01597,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.966581,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Linux i686; rv:122.0) Gecko/20100101 Firefox/122.0"
+    },
+    {
+      "crs_rule_ids": [
+        "930120"
+      ],
+      "given_label": "lfi",
+      "index": 20744,
+      "margin": 0.909434,
+      "method": "GET",
+      "path": "/d_21316fde/admin-ajax.php",
+      "query": "action=duplicator_download&file=../wp-config.php",
+      "rank": 49,
+      "request_id": "aIwUGx47Lqd4dccRQ04NWwAAABA",
+      "self_confidence": 0.016081,
+      "split": "owasp_train",
+      "status": 403,
+      "suggested_confidence": 0.925515,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:28.0) Gecko/20100101 Firefox/28.0"
+    },
+    {
+      "crs_rule_ids": [
+        "930120",
+        "932160",
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 115257,
+      "margin": 0.964342,
+      "method": "GET",
+      "path": "/d_c93247f7/d_70ed7f6f",
+      "query": "Action=StartSessionSubmit&User=%27%26cat%20/etc/passwd%26%27&PW",
+      "rank": 50,
+      "request_id": "aKBhFrzqNZR9fTlSpxiJRgAAABE",
+      "self_confidence": 0.016155,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.980497,
+      "suggested_label": "rce",
+      "ua": "Mozilla/5.0 (Debian; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 11539,
+      "margin": 0.932887,
+      "method": "GET",
+      "path": "/.wp-config.swp",
+      "query": "",
+      "rank": 51,
+      "request_id": "aIh1O1ByZdYiiaSjSD8jOgAAAAE",
+      "self_confidence": 0.016586,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.949473,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"
+    },
+    {
+      "crs_rule_ids": [
+        "932105"
+      ],
+      "given_label": "rce",
+      "index": 198,
+      "margin": 0.888586,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 52,
+      "request_id": "aIVq1GobI4gyyvj0yygzngAAAAk",
+      "self_confidence": 0.01717,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.905756,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 OpenWave/97.4.2043.44"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 82476,
+      "margin": 0.932902,
+      "method": "GET",
+      "path": "/.wp-config.swp",
+      "query": "",
+      "rank": 53,
+      "request_id": "aJ0ynLbxkdkeJPxkzJKqIwAAABw",
+      "self_confidence": 0.017211,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.950113,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 31628,
+      "margin": 0.959928,
+      "method": "GET",
+      "path": "/local.env",
+      "query": "",
+      "rank": 54,
+      "request_id": "aI5uIZpdNNT-6ZHWfRxOtwAAACk",
+      "self_confidence": 0.017271,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.977199,
+      "suggested_label": "lfi",
+      "ua": "Opera/8.01 (Windows NT 5.1; U; fr)"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 77339,
+      "margin": 0.952998,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 55,
+      "request_id": "aJvfVE7C3V33V0YtBv0krgAAAAw",
+      "self_confidence": 0.017603,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.970601,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350",
+        "920420"
+      ],
+      "given_label": "protocol",
+      "index": 13511,
+      "margin": 0.9105,
+      "method": "POST",
+      "path": "/d_8bb63550",
+      "query": "",
+      "rank": 56,
+      "request_id": "aIl63U0-tKpsAiptJ3fPNwAAAAk",
+      "self_confidence": 0.018039,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.928539,
+      "suggested_label": "sql_injection",
+      "ua": "Go-http-client/1.1"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 44276,
+      "margin": 0.953966,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 57,
+      "request_id": "aJEMctzl93V2sNbWwGCRjgAAACE",
+      "self_confidence": 0.018175,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.972141,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 125311,
+      "margin": 0.956265,
+      "method": "GET",
+      "path": "/config.env",
+      "query": "",
+      "rank": 58,
+      "request_id": "aKLbgRd2ech@7mLn6GGIYAAAAAY",
+      "self_confidence": 0.018532,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.974797,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Linux; Android 6.0.1; Z981 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 46502,
+      "margin": 0.950071,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 59,
+      "request_id": "aJE8dy5gvj8cujRJZfBqVQAAAAY",
+      "self_confidence": 0.018545,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.968616,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 86156,
+      "margin": 0.847258,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 60,
+      "request_id": "aJ3huF0yUYCNg2uvqv2HNwAAAAs",
+      "self_confidence": 0.019517,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.866774,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 149076,
+      "margin": 0.94943,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 61,
+      "request_id": "aKwTbRgC1FnBMk13pVcHMAAAAAI",
+      "self_confidence": 0.019835,
+      "split": "owasp_test",
+      "status": 404,
+      "suggested_confidence": 0.969264,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 81233,
+      "margin": 0.947623,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 62,
+      "request_id": "aJzQouV32l9OCBpqJR@0ZAAAABI",
+      "self_confidence": 0.020007,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.96763,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 85188,
+      "margin": 0.944677,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 63,
+      "request_id": "aJ3OQ2I97LoAD6aETesirwAAAAw",
+      "self_confidence": 0.020604,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.965282,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920420"
+      ],
+      "given_label": "protocol",
+      "index": 138979,
+      "margin": 0.870577,
+      "method": "GET",
+      "path": "/d_a160a55d/d_5875bf8c/d_313a3ab2/d_a121373d",
+      "query": "",
+      "rank": 64,
+      "request_id": "aKh5Fvn6rp8gMUX0pW3@AQAAABU",
+      "self_confidence": 0.020753,
+      "split": "owasp_test",
+      "status": 301,
+      "suggested_confidence": 0.89133,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 78586,
+      "margin": 0.95163,
+      "method": "GET",
+      "path": "/sendgrid.env",
+      "query": "",
+      "rank": 65,
+      "request_id": "aJwnXTlRnVzzV1xomN9OhQAAAAs",
+      "self_confidence": 0.020803,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.972434,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 49444,
+      "margin": 0.945407,
+      "method": "GET",
+      "path": "/sendgrid.env",
+      "query": "",
+      "rank": 66,
+      "request_id": "aJHcEareE-2VOT3wc9BgHAAAAAc",
+      "self_confidence": 0.021554,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.966961,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 79430,
+      "margin": 0.944483,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 67,
+      "request_id": "aJx8LYVNeLL-7gXQxwgZ3AAAAAc",
+      "self_confidence": 0.02163,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.966113,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 78075,
+      "margin": 0.946992,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 68,
+      "request_id": "aJwGAfluExmNgd6-qRJ-7QAAABU",
+      "self_confidence": 0.021749,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.96874,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920420"
+      ],
+      "given_label": "protocol",
+      "index": 114548,
+      "margin": 0.887415,
+      "method": "GET",
+      "path": "/d_a160a55d/d_5875bf8c/d_313a3ab2/d_3df9ae54",
+      "query": "",
+      "rank": 69,
+      "request_id": "aKBCuIFV10-ls48wxfDRdAAAAAc",
+      "self_confidence": 0.022045,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.90946,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 75125,
+      "margin": 0.855866,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 70,
+      "request_id": "aJrGe3kzFOCIn9cI55iJEQAAAAM",
+      "self_confidence": 0.022103,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.87797,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 65365,
+      "margin": 0.938976,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 71,
+      "request_id": "aJiBLbAIaO@nDnCi8ugrVQAAAAc",
+      "self_confidence": 0.022137,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.961114,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Avast/131.0.0.0"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 60267,
+      "margin": 0.934456,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 72,
+      "request_id": "aJaiSy-3fDsdR6bScik8ggAAAAo",
+      "self_confidence": 0.022264,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.95672,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Avast/131.0.0.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 79838,
+      "margin": 0.942685,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 73,
+      "request_id": "aJylb67EjnGA1DNgirOOLwAAAA8",
+      "self_confidence": 0.022279,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.964963,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942100",
+        "942160",
+        "942190"
+      ],
+      "given_label": "sql_injection",
+      "index": 116416,
+      "margin": 0.691005,
+      "method": "POST",
+      "path": "/d_21316fde/admin-post.php",
+      "query": "",
+      "rank": 74,
+      "request_id": "aKCVr1ydZGoK5UOOyIvMYAAAABI",
+      "self_confidence": 0.022342,
+      "split": "owasp_val",
+      "status": 403,
+      "suggested_confidence": 0.713347,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (ZZ; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920450",
+        "930120"
+      ],
+      "given_label": "lfi",
+      "index": 35434,
+      "margin": 0.840944,
+      "method": "GET",
+      "path": "/d_21316fde/admin-ajax.php",
+      "query": "action=duplicator_download&file=../wp-config.php",
+      "rank": 75,
+      "request_id": "aI@J65MEg5I2rz-1QvrBlwAAABM",
+      "self_confidence": 0.022656,
+      "split": "owasp_train",
+      "status": 403,
+      "suggested_confidence": 0.8636,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:28.0) Gecko/20100101 Firefox/72.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 80047,
+      "margin": 0.938598,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 76,
+      "request_id": "aJy2uP0ogw1ZZomD4Bk4igAAABI",
+      "self_confidence": 0.023044,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.961642,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 48863,
+      "margin": 0.946531,
+      "method": "GET",
+      "path": "/sendgrid.env",
+      "query": "",
+      "rank": 77,
+      "request_id": "aJGRSFHDOPAPmZ977uIxdAAAAAk",
+      "self_confidence": 0.02308,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.969611,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920210"
+      ],
+      "given_label": "protocol",
+      "index": 131431,
+      "margin": 0.843653,
+      "method": "POST",
+      "path": "/wp-login.php",
+      "query": "",
+      "rank": 78,
+      "request_id": "aKT7K-wRdxcu@w5EF25QOAAAABM",
+      "self_confidence": 0.023326,
+      "split": "owasp_test",
+      "status": 503,
+      "suggested_confidence": 0.866979,
+      "suggested_label": "sql_injection",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 147982,
+      "margin": 0.939419,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 79,
+      "request_id": "aKvYG7mkP@V9z2c2yNPs4QAAAAI",
+      "self_confidence": 0.023518,
+      "split": "owasp_test",
+      "status": 404,
+      "suggested_confidence": 0.962937,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "932115"
+      ],
+      "given_label": "protocol",
+      "index": 87211,
+      "margin": 0.828177,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 80,
+      "request_id": "aJ3w4bPwguskYUAz8G5DBAAAAAQ",
+      "self_confidence": 0.024254,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.85243,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 Herring/95.1.8810.11"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 82982,
+      "margin": 0.936805,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 81,
+      "request_id": "aJ1Thvbdb3eo-uMIYH6UzwAAABE",
+      "self_confidence": 0.025415,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.96222,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 74253,
+      "margin": 0.932332,
+      "method": "GET",
+      "path": "/.wp-config.php.swp",
+      "query": "",
+      "rank": 82,
+      "request_id": "aJpjO--K793P4enjYrxObgAAABY",
+      "self_confidence": 0.027426,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.959758,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 117294,
+      "margin": 0.934762,
+      "method": "GET",
+      "path": "/sendgrid.env",
+      "query": "",
+      "rank": 83,
+      "request_id": "aKCbtC@HDmAWH3cD2ZMZ-AAAAAk",
+      "self_confidence": 0.027786,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.962548,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 84157,
+      "margin": 0.919954,
+      "method": "GET",
+      "path": "/d_407ec17b/config.env",
+      "query": "",
+      "rank": 84,
+      "request_id": "aJ2z49pQC9vUVjRSGIyd3gAAAB4",
+      "self_confidence": 0.027903,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.947857,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 61824,
+      "margin": 0.93204,
+      "method": "GET",
+      "path": "/sendgrid.env",
+      "query": "",
+      "rank": 85,
+      "request_id": "aJbzyIME4a30NkjAAS7ClQAAAAM",
+      "self_confidence": 0.029342,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.961381,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 61535,
+      "margin": 0.930746,
+      "method": "GET",
+      "path": "/d_4a09d027/config.env",
+      "query": "",
+      "rank": 86,
+      "request_id": "aJbzcUqSz3aY6Op9wcOxwwAAAAE",
+      "self_confidence": 0.029762,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.960508,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120839,
+      "margin": 0.91513,
+      "method": "GET",
+      "path": "/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 87,
+      "request_id": "aKE0BvLvmwY2N12RZiewGwAAAAM",
+      "self_confidence": 0.02983,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.94496,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.9 Safari/605.1.15"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 116996,
+      "margin": 0.933374,
+      "method": "GET",
+      "path": "/d_4a09d027/config.env",
+      "query": "",
+      "rank": 88,
+      "request_id": "aKCbZqtvvD2jRMNo9hTd0wAAAAU",
+      "self_confidence": 0.030282,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.963656,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 117310,
+      "margin": 0.930973,
+      "method": "GET",
+      "path": "/settings.env",
+      "query": "",
+      "rank": 89,
+      "request_id": "aKCbuiVk8ZemlGy8zHraoQAAAAA",
+      "self_confidence": 0.030799,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.961772,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "921150",
+        "933100",
+        "933150"
+      ],
+      "given_label": "rce",
+      "index": 33538,
+      "margin": 0.873477,
+      "method": "POST",
+      "path": "/d_79190768/d_400d3b87/d_400d3b87/d_6f3926dd/d_00df4609/d_e8180e2f/eval-stdin.php",
+      "query": "",
+      "rank": 90,
+      "request_id": "aI75bBgPetdq8pOIR@gpSQAAAAI",
+      "self_confidence": 0.032076,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.905554,
+      "suggested_label": "php_injection",
+      "ua": "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"
+    },
+    {
+      "crs_rule_ids": [
+        "934100",
+        "941110"
+      ],
+      "given_label": "rce",
+      "index": 121753,
+      "margin": 0.903791,
+      "method": "GET",
+      "path": "/d_eac5f762/d_5ff9c56e",
+      "query": "option=\"><script%20>alert(String.fromCharCode(88,83,83))</script>&view=book&id=43",
+      "rank": 91,
+      "request_id": "aKGGhrX@bcolzAmOoA8F7gAAAAc",
+      "self_confidence": 0.034568,
+      "split": "owasp_val",
+      "status": 403,
+      "suggested_confidence": 0.938359,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64; Rv:50.0) Gecko/20100101 Firefox/50.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120632,
+      "margin": 0.890603,
+      "method": "GET",
+      "path": "/d_b721959b/d_454b482e/d_d43efb07/C:%5CWindows%5Cwin.ini",
+      "query": "",
+      "rank": 92,
+      "request_id": "aKEsDurpir4m41BYV5drFgAAAAY",
+      "self_confidence": 0.03505,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.925653,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Mac OS X 13_2) AppleWebKit/537.36 (KHTML, like Gecko) Safari/120.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 61839,
+      "margin": 0.921291,
+      "method": "GET",
+      "path": "/settings.env",
+      "query": "",
+      "rank": 93,
+      "request_id": "aJbzzIME4a30NkjAAS7CqAAAAAM",
+      "self_confidence": 0.035419,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.95671,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 136046,
+      "margin": 0.866754,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 94,
+      "request_id": "aKcewuBOjHI@SpGdHs6nNAAAAA4",
+      "self_confidence": 0.035599,
+      "split": "owasp_test",
+      "status": 302,
+      "suggested_confidence": 0.902353,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920450"
+      ],
+      "given_label": "protocol",
+      "index": 17424,
+      "margin": 0.881058,
+      "method": "GET",
+      "path": "/d_12f1f6a0/d_abf2d38f/d_06c4c830/page.php",
+      "query": "",
+      "rank": 95,
+      "request_id": "aIr81P3PDABbZmGwV9JJkAAAAFc",
+      "self_confidence": 0.036375,
+      "split": "owasp_train",
+      "status": 301,
+      "suggested_confidence": 0.917433,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Linux i686; rv:6.0a2) Gecko/20110615 Firefox/6.0a2 Iceweasel/6.0a2"
+    },
+    {
+      "crs_rule_ids": [
+        "932115"
+      ],
+      "given_label": "protocol",
+      "index": 114169,
+      "margin": 0.591971,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 96,
+      "request_id": "aKAyerFbnv7doZmukqOFkQAAAAs",
+      "self_confidence": 0.036538,
+      "split": "owasp_val",
+      "status": 302,
+      "suggested_confidence": 0.628509,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 8895,
+      "margin": 0.90985,
+      "method": "GET",
+      "path": "/wp-config.com",
+      "query": "",
+      "rank": 97,
+      "request_id": "aId08-6@FLGwwLuu039DogAAAAE",
+      "self_confidence": 0.037466,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.947316,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920450"
+      ],
+      "given_label": "protocol",
+      "index": 604,
+      "margin": 0.826412,
+      "method": "GET",
+      "path": "/d_e24d9b98/d_21316fde/admin-ajax.php",
+      "query": "",
+      "rank": 98,
+      "request_id": "aIWc@xVZZC-MeQdFdAkAyAAAAAY",
+      "self_confidence": 0.037509,
+      "split": "owasp_train",
+      "status": 301,
+      "suggested_confidence": 0.863921,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Linux i686; rv:6.0a2) Gecko/20110615 Firefox/6.0a2 Iceweasel/6.0a2"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120696,
+      "margin": 0.886331,
+      "method": "GET",
+      "path": "/d_9441f56f/d_317bc571/d_59b0f75a/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 99,
+      "request_id": "aKEuZJSzYTv9TiBpKokDdgAAAAg",
+      "self_confidence": 0.037742,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.924072,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.1"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 61827,
+      "margin": 0.916107,
+      "method": "GET",
+      "path": "/sendinblue.env",
+      "query": "",
+      "rank": 100,
+      "request_id": "aJbzyYME4a30NkjAAS7CmQAAAAM",
+      "self_confidence": 0.038263,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.954369,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 117360,
+      "margin": 0.914181,
+      "method": "GET",
+      "path": "/smtp.env",
+      "query": "",
+      "rank": 101,
+      "request_id": "aKCbzJ8obUVfx3LvcElYNgAAAAo",
+      "self_confidence": 0.038685,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.952866,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 119772,
+      "margin": 0.810306,
+      "method": "GET",
+      "path": "/file=C:%5CWindows%5Cwin.ini",
+      "query": "",
+      "rank": 102,
+      "request_id": "aKERojOF4O1DcHb-bx3QzQAAAAk",
+      "self_confidence": 0.039207,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.849513,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Mac OS X 13_2) AppleWebKit/537.36 (KHTML, like Gecko) Safari/120.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120829,
+      "margin": 0.89921,
+      "method": "GET",
+      "path": "/d_9ea87e8d/d_02c02525/d_384bd526/d_04cb1a8e/d_3105be4a/jx2_config.ini",
+      "query": "",
+      "rank": 103,
+      "request_id": "aKEzobADWF0xQD6hl34dBAAAAAE",
+      "self_confidence": 0.039324,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.938534,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942230"
+      ],
+      "given_label": "sql_injection",
+      "index": 132355,
+      "margin": 0.796936,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 104,
+      "request_id": "aKVoKa4cGfdTIQ2As2@MhQAAAAA",
+      "self_confidence": 0.039776,
+      "split": "owasp_test",
+      "status": 302,
+      "suggested_confidence": 0.836713,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920420"
+      ],
+      "given_label": "protocol",
+      "index": 132475,
+      "margin": 0.817067,
+      "method": "GET",
+      "path": "/d_a160a55d/d_7a21f77b/d_a0e62b38/d_472e3acc",
+      "query": "",
+      "rank": 105,
+      "request_id": "aKVxs-C7WmV6X@lQQdagbAAAAAk",
+      "self_confidence": 0.040528,
+      "split": "owasp_test",
+      "status": 301,
+      "suggested_confidence": 0.857596,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4.1 Safari/605.1.15"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 128877,
+      "margin": 0.904045,
+      "method": "GET",
+      "path": "/wp-config.inc",
+      "query": "",
+      "rank": 106,
+      "request_id": "aKQlSeXF6MFMzlWjamlxfwAAAAU",
+      "self_confidence": 0.041572,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.945617,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120518,
+      "margin": 0.891259,
+      "method": "GET",
+      "path": "/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_51a75f85/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 107,
+      "request_id": "aKEng2sNN1Qa9AdopzoVegAAAA4",
+      "self_confidence": 0.042326,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.933585,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Safari/127.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 130054,
+      "margin": 0.908234,
+      "method": "GET",
+      "path": "/wp-config.inc",
+      "query": "",
+      "rank": 108,
+      "request_id": "aKRqJuP5bqHA2Ddj0V3t1wAAAAA",
+      "self_confidence": 0.04237,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.950604,
+      "suggested_label": "lfi",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "934100",
+        "941110"
+      ],
+      "given_label": "rce",
+      "index": 121754,
+      "margin": 0.885291,
+      "method": "GET",
+      "path": "/d_eac5f762/d_5ff9c56e",
+      "query": "option=com_flippingbook&view=\"><script%20>alert(String.fromCharCode(88,83,83))</script>&id=43",
+      "rank": 109,
+      "request_id": "aKGGhrX@bcolzAmOoA8F7wAAAAc",
+      "self_confidence": 0.044452,
+      "split": "owasp_val",
+      "status": 403,
+      "suggested_confidence": 0.929743,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64; Rv:50.0) Gecko/20100101 Firefox/50.0"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 119752,
+      "margin": 0.776277,
+      "method": "GET",
+      "path": "/file=C:%5CWindows%5Cwin.ini",
+      "query": "",
+      "rank": 110,
+      "request_id": "aKEQwCjsq-A1BD8tx95rJQAAAAw",
+      "self_confidence": 0.047701,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.823978,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.3 Safari/605.1.15"
+    },
+    {
+      "crs_rule_ids": [
+        "941120",
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 14161,
+      "margin": 0.750938,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 111,
+      "request_id": "aInN1taghIYVI9c4xzeI1gAAAAc",
+      "self_confidence": 0.050456,
+      "split": "owasp_train",
+      "status": 302,
+      "suggested_confidence": 0.801394,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "942230"
+      ],
+      "given_label": "sql_injection",
+      "index": 126374,
+      "margin": 0.793564,
+      "method": "POST",
+      "path": "/wp-comments-post.php",
+      "query": "",
+      "rank": 112,
+      "request_id": "aKMzdOTXX-O9hUAvg7ylPQAAAAQ",
+      "self_confidence": 0.052118,
+      "split": "owasp_val",
+      "status": 302,
+      "suggested_confidence": 0.845682,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920170",
+        "920340"
+      ],
+      "given_label": "protocol",
+      "index": 57481,
+      "margin": 0.869644,
+      "method": "GET",
+      "path": "/d_79190768/d_400d3b87/d_400d3b87/d_6f3926dd/d_00df4609/d_e8180e2f/eval-stdin.php",
+      "query": "",
+      "rank": 113,
+      "request_id": "aJVfP2--h8tzxOvL8z49VQAAABI",
+      "self_confidence": 0.056747,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.926391,
+      "suggested_label": "php_injection",
+      "ua": "python-requests/2.27.1"
+    },
+    {
+      "crs_rule_ids": [
+        "920600",
+        "932130",
+        "932160"
+      ],
+      "given_label": "rce",
+      "index": 118935,
+      "margin": 0.772745,
+      "method": "POST",
+      "path": "/d_72c7bdb5/d_286f40f1/d_b7e7f57b",
+      "query": "",
+      "rank": 114,
+      "request_id": "aKDr3POcFtaFs0r2il5zLAAAAAY",
+      "self_confidence": 0.05864,
+      "split": "owasp_val",
+      "status": 403,
+      "suggested_confidence": 0.831385,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (CentOS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920450"
+      ],
+      "given_label": "protocol",
+      "index": 55804,
+      "margin": 0.821958,
+      "method": "GET",
+      "path": "/d_3a1754c1/d_74a94a73/d_8a868875",
+      "query": "",
+      "rank": 115,
+      "request_id": "aJQvHXFVQXXBqZeSaBekgQAAAAs",
+      "self_confidence": 0.059823,
+      "split": "owasp_train",
+      "status": 301,
+      "suggested_confidence": 0.881781,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0/(X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "444444"
+      ],
+      "given_label": "protocol",
+      "index": 142981,
+      "margin": 0.798898,
+      "method": "GET",
+      "path": "/d_5c77f709/d_9ffc3fae/d_784901fe/d_5c77f709/d_9ffc3fae/d_784901fe/d_5c77f709/d_9ffc3fae/d_784901fe/d_5c77f709/d_9ffc3fae/d_784901fe/d_5c77f709/d_9ffc3fae/d_784",
+      "query": "Itemid=159&catid=203%3Aotthon&id=40319%3Anyit-magyarorszag-legnagyobb-ikea-aruhaza-&option=com_content&view=article",
+      "rank": 116,
+      "request_id": "aKoMTR80mL5kQShzmzPDOwAAAAg",
+      "self_confidence": 0.060464,
+      "split": "owasp_test",
+      "status": 403,
+      "suggested_confidence": 0.859361,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (compatible; SemrushBot-BA; +http://www.semrush.com/bot.html)"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120770,
+      "margin": 0.857347,
+      "method": "GET",
+      "path": "/d_d764c91d/d_317bc571/d_59b0f75a/d_b43afdb2/win.ini",
+      "query": "",
+      "rank": 117,
+      "request_id": "aKEw7ghDQI@qZMhoNvOh6wAAAAY",
+      "self_confidence": 0.060584,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.917931,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.6 Mobile/15E148 Safari/604.1"
+    },
+    {
+      "crs_rule_ids": [
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 13653,
+      "margin": 0.816423,
+      "method": "POST",
+      "path": "/wp-login.php",
+      "query": "",
+      "rank": 118,
+      "request_id": "aImQB8XM52bjzB58t@QOBQAAAAA",
+      "self_confidence": 0.067979,
+      "split": "owasp_train",
+      "status": 503,
+      "suggested_confidence": 0.884403,
+      "suggested_label": "php_injection",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.5) AppleWebKit/618.3.5 (KHTML, like Gecko) Version/17.4 Safari/618.3.5"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 117978,
+      "margin": 0.799027,
+      "method": "GET",
+      "path": "/d_3434d978/d_beec8b7a/d_8f363031/application.ini",
+      "query": "",
+      "rank": 119,
+      "request_id": "aKC8vmKxKK9B1Us5o8w3ZAAAAAg",
+      "self_confidence": 0.071837,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.870864,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Fedora; Linux i686; rv:132.0) Gecko/20100101 Firefox/132.0"
+    },
+    {
+      "crs_rule_ids": [
+        "930120",
+        "932160",
+        "942100"
+      ],
+      "given_label": "sql_injection",
+      "index": 115281,
+      "margin": 0.833712,
+      "method": "GET",
+      "path": "/d_c93247f7/d_70ed7f6f",
+      "query": "Action=StartSessionSubmit&User=%27%26cat%20/etc/passwd%26%27&PW",
+      "rank": 120,
+      "request_id": "aKBiqu4N-0YBna66o5kV3AAAAAA",
+      "self_confidence": 0.079197,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.912909,
+      "suggested_label": "rce",
+      "ua": "Mozilla/5.0 (ZZ; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 118088,
+      "margin": 0.806353,
+      "method": "GET",
+      "path": "/d_3434d978/d_beec8b7a/d_8f363031/application.ini",
+      "query": "",
+      "rank": 121,
+      "request_id": "aKDAep@-XTBscU@rOhjA7gAAABE",
+      "self_confidence": 0.087022,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.893375,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Mac OS X 13_2) AppleWebKit/537.36 (KHTML, like Gecko) Safari/103.0 Safari/537.36"
+    },
+    {
+      "crs_rule_ids": [
+        "932115",
+        "942100",
+        "942240",
+        "942280"
+      ],
+      "given_label": "sql_injection",
+      "index": 118922,
+      "margin": 0.456494,
+      "method": "POST",
+      "path": "/d_41458e75/d_45346b16/d_28a841d9",
+      "query": "",
+      "rank": 122,
+      "request_id": "aKDrD0rJE-QNRg7ss7ypXAAAAAg",
+      "self_confidence": 0.091807,
+      "split": "owasp_val",
+      "status": 404,
+      "suggested_confidence": 0.548302,
+      "suggested_label": "xss",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.2 Safari/605.1.15"
+    },
+    {
+      "crs_rule_ids": [
+        "920440"
+      ],
+      "given_label": "protocol",
+      "index": 120747,
+      "margin": 0.77617,
+      "method": "GET",
+      "path": "/d_05ea2860/d_0aa77154/d_d583bc9d/d_87478d6a/win.ini",
+      "query": "windows",
+      "rank": 123,
+      "request_id": "aKEwL0PP@wFCQuGAjT71KQAAAAA",
+      "self_confidence": 0.09217,
+      "split": "owasp_val",
+      "status": 301,
+      "suggested_confidence": 0.86834,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.9 Mobile/15E148 Safari/604.1"
+    },
+    {
+      "crs_rule_ids": [
+        "920350"
+      ],
+      "given_label": "protocol",
+      "index": 61751,
+      "margin": 0.780316,
+      "method": "GET",
+      "path": "/d_5ce5f8d9/d_aedee6e4/d_32366360/d_66a2fdd4/d_47ad3df3/d_924939ac/d_78bdc5f9/d_47ad3df3/d_e2c0944a",
+      "query": "",
+      "rank": 124,
+      "request_id": "aJbzsRz2DS2@5qzmtW95hwAAAAA",
+      "self_confidence": 0.096145,
+      "split": "owasp_train",
+      "status": 404,
+      "suggested_confidence": 0.876461,
+      "suggested_label": "path_traversal",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
+  ],
+  "metadata": {
+    "artifact_kind": "supporting_audit",
+    "audit_classifier": "TF-IDF + LogisticRegression",
+    "audit_method": "cleanlab.filter.find_label_issues",
+    "commit": "c042449-dirty",
+    "dataset_version": "d7400f33c949",
+    "date": "2026-06-02",
+    "embedding_version": "2c37c7f64455",
+    "features": {
+      "analyzer": "char_wb",
+      "fields": [
+        "method",
+        "path",
+        "query",
+        "ua",
+        "status",
+        "timing"
+      ],
+      "max_features": 50000,
+      "ngram_range": [
+        1,
+        2
+      ]
+    },
+    "fold_reports": [
+      {
+        "accuracy": 0.978347,
+        "fold": 1,
+        "macro_f1": 0.867833,
+        "n_test": 30203,
+        "n_train": 120808
+      },
+      {
+        "accuracy": 0.979571,
+        "fold": 2,
+        "macro_f1": 0.870437,
+        "n_test": 30202,
+        "n_train": 120809
+      },
+      {
+        "accuracy": 0.978909,
+        "fold": 3,
+        "macro_f1": 0.872243,
+        "n_test": 30202,
+        "n_train": 120809
+      },
+      {
+        "accuracy": 0.978743,
+        "fold": 4,
+        "macro_f1": 0.870825,
+        "n_test": 30202,
+        "n_train": 120809
+      },
+      {
+        "accuracy": 0.978677,
+        "fold": 5,
+        "macro_f1": 0.867653,
+        "n_test": 30202,
+        "n_train": 120809
+      }
+    ],
+    "folds": 5,
+    "gpu": "cpu",
+    "max_records": null,
+    "model": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "max_iter": 1000,
+      "solver": "lbfgs"
+    },
+    "note": "Statistical audit of suspected CRS-derived subtype label issues using out-of-fold probabilities; not human ground truth.",
+    "seed": 42,
+    "single_run_audit": true,
+    "splits": [
+      "owasp_train",
+      "owasp_val",
+      "owasp_test"
+    ]
+  }
+}

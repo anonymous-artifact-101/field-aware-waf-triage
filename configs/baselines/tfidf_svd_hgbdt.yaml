@@ -1,0 +1,40 @@
+# tfidf_svd_hgbdt.yaml -- tree-based supervised subtype baseline (paper Table 3).
+#
+# Classical tree-family comparator for reviewers who expect an XGBoost/LightGBM-
+# style baseline. We avoid adding those external dependencies and use
+# scikit-learn's HistGradientBoostingClassifier instead. Because boosted trees
+# need dense features, the same rendered 6-field text view is featurized with
+# char n-gram TF-IDF and reduced by TruncatedSVD before the tree ensemble.
+baseline: tfidf_svd_hgbdt
+family: classical_supervised_tree
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  label_budget: 0.05
+
+features:
+  representation: char_tfidf_svd
+  ngram_range: [1, 2]
+  analyzer: char_wb
+  max_features: 50000
+  svd_components: 256
+  fields: [method, path, query, ua, status, timing]
+
+model:
+  learning_rate: 0.08
+  max_iter: 300
+  max_leaf_nodes: 31
+  min_samples_leaf: 20
+  l2_regularization: 0.0
+  class_weight: balanced
+  # early_stopping is off: the full max_iter boosting schedule is run on the
+  # Low-label budget (validation_fraction / n_iter_no_change would only take
+  # effect under early_stopping: true, so they are intentionally omitted).
+  early_stopping: false
+  num_classes: 8
+
+seed: 42
+results_path: results/table_03_rq1_baselines/tfidf_svd_hgbdt.json
+output_dir: models/baselines/tfidf_svd_hgbdt/

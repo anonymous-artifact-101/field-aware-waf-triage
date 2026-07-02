@@ -1,0 +1,24 @@
+# flat_no_typed_embed_10pct.yaml -- flat FastText at the 10% budget (R2 control).
+#
+# The dense-representation field-awareness control at the HEADLINE 10% budget. It is
+# the proposed FastText pipeline with granularity FLAT (1 block: all 6 fields pooled
+# together, no per-field concatenation), fit on the 10% label budget. Compared to
+# the 6-field proposed @10% (Table 3 = 73.6), it answers: does the DENSE (FastText)
+# representation also lose its field-awareness lift at 10% the way the SPARSE
+# (char-TF-IDF) representation flips (flat 76.7 > typed 74.4) -- or does field-
+# awareness still help the dense embedding at the larger budget?
+#
+# Inherits the 10% budget from label_10pct.yaml (-> _base.yaml -> fasttext_base.yaml)
+# and differs from the proposed 6-field run ONLY in granularity (1 vs 6). Deterministic
+# in seed (linear SVM + time-ordered prefix). Distinct row so it does not clobber the
+# Table-5 5% flat cell.
+extends: configs/finetune/label_10pct.yaml
+
+granularity: 1
+model:
+  num_fields: 1
+
+row: "FastText flat @10% (no typed)"
+
+results_path: results/table_05_field_granularity/flat_no_typed_embed_10pct.json
+output_dir: models/detector/ablation/flat_no_typed_embed_10pct/

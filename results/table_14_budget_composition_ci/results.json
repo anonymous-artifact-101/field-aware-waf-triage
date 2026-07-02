@@ -1,0 +1,215 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        53.4693,
+        67.3546
+      ],
+      "col": "10%",
+      "metadata": {
+        "budget": 0.1,
+        "ci_kind": "budget_composition_over_sliding_windows",
+        "commit": "c042449",
+        "date": "2026-06-07",
+        "earliest_prefix": 73.6091,
+        "earliest_prefix_macro_f1": 73.6091,
+        "gpu": "cpu",
+        "n_test": 19646,
+        "n_train": 110005,
+        "n_windows": 10,
+        "note": "CI is over sliding contiguous LABELED windows within the time-ordered train split (every window precedes the test set, so no leakage); it reports budget-composition variance, which the seed-only CI (deterministic prefix) cannot capture. The earliest-prefix point is the value reported in Table 3.",
+        "single_run_measured": false,
+        "std": 9.7058,
+        "window_details": [
+          {
+            "macro_f1": 73.6091,
+            "start_frac": 0.0,
+            "start_index": 0,
+            "weighted_f1": 96.6088
+          },
+          {
+            "macro_f1": 58.4514,
+            "start_frac": 0.1,
+            "start_index": 11001,
+            "weighted_f1": 96.113
+          },
+          {
+            "macro_f1": 66.3767,
+            "start_frac": 0.2,
+            "start_index": 22001,
+            "weighted_f1": 95.7439
+          },
+          {
+            "macro_f1": 51.7876,
+            "start_frac": 0.3,
+            "start_index": 33002,
+            "weighted_f1": 95.1196
+          },
+          {
+            "macro_f1": 56.0177,
+            "start_frac": 0.4,
+            "start_index": 44002,
+            "weighted_f1": 96.5271
+          },
+          {
+            "macro_f1": 68.8992,
+            "start_frac": 0.5,
+            "start_index": 55003,
+            "weighted_f1": 95.7591
+          },
+          {
+            "macro_f1": 68.3522,
+            "start_frac": 0.6,
+            "start_index": 66003,
+            "weighted_f1": 96.612
+          },
+          {
+            "macro_f1": 66.1701,
+            "start_frac": 0.7,
+            "start_index": 77004,
+            "weighted_f1": 97.2479
+          },
+          {
+            "macro_f1": 50.7396,
+            "start_frac": 0.8,
+            "start_index": 88004,
+            "weighted_f1": 93.4428
+          },
+          {
+            "macro_f1": 43.7159,
+            "start_frac": 0.9,
+            "start_index": 99005,
+            "weighted_f1": 92.9846
+          }
+        ],
+        "window_macro_f1": [
+          73.6091,
+          58.4514,
+          66.3767,
+          51.7876,
+          56.0177,
+          68.8992,
+          68.3522,
+          66.1701,
+          50.7396,
+          43.7159
+        ],
+        "window_size": 11000
+      },
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42
+      ],
+      "value": 60.412
+    },
+    {
+      "ci_95": [
+        46.8038,
+        61.2985
+      ],
+      "col": "5%",
+      "metadata": {
+        "budget": 0.05,
+        "ci_kind": "budget_composition_over_sliding_windows",
+        "commit": "c042449",
+        "date": "2026-06-07",
+        "earliest_prefix": 65.1035,
+        "earliest_prefix_macro_f1": 65.1035,
+        "gpu": "cpu",
+        "n_test": 19646,
+        "n_train": 110005,
+        "n_windows": 10,
+        "note": "CI is over sliding contiguous LABELED windows within the time-ordered train split (every window precedes the test set, so no leakage); it reports budget-composition variance, which the seed-only CI (deterministic prefix) cannot capture. The earliest-prefix point is the value reported in Table 3.",
+        "single_run_measured": false,
+        "std": 10.1318,
+        "window_details": [
+          {
+            "macro_f1": 65.1035,
+            "start_frac": 0.0,
+            "start_index": 0,
+            "weighted_f1": 94.9402
+          },
+          {
+            "macro_f1": 58.8966,
+            "start_frac": 0.1056,
+            "start_index": 11612,
+            "weighted_f1": 96.5005
+          },
+          {
+            "macro_f1": 50.4409,
+            "start_frac": 0.2111,
+            "start_index": 23223,
+            "weighted_f1": 93.5263
+          },
+          {
+            "macro_f1": 38.017,
+            "start_frac": 0.3167,
+            "start_index": 34835,
+            "weighted_f1": 91.5151
+          },
+          {
+            "macro_f1": 54.1877,
+            "start_frac": 0.4222,
+            "start_index": 46447,
+            "weighted_f1": 94.9865
+          },
+          {
+            "macro_f1": 61.7129,
+            "start_frac": 0.5278,
+            "start_index": 58058,
+            "weighted_f1": 94.0933
+          },
+          {
+            "macro_f1": 62.4935,
+            "start_frac": 0.6333,
+            "start_index": 69670,
+            "weighted_f1": 96.2738
+          },
+          {
+            "macro_f1": 63.1811,
+            "start_frac": 0.7389,
+            "start_index": 81282,
+            "weighted_f1": 95.8866
+          },
+          {
+            "macro_f1": 48.7608,
+            "start_frac": 0.8444,
+            "start_index": 92893,
+            "weighted_f1": 92.9494
+          },
+          {
+            "macro_f1": 37.7176,
+            "start_frac": 0.95,
+            "start_index": 104505,
+            "weighted_f1": 91.0034
+          }
+        ],
+        "window_macro_f1": [
+          65.1035,
+          58.8966,
+          50.4409,
+          38.017,
+          54.1877,
+          61.7129,
+          62.4935,
+          63.1811,
+          48.7608,
+          37.7176
+        ],
+        "window_size": 5500
+      },
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42
+      ],
+      "value": 54.0512
+    }
+  ],
+  "metadata": {
+    "ci_kind": "budget_composition_over_sliding_windows",
+    "commit": "c042449",
+    "date": "2026-06-07",
+    "gpu": "cpu"
+  },
+  "table": "table_14_budget_composition_ci"
+}

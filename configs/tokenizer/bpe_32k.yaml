@@ -1,0 +1,44 @@
+# bpe_32k.yaml
+#
+# Configuration for training the field-aware ByteLevel BPE tokenizer.
+# Read by scripts/03_train_tokenizer.py (a thin CLI wrapper).
+#
+# Inherits the 6-field definition from field_schema.yaml via `extends:` so the
+# special FIELD-sentinel tokens ([FIELD=method]..[FIELD=timing]) are generated
+# from exactly the same field list the model's field-type embedding uses.
+
+extends: configs/tokenizer/field_schema.yaml
+
+tokenizer:
+  # Total vocabulary size INCLUDING special tokens. The HF trainer treats this
+  # as the target size; special tokens are reserved up front, so the number of
+  # learned BPE merges is (vocab_size - len(special_tokens)).
+  vocab_size: 32000
+
+  # Minimum frequency for a merge to be kept. 2 is the conventional default and
+  # keeps training deterministic for a fixed corpus.
+  min_frequency: 2
+
+  # ByteLevel BPE: operate on raw UTF-8 bytes so there are no out-of-alphabet
+  # characters (every byte 0..255 is representable). add_prefix_space mirrors
+  # how the field-aware encoder renders field values (see field_aware.py).
+  add_prefix_space: false
+
+  # Output tokenizer file (single self-contained HF tokenizer JSON).
+  out_path: configs/tokenizer/bpe_32k.json
+
+corpus:
+  # Preferred pre-training corpus: the Kaggle web-server access-log benign
+  # pretrain split (written by scripts/01_parse_all.py). If this file is absent,
+  # scripts/03_train_tokenizer.py falls back to the OWASP train split below.
+  weblog_jsonl: data/splits/weblog_pretrain.jsonl
+
+  # Fallback corpus when the weblog pretrain corpus is not available.
+  owasp_train_jsonl: data/splits/owasp_train.jsonl
+
+  # Cap on the number of records streamed into the trainer. null = no cap (use
+  # the whole corpus). A finite cap is deterministic because records are read in
+  # file order (time-ordered) and never shuffled.
+  max_records: null
+
+seed: 42

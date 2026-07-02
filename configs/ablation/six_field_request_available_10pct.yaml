@@ -1,0 +1,12 @@
+# six_field_request_available_10pct.yaml -- 10% request-available control.
+#
+# Same representation as six_field_request_available.yaml: keep only fields
+# available before response generation (method/path/query/ua), and change only
+# the labeled earliest-prefix budget to the 10% headline column.
+extends: configs/ablation/six_field_request_available.yaml
+
+data:
+  label_budget: 0.10
+
+results_path: results/table_05_field_granularity/six_field_request_available_10pct.json
+output_dir: models/detector/ablation/six_field_request_available_10pct/

@@ -1,0 +1,27 @@
+{
+  "best_params": {
+    "C": 0.4920667786177922,
+    "class_weight": "null",
+    "estimator": "linear_svc",
+    "max_iter": 1000
+  },
+  "best_trial": 22,
+  "best_val_macro_f1": 48.6797,
+  "config_path": "configs/optuna/classifier_5pct.yaml",
+  "n_records": {
+    "test": 19646,
+    "train": 110005,
+    "val": 21360
+  },
+  "n_trials": 25,
+  "note": "Exploratory single-seed study; paper Table 3 uses seeds {42..46} with 95% CI.",
+  "search_scope": "classifier_only",
+  "seed": 42,
+  "splits": {
+    "objective": "owasp_val",
+    "report": "owasp_test",
+    "train": "owasp_train"
+  },
+  "test_macro_f1_with_best_params": 65.8336,
+  "val_macro_f1_rerun": 48.6797
+}

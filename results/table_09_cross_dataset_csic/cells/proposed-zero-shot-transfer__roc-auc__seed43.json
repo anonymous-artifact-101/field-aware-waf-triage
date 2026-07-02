@@ -1,0 +1,31 @@
+{
+  "col": "ROC-AUC",
+  "metadata": {
+    "checkpoint_loaded": true,
+    "commit": "c042449",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "gpu": "cpu",
+    "metric": "roc_auc",
+    "mode": "unsupervised_zero_shot_transfer",
+    "n_attack": 25065,
+    "n_benign": 36000,
+    "n_csic": 61065,
+    "note": "Zero-shot transfer: detector trained on OWASP/Kaggle, NO CSIC fit. CSIC is saturated, so ROC-AUC of the transferred anomaly score (not an F1 horse-race) is the external-validity claim.",
+    "pr_auc": 0.5314,
+    "threshold_metrics": {
+      "fp": 17000,
+      "fpr": 0.4722,
+      "precision": 0.5568,
+      "threshold": 4.2455,
+      "tp": 21361,
+      "tpr": 0.8522
+    }
+  },
+  "row": "Proposed (zero-shot transfer)",
+  "seed": 43,
+  "table": "table_09_cross_dataset_csic",
+  "value": 0.6791
+}

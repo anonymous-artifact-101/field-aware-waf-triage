@@ -1,0 +1,749 @@
+{
+  "cells": [
+    {
+      "ci_95": null,
+      "col": "agreement",
+      "row": "Always-path baseline",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 100.0
+    },
+    {
+      "ci_95": [
+        75.6,
+        75.6
+      ],
+      "col": "agreement",
+      "row": "lfi",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 75.6
+    },
+    {
+      "ci_95": [
+        100.0,
+        100.0
+      ],
+      "col": "populated",
+      "row": "lfi",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 100.0
+    },
+    {
+      "ci_95": [
+        8790.0,
+        8790.0
+      ],
+      "col": "support",
+      "row": "lfi",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 8790.0
+    },
+    {
+      "ci_95": [
+        28.5,
+        28.5
+      ],
+      "col": "agreement",
+      "row": "Macro (excl. protocol)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 28.5
+    },
+    {
+      "ci_95": [
+        40.4,
+        40.4
+      ],
+      "col": "agreement",
+      "row": "Macro (field-observable)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 40.4
+    },
+    {
+      "ci_95": [
+        25.5,
+        25.5
+      ],
+      "col": "agreement",
+      "row": "Macro (mean)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 25.5
+    },
+    {
+      "ci_95": [
+        19.6,
+        19.6
+      ],
+      "col": "agreement",
+      "row": "Macro (query-borne)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 19.6
+    },
+    {
+      "ci_95": [
+        4.3,
+        4.3
+      ],
+      "col": "agreement",
+      "row": "path_traversal",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 4.3
+    },
+    {
+      "ci_95": [
+        100.0,
+        100.0
+      ],
+      "col": "populated",
+      "row": "path_traversal",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 100.0
+    },
+    {
+      "ci_95": [
+        23.0,
+        23.0
+      ],
+      "col": "support",
+      "row": "path_traversal",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 23.0
+    },
+    {
+      "ci_95": [
+        39.0,
+        39.0
+      ],
+      "col": "agreement",
+      "row": "php_injection",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 39.0
+    },
+    {
+      "ci_95": [
+        45.1,
+        45.1
+      ],
+      "col": "populated",
+      "row": "php_injection",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 45.1
+    },
+    {
+      "ci_95": [
+        182.0,
+        182.0
+      ],
+      "col": "support",
+      "row": "php_injection",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 182.0
+    },
+    {
+      "ci_95": [
+        4.5,
+        4.5
+      ],
+      "col": "agreement",
+      "row": "protocol",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 4.5
+    },
+    {
+      "ci_95": [
+        100.0,
+        100.0
+      ],
+      "col": "populated",
+      "row": "protocol",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 100.0
+    },
+    {
+      "ci_95": [
+        9879.0,
+        9879.0
+      ],
+      "col": "support",
+      "row": "protocol",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 9879.0
+    },
+    {
+      "ci_95": null,
+      "col": "agreement",
+      "row": "Query-empty rate",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 94.0
+    },
+    {
+      "ci_95": null,
+      "col": "agreement",
+      "row": "Random-field floor",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 16.7
+    },
+    {
+      "ci_95": [
+        8.6,
+        8.6
+      ],
+      "col": "agreement",
+      "row": "rce",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 8.6
+    },
+    {
+      "ci_95": [
+        86.1,
+        86.1
+      ],
+      "col": "populated",
+      "row": "rce",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 86.1
+    },
+    {
+      "ci_95": [
+        546.0,
+        546.0
+      ],
+      "col": "support",
+      "row": "rce",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 546.0
+    },
+    {
+      "ci_95": [
+        41.3,
+        41.3
+      ],
+      "col": "agreement",
+      "row": "scanner",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 41.3
+    },
+    {
+      "ci_95": [
+        100.0,
+        100.0
+      ],
+      "col": "populated",
+      "row": "scanner",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 100.0
+    },
+    {
+      "ci_95": [
+        63.0,
+        63.0
+      ],
+      "col": "support",
+      "row": "scanner",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 63.0
+    },
+    {
+      "ci_95": [
+        17.0,
+        17.0
+      ],
+      "col": "agreement",
+      "row": "sql_injection",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 17.0
+    },
+    {
+      "ci_95": [
+        20.6,
+        20.6
+      ],
+      "col": "populated",
+      "row": "sql_injection",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 20.6
+    },
+    {
+      "ci_95": [
+        141.0,
+        141.0
+      ],
+      "col": "support",
+      "row": "sql_injection",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 141.0
+    },
+    {
+      "ci_95": [
+        13.6,
+        13.6
+      ],
+      "col": "agreement",
+      "row": "xss",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 13.6
+    },
+    {
+      "ci_95": [
+        36.4,
+        36.4
+      ],
+      "col": "populated",
+      "row": "xss",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 36.4
+    },
+    {
+      "ci_95": [
+        22.0,
+        22.0
+      ],
+      "col": "support",
+      "row": "xss",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 22.0
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "Always-path baseline | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": true
+      },
+      "Macro (excl. protocol) | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "Macro (field-observable) | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "Macro (mean) | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "Macro (query-borne) | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "Query-empty rate | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": true
+      },
+      "Random-field floor | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": true
+      },
+      "lfi | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "lfi | populated": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "populated_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "lfi | support": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "count",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "path_traversal | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "path_traversal | populated": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "populated_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "path_traversal | support": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "count",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "php_injection | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "php_injection | populated": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "populated_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "php_injection | support": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "count",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "protocol | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "protocol | populated": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "populated_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "protocol | support": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "count",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "rce | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "rce | populated": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "populated_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "rce | support": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "count",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "scanner | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "scanner | populated": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "populated_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "scanner | support": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "count",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "sql_injection | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "sql_injection | populated": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "populated_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "sql_injection | support": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "count",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "xss | agreement": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "attribution_agreement_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "xss | populated": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "populated_pct",
+        "mode": "attribution",
+        "single_run_measured": false
+      },
+      "xss | support": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "count",
+        "mode": "attribution",
+        "single_run_measured": false
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "c042449",
+    "date": "2026-06-07",
+    "gpu": "cpu",
+    "n_cell_files": 155
+  },
+  "table": "table_07_attribution"
+}

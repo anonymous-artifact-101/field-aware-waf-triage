@@ -1,0 +1,151 @@
+{
+  "col": "10%",
+  "metadata": {
+    "accuracy": 96.8441,
+    "checkpoint_loaded": true,
+    "class_support": {
+      "lfi": 8790,
+      "path_traversal": 23,
+      "php_injection": 182,
+      "protocol": 9879,
+      "rce": 546,
+      "scanner": 63,
+      "sql_injection": 141,
+      "xss": 22
+    },
+    "commit": "9bb51e5",
+    "confusion_matrix": [
+      [
+        75,
+        0,
+        17,
+        2,
+        0,
+        0,
+        0,
+        47
+      ],
+      [
+        4,
+        539,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        14,
+        2,
+        113,
+        0,
+        0,
+        0,
+        0,
+        53
+      ],
+      [
+        2,
+        0,
+        0,
+        8,
+        0,
+        0,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        0,
+        18
+      ],
+      [
+        0,
+        4,
+        19,
+        0,
+        0,
+        8525,
+        0,
+        242
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        63,
+        0
+      ],
+      [
+        9,
+        0,
+        17,
+        0,
+        0,
+        147,
+        5,
+        9701
+      ]
+    ],
+    "dataset_version": "3ce0e30a2e51",
+    "detector": "fasttext_field_aware",
+    "deterministic": true,
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "gpu": "cpu",
+    "granularity": 6,
+    "macro_precision": 85.6893,
+    "macro_recall": 69.28,
+    "max_records": null,
+    "metric": "macro_f1",
+    "mode": "supervised",
+    "n_test": 19646,
+    "n_train_labeled": 11000,
+    "per_class_f1": {
+      "lfi": 0.976238,
+      "path_traversal": 0.16,
+      "php_injection": 0.649425,
+      "protocol": 0.972678,
+      "rce": 0.988084,
+      "scanner": 0.919708,
+      "sql_injection": 0.612245,
+      "xss": 0.470588
+    },
+    "per_class_precision": {
+      "lfi": 98.2709,
+      "path_traversal": 100.0,
+      "php_injection": 68.0723,
+      "protocol": 96.3548,
+      "rce": 98.8991,
+      "scanner": 85.1351,
+      "sql_injection": 72.1154,
+      "xss": 66.6667
+    },
+    "per_class_recall": {
+      "lfi": 96.9852,
+      "path_traversal": 8.6957,
+      "php_injection": 62.0879,
+      "protocol": 98.1982,
+      "rce": 98.7179,
+      "scanner": 100.0,
+      "sql_injection": 53.1915,
+      "xss": 36.3636
+    },
+    "train_macro_f1": 99.471,
+    "weighted_f1": 96.7434
+  },
+  "row": "6-field, status masked",
+  "seed": 45,
+  "table": "table_05_field_granularity",
+  "value": 71.8621
+}

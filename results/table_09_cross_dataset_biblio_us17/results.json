@@ -1,0 +1,187 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        0.5658,
+        0.5658
+      ],
+      "col": "roc_auc (status-masked)",
+      "row": "Proposed (request-fields only, status-masked)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.5658
+    },
+    {
+      "ci_95": [
+        0.5061,
+        0.5061
+      ],
+      "col": "pr_auc (status-masked)",
+      "row": "Proposed (request-fields only, status-masked)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.5061
+    },
+    {
+      "ci_95": [
+        0.7885,
+        0.7885
+      ],
+      "col": "tpr (status-masked)",
+      "row": "Proposed (request-fields only, status-masked)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.7885
+    },
+    {
+      "ci_95": [
+        0.4762,
+        0.4762
+      ],
+      "col": "fpr (status-masked)",
+      "row": "Proposed (request-fields only, status-masked)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.4762
+    },
+    {
+      "ci_95": [
+        0.6234,
+        0.6234
+      ],
+      "col": "precision (status-masked)",
+      "row": "Proposed (request-fields only, status-masked)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.6234
+    },
+    {
+      "ci_95": [
+        0.9801,
+        0.9801
+      ],
+      "col": "roc_auc",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.9801
+    },
+    {
+      "ci_95": [
+        0.9404,
+        0.9404
+      ],
+      "col": "pr_auc",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.9404
+    },
+    {
+      "ci_95": [
+        0.9911,
+        0.9911
+      ],
+      "col": "tpr",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.9911
+    },
+    {
+      "ci_95": [
+        0.0458,
+        0.0458
+      ],
+      "col": "fpr",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.0458
+    },
+    {
+      "ci_95": [
+        0.9558,
+        0.9558
+      ],
+      "col": "precision",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.9558
+    }
+  ],
+  "metadata": {
+    "attack_stride": 6,
+    "base_rate_pos": 0.4999,
+    "benign_stride": 777,
+    "ci_method": "student_t",
+    "commit": "3843f64",
+    "dataset": "biblio-us17",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-04",
+    "embedding_version": "7769ea2c62c8",
+    "gpu": "cpu",
+    "max_field_chars": 2048,
+    "n_attack": 54651,
+    "n_benign": 54663,
+    "n_cell_files": 10,
+    "n_total": 109314,
+    "note": "Zero-shot OWASP/Kaggle -> Biblio-US17 stress probe; detector fit uses no Biblio record. Evaluation uses a deterministic class-balanced systematic sample (every Nth record per class). Full-field AUC is status-shortcut-inflated; the status-masked row is the honest request-field transfer number.",
+    "restamped_from": "dcf5e62",
+    "restamped_note": "metadata.commit unified to one HEAD after a mid-run commit; the inter-commit diff was verified result-neutral (no detector code/config/data change), so no cell value changed.",
+    "sampling": "systematic",
+    "youden_j_threshold": 4.2692
+  },
+  "table": "table_09_cross_dataset_biblio_us17"
+}

@@ -1,0 +1,43 @@
+# deeplog.yaml -- DeepLog log-anomaly baseline (paper Table 3).
+#
+# DeepLog (Du et al., CCS'17): an LSTM that predicts the next log "key" in a
+# session window; a record is flagged anomalous when its observed key falls
+# outside the model's top-k predictions.
+#
+# FAIRNESS (non-negotiable): DeepLog is RE-TRAINED FROM SCRATCH on THIS
+# access-log corpus, never run from off-the-shelf weights. The "log key" here is
+# the parsed access-record template (method + path-shape + status bucket), not
+# system-log event ids. Trained self-supervised on the OWASP train split.
+#
+# Consumed by src/baselines/deeplog.py via scripts/20_run_baseline.py.
+baseline: deeplog
+family: log_anomaly
+retrain_on_corpus: true   # MUST re-train on this corpus; no pretrained weights.
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+
+# Log-key construction and session windowing.
+sequence:
+  log_key: method_path_status   # template used as the discrete "log key".
+  num_keys: 512                 # vocabulary cap for log keys.
+  window_size: 10               # sliding history length h.
+  session_by: source_ip         # how records are grouped into sequences.
+  top_k: 9                      # anomaly if true key not in top-k predictions.
+
+model:
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.1
+
+train:
+  epochs: 20
+  batch_size: 128
+  optimizer: adam
+  lr: 1.0e-3
+
+seed: 42
+results_path: results/table_03_rq1_baselines/deeplog.json
+output_dir: models/baselines/deeplog/

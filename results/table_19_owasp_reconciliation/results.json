@@ -1,0 +1,501 @@
+{
+  "cells": [
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "OWASP source descriptor",
+      "seeds": [],
+      "value": 147205
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "OWASP parser output",
+      "seeds": [],
+      "value": 151011
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "OWASP split records",
+      "seeds": [],
+      "value": 151011
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Parser minus descriptor",
+      "seeds": [],
+      "value": 3806
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Split unique transaction IDs",
+      "seeds": [],
+      "value": 151011
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Split duplicate transaction ID values",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Split duplicate transaction records",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Split multi-rule records",
+      "seeds": [],
+      "value": 14814
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw day files",
+      "seeds": [],
+      "value": 29
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Missing raw day files",
+      "seeds": [],
+      "value": 1
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Missing raw day processed records",
+      "seeds": [],
+      "value": 4874
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw parser output",
+      "seeds": [],
+      "value": 146137
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Current staged raw shortfall vs split output",
+      "seeds": [],
+      "value": 4874
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw transaction chunks",
+      "seeds": [],
+      "value": 146137
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw unique transaction IDs",
+      "seeds": [],
+      "value": 146137
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw duplicate transaction ID values",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw duplicate transaction records",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw multi-message transactions",
+      "seeds": [],
+      "value": 14688
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw message lines",
+      "seeds": [],
+      "value": 169635
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw transactions with multiple audit sections",
+      "seeds": [],
+      "value": 146137
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw transactions with repeated audit section letters",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw malformed/unusable chunks skipped",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw truncated chunks missing Z",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw malformed or truncated chunks",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw parsed records missing unique ID",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw missing section A",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw missing section B",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw missing section F",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Available raw missing section H",
+      "seeds": [],
+      "value": 0
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Empty trailing chunks ignored",
+      "seeds": [],
+      "value": 29
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Unresolved descriptor discrepancy",
+      "seeds": [],
+      "value": 3806
+    }
+  ],
+  "metadata": {
+    "commit": "9bb51e5",
+    "date": "2026-07-01",
+    "definition": {
+      "malformed_unusable_chunks_skipped": "Raw chunks for which parse_transaction returns None.",
+      "multi_message_transactions": "Raw chunks with more than one Section-H line beginning with 'Message:'.",
+      "raw_transaction_chunks": "Chunks yielded by the same boundary parser used by src.data.parsers.modsec_audit.",
+      "transactions_with_multiple_audit_sections": "Raw chunks containing more than one distinct ModSecurity audit section letter.",
+      "truncated_chunks_missing_z": "Raw chunks with no Z terminator section."
+    },
+    "interpretation": "The released split/parser output has one unique transaction ID per record. The currently staged raw directory is missing the 03-Aug-2025 audit file, whose 4,874 processed records account for the shortfall between available raw parsing and split output. On available raw days, no duplicate IDs, skipped malformed chunks, or missing-Z chunks explain the 3,806-record difference from the source descriptor; the descriptor discrepancy remains unresolved.",
+    "missing_raw_days": [
+      "03-Aug-2025"
+    ],
+    "per_day": [
+      {
+        "day": "27-Jul-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 3443,
+        "multi_message_transactions": 403,
+        "parsed_records_from_raw": 3020,
+        "raw_transaction_chunks": 3020,
+        "transactions_with_multiple_audit_sections": 3020
+      },
+      {
+        "day": "28-Jul-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 12848,
+        "multi_message_transactions": 3269,
+        "parsed_records_from_raw": 7100,
+        "raw_transaction_chunks": 7100,
+        "transactions_with_multiple_audit_sections": 7100
+      },
+      {
+        "day": "29-Jul-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 3490,
+        "multi_message_transactions": 360,
+        "parsed_records_from_raw": 3036,
+        "raw_transaction_chunks": 3036,
+        "transactions_with_multiple_audit_sections": 3036
+      },
+      {
+        "day": "30-Jul-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 3348,
+        "multi_message_transactions": 351,
+        "parsed_records_from_raw": 2991,
+        "raw_transaction_chunks": 2991,
+        "transactions_with_multiple_audit_sections": 2991
+      },
+      {
+        "day": "31-Jul-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 4433,
+        "multi_message_transactions": 254,
+        "parsed_records_from_raw": 4163,
+        "raw_transaction_chunks": 4163,
+        "transactions_with_multiple_audit_sections": 4163
+      },
+      {
+        "day": "01-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 6451,
+        "multi_message_transactions": 512,
+        "parsed_records_from_raw": 5909,
+        "raw_transaction_chunks": 5909,
+        "transactions_with_multiple_audit_sections": 5909
+      },
+      {
+        "day": "02-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 6446,
+        "multi_message_transactions": 403,
+        "parsed_records_from_raw": 6034,
+        "raw_transaction_chunks": 6034,
+        "transactions_with_multiple_audit_sections": 6034
+      },
+      {
+        "day": "04-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 8976,
+        "multi_message_transactions": 207,
+        "parsed_records_from_raw": 8752,
+        "raw_transaction_chunks": 8752,
+        "transactions_with_multiple_audit_sections": 8752
+      },
+      {
+        "day": "05-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 5837,
+        "multi_message_transactions": 341,
+        "parsed_records_from_raw": 5487,
+        "raw_transaction_chunks": 5487,
+        "transactions_with_multiple_audit_sections": 5487
+      },
+      {
+        "day": "06-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 4049,
+        "multi_message_transactions": 352,
+        "parsed_records_from_raw": 3685,
+        "raw_transaction_chunks": 3685,
+        "transactions_with_multiple_audit_sections": 3685
+      },
+      {
+        "day": "07-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 2248,
+        "multi_message_transactions": 152,
+        "parsed_records_from_raw": 2093,
+        "raw_transaction_chunks": 2093,
+        "transactions_with_multiple_audit_sections": 2093
+      },
+      {
+        "day": "08-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 2965,
+        "multi_message_transactions": 203,
+        "parsed_records_from_raw": 2684,
+        "raw_transaction_chunks": 2684,
+        "transactions_with_multiple_audit_sections": 2684
+      },
+      {
+        "day": "09-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 4066,
+        "multi_message_transactions": 518,
+        "parsed_records_from_raw": 3419,
+        "raw_transaction_chunks": 3419,
+        "transactions_with_multiple_audit_sections": 3419
+      },
+      {
+        "day": "10-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 8433,
+        "multi_message_transactions": 463,
+        "parsed_records_from_raw": 7752,
+        "raw_transaction_chunks": 7752,
+        "transactions_with_multiple_audit_sections": 7752
+      },
+      {
+        "day": "11-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 3728,
+        "multi_message_transactions": 348,
+        "parsed_records_from_raw": 3358,
+        "raw_transaction_chunks": 3358,
+        "transactions_with_multiple_audit_sections": 3358
+      },
+      {
+        "day": "12-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 2835,
+        "multi_message_transactions": 238,
+        "parsed_records_from_raw": 2586,
+        "raw_transaction_chunks": 2586,
+        "transactions_with_multiple_audit_sections": 2586
+      },
+      {
+        "day": "13-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 5444,
+        "multi_message_transactions": 354,
+        "parsed_records_from_raw": 5081,
+        "raw_transaction_chunks": 5081,
+        "transactions_with_multiple_audit_sections": 5081
+      },
+      {
+        "day": "14-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 12909,
+        "multi_message_transactions": 433,
+        "parsed_records_from_raw": 12384,
+        "raw_transaction_chunks": 12384,
+        "transactions_with_multiple_audit_sections": 12384
+      },
+      {
+        "day": "15-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 16151,
+        "multi_message_transactions": 347,
+        "parsed_records_from_raw": 15597,
+        "raw_transaction_chunks": 15597,
+        "transactions_with_multiple_audit_sections": 15597
+      },
+      {
+        "day": "16-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 12443,
+        "multi_message_transactions": 1816,
+        "parsed_records_from_raw": 9276,
+        "raw_transaction_chunks": 9276,
+        "transactions_with_multiple_audit_sections": 9276
+      },
+      {
+        "day": "17-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 7826,
+        "multi_message_transactions": 1086,
+        "parsed_records_from_raw": 4567,
+        "raw_transaction_chunks": 4567,
+        "transactions_with_multiple_audit_sections": 4567
+      },
+      {
+        "day": "18-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 4408,
+        "multi_message_transactions": 345,
+        "parsed_records_from_raw": 3463,
+        "raw_transaction_chunks": 3463,
+        "transactions_with_multiple_audit_sections": 3463
+      },
+      {
+        "day": "19-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 4936,
+        "multi_message_transactions": 398,
+        "parsed_records_from_raw": 4054,
+        "raw_transaction_chunks": 4054,
+        "transactions_with_multiple_audit_sections": 4054
+      },
+      {
+        "day": "20-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 3381,
+        "multi_message_transactions": 161,
+        "parsed_records_from_raw": 2914,
+        "raw_transaction_chunks": 2914,
+        "transactions_with_multiple_audit_sections": 2914
+      },
+      {
+        "day": "21-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 3377,
+        "multi_message_transactions": 186,
+        "parsed_records_from_raw": 2893,
+        "raw_transaction_chunks": 2893,
+        "transactions_with_multiple_audit_sections": 2893
+      },
+      {
+        "day": "22-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 3145,
+        "multi_message_transactions": 300,
+        "parsed_records_from_raw": 2751,
+        "raw_transaction_chunks": 2751,
+        "transactions_with_multiple_audit_sections": 2751
+      },
+      {
+        "day": "23-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 4262,
+        "multi_message_transactions": 437,
+        "parsed_records_from_raw": 3801,
+        "raw_transaction_chunks": 3801,
+        "transactions_with_multiple_audit_sections": 3801
+      },
+      {
+        "day": "24-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 3756,
+        "multi_message_transactions": 318,
+        "parsed_records_from_raw": 3425,
+        "raw_transaction_chunks": 3425,
+        "transactions_with_multiple_audit_sections": 3425
+      },
+      {
+        "day": "25-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 4001,
+        "multi_message_transactions": 133,
+        "parsed_records_from_raw": 3862,
+        "raw_transaction_chunks": 3862,
+        "transactions_with_multiple_audit_sections": 3862
+      }
+    ],
+    "source": "data/raw/owasp_modsec_30day/*/modsec_audit.anon.log and data/splits/owasp_*.jsonl"
+  },
+  "table": "table_19_owasp_reconciliation"
+}

@@ -1,0 +1,15 @@
+{
+  "col": "50%",
+  "per_class_f1": {
+    "lfi": 0.9872296952153925,
+    "path_traversal": 0.3571428571428571,
+    "php_injection": 0.9162011173184357,
+    "protocol": 0.9838783039369282,
+    "rce": 0.9917355371900827,
+    "scanner": 0.9692307692307692,
+    "sql_injection": 0.674698795180723,
+    "xss": 0.37499999999999994
+  },
+  "row": "Proposed (FastText field-aware)",
+  "seed": 42
+}

@@ -1,0 +1,35 @@
+{
+  "col": "10%",
+  "metadata": {
+    "baseline": "char_cnn",
+    "commit": "082f087",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-06",
+    "embedding_version": "7769ea2c62c8",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "family": "neural_supervised",
+    "final_train_loss": 0.003978,
+    "gpu": "cpu",
+    "label_budget": 0.1,
+    "metric": "macro_f1",
+    "n_test": 19646,
+    "n_train_labeled": 11000,
+    "note": "Single-seed baseline run; Table 3 aggregates seeds 42..46 with 95% CIs via the aggregation stage (src.eval.aggregate).",
+    "params": 134536,
+    "per_class_f1": {
+      "lfi": 0.988246,
+      "path_traversal": 0.16,
+      "php_injection": 0.777465,
+      "protocol": 0.98523,
+      "rce": 0.943132,
+      "scanner": 0.992126,
+      "sql_injection": 0.584071,
+      "xss": 0.514286
+    }
+  },
+  "row": "Char-CNN",
+  "seed": 45,
+  "table": "table_03_rq1_baselines",
+  "value": 74.3069
+}

@@ -1,0 +1,68 @@
+# field_schema.yaml
+#
+# The 6 typed fields that make the model "field-aware". This file is the SINGLE
+# SOURCE OF TRUTH for the field set, their order, and their stable integer
+# field-ids (0..5). Every component that emits or consumes a `field_ids` stream
+# (the field encoder / per-field embedding and the per-field attribution) MUST
+# agree with this definition.
+#
+# DO NOT reorder, insert, or remove fields once any tokenized data, trained
+# tokenizer, or trained model has been produced from this schema: the field-id
+# is baked into those artifacts and changing it silently invalidates results.
+#
+# The 6 model fields are, in order:
+#   0 method   HTTP verb from the request line (GET, POST, ...)
+#   1 path     URL path, the part of the request-line target before the first '?'
+#   2 query    URL query string, the part after the first '?' (may be empty)
+#   3 ua       User-Agent request header value (may be empty if header absent)
+#   4 status   HTTP response status code as an integer (0 if section F absent)
+#   5 timing   transaction duration in microseconds, integer (0 if unknown)
+#
+# Two orthogonal hints are recorded per field:
+#
+#   `type`  modelling hint -- how the field is featurized by the encoder:
+#     - categorical : small closed symbol set (HTTP method, status code).
+#                     Treated as a discrete symbol, not a magnitude.
+#     - text        : free-form string, BPE sub-word tokenized.
+#     - numeric     : a single non-negative integer measurement (microseconds);
+#                     bucketize / log-scale before embedding.
+#
+#   `kind`  rendering hint -- how the raw value is turned into text before BPE
+#           (kept for the tokenizer in configs/tokenizer/bpe_32k.yaml):
+#     - text    : rendered verbatim as a UTF-8 string.
+#     - numeric : integer rendered with str(int(value)); tokenized as digits.
+
+version: 1
+num_fields: 6
+
+fields:
+  - name: method
+    field_id: 0
+    type: categorical
+    kind: text
+    description: "HTTP request method from the request line (GET, POST, HEAD, ...)."
+  - name: path
+    field_id: 1
+    type: text
+    kind: text
+    description: "URL path; request-line target up to the first '?'."
+  - name: query
+    field_id: 2
+    type: text
+    kind: text
+    description: "URL query string; request-line target after the first '?' (may be empty)."
+  - name: ua
+    field_id: 3
+    type: text
+    kind: text
+    description: "User-Agent header value; empty string if header absent."
+  - name: status
+    field_id: 4
+    type: categorical
+    kind: numeric
+    description: "HTTP response status code as an integer; 0 when response section (F) is absent."
+  - name: timing
+    field_id: 5
+    type: numeric
+    kind: numeric
+    description: "Transaction duration in microseconds; 0 when unknown."

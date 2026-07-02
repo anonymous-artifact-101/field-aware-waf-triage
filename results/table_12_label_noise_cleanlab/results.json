@@ -1,0 +1,120 @@
+{
+  "cells": [
+    {
+      "ci_95": null,
+      "col": "issue_rate",
+      "row": "Cleanlab suspected CRS subtype issues",
+      "seeds": [
+        42
+      ],
+      "value": 0.082
+    },
+    {
+      "ci_95": null,
+      "col": "count",
+      "row": "Cleanlab suspected CRS subtype issues",
+      "seeds": [
+        42
+      ],
+      "value": 124
+    },
+    {
+      "ci_95": null,
+      "col": "macro_f1",
+      "row": "OOF TF-IDF+LogReg audit classifier",
+      "seeds": [
+        42
+      ],
+      "value": 86.975
+    },
+    {
+      "ci_95": null,
+      "col": "accuracy",
+      "row": "OOF TF-IDF+LogReg audit classifier",
+      "seeds": [
+        42
+      ],
+      "value": 97.885
+    }
+  ],
+  "metadata": {
+    "artifact_kind": "supporting_audit",
+    "audit_classifier": "TF-IDF + LogisticRegression",
+    "audit_method": "cleanlab.filter.find_label_issues",
+    "commit": "c042449-dirty",
+    "dataset_version": "d7400f33c949",
+    "date": "2026-06-02",
+    "embedding_version": "2c37c7f64455",
+    "features": {
+      "analyzer": "char_wb",
+      "fields": [
+        "method",
+        "path",
+        "query",
+        "ua",
+        "status",
+        "timing"
+      ],
+      "max_features": 50000,
+      "ngram_range": [
+        1,
+        2
+      ]
+    },
+    "fold_reports": [
+      {
+        "accuracy": 0.978347,
+        "fold": 1,
+        "macro_f1": 0.867833,
+        "n_test": 30203,
+        "n_train": 120808
+      },
+      {
+        "accuracy": 0.979571,
+        "fold": 2,
+        "macro_f1": 0.870437,
+        "n_test": 30202,
+        "n_train": 120809
+      },
+      {
+        "accuracy": 0.978909,
+        "fold": 3,
+        "macro_f1": 0.872243,
+        "n_test": 30202,
+        "n_train": 120809
+      },
+      {
+        "accuracy": 0.978743,
+        "fold": 4,
+        "macro_f1": 0.870825,
+        "n_test": 30202,
+        "n_train": 120809
+      },
+      {
+        "accuracy": 0.978677,
+        "fold": 5,
+        "macro_f1": 0.867653,
+        "n_test": 30202,
+        "n_train": 120809
+      }
+    ],
+    "folds": 5,
+    "gpu": "cpu",
+    "max_records": null,
+    "model": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "max_iter": 1000,
+      "solver": "lbfgs"
+    },
+    "note": "Statistical audit of suspected CRS-derived subtype label issues using out-of-fold probabilities; not human ground truth.",
+    "seed": 42,
+    "single_run_audit": true,
+    "splits": [
+      "owasp_train",
+      "owasp_val",
+      "owasp_test"
+    ]
+  },
+  "table": "table_12_label_noise_cleanlab"
+}

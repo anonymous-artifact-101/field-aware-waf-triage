@@ -1,0 +1,2584 @@
+{
+  "block_size": 500,
+  "block_size_summary": {
+    "max": 500,
+    "median": 500,
+    "min": 251
+  },
+  "bootstrap_unit": "temporal_cluster_block",
+  "cluster_counts": {
+    "20-Aug-2025": 2914,
+    "21-Aug-2025": 2893,
+    "22-Aug-2025": 2751,
+    "23-Aug-2025": 3801,
+    "24-Aug-2025": 3425,
+    "25-Aug-2025": 3862
+  },
+  "cluster_key": "day",
+  "col": "10%",
+  "comparisons": {
+    "Char-CNN": {
+      "baseline_macro_f1_range": [
+        66.8399,
+        74.6423
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            67.6547,
+            79.51
+          ],
+          "confidence": 0.95,
+          "delta": 0.0729,
+          "delta_boot_mean": 0.3474,
+          "delta_ci": [
+            -1.7478,
+            2.9408
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 73.5361,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Char-CNN",
+          "num_classes": 8,
+          "p_value": 0.8208,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            68.8713,
+            81.0202
+          ],
+          "confidence": 0.95,
+          "delta": -1.0333,
+          "delta_boot_mean": -0.8174,
+          "delta_ci": [
+            -3.0576,
+            1.736
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.6423,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Char-CNN",
+          "num_classes": 8,
+          "p_value": 0.48,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            61.7541,
+            73.3316
+          ],
+          "confidence": 0.95,
+          "delta": 6.7692,
+          "delta_boot_mean": 6.5696,
+          "delta_ci": [
+            2.5528,
+            10.1425
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 66.8399,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Char-CNN",
+          "num_classes": 8,
+          "p_value": 0.0014,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            68.7429,
+            80.5372
+          ],
+          "confidence": 0.95,
+          "delta": -0.6979,
+          "delta_boot_mean": -0.5158,
+          "delta_ci": [
+            -2.5227,
+            1.6991
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.3069,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Char-CNN",
+          "num_classes": 8,
+          "p_value": 0.6102,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            68.3104,
+            78.7328
+          ],
+          "confidence": 0.95,
+          "delta": -0.5203,
+          "delta_boot_mean": -0.0776,
+          "delta_ci": [
+            -3.011,
+            3.4592
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.1293,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Char-CNN",
+          "num_classes": 8,
+          "p_value": 0.9046,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        -1.0333,
+        6.7692
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          68.3104,
+          78.7328
+        ],
+        "confidence": 0.95,
+        "delta": -0.5203,
+        "delta_boot_mean": -0.0776,
+        "delta_ci": [
+          -3.011,
+          3.4592
+        ],
+        "headline_seed": 46,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 74.1293,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "Char-CNN",
+        "num_classes": 8,
+        "p_value": 0.9046,
+        "seed": 42,
+        "significant": false,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "FastText random-init (no pre-train)": {
+      "baseline_macro_f1_range": [
+        21.6861,
+        22.0114
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            20.1572,
+            24.0247
+          ],
+          "confidence": 0.95,
+          "delta": 51.8141,
+          "delta_boot_mean": 51.5436,
+          "delta_ci": [
+            46.4813,
+            57.8115
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 21.7949,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "FastText random-init (no pre-train)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            20.3581,
+            24.283
+          ],
+          "confidence": 0.95,
+          "delta": 51.5977,
+          "delta_boot_mean": 51.3261,
+          "delta_ci": [
+            46.2764,
+            57.6156
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 22.0114,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "FastText random-init (no pre-train)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            20.1345,
+            24.0255
+          ],
+          "confidence": 0.95,
+          "delta": 51.8296,
+          "delta_boot_mean": 51.5581,
+          "delta_ci": [
+            46.4902,
+            57.828
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 21.7795,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "FastText random-init (no pre-train)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            20.1324,
+            24.0279
+          ],
+          "confidence": 0.95,
+          "delta": 51.8297,
+          "delta_boot_mean": 51.5578,
+          "delta_ci": [
+            46.4889,
+            57.8282
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 21.7793,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "FastText random-init (no pre-train)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            20.0457,
+            23.9179
+          ],
+          "confidence": 0.95,
+          "delta": 51.923,
+          "delta_boot_mean": 51.6518,
+          "delta_ci": [
+            46.591,
+            57.9463
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 21.6861,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "FastText random-init (no pre-train)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        51.5977,
+        51.923
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          20.1345,
+          24.0255
+        ],
+        "confidence": 0.95,
+        "delta": 51.8296,
+        "delta_boot_mean": 51.5581,
+        "delta_ci": [
+          46.4902,
+          57.828
+        ],
+        "headline_seed": 44,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 21.7795,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "FastText random-init (no pre-train)",
+        "num_classes": 8,
+        "p_value": 0.0001,
+        "seed": 42,
+        "significant": true,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "Field-prefixed FastText + LinearSVC": {
+      "baseline_macro_f1_range": [
+        56.1719,
+        58.3792
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            53.1869,
+            58.9185
+          ],
+          "confidence": 0.95,
+          "delta": 17.0959,
+          "delta_boot_mean": 17.2199,
+          "delta_ci": [
+            12.6401,
+            23.7116
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 56.5131,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Field-prefixed FastText + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            53.288,
+            59.0903
+          ],
+          "confidence": 0.95,
+          "delta": 16.9565,
+          "delta_boot_mean": 17.0734,
+          "delta_ci": [
+            12.5133,
+            23.4146
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 56.6526,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Field-prefixed FastText + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            52.7595,
+            58.5449
+          ],
+          "confidence": 0.95,
+          "delta": 17.4372,
+          "delta_boot_mean": 17.6323,
+          "delta_ci": [
+            13.2042,
+            23.981
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 56.1719,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Field-prefixed FastText + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            53.3057,
+            59.2523
+          ],
+          "confidence": 0.95,
+          "delta": 16.8555,
+          "delta_boot_mean": 16.9984,
+          "delta_ci": [
+            12.362,
+            23.4784
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 56.7535,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Field-prefixed FastText + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            55.2202,
+            60.5524
+          ],
+          "confidence": 0.95,
+          "delta": 15.2299,
+          "delta_boot_mean": 15.3791,
+          "delta_ci": [
+            11.1314,
+            21.5989
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 58.3792,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Field-prefixed FastText + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        15.2299,
+        17.4372
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          53.288,
+          59.0903
+        ],
+        "confidence": 0.95,
+        "delta": 16.9565,
+        "delta_boot_mean": 17.0734,
+        "delta_ci": [
+          12.5133,
+          23.4146
+        ],
+        "headline_seed": 43,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 56.6526,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "Field-prefixed FastText + LinearSVC",
+        "num_classes": 8,
+        "p_value": 0.0001,
+        "seed": 42,
+        "significant": true,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "Hashing char-ngram + SGD": {
+      "baseline_macro_f1_range": [
+        69.8048,
+        75.5357
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            65.4214,
+            75.2765
+          ],
+          "confidence": 0.95,
+          "delta": 2.7406,
+          "delta_boot_mean": 3.0691,
+          "delta_ci": [
+            -3.0031,
+            9.1704
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 70.8684,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Hashing char-ngram + SGD",
+          "num_classes": 8,
+          "p_value": 0.3324,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            64.9472,
+            73.6137
+          ],
+          "confidence": 0.95,
+          "delta": 3.8043,
+          "delta_boot_mean": 4.1001,
+          "delta_ci": [
+            -1.5959,
+            10.2322
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 69.8048,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Hashing char-ngram + SGD",
+          "num_classes": 8,
+          "p_value": 0.1616,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            65.596,
+            75.0162
+          ],
+          "confidence": 0.95,
+          "delta": 2.7772,
+          "delta_boot_mean": 3.0907,
+          "delta_ci": [
+            -2.8134,
+            8.9176
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 70.8318,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Hashing char-ngram + SGD",
+          "num_classes": 8,
+          "p_value": 0.3262,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            65.1923,
+            75.2821
+          ],
+          "confidence": 0.95,
+          "delta": 2.824,
+          "delta_boot_mean": 3.1898,
+          "delta_ci": [
+            -3.1906,
+            9.2783
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 70.785,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Hashing char-ngram + SGD",
+          "num_classes": 8,
+          "p_value": 0.354,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            71.108,
+            78.976
+          ],
+          "confidence": 0.95,
+          "delta": -1.9266,
+          "delta_boot_mean": -1.5952,
+          "delta_ci": [
+            -6.794,
+            3.9005
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 75.5357,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Hashing char-ngram + SGD",
+          "num_classes": 8,
+          "p_value": 0.5276,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        -1.9266,
+        3.8043
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          65.596,
+          75.0162
+        ],
+        "confidence": 0.95,
+        "delta": 2.7772,
+        "delta_boot_mean": 3.0907,
+        "delta_ci": [
+          -2.8134,
+          8.9176
+        ],
+        "headline_seed": 44,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 70.8318,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "Hashing char-ngram + SGD",
+        "num_classes": 8,
+        "p_value": 0.3262,
+        "seed": 42,
+        "significant": false,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "ModSec-AdvLearn": {
+      "baseline_macro_f1_range": [
+        74.8269,
+        74.8269
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            67.0089,
+            79.7555
+          ],
+          "confidence": 0.95,
+          "delta": -1.2179,
+          "delta_boot_mean": -0.6089,
+          "delta_ci": [
+            -8.3449,
+            6.9476
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.8269,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-AdvLearn",
+          "num_classes": 8,
+          "p_value": 0.8716,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            67.0089,
+            79.7555
+          ],
+          "confidence": 0.95,
+          "delta": -1.2179,
+          "delta_boot_mean": -0.6089,
+          "delta_ci": [
+            -8.3449,
+            6.9476
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.8269,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-AdvLearn",
+          "num_classes": 8,
+          "p_value": 0.8716,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            67.0089,
+            79.7555
+          ],
+          "confidence": 0.95,
+          "delta": -1.2179,
+          "delta_boot_mean": -0.6089,
+          "delta_ci": [
+            -8.3449,
+            6.9476
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.8269,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-AdvLearn",
+          "num_classes": 8,
+          "p_value": 0.8716,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            67.0089,
+            79.7555
+          ],
+          "confidence": 0.95,
+          "delta": -1.2179,
+          "delta_boot_mean": -0.6089,
+          "delta_ci": [
+            -8.3449,
+            6.9476
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.8269,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-AdvLearn",
+          "num_classes": 8,
+          "p_value": 0.8716,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            67.0089,
+            79.7555
+          ],
+          "confidence": 0.95,
+          "delta": -1.2179,
+          "delta_boot_mean": -0.6089,
+          "delta_ci": [
+            -8.3449,
+            6.9476
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.8269,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-AdvLearn",
+          "num_classes": 8,
+          "p_value": 0.8716,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        -1.2179,
+        -1.2179
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          67.0089,
+          79.7555
+        ],
+        "confidence": 0.95,
+        "delta": -1.2179,
+        "delta_boot_mean": -0.6089,
+        "delta_ci": [
+          -8.3449,
+          6.9476
+        ],
+        "headline_seed": 44,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 74.8269,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "ModSec-AdvLearn",
+        "num_classes": 8,
+        "p_value": 0.8716,
+        "seed": 42,
+        "significant": false,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "ModSec-Learn": {
+      "baseline_macro_f1_range": [
+        90.9692,
+        90.9692
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            84.3506,
+            95.5622
+          ],
+          "confidence": 0.95,
+          "delta": -17.3601,
+          "delta_boot_mean": -16.7677,
+          "delta_ci": [
+            -24.4108,
+            -9.9579
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 90.9692,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-Learn",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            84.3506,
+            95.5622
+          ],
+          "confidence": 0.95,
+          "delta": -17.3601,
+          "delta_boot_mean": -16.7677,
+          "delta_ci": [
+            -24.4108,
+            -9.9579
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 90.9692,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-Learn",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            84.3506,
+            95.5622
+          ],
+          "confidence": 0.95,
+          "delta": -17.3601,
+          "delta_boot_mean": -16.7677,
+          "delta_ci": [
+            -24.4108,
+            -9.9579
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 90.9692,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-Learn",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            84.3506,
+            95.5622
+          ],
+          "confidence": 0.95,
+          "delta": -17.3601,
+          "delta_boot_mean": -16.7677,
+          "delta_ci": [
+            -24.4108,
+            -9.9579
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 90.9692,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-Learn",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            84.3506,
+            95.5622
+          ],
+          "confidence": 0.95,
+          "delta": -17.3601,
+          "delta_boot_mean": -16.7677,
+          "delta_ci": [
+            -24.4108,
+            -9.9579
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 90.9692,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "ModSec-Learn",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        -17.3601,
+        -17.3601
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          84.3506,
+          95.5622
+        ],
+        "confidence": 0.95,
+        "delta": -17.3601,
+        "delta_boot_mean": -16.7677,
+        "delta_ci": [
+          -24.4108,
+          -9.9579
+        ],
+        "headline_seed": 44,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 90.9692,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "ModSec-Learn",
+        "num_classes": 8,
+        "p_value": 0.0001,
+        "seed": 42,
+        "significant": true,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "Status-only (shortcut)": {
+      "baseline_macro_f1_range": [
+        18.2463,
+        18.2463
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            16.8345,
+            19.6469
+          ],
+          "confidence": 0.95,
+          "delta": 55.3628,
+          "delta_boot_mean": 55.2029,
+          "delta_ci": [
+            50.159,
+            61.3652
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 18.2463,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Status-only (shortcut)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            16.8345,
+            19.6469
+          ],
+          "confidence": 0.95,
+          "delta": 55.3628,
+          "delta_boot_mean": 55.2029,
+          "delta_ci": [
+            50.159,
+            61.3652
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 18.2463,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Status-only (shortcut)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            16.8345,
+            19.6469
+          ],
+          "confidence": 0.95,
+          "delta": 55.3628,
+          "delta_boot_mean": 55.2029,
+          "delta_ci": [
+            50.159,
+            61.3652
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 18.2463,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Status-only (shortcut)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            16.8345,
+            19.6469
+          ],
+          "confidence": 0.95,
+          "delta": 55.3628,
+          "delta_boot_mean": 55.2029,
+          "delta_ci": [
+            50.159,
+            61.3652
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 18.2463,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Status-only (shortcut)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            16.8345,
+            19.6469
+          ],
+          "confidence": 0.95,
+          "delta": 55.3628,
+          "delta_boot_mean": 55.2029,
+          "delta_ci": [
+            50.159,
+            61.3652
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 18.2463,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "Status-only (shortcut)",
+          "num_classes": 8,
+          "p_value": 0.0001,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        55.3628,
+        55.3628
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          16.8345,
+          19.6469
+        ],
+        "confidence": 0.95,
+        "delta": 55.3628,
+        "delta_boot_mean": 55.2029,
+        "delta_ci": [
+          50.159,
+          61.3652
+        ],
+        "headline_seed": 44,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 18.2463,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "Status-only (shortcut)",
+        "num_classes": 8,
+        "p_value": 0.0001,
+        "seed": 42,
+        "significant": true,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "TF-IDF + LogReg": {
+      "baseline_macro_f1_range": [
+        63.7734,
+        63.7734
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            55.7738,
+            69.4281
+          ],
+          "confidence": 0.95,
+          "delta": 9.8357,
+          "delta_boot_mean": 10.7023,
+          "delta_ci": [
+            3.4713,
+            16.887
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 63.7734,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + LogReg",
+          "num_classes": 8,
+          "p_value": 0.0028,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            55.7738,
+            69.4281
+          ],
+          "confidence": 0.95,
+          "delta": 9.8357,
+          "delta_boot_mean": 10.7023,
+          "delta_ci": [
+            3.4713,
+            16.887
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 63.7734,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + LogReg",
+          "num_classes": 8,
+          "p_value": 0.0028,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            55.7738,
+            69.4281
+          ],
+          "confidence": 0.95,
+          "delta": 9.8357,
+          "delta_boot_mean": 10.7023,
+          "delta_ci": [
+            3.4713,
+            16.887
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 63.7734,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + LogReg",
+          "num_classes": 8,
+          "p_value": 0.0028,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            55.7738,
+            69.4281
+          ],
+          "confidence": 0.95,
+          "delta": 9.8357,
+          "delta_boot_mean": 10.7023,
+          "delta_ci": [
+            3.4713,
+            16.887
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 63.7734,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + LogReg",
+          "num_classes": 8,
+          "p_value": 0.0028,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            55.7738,
+            69.4281
+          ],
+          "confidence": 0.95,
+          "delta": 9.8357,
+          "delta_boot_mean": 10.7023,
+          "delta_ci": [
+            3.4713,
+            16.887
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 63.7734,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + LogReg",
+          "num_classes": 8,
+          "p_value": 0.0028,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        9.8357,
+        9.8357
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          55.7738,
+          69.4281
+        ],
+        "confidence": 0.95,
+        "delta": 9.8357,
+        "delta_boot_mean": 10.7023,
+        "delta_ci": [
+          3.4713,
+          16.887
+        ],
+        "headline_seed": 44,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 63.7734,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "TF-IDF + LogReg",
+        "num_classes": 8,
+        "p_value": 0.0028,
+        "seed": 42,
+        "significant": true,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "TF-IDF + SVD + HGBDT": {
+      "baseline_macro_f1_range": [
+        69.0841,
+        70.4089
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            63.2946,
+            75.6774
+          ],
+          "confidence": 0.95,
+          "delta": 4.0555,
+          "delta_boot_mean": 4.3553,
+          "delta_ci": [
+            1.1859,
+            8.0672
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 69.5536,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + SVD + HGBDT",
+          "num_classes": 8,
+          "p_value": 0.0042,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            63.9668,
+            75.8667
+          ],
+          "confidence": 0.95,
+          "delta": 3.608,
+          "delta_boot_mean": 3.9052,
+          "delta_ci": [
+            0.9564,
+            7.5934
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 70.0011,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + SVD + HGBDT",
+          "num_classes": 8,
+          "p_value": 0.007,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            63.5104,
+            75.2793
+          ],
+          "confidence": 0.95,
+          "delta": 4.1879,
+          "delta_boot_mean": 4.4418,
+          "delta_ci": [
+            1.555,
+            7.8821
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 69.4212,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + SVD + HGBDT",
+          "num_classes": 8,
+          "p_value": 0.0014,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            64.3283,
+            76.3499
+          ],
+          "confidence": 0.95,
+          "delta": 3.2001,
+          "delta_boot_mean": 3.4632,
+          "delta_ci": [
+            0.7533,
+            6.7542
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 70.4089,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + SVD + HGBDT",
+          "num_classes": 8,
+          "p_value": 0.0082,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            62.7705,
+            75.3739
+          ],
+          "confidence": 0.95,
+          "delta": 4.5249,
+          "delta_boot_mean": 4.8146,
+          "delta_ci": [
+            1.5433,
+            8.5821
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 69.0841,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF + SVD + HGBDT",
+          "num_classes": 8,
+          "p_value": 0.0026,
+          "seed": 42,
+          "significant": true,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        3.2001,
+        4.5249
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          63.2946,
+          75.6774
+        ],
+        "confidence": 0.95,
+        "delta": 4.0555,
+        "delta_boot_mean": 4.3553,
+        "delta_ci": [
+          1.1859,
+          8.0672
+        ],
+        "headline_seed": 42,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 69.5536,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "TF-IDF + SVD + HGBDT",
+        "num_classes": 8,
+        "p_value": 0.0042,
+        "seed": 42,
+        "significant": true,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "TF-IDF flat + LinearSVC": {
+      "baseline_macro_f1_range": [
+        76.7102,
+        76.7102
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            68.9977,
+            81.8216
+          ],
+          "confidence": 0.95,
+          "delta": -3.1011,
+          "delta_boot_mean": -2.1833,
+          "delta_ci": [
+            -9.0091,
+            3.5313
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 76.7102,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF flat + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.6812,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            68.9977,
+            81.8216
+          ],
+          "confidence": 0.95,
+          "delta": -3.1011,
+          "delta_boot_mean": -2.1833,
+          "delta_ci": [
+            -9.0091,
+            3.5313
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 76.7102,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF flat + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.6812,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            68.9977,
+            81.8216
+          ],
+          "confidence": 0.95,
+          "delta": -3.1011,
+          "delta_boot_mean": -2.1833,
+          "delta_ci": [
+            -9.0091,
+            3.5313
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 76.7102,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF flat + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.6812,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            68.9977,
+            81.8216
+          ],
+          "confidence": 0.95,
+          "delta": -3.1011,
+          "delta_boot_mean": -2.1833,
+          "delta_ci": [
+            -9.0091,
+            3.5313
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 76.7102,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF flat + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.6812,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            68.9977,
+            81.8216
+          ],
+          "confidence": 0.95,
+          "delta": -3.1011,
+          "delta_boot_mean": -2.1833,
+          "delta_ci": [
+            -9.0091,
+            3.5313
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 76.7102,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF flat + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.6812,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        -3.1011,
+        -3.1011
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          68.9977,
+          81.8216
+        ],
+        "confidence": 0.95,
+        "delta": -3.1011,
+        "delta_boot_mean": -2.1833,
+        "delta_ci": [
+          -9.0091,
+          3.5313
+        ],
+        "headline_seed": 44,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 76.7102,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "TF-IDF flat + LinearSVC",
+        "num_classes": 8,
+        "p_value": 0.6812,
+        "seed": 42,
+        "significant": false,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "TF-IDF typed + LinearSVC": {
+      "baseline_macro_f1_range": [
+        74.4326,
+        74.4326
+      ],
+      "by_seed": {
+        "42": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            69.4574,
+            80.228
+          ],
+          "confidence": 0.95,
+          "delta": -0.8236,
+          "delta_boot_mean": -0.7626,
+          "delta_ci": [
+            -2.7286,
+            1.6695
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.4326,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF typed + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.4524,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "43": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            69.4574,
+            80.228
+          ],
+          "confidence": 0.95,
+          "delta": -0.8236,
+          "delta_boot_mean": -0.7626,
+          "delta_ci": [
+            -2.7286,
+            1.6695
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.4326,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF typed + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.4524,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "44": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            69.4574,
+            80.228
+          ],
+          "confidence": 0.95,
+          "delta": -0.8236,
+          "delta_boot_mean": -0.7626,
+          "delta_ci": [
+            -2.7286,
+            1.6695
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.4326,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF typed + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.4524,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "45": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            69.4574,
+            80.228
+          ],
+          "confidence": 0.95,
+          "delta": -0.8236,
+          "delta_boot_mean": -0.7626,
+          "delta_ci": [
+            -2.7286,
+            1.6695
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.4326,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF typed + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.4524,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        },
+        "46": {
+          "B": 10000,
+          "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+          "block_size_max": 500,
+          "block_size_median": 500.0,
+          "block_size_min": 251,
+          "bootstrap_n_mean": 19645.85,
+          "bootstrap_unit": "temporal_cluster_block",
+          "ci_a": [
+            69.0202,
+            79.2679
+          ],
+          "ci_b": [
+            69.4574,
+            80.228
+          ],
+          "confidence": 0.95,
+          "delta": -0.8236,
+          "delta_boot_mean": -0.7626,
+          "delta_ci": [
+            -2.7286,
+            1.6695
+          ],
+          "macro_f1_a": 73.6091,
+          "macro_f1_b": 74.4326,
+          "n": 19646,
+          "n_blocks": 41,
+          "name_a": "Proposed (FastText field-aware)",
+          "name_b": "TF-IDF typed + LinearSVC",
+          "num_classes": 8,
+          "p_value": 0.4524,
+          "seed": 42,
+          "significant": false,
+          "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+        }
+      },
+      "delta_range_over_seeds": [
+        -0.8236,
+        -0.8236
+      ],
+      "deterministic": false,
+      "headline": {
+        "B": 10000,
+        "block_description": "contiguous temporal blocks of up to 500 records, not crossing day clusters",
+        "block_size_max": 500,
+        "block_size_median": 500.0,
+        "block_size_min": 251,
+        "bootstrap_n_mean": 19645.85,
+        "bootstrap_unit": "temporal_cluster_block",
+        "ci_a": [
+          69.0202,
+          79.2679
+        ],
+        "ci_b": [
+          69.4574,
+          80.228
+        ],
+        "confidence": 0.95,
+        "delta": -0.8236,
+        "delta_boot_mean": -0.7626,
+        "delta_ci": [
+          -2.7286,
+          1.6695
+        ],
+        "headline_seed": 44,
+        "macro_f1_a": 73.6091,
+        "macro_f1_b": 74.4326,
+        "n": 19646,
+        "n_blocks": 41,
+        "name_a": "Proposed (FastText field-aware)",
+        "name_b": "TF-IDF typed + LinearSVC",
+        "num_classes": 8,
+        "p_value": 0.4524,
+        "seed": 42,
+        "significant": false,
+        "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    }
+  },
+  "labels_sha256": "5b5ba305a1e86aa99b5725ef86fad4645c8d1f11439413c91a144204e9629775",
+  "metadata": {
+    "B": 10000,
+    "commit": "9bb51e5",
+    "dataset_version": "3ce0e30a2e51"
+  },
+  "method": "paired temporal-block bootstrap, B=10000 resamples with replacement of 41 contiguous blocks from the shared n=19646 owasp_test records; blocks are capped at 500 records and do not cross day clusters; identical sampled blocks applied to both systems",
+  "n": 19646,
+  "n_blocks": 41,
+  "proposed": {
+    "ci_95": [
+      69.0202,
+      79.2679
+    ],
+    "deterministic": true,
+    "macro_f1": 73.6091,
+    "row": "Proposed (FastText field-aware)",
+    "seed_used": 42
+  },
+  "rng_seed": 42,
+  "table": "table_03_rq1_baselines",
+  "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+}

@@ -1,0 +1,26 @@
+{
+  "col": "FPR@p95",
+  "metadata": {
+    "checkpoint_loaded": true,
+    "commit": "c042449",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "gpu": "cpu",
+    "metric": "false_positive_rate",
+    "mode": "unsupervised_zero_shot_benign_fpr",
+    "n_benign": 29778,
+    "n_flagged_excluded": 7909,
+    "note": "Zero-shot benign FPR; scorer+threshold from benign weblog, AMAN-only.",
+    "weblog_thresholds": {
+      "p95": 6.5448,
+      "p99": 7.888,
+      "p99.9": 12.5401
+    }
+  },
+  "row": "Proposed (zero-shot benign FPR)",
+  "seed": 42,
+  "table": "table_11_benign_fpr_apache_indo",
+  "value": 0.2878
+}

@@ -1,0 +1,43 @@
+# char_cnn.yaml -- character-level CNN baseline (paper Table 3).
+#
+# Supervised character-level 1D-CNN over the raw rendered access record (no
+# field-awareness, no pre-training), classifying the 8 attack subtypes
+# (src.data.labels.SUBTYPES). A deliberately small, CPU-friendly architecture so
+# it trains in minutes on this machine. Trained on the Low-label label budget for
+# direct comparison with the proposed Low-label columns.
+#
+# Consumed by src/baselines/char_cnn.py via scripts/20_run_baseline.py.
+baseline: char_cnn
+family: neural_supervised
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  label_budget: 0.05
+
+features:
+  representation: char_index
+  # Bytes -> ids; small char vocabulary, fixed-length window with padding.
+  vocab_size: 128
+  max_length: 256
+  fields: [method, path, query, ua, status, timing]
+
+model:
+  embed_dim: 64
+  # Small CPU-friendly conv stack: parallel kernel widths, modest channel count.
+  conv_channels: 128
+  kernel_sizes: [3, 5, 7]
+  dropout: 0.2
+  num_classes: 8   # len(SUBTYPES).
+
+train:
+  epochs: 10
+  batch_size: 64
+  optimizer: adamw
+  lr: 1.0e-3
+  weight_decay: 0.01
+
+seed: 42
+results_path: results/table_03_rq1_baselines/char_cnn.json
+output_dir: models/baselines/char_cnn/

@@ -1,0 +1,39 @@
+# tfidf_flat_linearsvc.yaml -- FLAT char-TF-IDF + un-weighted LinearSVC control.
+#
+# The field-awareness control for the TF-IDF representation (closes reviewer note
+# N3). It is IDENTICAL to configs/baselines/tfidf_typed_linearsvc.yaml except the
+# representation is FLAT: one global char-TF-IDF over the rendered whole record
+# instead of one vectorizer per typed field. Same un-weighted LinearSVC head, same
+# char n-grams, same vocab budget (per_field cap x 6 fields). So the macro-F1 gap
+# typed - flat isolates the typed-block STRUCTURE alone, with the classifier held
+# fixed (the repo's existing flat baseline, tfidf_logreg, also swaps the head to
+# LogReg, which confounds the field-awareness signal).
+#
+# Driven by src/baselines/tfidf_typed_linearsvc.py (features.flat=true) via
+# scripts/20_run_baseline.py. Deterministic in seed (LinearSVC + time-ordered prefix).
+baseline: tfidf_typed_linearsvc   # same runner; the flat flag selects the flat encoder
+family: classical_supervised_flat
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  label_budget: 0.05   # override to 0.10 via `--budget 0.10` for the 10% control
+
+features:
+  representation: flat_char_tfidf
+  flat: true           # <-- the only meaningful difference vs the typed config
+  ngram_range: [2, 5]
+  analyzer: char_wb
+  max_features_per_field: 20000   # global cap = this x len(fields), matching typed
+  fields: [method, path, query, ua, status, timing]
+
+model:
+  C: 1.0
+  class_weight: null   # un-weighted LinearSVC, identical to the typed config + proposed head
+  max_iter: 2000
+  num_classes: 8
+
+seed: 42
+results_path: results/table_03_rq1_baselines/tfidf_flat_linearsvc.json
+output_dir: models/baselines/tfidf_flat_linearsvc/

@@ -1,0 +1,160 @@
+{
+  "budget": 0.1,
+  "ci_95": [
+    53.4693,
+    67.3546
+  ],
+  "col": "10%",
+  "earliest_prefix": 73.6091,
+  "mean": 60.412,
+  "metadata": {
+    "budget": 0.1,
+    "ci_kind": "budget_composition_over_sliding_windows",
+    "commit": "c042449",
+    "date": "2026-06-07",
+    "earliest_prefix_macro_f1": 73.6091,
+    "gpu": "cpu",
+    "n_test": 19646,
+    "n_train": 110005,
+    "n_windows": 10,
+    "note": "CI is over sliding contiguous LABELED windows within the time-ordered train split (every window precedes the test set, so no leakage); it reports budget-composition variance, which the seed-only CI (deterministic prefix) cannot capture. The earliest-prefix point is the value reported in Table 3.",
+    "window_details": [
+      {
+        "macro_f1": 73.6091,
+        "start_frac": 0.0,
+        "start_index": 0,
+        "weighted_f1": 96.6088
+      },
+      {
+        "macro_f1": 58.4514,
+        "start_frac": 0.1,
+        "start_index": 11001,
+        "weighted_f1": 96.113
+      },
+      {
+        "macro_f1": 66.3767,
+        "start_frac": 0.2,
+        "start_index": 22001,
+        "weighted_f1": 95.7439
+      },
+      {
+        "macro_f1": 51.7876,
+        "start_frac": 0.3,
+        "start_index": 33002,
+        "weighted_f1": 95.1196
+      },
+      {
+        "macro_f1": 56.0177,
+        "start_frac": 0.4,
+        "start_index": 44002,
+        "weighted_f1": 96.5271
+      },
+      {
+        "macro_f1": 68.8992,
+        "start_frac": 0.5,
+        "start_index": 55003,
+        "weighted_f1": 95.7591
+      },
+      {
+        "macro_f1": 68.3522,
+        "start_frac": 0.6,
+        "start_index": 66003,
+        "weighted_f1": 96.612
+      },
+      {
+        "macro_f1": 66.1701,
+        "start_frac": 0.7,
+        "start_index": 77004,
+        "weighted_f1": 97.2479
+      },
+      {
+        "macro_f1": 50.7396,
+        "start_frac": 0.8,
+        "start_index": 88004,
+        "weighted_f1": 93.4428
+      },
+      {
+        "macro_f1": 43.7159,
+        "start_frac": 0.9,
+        "start_index": 99005,
+        "weighted_f1": 92.9846
+      }
+    ],
+    "window_macro_f1": [
+      73.6091,
+      58.4514,
+      66.3767,
+      51.7876,
+      56.0177,
+      68.8992,
+      68.3522,
+      66.1701,
+      50.7396,
+      43.7159
+    ],
+    "window_size": 11000
+  },
+  "std": 9.7058,
+  "windows": [
+    {
+      "macro_f1": 73.6091,
+      "start_frac": 0.0,
+      "start_index": 0,
+      "weighted_f1": 96.6088
+    },
+    {
+      "macro_f1": 58.4514,
+      "start_frac": 0.1,
+      "start_index": 11001,
+      "weighted_f1": 96.113
+    },
+    {
+      "macro_f1": 66.3767,
+      "start_frac": 0.2,
+      "start_index": 22001,
+      "weighted_f1": 95.7439
+    },
+    {
+      "macro_f1": 51.7876,
+      "start_frac": 0.3,
+      "start_index": 33002,
+      "weighted_f1": 95.1196
+    },
+    {
+      "macro_f1": 56.0177,
+      "start_frac": 0.4,
+      "start_index": 44002,
+      "weighted_f1": 96.5271
+    },
+    {
+      "macro_f1": 68.8992,
+      "start_frac": 0.5,
+      "start_index": 55003,
+      "weighted_f1": 95.7591
+    },
+    {
+      "macro_f1": 68.3522,
+      "start_frac": 0.6,
+      "start_index": 66003,
+      "weighted_f1": 96.612
+    },
+    {
+      "macro_f1": 66.1701,
+      "start_frac": 0.7,
+      "start_index": 77004,
+      "weighted_f1": 97.2479
+    },
+    {
+      "macro_f1": 50.7396,
+      "start_frac": 0.8,
+      "start_index": 88004,
+      "weighted_f1": 93.4428
+    },
+    {
+      "macro_f1": 43.7159,
+      "start_frac": 0.9,
+      "start_index": 99005,
+      "weighted_f1": 92.9846
+    }
+  ]
+}

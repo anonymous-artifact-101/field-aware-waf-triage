@@ -1,0 +1,37 @@
+{
+  "col": "mean",
+  "metadata": {
+    "baseline": "tfidf_svd_hgbdt",
+    "ci95_halfwidth": 1.056959,
+    "commit": "9bb51e5",
+    "dataset_version": "3ce0e30a2e51",
+    "eval_capped": false,
+    "fit_budget": 0.1,
+    "gpu": "cpu",
+    "hardware": "12th Gen Intel(R) Core(TM) i7-12700",
+    "metric": "latency_ms",
+    "n_runs": 10,
+    "note": "per-record baseline latency over 10 independent runs; DeepLog/LogBERT excluded (windowed / not CPU-runnable).",
+    "num_threads": 1,
+    "run_std_ms": 1.477527,
+    "single_run_measured": false,
+    "split": "owasp_test",
+    "stages_featurize": {
+      "mean": 2.365641,
+      "p50": 2.2815,
+      "p95": 2.7609,
+      "p99": 3.789
+    },
+    "stages_score": {
+      "mean": 9.860942,
+      "p50": 9.4519,
+      "p95": 11.8355,
+      "p99": 16.9125
+    },
+    "unit": "milliseconds"
+  },
+  "row": "TF-IDF + SVD + HGBDT (latency)",
+  "seed": 42,
+  "table": "table_08_latency",
+  "value": 12.729686
+}

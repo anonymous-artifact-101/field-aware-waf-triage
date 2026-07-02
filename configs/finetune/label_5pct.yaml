@@ -1,0 +1,13 @@
+# label_5pct.yaml -- Table 3 column 3 (Low-label, 5% labels).
+#
+# Reveals the labels of the earliest contiguous 5% of the time-ordered train
+# split (no shuffling) and fits the FastText field-aware detector's supervised
+# subtype classifier over the 8 attack subtypes. Inherits everything else from
+# _base.yaml (-> fasttext_base.yaml).
+extends: configs/finetune/_base.yaml
+
+data:
+  label_budget: 0.05
+
+output_dir: models/detector/finetuned/label_5pct/
+results_path: results/table_03_rq1_baselines/proposed_fasttext.json

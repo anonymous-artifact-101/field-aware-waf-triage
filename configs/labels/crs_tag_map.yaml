@@ -1,0 +1,106 @@
+# CRS attack-tag -> paper attack-subtype mapping (auditable; edit here, never in code).
+#
+# The OWASP ModSec 30-day corpus is honeypot traffic: ~100% of records fire at
+# least one CRS rule, so there is no benign class WITHIN OWASP. Task framing
+# (see CLAUDE.md / memory): the Kaggle web-server access logs = benign
+# (self-supervised pretraining), OWASP = all attack. The per-class evaluation
+# (paper Table 6) needs an attack SUBTYPE for each OWASP record, derived from
+# the CRS rule tags that fired.
+#
+# Resolution policy (implemented in src/data/labels.py):
+#   1. Collect every fired tag for the record.
+#   2. Among the tags that appear in `tag_to_subtype`, pick the subtype with the
+#      highest `priority` (lower number = higher priority). This makes a genuine
+#      application-layer attack (sqli/xss/rce/...) win over generic protocol
+#      noise when both fire on the same request.
+#   3. If no tag matches `tag_to_subtype` EXACTLY, try the fuzzy fallback
+#      (`fuzzy_fallback` below) which catches anonymization-truncated tags
+#      (e.g. "attack-injection-ph" -> "attack-injection-php"). Only if that also
+#      fails does the record fall back to `default_subtype`.
+#
+# Subtypes are the paper's named classes:
+#   sql_injection, path_traversal, lfi, rce, php_injection, xss, scanner, protocol
+
+default_subtype: protocol
+
+# Lower priority value wins when multiple subtypes are present on one record.
+subtype_priority:
+  sql_injection: 1
+  rce: 2
+  php_injection: 3
+  xss: 4
+  path_traversal: 5
+  lfi: 6
+  scanner: 7
+  protocol: 8
+
+# CRS tag (exact string, as it appears in [tag "..."]) -> subtype.
+# Both the short `attack-*` tags and the verbose OWASP_CRS/WEB_ATTACK/* tags are
+# mapped so a record is classified whichever style its rules used.
+tag_to_subtype:
+  # SQL injection
+  "attack-sqli": sql_injection
+  "OWASP_CRS/WEB_ATTACK/SQL_INJECTION": sql_injection
+  # Remote command execution / OS command injection
+  "attack-rce": rce
+  "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION": rce
+  # PHP injection
+  "attack-injection-php": php_injection
+  "OWASP_CRS/WEB_ATTACK/PHP_INJECTION": php_injection
+  # Cross-site scripting
+  "attack-xss": xss
+  "OWASP_CRS/WEB_ATTACK/XSS": xss
+  # Path / directory traversal
+  "OWASP_CRS/WEB_ATTACK/DIR_TRAVERSAL": path_traversal
+  # Local file inclusion / file injection
+  "attack-lfi": lfi
+  "OWASP_CRS/WEB_ATTACK/FILE_INJECTION": lfi
+  # Scanner / bad reputation / automated tooling
+  "attack-reputation-scanner": scanner
+  "OWASP_CRS/AUTOMATION/SECURITY_SCANNER": scanner
+  # Protocol enforcement / violation (the noisy 920xxx family) -> generic
+  "attack-protocol": protocol
+  "OWASP_CRS/PROTOCOL_VIOLATION/INVALID_HREQ": protocol
+  # Remote File Inclusion: grouped with LFI (both are file-inclusion attacks; the
+  # paper's 8-class taxonomy has no separate rfi class). ~60 OWASP records.
+  "attack-rfi": lfi
+  "OWASP_CRS/WEB_ATTACK/RFI": lfi
+  # Session fixation -> protocol/default (no dedicated paper class). ~2 records.
+  "attack-fixation": protocol
+  "OWASP_CRS/WEB_ATTACK/SESSION_FIXATION": protocol
+
+# Fuzzy fallback (auditable; applied ONLY when no exact tag_to_subtype match).
+# CRS tags in this anonymized corpus are occasionally TRUNCATED (an anonymization
+# artifact), e.g. "attack-injection-ph" (php), "attack-injectio"/"attack-inject"
+# (a generic injection stub). Exact matching misses these and silently buries
+# genuine attacks under the protocol default. The fallback, in priority order:
+#   (a) PREFIX match: if a fired tag is a prefix of a known tag_to_subtype key
+#       (>= min_prefix_len chars and unambiguous -> all candidate keys map to the
+#       same subtype), adopt that subtype. Catches "attack-injection-ph" ->
+#       "attack-injection-php" and "OWASP_CRS/WEB_ATTACK/SQL_INJE" -> SQL_INJECTION.
+#   (b) KEYWORD match: if a fired tag contains one of these case-insensitive
+#       substrings, map to the given subtype. Catches generic stubs like
+#       "attack-inject" and any future verbose variants. Keyword order here is the
+#       resolution order for keyword matches (first hit wins); the overall
+#       subtype_priority still arbitrates across all tags on a record.
+# Set enabled:false to revert to pure exact matching.
+fuzzy_fallback:
+  enabled: true
+  min_prefix_len: 12
+  keyword_to_subtype:
+    - { keyword: "sql", subtype: sql_injection }
+    - { keyword: "xss", subtype: xss }
+    - { keyword: "traversal", subtype: path_traversal }
+    - { keyword: "rfi", subtype: lfi }
+    - { keyword: "lfi", subtype: lfi }
+    - { keyword: "file_inclusion", subtype: lfi }
+    - { keyword: "command", subtype: rce }
+    - { keyword: "rce", subtype: rce }
+    - { keyword: "php", subtype: php_injection }
+    - { keyword: "scanner", subtype: scanner }
+    # Generic "inject"/"injection" stubs with no language hint -> php_injection is
+    # WRONG (too specific); the safest non-default attack class for an unqualified
+    # injection is rce (command/code execution family). Kept LAST so a more
+    # specific keyword above always wins first.
+    - { keyword: "injection", subtype: rce }
+    - { keyword: "inject", subtype: rce }

@@ -1,0 +1,28 @@
+{
+  "col": "0%",
+  "metadata": {
+    "baseline": "deeplog",
+    "commit": "c042449",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-07",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "family": "log_anomaly",
+    "final_train_loss": 1.083734,
+    "gpu": "cpu",
+    "key_vocab_size": 511,
+    "log_key_scheme": "method_path_status",
+    "metric": "anomaly_rate_pct",
+    "n_test_windows": 17211,
+    "n_train_windows": 104930,
+    "note": "Unsupervised next-key detector; cell = test anomaly rate (true key outside top-k). OWASP is all-attack so in-corpus attack/benign AUC is degenerate.",
+    "retrained_on_corpus": true,
+    "top_k": 9,
+    "window_size": 10
+  },
+  "row": "DeepLog (re-trained)",
+  "seed": 43,
+  "table": "table_03_rq1_baselines",
+  "value": 11.9342
+}

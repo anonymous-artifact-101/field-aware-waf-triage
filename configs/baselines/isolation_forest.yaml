@@ -1,0 +1,45 @@
+# isolation_forest.yaml -- classical anomaly-detection baseline (paper Table 3).
+#
+# Unsupervised Isolation Forest over a featurized representation of each access
+# record. The honest setup trains on benign-only traffic -- the Kaggle weblog
+# benign pretrain corpus (normal_train_split below) -- and scores OWASP
+# val/test by isolation depth; higher anomaly score == more likely attack. No
+# labels used at fit time (label budget 0), so this is the unsupervised column's
+# classical counterpart. If the weblog corpus is absent the runner falls back to
+# the OWASP train split as a proxy and records the limitation in metadata.
+#
+# Consumed by src/baselines/isolation_forest.py via scripts/20_run_baseline.py.
+baseline: isolation_forest
+family: classical_unsupervised
+
+# Time-ordered split files (data/splits/, written by scripts/01_parse_all.py /
+# scripts/02_make_splits.py).
+data:
+  # Benign reference to fit the unsupervised detector on: the Kaggle weblog
+  # benign pretrain corpus (label == benign). Score OWASP attacks against it.
+  normal_train_split: weblog_pretrain
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+
+# Featurization: hash/char n-gram features over the rendered record fields so the
+# classical model has a fixed-width input (no learned embedding).
+features:
+  representation: char_ngram_tfidf
+  ngram_range: [3, 5]
+  max_features: 20000
+  fields: [method, path, query, ua, status, timing]
+
+model:
+  n_estimators: 200
+  max_samples: auto
+  # Expected attack fraction used to set the decision threshold; OWASP is a
+  # honeypot (predominantly attack), but contamination here is the held-out
+  # *threshold* prior, tuned on val, not a claim about the train mix.
+  contamination: 0.1
+  max_features: 1.0
+  bootstrap: false
+
+seed: 42
+results_path: results/table_03_rq1_baselines/isolation_forest.json
+output_dir: models/baselines/isolation_forest/

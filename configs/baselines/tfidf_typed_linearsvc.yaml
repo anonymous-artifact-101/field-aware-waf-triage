@@ -1,0 +1,47 @@
+# tfidf_typed_linearsvc.yaml -- typed-block char-TF-IDF + un-weighted LinearSVC
+# (Exp 1.2 ablation; appears as a new row in paper Table 3).
+#
+# The apples-to-apples ablation that isolates FastText's contribution. It holds
+# the field-aware skeleton (one block per typed field, concatenated) AND the
+# classifier head (un-weighted LinearSVC) FIXED, and swaps ONLY the per-field
+# representation: per-field FastText-embed+pool -> per-field char-TF-IDF. The ONLY
+# difference vs the proposed detector (configs/detector/fasttext_base.yaml) is the
+# representation, so the macro-F1 gap measures what FastText buys.
+#
+# Cloned from configs/baselines/tfidf_logreg.yaml; the head is changed to LinearSVC
+# with class_weight: null to MATCH the proposed head exactly. Consumed by
+# src/baselines/tfidf_typed_linearsvc.py via scripts/20_run_baseline.py.
+baseline: tfidf_typed_linearsvc
+family: classical_supervised_typed
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  # Low-label label budget; matches the proposed model's headline column.
+  label_budget: 0.05
+
+features:
+  representation: per_field_char_tfidf_concat
+  # char n-grams 2..5: wide enough to catch short attack tokens in a single field
+  # without exploding the per-field vocabulary. analyzer char_wb mirrors the other
+  # TF-IDF baselines.
+  ngram_range: [2, 5]
+  analyzer: char_wb
+  # Per-FIELD cap (not global): each typed field is vectorized separately, so the
+  # concatenated dimension is at most 6 * this. A near-empty field (status/timing,
+  # or the ~94%-empty query) just yields a small block.
+  max_features_per_field: 20000
+  fields: [method, path, query, ua, status, timing]
+
+model:
+  # IDENTICAL to the proposed head in configs/detector/fasttext_base.yaml:
+  # un-weighted LinearSVC (class_weight null beats balanced here -- see that config).
+  C: 1.0
+  class_weight: null
+  max_iter: 2000
+  num_classes: 8   # len(SUBTYPES); documented for traceability.
+
+seed: 42
+results_path: results/table_03_rq1_baselines/tfidf_typed_linearsvc.json
+output_dir: models/baselines/tfidf_typed_linearsvc/

@@ -1,0 +1,38 @@
+# field_prefixed_fasttext.yaml -- flat field-prefixed FastText control.
+#
+# Reviewer-facing control: tokens are prefixed with their typed field name
+# (path:..., query:..., ua:...) and pooled into ONE flat FastText vector before a
+# LinearSVC head. This tests whether field markers inside tokens are enough, in
+# contrast to the proposed six-block field-aware representation.
+baseline: field_prefixed_fasttext
+family: classical_supervised_fasttext_control
+row: Field-prefixed FastText + LinearSVC
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  label_budget: 0.05
+
+features:
+  representation: field_prefixed_fasttext_flat_pool
+  fields: [method, path, query, ua, status, timing]
+  vector_size: 128
+  window: 5
+  min_count: 1
+  min_n: 2
+  max_n: 8
+  epochs: 5
+  sg: 1
+  negative: 5
+  bucket: 200000
+
+model:
+  C: 1.0
+  class_weight: null
+  max_iter: 2000
+  num_classes: 8
+
+seed: 42
+results_path: results/table_03_rq1_baselines/field_prefixed_fasttext.json
+output_dir: models/baselines/field_prefixed_fasttext/

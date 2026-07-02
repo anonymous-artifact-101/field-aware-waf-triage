@@ -1,0 +1,74 @@
+{
+  "commit": "c042449",
+  "note": "vector_size x n-gram grid; macro_f1 vs latency_ms vs footprint_mb. Base deployed config is v64_n36.",
+  "rows": [
+    {
+      "config": "v64_n36",
+      "footprint_mb": 66.175,
+      "latency_ms": 0.12388,
+      "macro_f1": 62.1783,
+      "max_n": 6,
+      "min_n": 3,
+      "p95_ms": 0.187,
+      "vector_size": 64,
+      "weighted_f1": 93.0479
+    },
+    {
+      "config": "v64_n28",
+      "footprint_mb": 66.175,
+      "latency_ms": 0.399961,
+      "macro_f1": 62.9809,
+      "max_n": 8,
+      "min_n": 2,
+      "p95_ms": 0.713,
+      "vector_size": 64,
+      "weighted_f1": 93.9764
+    },
+    {
+      "config": "v128_n36",
+      "footprint_mb": 131.401,
+      "latency_ms": 0.129267,
+      "macro_f1": 63.1908,
+      "max_n": 6,
+      "min_n": 3,
+      "p95_ms": 0.2136,
+      "vector_size": 128,
+      "weighted_f1": 93.946
+    },
+    {
+      "config": "v128_n28",
+      "footprint_mb": 131.401,
+      "latency_ms": 0.152103,
+      "macro_f1": 65.1035,
+      "max_n": 8,
+      "min_n": 2,
+      "p95_ms": 0.2927,
+      "vector_size": 128,
+      "weighted_f1": 94.9402
+    },
+    {
+      "config": "v256_n36",
+      "footprint_mb": 261.8532,
+      "latency_ms": 0.369766,
+      "macro_f1": 62.7334,
+      "max_n": 6,
+      "min_n": 3,
+      "p95_ms": 0.6844,
+      "vector_size": 256,
+      "weighted_f1": 93.8548
+    },
+    {
+      "config": "v256_n28",
+      "footprint_mb": 261.8532,
+      "latency_ms": 0.212909,
+      "macro_f1": 65.7648,
+      "max_n": 8,
+      "min_n": 2,
+      "p95_ms": 0.4129,
+      "vector_size": 256,
+      "weighted_f1": 94.911
+    }
+  ],
+  "seed": 42,
+  "table": "table_10_fasttext_sweep"
+}

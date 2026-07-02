@@ -1,0 +1,37 @@
+# modsec_learn.yaml -- ModSec-Learn baseline (paper Table 3 / Table 6).
+#
+# ModSec-Learn (Nunes et al.): a supervised classifier over the OWASP CRS rule
+# firings. Each record is represented by the vector of CRS rules/tags that fired
+# on it (read straight from the ModSecurity audit log, no learned text encoder),
+# and a linear model is learned ON TOP of those firings to predict the attack
+# subtype. This tests how much of detection is explainable by CRS alone.
+#
+# Consumed by src/baselines/modsec_learn.py via scripts/20_run_baseline.py.
+baseline: modsec_learn
+family: crs_rule_classifier
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  label_budget: 0.05
+
+features:
+  # The firing CRS rule ids / tags per record are the input features.
+  representation: crs_rule_firings
+  # Source of the per-record rule firings (parsed from the ModSec audit log).
+  rule_firing_source: crs_rule_ids
+  tag_map: configs/labels/crs_tag_map.yaml
+  binary_firings: true   # 1/0 per rule id (presence), not anomaly score.
+
+model:
+  # Linear classifier over the CRS-firing vector.
+  classifier: logreg
+  C: 1.0
+  penalty: l2
+  class_weight: balanced
+  num_classes: 8   # len(SUBTYPES).
+
+seed: 42
+results_path: results/table_03_rq1_baselines/modsec_learn.json
+output_dir: models/baselines/modsec_learn/

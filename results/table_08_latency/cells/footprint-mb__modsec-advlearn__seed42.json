@@ -1,0 +1,18 @@
+{
+  "col": "ModSec-AdvLearn",
+  "metadata": {
+    "baseline": "modsec_advlearn",
+    "commit": "9bb51e5",
+    "component": "modsec_advlearn",
+    "dataset_version": "3ce0e30a2e51",
+    "eval_capped": false,
+    "gpu": "cpu",
+    "metric": "footprint_mb",
+    "single_run_measured": true,
+    "unit": "megabytes"
+  },
+  "row": "Footprint (MB)",
+  "seed": 42,
+  "table": "table_08_latency",
+  "value": 0.004
+}

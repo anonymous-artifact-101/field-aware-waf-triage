@@ -1,0 +1,26 @@
+# six_field_request_available.yaml -- Table 5 row: request-available fields only.
+#
+# Reviewer item (R2-M3): `status` and `timing` are response-derived, so any
+# pre-response (request-time) deployment can never see them. The status-masked
+# row removes only `status`; this config removes BOTH response fields and keeps
+# the four request-available typed fields -- method, path, query, ua -- embedded
+# + pooled + concatenated as usual. The resulting macro-F1 is the honest
+# request-time ceiling of the proposed representation.
+#
+# Same mechanism as six_field_status_masked.yaml: an explicit `encoder.groups`
+# partition overrides `granularity`; FastText params, pooling, classifier, and
+# label budget inherit from fasttext_base.yaml, so this row differs from the
+# 6-field proposed row in the status+timing blocks ALONE.
+extends: configs/detector/fasttext_base.yaml
+
+encoder:
+  groups:
+    - [method]
+    - [path]
+    - [query]
+    - [ua]
+
+row: "4-field, request-available (no status/timing)"
+
+results_path: results/table_05_field_granularity/six_field_request_available.json
+output_dir: models/detector/ablation/six_field_request_available/

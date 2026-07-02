@@ -1,0 +1,21 @@
+{
+  "col": "peak",
+  "metadata": {
+    "commit": "b87b425",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "7769ea2c62c8",
+    "eval_capped": false,
+    "gpu": "cpu",
+    "hardware": "Intel Core i7-12700 (12C/20T, 16GB), Python 3.13, Windows 11",
+    "metric": "rss_mb",
+    "num_threads": 1,
+    "rss_subprocess_baseline_mb": 18.359,
+    "single_run_measured": true,
+    "tool": "psutil 7.2.2",
+    "unit": "megabytes"
+  },
+  "row": "Resident memory (MB)",
+  "seed": 42,
+  "table": "table_08_latency",
+  "value": 846.504
+}

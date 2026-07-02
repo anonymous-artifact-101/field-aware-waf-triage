@@ -1,0 +1,21 @@
+{
+  "col": "support",
+  "metadata": {
+    "checkpoint_loaded": true,
+    "commit": "c042449",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "gpu": "cpu",
+    "granularity": 6,
+    "max_records": null,
+    "metric": "count",
+    "mode": "attribution",
+    "n_test": 19646
+  },
+  "row": "sql_injection",
+  "seed": 43,
+  "table": "table_07_attribution",
+  "value": 141
+}

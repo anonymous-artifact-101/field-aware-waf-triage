@@ -1,0 +1,18 @@
+{
+  "col": "One-Class SVM",
+  "metadata": {
+    "baseline": "ocsvm",
+    "commit": "9bb51e5",
+    "component": "ocsvm",
+    "dataset_version": "3ce0e30a2e51",
+    "eval_capped": false,
+    "gpu": "cpu",
+    "metric": "footprint_mb",
+    "single_run_measured": true,
+    "unit": "megabytes"
+  },
+  "row": "Footprint (MB)",
+  "seed": 42,
+  "table": "table_08_latency",
+  "value": 7.3786
+}

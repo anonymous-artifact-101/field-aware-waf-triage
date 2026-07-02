@@ -1,0 +1,37 @@
+{
+  "col": "ROC-AUC",
+  "metadata": {
+    "attack_stride": 6,
+    "benign_stride": 777,
+    "checkpoint_loaded": true,
+    "commit": "dcf5e62",
+    "dataset_version": "3ce0e30a2e51",
+    "deterministic": true,
+    "deterministic_seed_replicated": true,
+    "embedding_version": "7769ea2c62c8",
+    "eval_capped": false,
+    "gpu": "cpu",
+    "max_field_chars": 2048,
+    "metric": "roc_auc",
+    "mode": "unsupervised_zero_shot_transfer",
+    "n_attack": 54651,
+    "n_benign": 54663,
+    "n_total": 109314,
+    "note": "Zero-shot transfer: detector trained on OWASP/Kaggle, NO Biblio-US17 fit. Biblio-US17 uses real production HTTP requests; evaluation uses a deterministic class-balanced systematic sample (every Nth record per class across the whole corpus). NOTE: the full-field AUC is inflated by the status shortcut; see the status-masked row.",
+    "pr_auc": 0.9404,
+    "sampling": "systematic",
+    "status_masked": false,
+    "threshold_metrics": {
+      "fp": 2502,
+      "fpr": 0.0458,
+      "precision": 0.9558,
+      "threshold": 4.2692,
+      "tp": 54165,
+      "tpr": 0.9911
+    }
+  },
+  "row": "Proposed (zero-shot transfer)",
+  "seed": 44,
+  "table": "table_09_cross_dataset_biblio_us17",
+  "value": 0.9801
+}

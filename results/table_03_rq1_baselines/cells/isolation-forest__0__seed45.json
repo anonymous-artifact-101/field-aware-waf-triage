@@ -1,0 +1,31 @@
+{
+  "col": "0%",
+  "metadata": {
+    "baseline": "isolation_forest",
+    "commit": "c042449",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-07",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "family": "classical_unsupervised",
+    "gpu": "cpu",
+    "metric": "mean_anomaly_score",
+    "n_fit": 1000000,
+    "n_test": 19646,
+    "normal_reference": "weblog_pretrain",
+    "note": "Single-seed baseline run; Table 3 aggregates seeds 42..46 with 95% CIs via the aggregation stage (src.eval.aggregate).",
+    "score_summary": {
+      "max_score": 0.338516,
+      "mean_score": 0.317379,
+      "median_score": 0.316081,
+      "min_score": 0.305698,
+      "n": 19646.0,
+      "std_score": 0.00521
+    }
+  },
+  "row": "Isolation Forest",
+  "seed": 45,
+  "table": "table_03_rq1_baselines",
+  "value": 0.317379
+}

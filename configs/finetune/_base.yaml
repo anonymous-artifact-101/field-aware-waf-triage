@@ -1,0 +1,24 @@
+# _base.yaml -- shared Low-label label-budget schedule (paper Table 3).
+#
+# Post-pivot: the "fine-tune" step is fitting the FastText field-aware detector's
+# CLASSICAL classifier on the Low-label label budget (the FastText embedding is
+# pre-trained once, separately, by scripts/10_train_fasttext.py). This base
+# pulls in the full proposed detector definition (fasttext_base.yaml: FastText
+# params, encoder granularity, classifier spec) and fixes everything that must
+# NOT vary across the budget sweep: the FastText model to load, the encoder, the
+# splits. The budget configs then override ONLY `data.label_budget` and
+# `output_dir`, so Table 3's columns differ in label budget alone.
+#
+# num_classes: the supervised classifier predicts one of the 8 attack subtypes in
+# src.data.labels.SUBTYPES. The detector sizes itself from len(SUBTYPES); 8 is
+# recorded here for documentation/traceability only.
+extends: configs/detector/fasttext_base.yaml
+
+finetune:
+  num_classes: 8
+  # Low-label label budget is taken as the earliest contiguous prefix of the
+  # time-ordered train split (no shuffling -- src.baselines._common.select_label_budget).
+  train_split: owasp_train
+  val_split: owasp_val
+
+seed: 42

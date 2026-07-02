@@ -1,0 +1,92 @@
+# fasttext_base.yaml -- the proposed FastText field-aware detector (base config).
+#
+# Post-pivot PROPOSED model: a field-aware FastText embedding (cheap CPU
+# "pre-training" on the benign Kaggle weblog corpus) + a classical classifier.
+# This is the root config the ablation and label-budget configs `extends:`. It is
+# self-contained (no `extends:`): it carries the FastText hyperparameters, the
+# encoder granularity, and the classical detector spec.
+#
+# The architecture (see src/detector/):
+#   1. FastText on data/splits/weblog_pretrain.jsonl  -> sub-word/char-n-gram embeddings.
+#   2. FieldEncoder: per-field embed + pool, CONCATENATE the 6 per-field vectors.
+#   3. FieldAwareDetector: classical classifier (supervised) / anomaly scorer (0%).
+#
+# Granularity 6 (six-field) is the PROPOSED default; the Table 5 ablation
+# (configs/ablation/{flat,three_field,six_field}.yaml) overrides `granularity`.
+
+# --- FastText embedding ("pre-training") ------------------------------------
+# Trained by scripts/10_train_fasttext.py on the benign weblog pretrain split.
+# Char n-grams (min_n..max_n) give OOV robustness so attack payloads unseen in
+# benign traffic still embed. workers is forced to 1 in code for determinism.
+fasttext:
+  # Selected by the efficiency grid-search (scripts/14_fasttext_sweep.py): on the
+  # vector_size x n-gram grid, vector_size=128 with char n-grams 2..8 is the sweet
+  # spot -- macro-F1 +4.1 over the 64/3-6 starting point (58.7 -> 63.8) while
+  # staying sub-millisecond per record (~0.16 ms) and MB-scale (~131 MB). The wider
+  # 2..8 n-gram span improves token-internal OOV robustness for URI/query/UA
+  # tokens; multi-token motifs are modeled by tokenization, pooling, and the
+  # downstream linear head, not by a single FastText char n-gram crossing spaces.
+  # vector_size=256 adds <1 F1 at 2x the footprint (diminishing returns).
+  vector_size: 128
+  window: 5
+  min_count: 2
+  min_n: 2
+  max_n: 8
+  epochs: 5
+  sg: 1            # skip-gram (better for rare/OOV tokens)
+  negative: 5
+  bucket: 200000
+  train_split: weblog_pretrain
+  model_path: models/detector/fasttext/weblog_fasttext.model
+
+# --- Field-aware encoding ----------------------------------------------------
+# granularity 6 == the proposed full six-field representation (one block per
+# typed field; D = 6 * vector_size). pooling mean over a field's token vectors.
+granularity: 6
+encoder:
+  pooling: mean
+  # groups: <optional explicit field grouping; overrides granularity>
+
+# --- Classical detector ------------------------------------------------------
+# supervised: subtype classifier over the 8 SUBTYPES for the Low-label columns.
+# The 0%-label column flips mode to unsupervised via configs/finetune/label_0pct.yaml.
+detector:
+  mode: supervised
+  # linear_svc (not hist_gbdt): on the heavily imbalanced subtype distribution at
+  # a Low-label budget, the gradient-boosting estimator has no class_weight support
+  # and collapses every rare class to F1=0 (macro-F1 ~23, barely above the 17.56
+  # status-shortcut floor). LinearSVC is BOTH ~7x faster to fit AND far higher
+  # macro-F1 than hist_gbdt; logreg is the documented alternative but ~8 macro-F1
+  # lower here (validated seed 42, 6-field, 5% budget, owasp_test). linear_svc is
+  # the proposed default.
+  estimator: linear_svc     # linear_svc | logreg | hist_gbdt
+  scorer: centroid          # unsupervised (0%-label): centroid | isolation_forest
+  estimator_params:
+    C: 1.0
+    # class_weight: null (NOT "balanced"). Counter-intuitively, leaving the SVC
+    # UN-weighted beats class_weight=balanced on macro-F1 here. With `balanced`,
+    # the up-weighted rare classes (sql/php) widen their decision regions and
+    # swallow the large protocol class -- 408 of 544 predicted-sqli records are
+    # truly protocol, crushing sqli precision to 15%. Removing the weighting
+    # tightens those boundaries: macro-F1 +1.3 at 5% (63.8->65.1) and +1.6 at 10%
+    # (72.0->73.6), with sqli/php precision recovered and weighted-F1 also up
+    # (94.7->94.9 / 96.4->96.6); deterministic across seeds 42-46. The genuinely
+    # label-starved classes (path_traversal/xss have only ~2 train examples at 5%)
+    # are unaffected either way -- their F1 is gated by support, not weighting.
+    class_weight: null
+    max_iter: 2000
+  scorer_params:
+    n_estimators: 200
+
+# --- Data / label budget -----------------------------------------------------
+# Time-ordered splits; the label budget is the earliest contiguous prefix of the
+# train split (src.baselines._common.select_label_budget -- no shuffling).
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  label_budget: 0.05
+
+seed: 42
+results_path: results/table_03_rq1_baselines/proposed_fasttext.json
+output_dir: models/detector/fasttext_base/

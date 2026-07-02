@@ -1,0 +1,20 @@
+{
+  "col": "Classifier head",
+  "metadata": {
+    "commit": "9bb51e5",
+    "component": "Classifier head",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "gpu": "cpu",
+    "metric": "footprint_mb",
+    "mode": "supervised",
+    "num_threads": 1,
+    "single_run_measured": true,
+    "unit": "megabytes"
+  },
+  "row": "Footprint (MB)",
+  "seed": 42,
+  "table": "table_08_latency",
+  "value": 0.0476
+}

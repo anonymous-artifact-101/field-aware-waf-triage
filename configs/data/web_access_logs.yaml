@@ -1,0 +1,55 @@
+# Kaggle "Web Server Access Logs" (eliasdabbas) — benign self-supervised
+# PRE-TRAINING corpus. This is the single YAML consumed by
+# scripts/01_parse_all.py (and referenced by scripts/03_train_tokenizer.py /
+# scripts/04_tokenize_all.py) to build the benign pretraining stream.
+#
+# What it is
+# ----------
+# A standard NGINX/Apache **combined** access log captured from the zanbil.ir
+# e-commerce site, January 2019 (~10M lines / ~3.5 GB). Real, ordinary web
+# traffic, so every parsed record carries label == "benign" and an empty
+# attack_subtype. It is used ONLY for self-supervised pre-training and BPE
+# tokenizer training — NEVER for the attack-detection evaluation (attacks come
+# from OWASP; CSIC is cross-dataset transfer only).
+#
+# Combined-log format note: per-request engine `timing` is not present in a
+# combined access log, so the parser sets timing = 0 (the same "unknown"
+# sentinel used elsewhere). status/method/path/query/ua map from the request
+# line, status code, and user-agent field; see
+# src/data/parsers/apache_combined.py.
+#
+# Determinism: the parser is a pure function of the input bytes; records are
+# emitted in file order (time-ordered) and never shuffled.
+
+dataset: web_access_logs
+source: "Kaggle eliasdabbas/web-server-access-logs (zanbil.ir, Jan 2019)"
+
+# Immutable raw input: the extracted combined access log.
+# (download/2.access.log.zip -> data/raw/web_access_logs/access.log)
+raw_path: data/raw/web_access_logs/access.log
+
+# Where scripts/01_parse_all.py writes the parsed benign corpus.
+processed_dir: data/processed/weblog_parsed
+
+# Where the pretrain split is written. For a single self-supervised stream there
+# is no train/val/test subtyping; the parsed corpus is written directly as the
+# pretrain split below. scripts/04_tokenize_all.py tokenizes this split name.
+splits_dir: data/splits
+pretrain_split: weblog_pretrain          # -> data/splits/weblog_pretrain.jsonl
+
+# Subsample cap for tractable CPU pretraining. The full log is ~10M lines /
+# ~3.5 GB; this caps how many lines are READ from the head of the file. Because
+# the sample is the FIRST N lines (NOT random), it is deterministic AND
+# time-ordered — never shuffled. Set to null to use the entire corpus.
+max_records: 1000000
+
+# Documented conventions for the parsed-record schema (mirrors the parser).
+conventions:
+  # Combined access logs have no per-request engine duration -> timing unknown.
+  # The parser records 0 for unknown timing.
+  unknown_timing: 0
+  # This is the project's benign corpus: every record is label == "benign" and
+  # attack_subtype == "" (not sub-typed). Benign traffic for self-supervised
+  # pre-training comes from this Kaggle web-server access-log corpus.
+  label: benign
+  attack_subtype: ""

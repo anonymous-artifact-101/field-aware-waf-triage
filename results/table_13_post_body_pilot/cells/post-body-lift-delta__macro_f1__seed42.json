@@ -1,0 +1,19 @@
+{
+  "col": "macro_f1",
+  "metadata": {
+    "budget": 0.5,
+    "commit": "c042449",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-07",
+    "deterministic": true,
+    "embedding_version": "2c37c7f64455",
+    "gpu": "cpu",
+    "n_post_slice": 11388,
+    "n_test": 5694,
+    "note": "POST-body (section C) pilot on the OWASP POST-borne slice; the only feature change between rows is the query field (GET-only vs GET+decoded POST body). Same 6-field detector, same CRS labels, same time-ordered split."
+  },
+  "row": "POST-body lift (delta)",
+  "seed": 42,
+  "table": "table_13_post_body_pilot",
+  "value": 6.7547
+}

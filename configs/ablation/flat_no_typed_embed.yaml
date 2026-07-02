@@ -1,0 +1,24 @@
+# flat_no_typed_embed.yaml -- field-granularity ablation (paper Table 5 row 1).
+#
+# Post-pivot FastText granularity ablation, the "flat" baseline: NOT field-aware.
+# All 6 typed fields are tokenized and pooled TOGETHER into ONE vector (feature
+# dim = vector_size); there is no per-field block and no concatenation, so the
+# classifier cannot tell which field a coordinate came from. This removes the
+# paper's first contribution (field-awareness) so its effect can be measured
+# against the 3-field and 6-field rows.
+#
+# Inherits everything else (FastText, classifier, label budget) from
+# fasttext_base.yaml; differs from six_field.yaml ONLY in granularity (1 vs 6),
+# never in the embedding or classifier.
+extends: configs/detector/fasttext_base.yaml
+
+granularity: 1
+model:
+  num_fields: 1
+
+# Distinct cell row label so Table 5's three granularity rows accumulate as
+# separate (row, col) cells instead of clobbering one shared "Proposed" cell.
+row: "Flat (no typed embedding)"
+
+results_path: results/table_05_field_granularity/flat_no_typed_embed.json
+output_dir: models/detector/ablation/flat_no_typed_embed/

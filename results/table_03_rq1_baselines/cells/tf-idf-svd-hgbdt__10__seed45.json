@@ -1,0 +1,35 @@
+{
+  "col": "10%",
+  "metadata": {
+    "baseline": "tfidf_svd_hgbdt",
+    "commit": "082f087",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-06",
+    "embedding_version": "7769ea2c62c8",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "family": "classical_supervised_tree",
+    "gpu": "cpu",
+    "label_budget": 0.1,
+    "metric": "macro_f1",
+    "n_test": 19646,
+    "n_train_labeled": 11000,
+    "note": "Single-seed baseline run; Table 3 aggregates seeds 42..46 with 95% CIs via the aggregation stage (src.eval.aggregate).",
+    "per_class_f1": {
+      "lfi": 0.958122,
+      "path_traversal": 0.16,
+      "php_injection": 0.686047,
+      "protocol": 0.967298,
+      "rce": 0.88216,
+      "scanner": 0.933333,
+      "sql_injection": 0.531469,
+      "xss": 0.514286
+    },
+    "svd_components": 256,
+    "tree_baseline": true
+  },
+  "row": "TF-IDF + SVD + HGBDT",
+  "seed": 45,
+  "table": "table_03_rq1_baselines",
+  "value": 70.4089
+}

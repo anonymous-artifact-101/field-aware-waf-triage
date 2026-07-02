@@ -1,0 +1,37 @@
+{
+  "col": "p99",
+  "metadata": {
+    "baseline": "isolation_forest",
+    "ci95_halfwidth": 16.655934,
+    "commit": "9bb51e5",
+    "dataset_version": "3ce0e30a2e51",
+    "eval_capped": false,
+    "fit_budget": 0.1,
+    "gpu": "cpu",
+    "hardware": "12th Gen Intel(R) Core(TM) i7-12700",
+    "metric": "latency_ms",
+    "n_runs": 10,
+    "note": "per-record baseline latency over 10 independent runs; DeepLog/LogBERT excluded (windowed / not CPU-runnable).",
+    "num_threads": 1,
+    "run_std_ms": 4.333633,
+    "single_run_measured": false,
+    "split": "owasp_test",
+    "stages_featurize": {
+      "mean": 0.836723,
+      "p50": 0.5662,
+      "p95": 1.5823,
+      "p99": 3.5227
+    },
+    "stages_score": {
+      "mean": 19.996514,
+      "p50": 8.436,
+      "p95": 68.81,
+      "p99": 132.3207
+    },
+    "unit": "milliseconds"
+  },
+  "row": "Isolation Forest (latency)",
+  "seed": 42,
+  "table": "table_08_latency",
+  "value": 69.59917
+}

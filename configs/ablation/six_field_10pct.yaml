@@ -1,0 +1,12 @@
+# six_field_10pct.yaml -- headline-budget twin of the proposed six-field row.
+#
+# Same representation as six_field.yaml (all six typed fields, one block each),
+# changing only the labeled earliest-prefix budget to the 10% headline column so
+# Table 5's full six-field row is backed directly by table_05 artifacts.
+extends: configs/ablation/six_field.yaml
+
+data:
+  label_budget: 0.10
+
+results_path: results/table_05_field_granularity/six_field_10pct.json
+output_dir: models/detector/ablation/six_field_10pct/

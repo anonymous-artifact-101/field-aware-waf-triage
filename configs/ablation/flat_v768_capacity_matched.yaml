@@ -1,0 +1,34 @@
+# flat_v768_capacity_matched.yaml -- capacity-matched dense control @5% (R4-B-M2).
+#
+# The CAPACITY-MATCHED flat baseline for paper Table 5. The plain flat row
+# (flat_no_typed_embed.yaml) pools all 6 fields into ONE 128-dim block, so it is
+# lower-dimensional than the 6-field proposed model (6 x 128 = 768 dim). That
+# confounds the flat-to-typed gain with a 6x capacity increase. This config
+# removes the confound: it is FLAT (granularity 1, no typed concatenation) but
+# uses a 768-dim FastText embedding, so its feature is ALSO 768-dim -- the same
+# capacity as the proposed 6-field model. Any remaining gap of 6-field over THIS
+# row is attributable to typed STRUCTURE, not dimensionality.
+#
+#   6-field (proposed)        : 6 blocks x 128 = 768-dim   (structure + capacity)
+#   flat (no typed embedding) : 1 block  x 128 = 128-dim   (neither)
+#   flat @768 (this control)  : 1 block  x 768 = 768-dim   (capacity, no structure)
+#
+# Inherits the 768-dim embedding (model_path + vector_size) from fasttext_v768.yaml
+# and overrides ONLY granularity (-> flat) and the row label. Same classifier,
+# same label budget (5%, from fasttext_base), same splits. Deterministic in seed
+# (LinearSVC + time-ordered prefix), so a single seed is sufficient.
+#
+# Prereq: train the 768-dim model first --
+#   python scripts/10_train_fasttext.py --config configs/detector/fasttext_v768.yaml --seed 42
+extends: configs/detector/fasttext_v768.yaml
+
+granularity: 1
+model:
+  num_fields: 1
+
+# Distinct row so it accumulates as its own Table-5 cell, not clobbering the
+# 128-dim flat cell.
+row: "Flat @768 (capacity-matched)"
+
+results_path: results/table_05_field_granularity/flat_v768_capacity_matched.json
+output_dir: models/detector/ablation/flat_v768_capacity_matched/

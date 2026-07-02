@@ -1,0 +1,113 @@
+{
+  "figure": "figure_03_latency_accuracy_pareto",
+  "note": "Latency is read from Table 8 for the proposed detector and any per-record baselines timed by scripts/54_measure_baseline_latency.py; baselines without measured per-record latency carry latency_ms=null and are excluded from the front. ModSec-Learn/AdvLearn are label-adjacent CRS-input references, not fair log-only peers; their latency measures CRS firing-vector featurization plus the learned predictor and excludes ModSecurity/CRS rule-engine execution. Status-only is retained as a shortcut diagnostic and excluded from the front.",
+  "pareto_front": [
+    "TF-IDF flat + LinearSVC",
+    "Proposed (FastText field-aware)",
+    "Field-prefixed FastText + LinearSVC"
+  ],
+  "points": [
+    {
+      "footprint_mb": 0.004,
+      "group": "crs_assisted",
+      "latency_measured": true,
+      "name": "ModSec-Learn",
+      "x": 0.098133,
+      "y": 91.0
+    },
+    {
+      "footprint_mb": 7.8266,
+      "group": "log_only",
+      "latency_measured": true,
+      "name": "TF-IDF flat + LinearSVC",
+      "x": 1.118127,
+      "y": 76.7
+    },
+    {
+      "footprint_mb": 0.004,
+      "group": "crs_assisted",
+      "latency_measured": true,
+      "name": "ModSec-AdvLearn",
+      "x": 0.105044,
+      "y": 74.8
+    },
+    {
+      "footprint_mb": 7.124,
+      "group": "log_only",
+      "latency_measured": true,
+      "name": "TF-IDF typed + LinearSVC",
+      "x": 1.336933,
+      "y": 74.4
+    },
+    {
+      "footprint_mb": 131.4486,
+      "group": "log_only",
+      "latency_measured": true,
+      "name": "Proposed (FastText field-aware)",
+      "x": 0.380846,
+      "y": 73.6
+    },
+    {
+      "footprint_mb": 0.5164,
+      "group": "log_only",
+      "latency_measured": true,
+      "name": "Char-CNN",
+      "x": 3.48037,
+      "y": 72.7
+    },
+    {
+      "footprint_mb": 16.0015,
+      "group": "log_only",
+      "latency_measured": true,
+      "name": "Hashing char-ngram + SGD",
+      "x": 0.654224,
+      "y": 71.6
+    },
+    {
+      "footprint_mb": 10.2131,
+      "group": "log_only",
+      "latency_measured": true,
+      "name": "TF-IDF + SVD + HGBDT",
+      "x": 12.729686,
+      "y": 69.7
+    },
+    {
+      "footprint_mb": 0.3103,
+      "group": "log_only",
+      "latency_measured": true,
+      "name": "TF-IDF + LogReg",
+      "x": 0.61593,
+      "y": 63.8
+    },
+    {
+      "footprint_mb": 112.6079,
+      "group": "log_only",
+      "latency_measured": true,
+      "name": "Field-prefixed FastText + LinearSVC",
+      "x": 0.204752,
+      "y": 56.9
+    },
+    {
+      "footprint_mb": null,
+      "group": "log_only",
+      "latency_measured": false,
+      "name": "FastText random-init (no pre-train)",
+      "x": null,
+      "y": 21.8
+    },
+    {
+      "footprint_mb": 0.0001,
+      "group": "log_only",
+      "latency_measured": true,
+      "name": "Status-only (shortcut)",
+      "x": 0.000466,
+      "y": 18.2
+    }
+  ],
+  "source": {
+    "accuracy": "results/table_03_rq1_baselines/results.json",
+    "latency": "results/table_08_latency/results.json"
+  },
+  "x_col": "latency_ms (end_to_end mean, CPU)",
+  "y_col": "macro_f1 (Table 3, 10%)"
+}

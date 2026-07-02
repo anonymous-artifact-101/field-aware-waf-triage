@@ -1,0 +1,417 @@
+{
+  "cells": [
+    {
+      "ci_95": null,
+      "col": "mean_latency_ms",
+      "row": "Proposed",
+      "seeds": [],
+      "value": 0.380846
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@100%",
+      "row": "Proposed",
+      "seeds": [],
+      "value": 0.3808
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@70%",
+      "row": "Proposed",
+      "seeds": [],
+      "value": 0.5441
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@100%",
+      "row": "Proposed",
+      "seeds": [],
+      "value": 1.9042
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@70%",
+      "row": "Proposed",
+      "seeds": [],
+      "value": 2.7203
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@100%",
+      "row": "Proposed",
+      "seeds": [],
+      "value": 3.8085
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@70%",
+      "row": "Proposed",
+      "seeds": [],
+      "value": 5.4407
+    },
+    {
+      "ci_95": null,
+      "col": "mean_latency_ms",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [],
+      "value": 1.118127
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@100%",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [],
+      "value": 1.1181
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@70%",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [],
+      "value": 1.5973
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@100%",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [],
+      "value": 5.5906
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@70%",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [],
+      "value": 7.9866
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@100%",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [],
+      "value": 11.1813
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@70%",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [],
+      "value": 15.9732
+    },
+    {
+      "ci_95": null,
+      "col": "mean_latency_ms",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [],
+      "value": 1.336933
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@100%",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [],
+      "value": 1.3369
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@70%",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [],
+      "value": 1.9099
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@100%",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [],
+      "value": 6.6847
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@70%",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [],
+      "value": 9.5495
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@100%",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [],
+      "value": 13.3693
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@70%",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [],
+      "value": 19.099
+    },
+    {
+      "ci_95": null,
+      "col": "mean_latency_ms",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [],
+      "value": 0.654224
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@100%",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [],
+      "value": 0.6542
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@70%",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [],
+      "value": 0.9346
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@100%",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [],
+      "value": 3.2711
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@70%",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [],
+      "value": 4.673
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@100%",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [],
+      "value": 6.5422
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@70%",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [],
+      "value": 9.3461
+    },
+    {
+      "ci_95": null,
+      "col": "mean_latency_ms",
+      "row": "Char-CNN",
+      "seeds": [],
+      "value": 3.48037
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@100%",
+      "row": "Char-CNN",
+      "seeds": [],
+      "value": 3.4804
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@70%",
+      "row": "Char-CNN",
+      "seeds": [],
+      "value": 4.972
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@100%",
+      "row": "Char-CNN",
+      "seeds": [],
+      "value": 17.4019
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@70%",
+      "row": "Char-CNN",
+      "seeds": [],
+      "value": 24.8598
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@100%",
+      "row": "Char-CNN",
+      "seeds": [],
+      "value": 34.8037
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@70%",
+      "row": "Char-CNN",
+      "seeds": [],
+      "value": 49.7196
+    },
+    {
+      "ci_95": null,
+      "col": "mean_latency_ms",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [],
+      "value": 12.729686
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@100%",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [],
+      "value": 12.7297
+    },
+    {
+      "ci_95": null,
+      "col": "1000 rps cores@70%",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [],
+      "value": 18.1853
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@100%",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [],
+      "value": 63.6484
+    },
+    {
+      "ci_95": null,
+      "col": "5000 rps cores@70%",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [],
+      "value": 90.9263
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@100%",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [],
+      "value": 127.2969
+    },
+    {
+      "ci_95": null,
+      "col": "10000 rps cores@70%",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [],
+      "value": 181.8527
+    }
+  ],
+  "metadata": {
+    "commit": "9bb51e5",
+    "date": "2026-07-01",
+    "details": {
+      "Char-CNN": {
+        "latency_ms": 3.48037,
+        "rates": {
+          "1000": {
+            "cores_at_100pct": 3.4804,
+            "cores_at_target_utilization": 4.972
+          },
+          "10000": {
+            "cores_at_100pct": 34.8037,
+            "cores_at_target_utilization": 49.7196
+          },
+          "5000": {
+            "cores_at_100pct": 17.4019,
+            "cores_at_target_utilization": 24.8598
+          }
+        }
+      },
+      "Hashing char-ngram + SGD": {
+        "latency_ms": 0.654224,
+        "rates": {
+          "1000": {
+            "cores_at_100pct": 0.6542,
+            "cores_at_target_utilization": 0.9346
+          },
+          "10000": {
+            "cores_at_100pct": 6.5422,
+            "cores_at_target_utilization": 9.3461
+          },
+          "5000": {
+            "cores_at_100pct": 3.2711,
+            "cores_at_target_utilization": 4.673
+          }
+        }
+      },
+      "Proposed": {
+        "latency_ms": 0.380846,
+        "rates": {
+          "1000": {
+            "cores_at_100pct": 0.3808,
+            "cores_at_target_utilization": 0.5441
+          },
+          "10000": {
+            "cores_at_100pct": 3.8085,
+            "cores_at_target_utilization": 5.4407
+          },
+          "5000": {
+            "cores_at_100pct": 1.9042,
+            "cores_at_target_utilization": 2.7203
+          }
+        }
+      },
+      "TF-IDF + SVD + HGBDT": {
+        "latency_ms": 12.729686,
+        "rates": {
+          "1000": {
+            "cores_at_100pct": 12.7297,
+            "cores_at_target_utilization": 18.1853
+          },
+          "10000": {
+            "cores_at_100pct": 127.2969,
+            "cores_at_target_utilization": 181.8527
+          },
+          "5000": {
+            "cores_at_100pct": 63.6484,
+            "cores_at_target_utilization": 90.9263
+          }
+        }
+      },
+      "TF-IDF flat + LinearSVC": {
+        "latency_ms": 1.118127,
+        "rates": {
+          "1000": {
+            "cores_at_100pct": 1.1181,
+            "cores_at_target_utilization": 1.5973
+          },
+          "10000": {
+            "cores_at_100pct": 11.1813,
+            "cores_at_target_utilization": 15.9732
+          },
+          "5000": {
+            "cores_at_100pct": 5.5906,
+            "cores_at_target_utilization": 7.9866
+          }
+        }
+      },
+      "TF-IDF typed + LinearSVC": {
+        "latency_ms": 1.336933,
+        "rates": {
+          "1000": {
+            "cores_at_100pct": 1.3369,
+            "cores_at_target_utilization": 1.9099
+          },
+          "10000": {
+            "cores_at_100pct": 13.3693,
+            "cores_at_target_utilization": 19.099
+          },
+          "5000": {
+            "cores_at_100pct": 6.6847,
+            "cores_at_target_utilization": 9.5495
+          }
+        }
+      }
+    },
+    "formula": "cores = traffic_rps * latency_ms / 1000 / target_utilization",
+    "latency_source": "mean end-to-end ms/record from Table 8",
+    "rates_rps": [
+      1000,
+      5000,
+      10000
+    ],
+    "source": "<REPO>/results\\table_08_latency\\results.json",
+    "target_utilization": 0.7,
+    "unit": "CPU cores"
+  },
+  "table": "table_18_deployment_workload"
+}

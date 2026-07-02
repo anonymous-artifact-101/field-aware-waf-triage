@@ -1,0 +1,30 @@
+# status_only.yaml -- status-code-only shortcut baseline (paper Table 3 / Table 6).
+#
+# NOT a competitive detector: this is the shortcut PROBE the audit motivated. It
+# fits a majority-vote "HTTP status -> attack subtype" table on the Low-label
+# label budget (earliest contiguous prefix of the time-ordered OWASP train split)
+# and predicts on test by status lookup alone -- no request content. Its macro-F1
+# quantifies how far the status-code shortcut alone gets, so the paper can report
+# it as a floor and argue the proposed model's gain is genuine content analysis
+# rather than reading the response code.
+#
+# Consumed by src/baselines/status_only.py via scripts/20_run_baseline.py.
+baseline: status_only
+family: shortcut_probe
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  # Same Low-label budget as the proposed model's headline column, so the
+  # shortcut floor is measured under identical labeled-data conditions.
+  label_budget: 0.05
+
+model:
+  # The rule has no hyperparameters: it is a deterministic majority-per-status
+  # frequency table with a global-majority fallback for unseen statuses.
+  num_classes: 8   # len(SUBTYPES); documented for traceability.
+
+seed: 42
+results_path: results/table_03_rq1_baselines/status_only.json
+output_dir: models/baselines/status_only/

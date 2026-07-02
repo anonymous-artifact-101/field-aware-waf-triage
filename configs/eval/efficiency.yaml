@@ -1,0 +1,79 @@
+# efficiency.yaml -- the CPU efficiency-measurement protocol (Table 8 latency +
+# throughput + footprint). EFFICIENCY-FIRST headline: this declares HOW the
+# per-request latency, throughput, and memory footprint of the FastText detector
+# are measured on the CPU box so the numbers are reproducible and fair.
+#
+# This is a PROTOCOL config, not a model config -- it has no `extends:` and no
+# `model` block. The latency/throughput/footprint knobs are read by the eval
+# helpers in src/eval/latency.py (which time the FastText detector's
+# tokenize/encode/score stages). Every accuracy number in the paper is paired
+# with the latency + footprint measured HERE (the efficiency-first convention).
+#
+# NOTE: the transformer-era model-SIZE sweep (proposed_base/small/tiny ->
+# Tables 9/10, Figure 3, via the deleted scripts/43+52) was removed with the
+# FastText pivot. A FastText efficiency sweep (over vector_size / classifier) is
+# the natural replacement and is future work; this protocol covers the single
+# proposed detector's latency/throughput/footprint for now.
+
+version: 1
+
+efficiency:
+  # Device + thread pinning. CPU-only edge/WAF deployment is the target. Threads
+  # are pinned for reproducible single-box timing; batch=1 per-request latency
+  # is measured single-threaded (1) to reflect a per-connection serving path,
+  # while throughput is also probed at the full box width.
+  device: cpu
+  # Measured host (Table 8): one pinned logical core, BLAS/OpenMP capped to 1.
+  hardware: "12th Gen Intel(R) Core(TM) i7-12700"
+  num_threads: 1
+  # Also cap the math-library thread pools (OMP/MKL) -- the pretrain segfault
+  # fix; honored by the runner before any torch op so timings are stable.
+  cap_omp_mkl_threads: true
+
+  # --- Per-request latency (Table 8 stages, now headline) ------------------
+  # batch=1 so tail percentiles (p95/p99) are meaningful per request, not an
+  # artifact of batched throughput. Warmup iterations are discarded to drop
+  # first-call / lazy-allocation overhead before timing.
+  latency:
+    batch_size: 1
+    warmup: 20
+    n_trials: 300            # records timed AFTER warmup, per independent run
+    runs: 10                 # independent timing runs -> a run-to-run 95% CI on
+                             # the end-to-end latency (systems-rigor: one 300-record
+                             # pass is too thin; the headline now carries an interval)
+    mode: anomaly            # distance-to-benign-centroid anomaly score (no labels needed)
+    split: owasp_test        # time over the held-out test split
+    # Pipeline stages to time individually (sum == end_to_end). Names match
+    # src/eval/latency.py so the runner maps stage -> results.json row directly.
+    stages: [tokenize, encode, score, end_to_end]
+    stats: [mean, p50, p95, p99]
+    unit: milliseconds
+
+  # --- Throughput: records/sec on CPU -------------------------------------
+  # Measured two ways so the table shows the serving trade-off:
+  #   * batch_1   -- streaming, one request at a time (the per-connection path).
+  #   * batched   -- amortized, the largest batch the budget allows.
+  throughput:
+    batch_sizes: [1, 32]
+    warmup_batches: 5
+    n_batches: 50            # batches timed AFTER warmup (per seed)
+    split: owasp_test
+    unit: records_per_second
+
+  # --- Memory footprint ---------------------------------------------------
+  # What ships in the WAF: the FastText model (vectors + char-n-gram buckets) +
+  # the fitted classical head (LinearSVC coefficients). Measured on disk / in RAM
+  # without any training.
+  footprint:
+    report_fasttext_model: true   # FastText .model / vectors size
+    report_classifier: true       # fitted sklearn estimator size
+    units: [bytes, megabytes]
+
+# Paper artifact this protocol drives: Table 8 (per-request CPU latency stages +
+# throughput + footprint of the proposed FastText detector). A future FastText
+# efficiency sweep (over vector_size / classifier) would add a Pareto figure;
+# the transformer size-sweep tables (table_09/table_10, figure_03) were retired.
+results:
+  latency_table: table_08_latency
+
+seed: 42

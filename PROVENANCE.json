@@ -1,0 +1,90 @@
+{
+  "anonymous_snapshot_commit": "<PUBLIC_ANON_SHA -- fill in after creating the public repo>",
+  "internal_commits": [
+    {
+      "commit": "11b9822",
+      "date": "2026-06-04",
+      "tables": [
+        "manual_verification"
+      ]
+    },
+    {
+      "commit": "3843f64",
+      "date": "2026-06-04",
+      "tables": [
+        "table_09_cross_dataset_biblio_us17"
+      ]
+    },
+    {
+      "commit": "9bb51e5",
+      "date": "",
+      "tables": [
+        "table_15_protocol_sensitivity"
+      ]
+    },
+    {
+      "commit": "9bb51e5",
+      "date": "2026-07-01",
+      "tables": [
+        "environment",
+        "table_02_dataset_profile",
+        "table_03_rq1_baselines",
+        "table_05_field_granularity",
+        "table_08_latency",
+        "table_16_rare_class_ci",
+        "table_17_no_custom_444444",
+        "table_18_deployment_workload",
+        "table_19_owasp_reconciliation"
+      ]
+    },
+    {
+      "commit": "c042449",
+      "date": "",
+      "tables": [
+        "table_09_cross_dataset_csic",
+        "table_11_benign_fpr_apache_indo"
+      ]
+    },
+    {
+      "commit": "c042449",
+      "date": "2026-06-07",
+      "tables": [
+        "table_06_per_class_owasp",
+        "table_07_attribution",
+        "table_10_fasttext_sweep",
+        "table_13_post_body_pilot",
+        "table_14_budget_composition_ci"
+      ]
+    },
+    {
+      "commit": "c042449-dirty",
+      "date": "2026-06-02",
+      "tables": [
+        "table_12_label_noise_cleanlab"
+      ]
+    }
+  ],
+  "note": "Results were produced in a private working repository at the internal commits listed below; this public artifact is an anonymized snapshot. The internal SHAs do not exist in the public repo by construction. Verify code integrity with verify_provenance.py (artifact root), which recomputes source_content_hash over src/, scripts/, and configs/. Any commit ending in '-dirty' was produced from an uncommitted working tree and is reproducible only up to the recorded source hash, not a clean commit.",
+  "schema": "pecti-provenance/1",
+  "source_content_hash": {
+    "algorithm": "sha256",
+    "extensions": [
+      ".cfg",
+      ".ini",
+      ".json",
+      ".py",
+      ".sh",
+      ".toml",
+      ".yaml",
+      ".yml"
+    ],
+    "file_count": 136,
+    "over": [
+      "src",
+      "scripts",
+      "configs"
+    ],
+    "value": "ba68948e972065252c98d55c55ba931614945a281c1fc6d86e9c962e90486890"
+  },
+  "source_equivalence_verified": true
+}

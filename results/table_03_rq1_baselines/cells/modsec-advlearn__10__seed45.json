@@ -1,0 +1,40 @@
+{
+  "col": "10%",
+  "metadata": {
+    "adversarial": {
+      "enabled": true,
+      "epsilon": 0.1,
+      "n_steps": 7,
+      "train_ratio": 0.5
+    },
+    "baseline": "modsec_advlearn",
+    "commit": "082f087",
+    "crs_vocab_size": 43,
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-06",
+    "embedding_version": "7769ea2c62c8",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "family": "crs_rule_classifier_adversarial",
+    "gpu": "cpu",
+    "label_budget": 0.1,
+    "metric": "macro_f1",
+    "n_test": 19646,
+    "n_train_labeled": 11000,
+    "note": "Single-seed baseline run; Table 3 aggregates seeds 42..46 with 95% CIs via the aggregation stage (src.eval.aggregate).",
+    "per_class_f1": {
+      "lfi": 0.999488,
+      "path_traversal": 0.484848,
+      "php_injection": 0.630037,
+      "protocol": 0.989978,
+      "rce": 0.993572,
+      "scanner": 0.0,
+      "sql_injection": 0.935849,
+      "xss": 0.952381
+    }
+  },
+  "row": "ModSec-AdvLearn",
+  "seed": 45,
+  "table": "table_03_rq1_baselines",
+  "value": 74.8269
+}

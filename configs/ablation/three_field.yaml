@@ -1,0 +1,37 @@
+# three_field.yaml -- field-granularity ablation (paper Table 5 row 2).
+#
+# Post-pivot FastText granularity ablation, intermediate granularity: field-aware
+# but with the 6 typed fields collapsed into 3 coarse blocks, each embedded +
+# pooled separately and concatenated (feature dim = 3 * vector_size). Sits between
+# the flat baseline (1 block) and the proposed six-field model (6 blocks) so
+# Table 5 shows a monotonic granularity sweep 1 -> 3 -> 6.
+#
+# The 6 -> 3 grouping (matches src.detector.field_encoder.GRANULARITY_GROUPS[3]):
+#   block 0  REQUEST-LINE : {method, path, query} -- the verb + target.
+#   block 1  CLIENT       : {ua}                  -- client-supplied header context.
+#   block 2  RESPONSE     : {status, timing}      -- server-side response outcome.
+#
+# Inherits everything else (FastText, classifier, label budget) from
+# fasttext_base.yaml; differs from six_field.yaml ONLY in granularity.
+extends: configs/detector/fasttext_base.yaml
+
+granularity: 3
+model:
+  num_fields: 3
+
+# Distinct cell row label so Table 5's three granularity rows accumulate as
+# separate (row, col) cells instead of clobbering one shared "Proposed" cell.
+row: "3-field (request/client/response)"
+
+# The grouping is the built-in GRANULARITY_GROUPS[3]. An explicit equivalent is
+# shown for auditability; remove to fall back to the built-in. groups (when set)
+# overrides `granularity` in src.detector.field_encoder.resolve_groups.
+encoder:
+  pooling: mean
+  groups:
+    - [method, path, query]
+    - [ua]
+    - [status, timing]
+
+results_path: results/table_05_field_granularity/three_field.json
+output_dir: models/detector/ablation/three_field/

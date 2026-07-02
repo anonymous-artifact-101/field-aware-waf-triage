@@ -1,0 +1,40 @@
+# attribution_truth.yaml -- ground-truth field localization per attack subtype.
+#
+# Paper Table 7 reports "field-attribution agreement": for each detected attack,
+# does the model's HIGHEST per-field anomaly score (src/model/attribution.py)
+# fall on the field where the attack's payload actually lives?
+#
+# This file is the AUDITABLE ground truth (edit here, never hard-code in source).
+# For each of the 8 attack subtypes (src/data/labels.SUBTYPES) it lists the
+# field(s) that legitimately carry the malicious signal. A prediction counts as
+# "agreeing" when the model's argmax field is in `expected_fields` for that
+# record's subtype.
+#
+# Field names MUST match configs/tokenizer/field_schema.yaml:
+#   method, path, query, ua, status, timing
+#
+# Rationale per subtype:
+#   sql_injection  -> query/path : SQLi payloads ride in the query string (and
+#                                  occasionally the path for path-param injection).
+#   rce            -> query/path : command-injection payloads in the request target.
+#   php_injection  -> query/path : injected PHP rides in the request target.
+#   xss            -> query/path : reflected XSS payloads in the request target.
+#   path_traversal -> path       : ../ sequences live in the URL path.
+#   lfi            -> path/query  : file-inclusion targets a file via path or query.
+#   scanner        -> ua/path     : automated tooling is fingerprinted by its
+#                                   User-Agent and noisy path probing.
+#   protocol       -> method/status/path : protocol-violation noise is structural
+#                                   (odd verb, request-line, or response anomaly)
+#                                   rather than a payload in a single field.
+
+version: 1
+
+expected_fields:
+  sql_injection: [query, path]
+  rce: [query, path]
+  php_injection: [query, path]
+  xss: [query, path]
+  path_traversal: [path]
+  lfi: [path, query]
+  scanner: [ua, path]
+  protocol: [method, status, path]

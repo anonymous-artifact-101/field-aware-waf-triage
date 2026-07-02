@@ -1,0 +1,46 @@
+# Runtime dependencies for field-aware-waf-detector.
+#
+# This file MIRRORS the [project].dependencies table in pyproject.toml (the CORE,
+# torch-free set). Versions are pinned to the environment used to produce the
+# reported results (Python 3.13.13, CPU box). Pinning fixes the Python package
+# versions; it does NOT by itself guarantee bit-identical output across machines
+# (that also depends on the OS, BLAS build, CPU instruction set, and compiler).
+# Re-pin (pip freeze) only when a dependency is deliberately upgraded AND the
+# tables are re-run.
+#
+# Install the package itself (editable) with:  pip install -e .
+# Install only these runtime deps with:        pip install -r requirements.txt
+#
+# The PROPOSED detector (field-aware FastText embeddings + a classical scikit-learn
+# classifier; src/detector/) is CPU-only and TORCH-FREE. This default set installs
+# NO torch. Its representation learning is gensim FastText on the benign weblog corpus.
+#
+# To run the standalone neural BASELINES (src/baselines/{deeplog,logbert,char_cnn}.py)
+# install the baselines extra instead:  pip install -e ".[baselines]"
+# (or uncomment the two pins in the optional block below).
+
+# --- proposed detector + shared infra (required) ---
+gensim==4.4.0          # FastText embeddings -- the detector's self-supervised "pre-training"
+numpy==2.4.6
+scikit-learn==1.8.0    # LinearSVC / LogReg / HistGBDT head + IsolationForest scorer
+PyYAML==6.0.3
+scipy==1.17.1          # Student-t / bootstrap CIs + significance tests
+tqdm==4.67.3
+
+# --- neural baselines only (OPTIONAL; commented out to keep the default install
+#     torch-free). Uncomment, or use `pip install -e ".[baselines]"`, to run the
+#     deeplog / logbert / char_cnn baselines. tokenizers is the transformer-era BPE
+#     used only by retired-path tokenizer code, NOT on the FastText critical path. ---
+# torch==2.12.0+cpu
+# tokenizers==0.23.1
+
+# NOTE: pandas was removed -- it is imported nowhere in src/ scripts/ tests/
+# (the ledger is written with the stdlib csv module). It was transformer/data-
+# exploration-era residue. Re-add (pinned) only if a future analysis needs it.
+
+# --- efficiency profiling only (optional; not used by the proposed detector) ---
+# psutil measures resident/peak RSS for the Table 8 systems profile
+# (src/eval/efficiency.py). It captures the native gensim/numpy buffers that
+# tracemalloc cannot see. Offline measurement only; the served detector does not
+# import it. Mirrors the [project.optional-dependencies] 'efficiency' extra.
+psutil==7.2.2

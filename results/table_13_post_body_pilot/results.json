@@ -1,0 +1,79 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        6.8,
+        6.8
+      ],
+      "col": "macro_f1",
+      "row": "POST-body lift (delta)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 6.8
+    },
+    {
+      "ci_95": [
+        32.5,
+        32.5
+      ],
+      "col": "macro_f1",
+      "row": "query = GET only",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 32.5
+    },
+    {
+      "ci_95": [
+        39.3,
+        39.3
+      ],
+      "col": "macro_f1",
+      "row": "query = GET + POST body",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 39.3
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "POST-body lift (delta) | macro_f1": {
+        "deterministic": true,
+        "exploratory_single_seed": false,
+        "single_run_measured": false
+      },
+      "query = GET + POST body | macro_f1": {
+        "deterministic": true,
+        "exploratory_single_seed": false,
+        "single_run_measured": false,
+        "weighted_f1": 68.4682
+      },
+      "query = GET only | macro_f1": {
+        "deterministic": true,
+        "exploratory_single_seed": false,
+        "single_run_measured": false,
+        "weighted_f1": 65.6071
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "c042449",
+    "date": "2026-06-07",
+    "gpu": "cpu",
+    "n_cell_files": 15
+  },
+  "table": "table_13_post_body_pilot"
+}

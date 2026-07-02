@@ -1,0 +1,26 @@
+# six_field.yaml -- field-granularity ablation (paper Table 5 row 3, PROPOSED).
+#
+# Post-pivot FastText granularity ablation. The PROPOSED full granularity: all 6
+# typed fields (method, path, query, ua, status, timing -- see
+# configs/tokenizer/field_schema.yaml) are embedded + pooled SEPARATELY and the
+# 6 per-field vectors are CONCATENATED (feature dim = 6 * vector_size). This is
+# the top end of the granularity sweep (1 -> 3 -> 6).
+#
+# Inherits the FastText params, encoder pooling, classifier spec, and label
+# budget from fasttext_base.yaml; overrides ONLY the granularity so Table 5
+# differs in field granularity alone, never in embedding or classifier.
+extends: configs/detector/fasttext_base.yaml
+
+granularity: 6
+# num_fields kept for traceability against the old transformer ablation rows;
+# build_detector reads `granularity` (falling back to model.num_fields) so this
+# is informational.
+model:
+  num_fields: 6
+
+# Distinct cell row label so Table 5's three granularity rows accumulate as
+# separate (row, col) cells instead of clobbering one shared "Proposed" cell.
+row: "6-field (proposed)"
+
+results_path: results/table_05_field_granularity/six_field.json
+output_dir: models/detector/ablation/six_field/

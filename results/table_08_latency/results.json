@@ -1,0 +1,1616 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        2.7706150000000003,
+        4.190125
+      ],
+      "col": "mean",
+      "row": "Char-CNN (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 3.48037
+    },
+    {
+      "ci_95": [
+        3.37287,
+        3.37287
+      ],
+      "col": "p50",
+      "row": "Char-CNN (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 3.37287
+    },
+    {
+      "ci_95": [
+        3.782074,
+        5.348126000000001
+      ],
+      "col": "p95",
+      "row": "Char-CNN (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 4.5651
+    },
+    {
+      "ci_95": [
+        5.489366,
+        7.990974
+      ],
+      "col": "p99",
+      "row": "Char-CNN (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 6.74017
+    },
+    {
+      "ci_95": null,
+      "col": "mean",
+      "row": "encode",
+      "seeds": [
+        42
+      ],
+      "value": 0.241641
+    },
+    {
+      "ci_95": null,
+      "col": "p50",
+      "row": "encode",
+      "seeds": [
+        42
+      ],
+      "value": 0.2137
+    },
+    {
+      "ci_95": null,
+      "col": "p95",
+      "row": "encode",
+      "seeds": [
+        42
+      ],
+      "value": 0.4603
+    },
+    {
+      "ci_95": null,
+      "col": "p99",
+      "row": "encode",
+      "seeds": [
+        42
+      ],
+      "value": 0.8124
+    },
+    {
+      "ci_95": null,
+      "col": "mean",
+      "row": "end_to_end",
+      "seeds": [
+        42
+      ],
+      "value": 0.361168
+    },
+    {
+      "ci_95": null,
+      "col": "p50",
+      "row": "end_to_end",
+      "seeds": [
+        42
+      ],
+      "value": 0.3261
+    },
+    {
+      "ci_95": null,
+      "col": "p95",
+      "row": "end_to_end",
+      "seeds": [
+        42
+      ],
+      "value": 0.5979
+    },
+    {
+      "ci_95": null,
+      "col": "p99",
+      "row": "end_to_end",
+      "seeds": [
+        42
+      ],
+      "value": 0.9223
+    },
+    {
+      "ci_95": [
+        0.196618,
+        0.212886
+      ],
+      "col": "mean",
+      "row": "Field-prefixed FastText + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.204752
+    },
+    {
+      "ci_95": [
+        0.15716,
+        0.15716
+      ],
+      "col": "p50",
+      "row": "Field-prefixed FastText + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.15716
+    },
+    {
+      "ci_95": [
+        0.342767,
+        0.406673
+      ],
+      "col": "p95",
+      "row": "Field-prefixed FastText + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.37472
+    },
+    {
+      "ci_95": [
+        0.501736,
+        0.7117439999999999
+      ],
+      "col": "p99",
+      "row": "Field-prefixed FastText + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.60674
+    },
+    {
+      "ci_95": null,
+      "col": "Char-CNN",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 0.5164
+    },
+    {
+      "ci_95": null,
+      "col": "Classifier head",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 0.0476
+    },
+    {
+      "ci_95": null,
+      "col": "FastText model",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 131.401
+    },
+    {
+      "ci_95": null,
+      "col": "Field-prefixed FastText + LinearSVC",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 112.6079
+    },
+    {
+      "ci_95": null,
+      "col": "Hashing char-ngram + SGD",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 16.0015
+    },
+    {
+      "ci_95": null,
+      "col": "Isolation Forest",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 31.8503
+    },
+    {
+      "ci_95": null,
+      "col": "ModSec-AdvLearn",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 0.004
+    },
+    {
+      "ci_95": null,
+      "col": "ModSec-Learn",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 0.004
+    },
+    {
+      "ci_95": null,
+      "col": "One-Class SVM",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 7.3786
+    },
+    {
+      "ci_95": null,
+      "col": "Status-only (shortcut)",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 0.0001
+    },
+    {
+      "ci_95": null,
+      "col": "TF-IDF flat + LinearSVC",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 7.8266
+    },
+    {
+      "ci_95": null,
+      "col": "TF-IDF + LogReg",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 0.3103
+    },
+    {
+      "ci_95": null,
+      "col": "TF-IDF + SVD + HGBDT",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 10.2131
+    },
+    {
+      "ci_95": null,
+      "col": "TF-IDF typed + LinearSVC",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 7.124
+    },
+    {
+      "ci_95": null,
+      "col": "Total",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 131.4486
+    },
+    {
+      "ci_95": [
+        0.643625,
+        0.664823
+      ],
+      "col": "mean",
+      "row": "Hashing char-ngram + SGD (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.654224
+    },
+    {
+      "ci_95": [
+        0.67158,
+        0.67158
+      ],
+      "col": "p50",
+      "row": "Hashing char-ngram + SGD (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.67158
+    },
+    {
+      "ci_95": [
+        0.846811,
+        0.8790089999999999
+      ],
+      "col": "p95",
+      "row": "Hashing char-ngram + SGD (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.86291
+    },
+    {
+      "ci_95": [
+        1.045146,
+        1.187414
+      ],
+      "col": "p99",
+      "row": "Hashing char-ngram + SGD (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 1.11628
+    },
+    {
+      "ci_95": [
+        23.145082000000002,
+        29.34527
+      ],
+      "col": "mean",
+      "row": "Isolation Forest (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 26.245176
+    },
+    {
+      "ci_95": [
+        9.0195,
+        9.0195
+      ],
+      "col": "p50",
+      "row": "Isolation Forest (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 9.0195
+    },
+    {
+      "ci_95": [
+        36.962587,
+        47.76661300000001
+      ],
+      "col": "p95",
+      "row": "Isolation Forest (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 42.3646
+    },
+    {
+      "ci_95": [
+        52.943236,
+        86.255104
+      ],
+      "col": "p99",
+      "row": "Isolation Forest (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 69.59917
+    },
+    {
+      "ci_95": [
+        2537.182,
+        2744.852
+      ],
+      "col": "mean",
+      "row": "Model load time (ms)",
+      "seeds": [
+        42
+      ],
+      "value": 2641.017
+    },
+    {
+      "ci_95": [
+        0.090446,
+        0.119642
+      ],
+      "col": "mean",
+      "row": "ModSec-AdvLearn (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.105044
+    },
+    {
+      "ci_95": [
+        0.0789,
+        0.0789
+      ],
+      "col": "p50",
+      "row": "ModSec-AdvLearn (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.0789
+    },
+    {
+      "ci_95": [
+        0.186431,
+        0.257069
+      ],
+      "col": "p95",
+      "row": "ModSec-AdvLearn (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.22175
+    },
+    {
+      "ci_95": [
+        0.29052,
+        0.38878
+      ],
+      "col": "p99",
+      "row": "ModSec-AdvLearn (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.33965
+    },
+    {
+      "ci_95": [
+        0.090243,
+        0.10602299999999999
+      ],
+      "col": "mean",
+      "row": "ModSec-Learn (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.098133
+    },
+    {
+      "ci_95": [
+        0.099,
+        0.099
+      ],
+      "col": "p50",
+      "row": "ModSec-Learn (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.099
+    },
+    {
+      "ci_95": [
+        0.12696200000000002,
+        0.209918
+      ],
+      "col": "p95",
+      "row": "ModSec-Learn (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.16844
+    },
+    {
+      "ci_95": [
+        0.188952,
+        0.285628
+      ],
+      "col": "p99",
+      "row": "ModSec-Learn (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.23729
+    },
+    {
+      "ci_95": [
+        4.192093000000001,
+        5.035699
+      ],
+      "col": "mean",
+      "row": "One-Class SVM (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 4.613896
+    },
+    {
+      "ci_95": [
+        4.9072,
+        4.9072
+      ],
+      "col": "p50",
+      "row": "One-Class SVM (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 4.9072
+    },
+    {
+      "ci_95": [
+        5.065832,
+        6.235668
+      ],
+      "col": "p95",
+      "row": "One-Class SVM (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 5.65075
+    },
+    {
+      "ci_95": [
+        5.810722,
+        7.504298
+      ],
+      "col": "p99",
+      "row": "One-Class SVM (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 6.65751
+    },
+    {
+      "ci_95": [
+        0.355889,
+        0.405803
+      ],
+      "col": "mean",
+      "row": "Proposed end-to-end (10-run)",
+      "seeds": [
+        42
+      ],
+      "value": 0.380846
+    },
+    {
+      "ci_95": [
+        0.607469,
+        0.7548710000000001
+      ],
+      "col": "p95",
+      "row": "Proposed end-to-end (10-run)",
+      "seeds": [
+        42
+      ],
+      "value": 0.68117
+    },
+    {
+      "ci_95": [
+        0.919844,
+        1.327656
+      ],
+      "col": "p99",
+      "row": "Proposed end-to-end (10-run)",
+      "seeds": [
+        42
+      ],
+      "value": 1.12375
+    },
+    {
+      "ci_95": null,
+      "col": "baseline",
+      "row": "Resident memory (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 17.0
+    },
+    {
+      "ci_95": null,
+      "col": "loaded",
+      "row": "Resident memory (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 265.934
+    },
+    {
+      "ci_95": null,
+      "col": "model delta",
+      "row": "Resident memory (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 248.934
+    },
+    {
+      "ci_95": null,
+      "col": "peak",
+      "row": "Resident memory (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 846.504
+    },
+    {
+      "ci_95": null,
+      "col": "mean",
+      "row": "score",
+      "seeds": [
+        42
+      ],
+      "value": 0.116588
+    },
+    {
+      "ci_95": null,
+      "col": "p50",
+      "row": "score",
+      "seeds": [
+        42
+      ],
+      "value": 0.1053
+    },
+    {
+      "ci_95": null,
+      "col": "p95",
+      "row": "score",
+      "seeds": [
+        42
+      ],
+      "value": 0.162
+    },
+    {
+      "ci_95": null,
+      "col": "p99",
+      "row": "score",
+      "seeds": [
+        42
+      ],
+      "value": 0.251
+    },
+    {
+      "ci_95": [
+        0.000444,
+        0.000488
+      ],
+      "col": "mean",
+      "row": "Status-only (shortcut) (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.000466
+    },
+    {
+      "ci_95": [
+        0.0005,
+        0.0005
+      ],
+      "col": "p50",
+      "row": "Status-only (shortcut) (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.0005
+    },
+    {
+      "ci_95": [
+        0.00059,
+        0.0006900000000000001
+      ],
+      "col": "p95",
+      "row": "Status-only (shortcut) (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.00064
+    },
+    {
+      "ci_95": [
+        0.000811,
+        0.0009889999999999999
+      ],
+      "col": "p99",
+      "row": "Status-only (shortcut) (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.0009
+    },
+    {
+      "ci_95": [
+        0.9847690000000001,
+        1.2514850000000002
+      ],
+      "col": "mean",
+      "row": "TF-IDF flat + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 1.118127
+    },
+    {
+      "ci_95": [
+        0.9787,
+        0.9787
+      ],
+      "col": "p50",
+      "row": "TF-IDF flat + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.9787
+    },
+    {
+      "ci_95": [
+        1.4739659999999999,
+        2.373294
+      ],
+      "col": "p95",
+      "row": "TF-IDF flat + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 1.92363
+    },
+    {
+      "ci_95": [
+        1.2752379999999999,
+        5.281522
+      ],
+      "col": "p99",
+      "row": "TF-IDF flat + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 3.27838
+    },
+    {
+      "ci_95": [
+        0.592379,
+        0.639481
+      ],
+      "col": "mean",
+      "row": "TF-IDF + LogReg (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.61593
+    },
+    {
+      "ci_95": [
+        0.5786,
+        0.5786
+      ],
+      "col": "p50",
+      "row": "TF-IDF + LogReg (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.5786
+    },
+    {
+      "ci_95": [
+        0.750506,
+        0.853894
+      ],
+      "col": "p95",
+      "row": "TF-IDF + LogReg (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 0.8022
+    },
+    {
+      "ci_95": [
+        0.772603,
+        2.369897
+      ],
+      "col": "p99",
+      "row": "TF-IDF + LogReg (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 1.57125
+    },
+    {
+      "ci_95": [
+        11.672726999999998,
+        13.786645
+      ],
+      "col": "mean",
+      "row": "TF-IDF + SVD + HGBDT (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 12.729686
+    },
+    {
+      "ci_95": [
+        11.7797,
+        11.7797
+      ],
+      "col": "p50",
+      "row": "TF-IDF + SVD + HGBDT (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 11.7797
+    },
+    {
+      "ci_95": [
+        12.394909000000002,
+        21.566731
+      ],
+      "col": "p95",
+      "row": "TF-IDF + SVD + HGBDT (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 16.98082
+    },
+    {
+      "ci_95": [
+        15.291442000000002,
+        25.099438
+      ],
+      "col": "p99",
+      "row": "TF-IDF + SVD + HGBDT (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 20.19544
+    },
+    {
+      "ci_95": [
+        1.169767,
+        1.5040989999999999
+      ],
+      "col": "mean",
+      "row": "TF-IDF typed + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 1.336933
+    },
+    {
+      "ci_95": [
+        1.0887,
+        1.0887
+      ],
+      "col": "p50",
+      "row": "TF-IDF typed + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 1.0887
+    },
+    {
+      "ci_95": [
+        1.474543,
+        2.436857
+      ],
+      "col": "p95",
+      "row": "TF-IDF typed + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 1.9557
+    },
+    {
+      "ci_95": [
+        1.8064829999999998,
+        3.0516569999999996
+      ],
+      "col": "p99",
+      "row": "TF-IDF typed + LinearSVC (latency)",
+      "seeds": [
+        42
+      ],
+      "value": 2.42907
+    },
+    {
+      "ci_95": null,
+      "col": "batch=1",
+      "row": "Throughput (req/s/core)",
+      "seeds": [
+        42
+      ],
+      "value": 2422.49
+    },
+    {
+      "ci_95": null,
+      "col": "batch=32",
+      "row": "Throughput (req/s/core)",
+      "seeds": [
+        42
+      ],
+      "value": 3376.81
+    },
+    {
+      "ci_95": null,
+      "col": "mean",
+      "row": "tokenize",
+      "seeds": [
+        42
+      ],
+      "value": 0.013889
+    },
+    {
+      "ci_95": null,
+      "col": "p50",
+      "row": "tokenize",
+      "seeds": [
+        42
+      ],
+      "value": 0.0136
+    },
+    {
+      "ci_95": null,
+      "col": "p95",
+      "row": "tokenize",
+      "seeds": [
+        42
+      ],
+      "value": 0.0187
+    },
+    {
+      "ci_95": null,
+      "col": "p99",
+      "row": "tokenize",
+      "seeds": [
+        42
+      ],
+      "value": 0.0207
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "Char-CNN (latency) | mean": {
+        "ci95_halfwidth": 0.709755,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Char-CNN (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Char-CNN (latency) | p95": {
+        "ci95_halfwidth": 0.783026,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Char-CNN (latency) | p99": {
+        "ci95_halfwidth": 1.250804,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Field-prefixed FastText + LinearSVC (latency) | mean": {
+        "ci95_halfwidth": 0.008134,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Field-prefixed FastText + LinearSVC (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Field-prefixed FastText + LinearSVC (latency) | p95": {
+        "ci95_halfwidth": 0.031953,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Field-prefixed FastText + LinearSVC (latency) | p99": {
+        "ci95_halfwidth": 0.105004,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Footprint (MB) | Char-CNN": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | Classifier head": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | FastText model": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | Field-prefixed FastText + LinearSVC": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | Hashing char-ngram + SGD": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | Isolation Forest": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | ModSec-AdvLearn": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | ModSec-Learn": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | One-Class SVM": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | Status-only (shortcut)": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | TF-IDF + LogReg": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | TF-IDF + SVD + HGBDT": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | TF-IDF flat + LinearSVC": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | TF-IDF typed + LinearSVC": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | Total": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "Hashing char-ngram + SGD (latency) | mean": {
+        "ci95_halfwidth": 0.010599,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Hashing char-ngram + SGD (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Hashing char-ngram + SGD (latency) | p95": {
+        "ci95_halfwidth": 0.016099,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Hashing char-ngram + SGD (latency) | p99": {
+        "ci95_halfwidth": 0.071134,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Isolation Forest (latency) | mean": {
+        "ci95_halfwidth": 3.100094,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Isolation Forest (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Isolation Forest (latency) | p95": {
+        "ci95_halfwidth": 5.402013,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Isolation Forest (latency) | p99": {
+        "ci95_halfwidth": 16.655934,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "ModSec-AdvLearn (latency) | mean": {
+        "ci95_halfwidth": 0.014598,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "ModSec-AdvLearn (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "ModSec-AdvLearn (latency) | p95": {
+        "ci95_halfwidth": 0.035319,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "ModSec-AdvLearn (latency) | p99": {
+        "ci95_halfwidth": 0.04913,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "ModSec-Learn (latency) | mean": {
+        "ci95_halfwidth": 0.00789,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "ModSec-Learn (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "ModSec-Learn (latency) | p95": {
+        "ci95_halfwidth": 0.041478,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "ModSec-Learn (latency) | p99": {
+        "ci95_halfwidth": 0.048338,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Model load time (ms) | mean": {
+        "ci95_halfwidth": 103.835,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "load_time_ms",
+        "n_runs": 5,
+        "single_run_measured": false
+      },
+      "One-Class SVM (latency) | mean": {
+        "ci95_halfwidth": 0.421803,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "One-Class SVM (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "One-Class SVM (latency) | p95": {
+        "ci95_halfwidth": 0.584918,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "One-Class SVM (latency) | p99": {
+        "ci95_halfwidth": 0.846788,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Proposed end-to-end (10-run) | mean": {
+        "ci95_halfwidth": 0.024957,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms_multirun",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Proposed end-to-end (10-run) | p95": {
+        "ci95_halfwidth": 0.073701,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms_multirun",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Proposed end-to-end (10-run) | p99": {
+        "ci95_halfwidth": 0.203906,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms_multirun",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Resident memory (MB) | baseline": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "rss_mb",
+        "single_run_measured": true
+      },
+      "Resident memory (MB) | loaded": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "rss_mb",
+        "single_run_measured": true
+      },
+      "Resident memory (MB) | model delta": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "rss_mb",
+        "single_run_measured": true
+      },
+      "Resident memory (MB) | peak": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "rss_mb",
+        "single_run_measured": true
+      },
+      "Status-only (shortcut) (latency) | mean": {
+        "ci95_halfwidth": 2.2e-05,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Status-only (shortcut) (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Status-only (shortcut) (latency) | p95": {
+        "ci95_halfwidth": 5e-05,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Status-only (shortcut) (latency) | p99": {
+        "ci95_halfwidth": 8.9e-05,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF + LogReg (latency) | mean": {
+        "ci95_halfwidth": 0.023551,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF + LogReg (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF + LogReg (latency) | p95": {
+        "ci95_halfwidth": 0.051694,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF + LogReg (latency) | p99": {
+        "ci95_halfwidth": 0.798647,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF + SVD + HGBDT (latency) | mean": {
+        "ci95_halfwidth": 1.056959,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF + SVD + HGBDT (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF + SVD + HGBDT (latency) | p95": {
+        "ci95_halfwidth": 4.585911,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF + SVD + HGBDT (latency) | p99": {
+        "ci95_halfwidth": 4.903998,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF flat + LinearSVC (latency) | mean": {
+        "ci95_halfwidth": 0.133358,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF flat + LinearSVC (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF flat + LinearSVC (latency) | p95": {
+        "ci95_halfwidth": 0.449664,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF flat + LinearSVC (latency) | p99": {
+        "ci95_halfwidth": 2.003142,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF typed + LinearSVC (latency) | mean": {
+        "ci95_halfwidth": 0.167166,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF typed + LinearSVC (latency) | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF typed + LinearSVC (latency) | p95": {
+        "ci95_halfwidth": 0.481157,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "TF-IDF typed + LinearSVC (latency) | p99": {
+        "ci95_halfwidth": 0.622587,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Throughput (req/s/core) | batch=1": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "throughput_rps",
+        "single_run_measured": true
+      },
+      "Throughput (req/s/core) | batch=32": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "throughput_rps",
+        "single_run_measured": true
+      },
+      "encode | mean": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "encode | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "encode | p95": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "encode | p99": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "end_to_end | mean": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "end_to_end | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "end_to_end | p95": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "end_to_end | p99": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "score | mean": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "score | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "score | p95": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "score | p99": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "tokenize | mean": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "tokenize | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "tokenize | p95": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "tokenize | p99": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "9bb51e5",
+    "date": "2026-07-01",
+    "gpu": "cpu",
+    "n_cell_files": 89
+  },
+  "table": "table_08_latency"
+}

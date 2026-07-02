@@ -1,0 +1,720 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        68.6,
+        76.8
+      ],
+      "col": "10%",
+      "row": "Char-CNN",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 72.7
+    },
+    {
+      "ci_95": [
+        54.9,
+        60.1
+      ],
+      "col": "5%",
+      "row": "Char-CNN",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 57.5
+    },
+    {
+      "ci_95": [
+        11.6,
+        12.2
+      ],
+      "col": "0%",
+      "row": "DeepLog (re-trained)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 11.9
+    },
+    {
+      "ci_95": [
+        21.7,
+        22.0
+      ],
+      "col": "10%",
+      "row": "FastText random-init (no pre-train)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 21.8
+    },
+    {
+      "ci_95": [
+        22.9,
+        23.6
+      ],
+      "col": "5%",
+      "row": "FastText random-init (no pre-train)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 23.3
+    },
+    {
+      "ci_95": [
+        55.8,
+        58.0
+      ],
+      "col": "10%",
+      "row": "Field-prefixed FastText + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 56.9
+    },
+    {
+      "ci_95": [
+        35.4,
+        36.4
+      ],
+      "col": "5%",
+      "row": "Field-prefixed FastText + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 35.9
+    },
+    {
+      "ci_95": [
+        68.8,
+        74.4
+      ],
+      "col": "10%",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 71.6
+    },
+    {
+      "ci_95": [
+        63.2,
+        71.6
+      ],
+      "col": "5%",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 67.4
+    },
+    {
+      "ci_95": [
+        0.3,
+        0.3
+      ],
+      "col": "0%",
+      "row": "Isolation Forest",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.3
+    },
+    {
+      "ci_95": [
+        74.8,
+        74.8
+      ],
+      "col": "10%",
+      "row": "ModSec-AdvLearn",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 74.8
+    },
+    {
+      "ci_95": [
+        76.1,
+        76.1
+      ],
+      "col": "5%",
+      "row": "ModSec-AdvLearn",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 76.1
+    },
+    {
+      "ci_95": [
+        91.0,
+        91.0
+      ],
+      "col": "10%",
+      "row": "ModSec-Learn",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 91.0
+    },
+    {
+      "ci_95": [
+        91.0,
+        91.0
+      ],
+      "col": "5%",
+      "row": "ModSec-Learn",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 91.0
+    },
+    {
+      "ci_95": [
+        1.1,
+        1.1
+      ],
+      "col": "0%",
+      "row": "One-Class SVM",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 1.1
+    },
+    {
+      "ci_95": [
+        7.4,
+        7.4
+      ],
+      "col": "0%",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 7.4
+    },
+    {
+      "ci_95": [
+        73.6,
+        73.6
+      ],
+      "col": "10%",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 73.6
+    },
+    {
+      "ci_95": [
+        38.2,
+        38.2
+      ],
+      "col": "1%",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 38.2
+    },
+    {
+      "ci_95": [
+        72.2,
+        72.2
+      ],
+      "col": "20%",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 72.2
+    },
+    {
+      "ci_95": [
+        78.2,
+        78.2
+      ],
+      "col": "50%",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 78.2
+    },
+    {
+      "ci_95": [
+        65.1,
+        65.1
+      ],
+      "col": "5%",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 65.1
+    },
+    {
+      "ci_95": [
+        18.2,
+        18.2
+      ],
+      "col": "10%",
+      "row": "Status-only (shortcut)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 18.2
+    },
+    {
+      "ci_95": [
+        17.6,
+        17.6
+      ],
+      "col": "5%",
+      "row": "Status-only (shortcut)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 17.6
+    },
+    {
+      "ci_95": [
+        76.7,
+        76.7
+      ],
+      "col": "10%",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 76.7
+    },
+    {
+      "ci_95": [
+        66.0,
+        66.0
+      ],
+      "col": "5%",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 66.0
+    },
+    {
+      "ci_95": [
+        63.8,
+        63.8
+      ],
+      "col": "10%",
+      "row": "TF-IDF + LogReg",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 63.8
+    },
+    {
+      "ci_95": [
+        50.8,
+        50.8
+      ],
+      "col": "5%",
+      "row": "TF-IDF + LogReg",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 50.8
+    },
+    {
+      "ci_95": [
+        69.1,
+        70.3
+      ],
+      "col": "10%",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 69.7
+    },
+    {
+      "ci_95": [
+        66.8,
+        68.7
+      ],
+      "col": "5%",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 67.8
+    },
+    {
+      "ci_95": [
+        74.4,
+        74.4
+      ],
+      "col": "10%",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 74.4
+    },
+    {
+      "ci_95": [
+        72.7,
+        72.7
+      ],
+      "col": "5%",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 72.7
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "Char-CNN | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Char-CNN | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "DeepLog (re-trained) | 0%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "anomaly_rate_pct",
+        "single_run_measured": false
+      },
+      "FastText random-init (no pre-train) | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false,
+        "weighted_f1": 75.7759
+      },
+      "FastText random-init (no pre-train) | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false,
+        "weighted_f1": 78.5549
+      },
+      "Field-prefixed FastText + LinearSVC | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Field-prefixed FastText + LinearSVC | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Hashing char-ngram + SGD | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Hashing char-ngram + SGD | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Isolation Forest | 0%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "mean_anomaly_score",
+        "single_run_measured": false
+      },
+      "ModSec-AdvLearn | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "ModSec-AdvLearn | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "ModSec-Learn | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "ModSec-Learn | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "One-Class SVM | 0%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "mean_anomaly_score",
+        "single_run_measured": false
+      },
+      "Proposed (FastText field-aware) | 0%": {
+        "checkpoint_loaded": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "mean_anomaly_score",
+        "mode": "unsupervised",
+        "single_run_measured": false
+      },
+      "Proposed (FastText field-aware) | 1%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 88.8645
+      },
+      "Proposed (FastText field-aware) | 10%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 96.6088
+      },
+      "Proposed (FastText field-aware) | 20%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 97.0721
+      },
+      "Proposed (FastText field-aware) | 5%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 94.9402
+      },
+      "Proposed (FastText field-aware) | 50%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 98.1288
+      },
+      "Status-only (shortcut) | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Status-only (shortcut) | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "TF-IDF + LogReg | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "TF-IDF + LogReg | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "TF-IDF + SVD + HGBDT | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "TF-IDF + SVD + HGBDT | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "TF-IDF flat + LinearSVC | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "TF-IDF flat + LinearSVC | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "TF-IDF typed + LinearSVC | 10%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "TF-IDF typed + LinearSVC | 5%": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "9bb51e5",
+    "date": "2026-07-01",
+    "gpu": "cpu",
+    "n_cell_files": 155
+  },
+  "table": "table_03_rq1_baselines"
+}

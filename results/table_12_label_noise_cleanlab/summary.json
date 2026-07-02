@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "artifact_kind": "supporting_audit",
+    "audit_classifier": "TF-IDF + LogisticRegression",
+    "audit_method": "cleanlab.filter.find_label_issues",
+    "commit": "c042449-dirty",
+    "dataset_version": "d7400f33c949",
+    "date": "2026-06-02",
+    "embedding_version": "2c37c7f64455",
+    "features": {
+      "analyzer": "char_wb",
+      "fields": [
+        "method",
+        "path",
+        "query",
+        "ua",
+        "status",
+        "timing"
+      ],
+      "max_features": 50000,
+      "ngram_range": [
+        1,
+        2
+      ]
+    },
+    "fold_reports": [
+      {
+        "accuracy": 0.978347,
+        "fold": 1,
+        "macro_f1": 0.867833,
+        "n_test": 30203,
+        "n_train": 120808
+      },
+      {
+        "accuracy": 0.979571,
+        "fold": 2,
+        "macro_f1": 0.870437,
+        "n_test": 30202,
+        "n_train": 120809
+      },
+      {
+        "accuracy": 0.978909,
+        "fold": 3,
+        "macro_f1": 0.872243,
+        "n_test": 30202,
+        "n_train": 120809
+      },
+      {
+        "accuracy": 0.978743,
+        "fold": 4,
+        "macro_f1": 0.870825,
+        "n_test": 30202,
+        "n_train": 120809
+      },
+      {
+        "accuracy": 0.978677,
+        "fold": 5,
+        "macro_f1": 0.867653,
+        "n_test": 30202,
+        "n_train": 120809
+      }
+    ],
+    "folds": 5,
+    "gpu": "cpu",
+    "max_records": null,
+    "model": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "max_iter": 1000,
+      "solver": "lbfgs"
+    },
+    "note": "Statistical audit of suspected CRS-derived subtype label issues using out-of-fold probabilities; not human ground truth.",
+    "seed": 42,
+    "single_run_audit": true,
+    "splits": [
+      "owasp_train",
+      "owasp_val",
+      "owasp_test"
+    ]
+  },
+  "summary": {
+    "by_split": {
+      "owasp_test": {
+        "issue_rate_pct": 0.046,
+        "support": 19646,
+        "suspected_issues": 9
+      },
+      "owasp_train": {
+        "issue_rate_pct": 0.053,
+        "support": 110005,
+        "suspected_issues": 58
+      },
+      "owasp_val": {
+        "issue_rate_pct": 0.267,
+        "support": 21360,
+        "suspected_issues": 57
+      }
+    },
+    "issue_rate_pct": 0.082,
+    "mean_self_confidence": 0.931803,
+    "median_self_confidence": 0.986581,
+    "n_records": 151011,
+    "n_suspected_issues": 124,
+    "oof_accuracy": 0.978849,
+    "oof_macro_f1": 0.869747,
+    "per_given_label": {
+      "lfi": {
+        "issue_rate_pct": 0.008,
+        "mean_self_confidence": 0.959667,
+        "support": 50841,
+        "suspected_issues": 4
+      },
+      "path_traversal": {
+        "issue_rate_pct": 0.0,
+        "mean_self_confidence": 0.880822,
+        "support": 609,
+        "suspected_issues": 0
+      },
+      "php_injection": {
+        "issue_rate_pct": 0.0,
+        "mean_self_confidence": 0.883823,
+        "support": 1679,
+        "suspected_issues": 0
+      },
+      "protocol": {
+        "issue_rate_pct": 0.105,
+        "mean_self_confidence": 0.920227,
+        "support": 89690,
+        "suspected_issues": 94
+      },
+      "rce": {
+        "issue_rate_pct": 0.246,
+        "mean_self_confidence": 0.894871,
+        "support": 3252,
+        "suspected_issues": 8
+      },
+      "scanner": {
+        "issue_rate_pct": 0.0,
+        "mean_self_confidence": 0.996722,
+        "support": 366,
+        "suspected_issues": 0
+      },
+      "sql_injection": {
+        "issue_rate_pct": 0.415,
+        "mean_self_confidence": 0.898065,
+        "support": 4338,
+        "suspected_issues": 18
+      },
+      "xss": {
+        "issue_rate_pct": 0.0,
+        "mean_self_confidence": 0.829545,
+        "support": 236,
+        "suspected_issues": 0
+      }
+    },
+    "top_confused_pairs_among_issues": [
+      {
+        "count": 41,
+        "given_label": "protocol",
+        "rate_of_all_issues_pct": 33.065,
+        "suggested_label": "path_traversal"
+      },
+      {
+        "count": 40,
+        "given_label": "protocol",
+        "rate_of_all_issues_pct": 32.258,
+        "suggested_label": "lfi"
+      },
+      {
+        "count": 15,
+        "given_label": "sql_injection",
+        "rate_of_all_issues_pct": 12.097,
+        "suggested_label": "xss"
+      },
+      {
+        "count": 7,
+        "given_label": "rce",
+        "rate_of_all_issues_pct": 5.645,
+        "suggested_label": "xss"
+      },
+      {
+        "count": 6,
+        "given_label": "protocol",
+        "rate_of_all_issues_pct": 4.839,
+        "suggested_label": "xss"
+      },
+      {
+        "count": 4,
+        "given_label": "protocol",
+        "rate_of_all_issues_pct": 3.226,
+        "suggested_label": "sql_injection"
+      },
+      {
+        "count": 4,
+        "given_label": "lfi",
+        "rate_of_all_issues_pct": 3.226,
+        "suggested_label": "path_traversal"
+      },
+      {
+        "count": 3,
+        "given_label": "protocol",
+        "rate_of_all_issues_pct": 2.419,
+        "suggested_label": "php_injection"
+      },
+      {
+        "count": 2,
+        "given_label": "sql_injection",
+        "rate_of_all_issues_pct": 1.613,
+        "suggested_label": "rce"
+      },
+      {
+        "count": 1,
+        "given_label": "rce",
+        "rate_of_all_issues_pct": 0.806,
+        "suggested_label": "php_injection"
+      },
+      {
+        "count": 1,
+        "given_label": "sql_injection",
+        "rate_of_all_issues_pct": 0.806,
+        "suggested_label": "php_injection"
+      }
+    ]
+  }
+}

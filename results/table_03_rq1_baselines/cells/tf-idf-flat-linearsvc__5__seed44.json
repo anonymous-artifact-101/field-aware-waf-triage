@@ -1,0 +1,39 @@
+{
+  "col": "5%",
+  "metadata": {
+    "ablation_role": "FLAT char-TF-IDF (one global vectorizer over the rendered record) + un-weighted LinearSVC; field-awareness control vs the typed row (same features + head).",
+    "baseline": "tfidf_typed_linearsvc",
+    "commit": "b22395e",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-06",
+    "embedding_version": "7769ea2c62c8",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "family": "classical_supervised_flat",
+    "feature_dim": 58376,
+    "gpu": "cpu",
+    "head": "LinearSVC(class_weight=None)",
+    "label_budget": 0.05,
+    "metric": "macro_f1",
+    "n_test": 19646,
+    "n_train_labeled": 5500,
+    "note": "Single-seed baseline run; Table 3 aggregates seeds 42..46 with 95% CIs via the aggregation stage (src.eval.aggregate).",
+    "per_class_f1": {
+      "lfi": 0.952751,
+      "path_traversal": 0.0,
+      "php_injection": 0.727794,
+      "protocol": 0.980087,
+      "rce": 0.66135,
+      "scanner": 0.969231,
+      "sql_injection": 0.56338,
+      "xss": 0.424242
+    },
+    "per_field_block_dims": {
+      "__flat__": 58376
+    }
+  },
+  "row": "TF-IDF flat + LinearSVC",
+  "seed": 44,
+  "table": "table_03_rq1_baselines",
+  "value": 65.9854
+}

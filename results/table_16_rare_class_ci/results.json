@@ -1,0 +1,481 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        10.9084,
+        48.5246
+      ],
+      "col": "5% f1",
+      "row": "sql_injection",
+      "seeds": [
+        42
+      ],
+      "value": 25.966
+    },
+    {
+      "ci_95": null,
+      "col": "5% support",
+      "row": "sql_injection",
+      "seeds": [],
+      "value": 141
+    },
+    {
+      "ci_95": [
+        94.9658,
+        99.0253
+      ],
+      "col": "5% f1",
+      "row": "rce",
+      "seeds": [
+        42
+      ],
+      "value": 97.7211
+    },
+    {
+      "ci_95": null,
+      "col": "5% support",
+      "row": "rce",
+      "seeds": [],
+      "value": 546
+    },
+    {
+      "ci_95": [
+        47.5137,
+        74.5969
+      ],
+      "col": "5% f1",
+      "row": "php_injection",
+      "seeds": [
+        42
+      ],
+      "value": 63.9535
+    },
+    {
+      "ci_95": null,
+      "col": "5% support",
+      "row": "php_injection",
+      "seeds": [],
+      "value": 182
+    },
+    {
+      "ci_95": [
+        21.6216,
+        66.6667
+      ],
+      "col": "5% f1",
+      "row": "xss",
+      "seeds": [
+        42
+      ],
+      "value": 45.1613
+    },
+    {
+      "ci_95": null,
+      "col": "5% support",
+      "row": "xss",
+      "seeds": [],
+      "value": 22
+    },
+    {
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "col": "5% f1",
+      "row": "path_traversal",
+      "seeds": [
+        42
+      ],
+      "value": 0.0
+    },
+    {
+      "ci_95": null,
+      "col": "5% support",
+      "row": "path_traversal",
+      "seeds": [],
+      "value": 23
+    },
+    {
+      "ci_95": [
+        96.0529,
+        97.9815
+      ],
+      "col": "5% f1",
+      "row": "lfi",
+      "seeds": [
+        42
+      ],
+      "value": 97.0887
+    },
+    {
+      "ci_95": null,
+      "col": "5% support",
+      "row": "lfi",
+      "seeds": [],
+      "value": 8790
+    },
+    {
+      "ci_95": [
+        89.0909,
+        100.0
+      ],
+      "col": "5% f1",
+      "row": "scanner",
+      "seeds": [
+        42
+      ],
+      "value": 96.1832
+    },
+    {
+      "ci_95": null,
+      "col": "5% support",
+      "row": "scanner",
+      "seeds": [],
+      "value": 63
+    },
+    {
+      "ci_95": [
+        92.2546,
+        96.3857
+      ],
+      "col": "5% f1",
+      "row": "protocol",
+      "seeds": [
+        42
+      ],
+      "value": 94.7541
+    },
+    {
+      "ci_95": null,
+      "col": "5% support",
+      "row": "protocol",
+      "seeds": [],
+      "value": 9879
+    },
+    {
+      "ci_95": [
+        38.5965,
+        78.6523
+      ],
+      "col": "10% f1",
+      "row": "sql_injection",
+      "seeds": [
+        42
+      ],
+      "value": 61.4865
+    },
+    {
+      "ci_95": null,
+      "col": "10% support",
+      "row": "sql_injection",
+      "seeds": [],
+      "value": 141
+    },
+    {
+      "ci_95": [
+        96.2518,
+        99.5146
+      ],
+      "col": "10% f1",
+      "row": "rce",
+      "seeds": [
+        42
+      ],
+      "value": 98.4446
+    },
+    {
+      "ci_95": null,
+      "col": "10% support",
+      "row": "rce",
+      "seeds": [],
+      "value": 546
+    },
+    {
+      "ci_95": [
+        54.5455,
+        79.1471
+      ],
+      "col": "10% f1",
+      "row": "php_injection",
+      "seeds": [
+        42
+      ],
+      "value": 69.7819
+    },
+    {
+      "ci_95": null,
+      "col": "10% support",
+      "row": "php_injection",
+      "seeds": [],
+      "value": 182
+    },
+    {
+      "ci_95": [
+        27.5862,
+        75.0
+      ],
+      "col": "10% f1",
+      "row": "xss",
+      "seeds": [
+        42
+      ],
+      "value": 52.9412
+    },
+    {
+      "ci_95": null,
+      "col": "10% support",
+      "row": "xss",
+      "seeds": [],
+      "value": 22
+    },
+    {
+      "ci_95": [
+        0.0,
+        53.3333
+      ],
+      "col": "10% f1",
+      "row": "path_traversal",
+      "seeds": [
+        42
+      ],
+      "value": 14.8148
+    },
+    {
+      "ci_95": null,
+      "col": "10% support",
+      "row": "path_traversal",
+      "seeds": [],
+      "value": 23
+    },
+    {
+      "ci_95": [
+        96.3802,
+        98.1857
+      ],
+      "col": "10% f1",
+      "row": "lfi",
+      "seeds": [
+        42
+      ],
+      "value": 97.3627
+    },
+    {
+      "ci_95": null,
+      "col": "10% support",
+      "row": "lfi",
+      "seeds": [],
+      "value": 8790
+    },
+    {
+      "ci_95": [
+        89.8305,
+        100.0
+      ],
+      "col": "10% f1",
+      "row": "scanner",
+      "seeds": [
+        42
+      ],
+      "value": 96.9231
+    },
+    {
+      "ci_95": null,
+      "col": "10% support",
+      "row": "scanner",
+      "seeds": [],
+      "value": 63
+    },
+    {
+      "ci_95": [
+        96.1063,
+        97.9344
+      ],
+      "col": "10% f1",
+      "row": "protocol",
+      "seeds": [
+        42
+      ],
+      "value": 97.1177
+    },
+    {
+      "ci_95": null,
+      "col": "10% support",
+      "row": "protocol",
+      "seeds": [],
+      "value": 9879
+    }
+  ],
+  "metadata": {
+    "B": 10000,
+    "block_size": 500,
+    "block_size_summary": {
+      "max": 500,
+      "median": 500,
+      "min": 251
+    },
+    "bootstrap_unit": "temporal_cluster_block",
+    "cluster_key": "day",
+    "commit": "9bb51e5",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-07-01",
+    "details": {
+      "10%": {
+        "lfi": {
+          "ci_95": [
+            96.3802,
+            98.1857
+          ],
+          "f1": 97.3627,
+          "rare": false,
+          "support": 8790
+        },
+        "path_traversal": {
+          "ci_95": [
+            0.0,
+            53.3333
+          ],
+          "f1": 14.8148,
+          "rare": true,
+          "support": 23
+        },
+        "php_injection": {
+          "ci_95": [
+            54.5455,
+            79.1471
+          ],
+          "f1": 69.7819,
+          "rare": true,
+          "support": 182
+        },
+        "protocol": {
+          "ci_95": [
+            96.1063,
+            97.9344
+          ],
+          "f1": 97.1177,
+          "rare": false,
+          "support": 9879
+        },
+        "rce": {
+          "ci_95": [
+            96.2518,
+            99.5146
+          ],
+          "f1": 98.4446,
+          "rare": false,
+          "support": 546
+        },
+        "scanner": {
+          "ci_95": [
+            89.8305,
+            100.0
+          ],
+          "f1": 96.9231,
+          "rare": true,
+          "support": 63
+        },
+        "sql_injection": {
+          "ci_95": [
+            38.5965,
+            78.6523
+          ],
+          "f1": 61.4865,
+          "rare": true,
+          "support": 141
+        },
+        "xss": {
+          "ci_95": [
+            27.5862,
+            75.0
+          ],
+          "f1": 52.9412,
+          "rare": true,
+          "support": 22
+        }
+      },
+      "5%": {
+        "lfi": {
+          "ci_95": [
+            96.0529,
+            97.9815
+          ],
+          "f1": 97.0887,
+          "rare": false,
+          "support": 8790
+        },
+        "path_traversal": {
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "f1": 0.0,
+          "rare": true,
+          "support": 23
+        },
+        "php_injection": {
+          "ci_95": [
+            47.5137,
+            74.5969
+          ],
+          "f1": 63.9535,
+          "rare": true,
+          "support": 182
+        },
+        "protocol": {
+          "ci_95": [
+            92.2546,
+            96.3857
+          ],
+          "f1": 94.7541,
+          "rare": false,
+          "support": 9879
+        },
+        "rce": {
+          "ci_95": [
+            94.9658,
+            99.0253
+          ],
+          "f1": 97.7211,
+          "rare": false,
+          "support": 546
+        },
+        "scanner": {
+          "ci_95": [
+            89.0909,
+            100.0
+          ],
+          "f1": 96.1832,
+          "rare": true,
+          "support": 63
+        },
+        "sql_injection": {
+          "ci_95": [
+            10.9084,
+            48.5246
+          ],
+          "f1": 25.966,
+          "rare": true,
+          "support": 141
+        },
+        "xss": {
+          "ci_95": [
+            21.6216,
+            66.6667
+          ],
+          "f1": 45.1613,
+          "rare": true,
+          "support": 22
+        }
+      }
+    },
+    "gpu": "cpu",
+    "labels_sha256": "5b5ba305a1e86aa99b5725ef86fad4645c8d1f11439413c91a144204e9629775",
+    "n_blocks": 41,
+    "rare_support_threshold": 200,
+    "rng_seed": 42,
+    "row": "Proposed (FastText field-aware)",
+    "source_table": "table_03_rq1_baselines",
+    "split": "owasp_test"
+  },
+  "table": "table_16_rare_class_ci"
+}

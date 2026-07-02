@@ -1,0 +1,695 @@
+{
+  "cells": [
+    {
+      "ci_95": null,
+      "col": "kept",
+      "row": "filtered records",
+      "seeds": [],
+      "value": 15726
+    },
+    {
+      "ci_95": null,
+      "col": "excluded rule 444444",
+      "row": "filtered records",
+      "seeds": [],
+      "value": 3920
+    },
+    {
+      "ci_95": [
+        64.7981,
+        64.7981
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 64.7981
+    },
+    {
+      "ci_95": [
+        65.8225,
+        65.8225
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 65.8225
+    },
+    {
+      "ci_95": [
+        72.5602,
+        72.5602
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 72.5602
+    },
+    {
+      "ci_95": [
+        34.002,
+        34.9262
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "Field-prefixed FastText + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 34.4641
+    },
+    {
+      "ci_95": [
+        63.2834,
+        71.3448
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 67.3141
+    },
+    {
+      "ci_95": [
+        66.4179,
+        68.4215
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 67.4197
+    },
+    {
+      "ci_95": [
+        54.6297,
+        60.0499
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "Char-CNN",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 57.3398
+    },
+    {
+      "ci_95": [
+        90.9127,
+        90.9127
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "ModSec-Learn",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 90.9127
+    },
+    {
+      "ci_95": [
+        76.0267,
+        76.0267
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "ModSec-AdvLearn",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 76.0267
+    },
+    {
+      "ci_95": [
+        19.848,
+        19.848
+      ],
+      "col": "5% macro_f1_no_444444",
+      "row": "Status-only (shortcut)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 19.848
+    },
+    {
+      "ci_95": [
+        73.557,
+        73.557
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 73.557
+    },
+    {
+      "ci_95": [
+        76.6158,
+        76.6158
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "TF-IDF flat + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 76.6158
+    },
+    {
+      "ci_95": [
+        74.3289,
+        74.3289
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "TF-IDF typed + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 74.3289
+    },
+    {
+      "ci_95": [
+        55.7629,
+        57.8858
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "Field-prefixed FastText + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 56.8244
+    },
+    {
+      "ci_95": [
+        68.7471,
+        74.3562
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 71.5516
+    },
+    {
+      "ci_95": [
+        68.7067,
+        70.1276
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "TF-IDF + SVD + HGBDT",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 69.4171
+    },
+    {
+      "ci_95": [
+        68.4719,
+        76.6618
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "Char-CNN",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 72.5669
+    },
+    {
+      "ci_95": [
+        90.9301,
+        90.9301
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "ModSec-Learn",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 90.9301
+    },
+    {
+      "ci_95": [
+        74.7458,
+        74.7458
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "ModSec-AdvLearn",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 74.7458
+    },
+    {
+      "ci_95": [
+        22.1314,
+        22.1314
+      ],
+      "col": "10% macro_f1_no_444444",
+      "row": "Status-only (shortcut)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 22.1314
+    }
+  ],
+  "metadata": {
+    "commit": "9bb51e5",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-07-01",
+    "details": {
+      "Char-CNN | 10%": {
+        "ci_95": [
+          68.4719,
+          76.6618
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "Char-CNN",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 72.5669
+      },
+      "Char-CNN | 5%": {
+        "ci_95": [
+          54.6297,
+          60.0499
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "Char-CNN",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 57.3398
+      },
+      "Field-prefixed FastText + LinearSVC | 10%": {
+        "ci_95": [
+          55.7629,
+          57.8858
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "Field-prefixed FastText + LinearSVC",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 56.8244
+      },
+      "Field-prefixed FastText + LinearSVC | 5%": {
+        "ci_95": [
+          34.002,
+          34.9262
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "Field-prefixed FastText + LinearSVC",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 34.4641
+      },
+      "Hashing char-ngram + SGD | 10%": {
+        "ci_95": [
+          68.7471,
+          74.3562
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "Hashing char-ngram + SGD",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 71.5516
+      },
+      "Hashing char-ngram + SGD | 5%": {
+        "ci_95": [
+          63.2834,
+          71.3448
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "Hashing char-ngram + SGD",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 67.3141
+      },
+      "ModSec-AdvLearn | 10%": {
+        "ci_95": [
+          74.7458,
+          74.7458
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "ModSec-AdvLearn",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 74.7458
+      },
+      "ModSec-AdvLearn | 5%": {
+        "ci_95": [
+          76.0267,
+          76.0267
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "ModSec-AdvLearn",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 76.0267
+      },
+      "ModSec-Learn | 10%": {
+        "ci_95": [
+          90.9301,
+          90.9301
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "ModSec-Learn",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 90.9301
+      },
+      "ModSec-Learn | 5%": {
+        "ci_95": [
+          90.9127,
+          90.9127
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "ModSec-Learn",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 90.9127
+      },
+      "Proposed (FastText field-aware) | 10%": {
+        "ci_95": [
+          73.557,
+          73.557
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "Proposed (FastText field-aware)",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 73.557
+      },
+      "Proposed (FastText field-aware) | 5%": {
+        "ci_95": [
+          64.7981,
+          64.7981
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "Proposed (FastText field-aware)",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 64.7981
+      },
+      "Status-only (shortcut) | 10%": {
+        "ci_95": [
+          22.1314,
+          22.1314
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "Status-only (shortcut)",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 22.1314
+      },
+      "Status-only (shortcut) | 5%": {
+        "ci_95": [
+          19.848,
+          19.848
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "Status-only (shortcut)",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 19.848
+      },
+      "TF-IDF + SVD + HGBDT | 10%": {
+        "ci_95": [
+          68.7067,
+          70.1276
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "TF-IDF + SVD + HGBDT",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 69.4171
+      },
+      "TF-IDF + SVD + HGBDT | 5%": {
+        "ci_95": [
+          66.4179,
+          68.4215
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "TF-IDF + SVD + HGBDT",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 67.4197
+      },
+      "TF-IDF flat + LinearSVC | 10%": {
+        "ci_95": [
+          76.6158,
+          76.6158
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "TF-IDF flat + LinearSVC",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 76.6158
+      },
+      "TF-IDF flat + LinearSVC | 5%": {
+        "ci_95": [
+          65.8225,
+          65.8225
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "TF-IDF flat + LinearSVC",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 65.8225
+      },
+      "TF-IDF typed + LinearSVC | 10%": {
+        "ci_95": [
+          74.3289,
+          74.3289
+        ],
+        "col": "10% macro_f1_no_444444",
+        "row": "TF-IDF typed + LinearSVC",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 74.3289
+      },
+      "TF-IDF typed + LinearSVC | 5%": {
+        "ci_95": [
+          72.5602,
+          72.5602
+        ],
+        "col": "5% macro_f1_no_444444",
+        "row": "TF-IDF typed + LinearSVC",
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "value": 72.5602
+      }
+    },
+    "excluded_support": {
+      "lfi": 0,
+      "path_traversal": 0,
+      "php_injection": 0,
+      "protocol": 3920,
+      "rce": 0,
+      "scanner": 0,
+      "sql_injection": 0,
+      "xss": 0
+    },
+    "filter": "exclude any test record whose crs_rule_ids contains 444444",
+    "gpu": "cpu",
+    "kept_support": {
+      "lfi": 8790,
+      "path_traversal": 23,
+      "php_injection": 182,
+      "protocol": 5959,
+      "rce": 546,
+      "scanner": 63,
+      "sql_injection": 141,
+      "xss": 22
+    },
+    "labels_sha256": "5b5ba305a1e86aa99b5725ef86fad4645c8d1f11439413c91a144204e9629775",
+    "n_excluded_444444": 3920,
+    "n_kept": 15726,
+    "n_total": 19646,
+    "sensitivity_type": "evaluation_only_filter_no_refit",
+    "source_table": "table_03_rq1_baselines",
+    "split": "owasp_test"
+  },
+  "table": "table_17_no_custom_444444"
+}

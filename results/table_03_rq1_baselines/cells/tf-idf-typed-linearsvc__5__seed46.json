@@ -1,0 +1,44 @@
+{
+  "col": "5%",
+  "metadata": {
+    "ablation_role": "typed-block char-TF-IDF replaces per-field FastText embed (isolates FastText's contribution; same skeleton + head as proposed).",
+    "baseline": "tfidf_typed_linearsvc",
+    "commit": "082f087",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-06",
+    "embedding_version": "7769ea2c62c8",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "family": "classical_supervised_typed",
+    "feature_dim": 60177,
+    "gpu": "cpu",
+    "head": "LinearSVC(class_weight=None)",
+    "label_budget": 0.05,
+    "metric": "macro_f1",
+    "n_test": 19646,
+    "n_train_labeled": 5500,
+    "note": "Single-seed baseline run; Table 3 aggregates seeds 42..46 with 95% CIs via the aggregation stage (src.eval.aggregate).",
+    "per_class_f1": {
+      "lfi": 0.985586,
+      "path_traversal": 0.0,
+      "php_injection": 0.769231,
+      "protocol": 0.97967,
+      "rce": 0.989899,
+      "scanner": 0.940299,
+      "sql_injection": 0.639004,
+      "xss": 0.514286
+    },
+    "per_field_block_dims": {
+      "method": 65,
+      "path": 20000,
+      "query": 10173,
+      "status": 74,
+      "timing": 10322,
+      "ua": 19543
+    }
+  },
+  "row": "TF-IDF typed + LinearSVC",
+  "seed": 46,
+  "table": "table_03_rq1_baselines",
+  "value": 72.7247
+}

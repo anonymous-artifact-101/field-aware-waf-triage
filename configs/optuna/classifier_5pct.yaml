@@ -1,0 +1,15 @@
+# Optuna study base config — classifier-only search at the paper's 5% label budget.
+#
+# Read-only inheritance from the paper pipeline; the Optuna runner deep-copies this
+# merged config per trial and overrides detector.estimator_params only (FastText
+# model is loaded once from the pre-trained checkpoint).
+extends: configs/finetune/label_5pct.yaml
+
+# Study metadata (not consumed by src/; used by experiments/optuna/run_study.py).
+optuna:
+  objective_split: owasp_val
+  report_split: owasp_test
+  label_budget: 0.05
+  seed: 42
+  # Classifier-only by default — retraining FastText per trial is ~minutes each.
+  search_scope: classifier_only

@@ -1,0 +1,23 @@
+{
+  "col": "agreement",
+  "metadata": {
+    "checkpoint_loaded": true,
+    "commit": "c042449",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "gpu": "cpu",
+    "granularity": 6,
+    "max_records": null,
+    "metric": "attribution_agreement_pct",
+    "mode": "attribution",
+    "n_test": 19646,
+    "note": "degenerate always-predict-path, macro excl. protocol",
+    "single_run_measured": true
+  },
+  "row": "Always-path baseline",
+  "seed": 44,
+  "table": "table_07_attribution",
+  "value": 100.0
+}

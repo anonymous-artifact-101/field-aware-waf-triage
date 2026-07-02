@@ -1,0 +1,31 @@
+{
+  "col": "0%",
+  "metadata": {
+    "baseline": "ocsvm",
+    "commit": "c042449",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "2026-06-07",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "family": "classical_unsupervised",
+    "gpu": "cpu",
+    "metric": "mean_anomaly_score",
+    "n_fit": 8000,
+    "n_test": 19646,
+    "normal_reference": "weblog_pretrain[:8000]",
+    "note": "Single-seed baseline run; Table 3 aggregates seeds 42..46 with 95% CIs via the aggregation stage (src.eval.aggregate).",
+    "score_summary": {
+      "max_score": 16.166655,
+      "mean_score": 1.146014,
+      "median_score": -0.155459,
+      "min_score": -5.98703,
+      "n": 19646.0,
+      "std_score": 3.967206
+    }
+  },
+  "row": "One-Class SVM",
+  "seed": 45,
+  "table": "table_03_rq1_baselines",
+  "value": 1.146014
+}

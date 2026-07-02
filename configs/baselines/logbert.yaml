@@ -1,0 +1,48 @@
+# logbert.yaml -- LogBERT log-anomaly baseline (paper Table 3).
+#
+# LogBERT (Guo et al., 2021): a BERT-style encoder pre-trained on log-key
+# sequences with a masked-log-key objective plus a hypersphere (VHM/DeepSVDD)
+# objective; anomaly score combines masked-key prediction error and distance to
+# the learned center.
+#
+# FAIRNESS (non-negotiable): LogBERT is RE-TRAINED FROM SCRATCH on THIS
+# access-log corpus, never run from off-the-shelf weights. This is the closest
+# transformer comparator to the proposed model WITHOUT field-awareness,
+# so it isolates that contribution.
+#
+# Consumed by src/baselines/logbert.py via scripts/20_run_baseline.py.
+baseline: logbert
+family: log_anomaly_transformer
+retrain_on_corpus: true   # MUST re-train on this corpus; no pretrained weights.
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+
+sequence:
+  log_key: method_path_status
+  num_keys: 512
+  window_size: 128         # token/key window fed to the encoder.
+  session_by: source_ip
+
+model:
+  num_hidden_layers: 4
+  hidden_size: 256
+  num_attention_heads: 4
+  intermediate_size: 1024
+  dropout: 0.1
+
+pretrain:
+  # Masked log-key modeling + hypersphere objective (LogBERT's two terms).
+  mask_rate: 0.15
+  hypersphere_weight: 0.1
+  steps: 50000
+  batch_size: 64
+  optimizer: adamw
+  lr_peak: 1.0e-4
+  warmup_pct: 0.10
+
+seed: 42
+results_path: results/table_03_rq1_baselines/logbert.json
+output_dir: models/baselines/logbert/

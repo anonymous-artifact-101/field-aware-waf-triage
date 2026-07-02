@@ -1,0 +1,49 @@
+{
+  "config": "configs/ablation/six_field.yaml",
+  "examples": [
+    {
+      "argmax_field": "path",
+      "deltas": {
+        "method": -0.016,
+        "path": 0.708,
+        "query": 0.0,
+        "status": -0.026,
+        "timing": 0.045,
+        "ua": 0.029
+      },
+      "path": "/core/.env",
+      "reference_score": 0.957333,
+      "subtype": "lfi",
+      "true_field": "path",
+      "ua": "Mozilla/5.0 (X11; Linux x86_64)",
+      "unique_id": "aKT-ngdGqtczkJ6Khp67agAAAAY"
+    },
+    {
+      "argmax_field": "ua",
+      "deltas": {
+        "method": 0.111,
+        "path": 0.0,
+        "query": 0.0,
+        "status": 0.049,
+        "timing": 0.005,
+        "ua": 0.224
+      },
+      "path": "/",
+      "reference_score": 0.60509,
+      "subtype": "scanner",
+      "true_field": "ua",
+      "ua": "Mozilla/5.0 zgrab/0.x",
+      "unique_id": "aKUVZdTG6UW2BSQ8WTdiXwAAAAY"
+    }
+  ],
+  "figure": "fig:attr",
+  "metadata": {
+    "commit": "3843f64",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "7769ea2c62c8",
+    "gpu": "cpu",
+    "single_run_measured": true
+  },
+  "note": "Per-field block-zeroing deltas for two example requests plotted in Fig. attribution; regenerated from the fitted 6-field detector (5% budget, seed 42). The argmax field matches the attack's true field.",
+  "seed": 42
+}

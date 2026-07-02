@@ -1,0 +1,21 @@
+{
+  "col": "5%",
+  "metadata": {
+    "commit": "b22395e",
+    "control_role": "self-supervised-pre-training control: proposed pipeline with the FastText embedding re-randomized in place (vocab+buckets kept); (trained proposed) - (this) = pre-training accuracy gain.",
+    "dataset_version": "3ce0e30a2e51",
+    "date": null,
+    "eval_capped": false,
+    "exploratory_single_seed": false,
+    "gpu": "cpu",
+    "label_budget": 0.05,
+    "metric": "macro_f1",
+    "n_test": 19646,
+    "n_train_labeled": 5500,
+    "weighted_f1": 78.1202
+  },
+  "row": "FastText random-init (no pre-train)",
+  "seed": 44,
+  "table": "table_03_rq1_baselines",
+  "value": 22.9934
+}

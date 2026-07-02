@@ -1,0 +1,30 @@
+{
+  "col": "0%",
+  "metadata": {
+    "checkpoint_loaded": true,
+    "commit": "c042449",
+    "dataset_version": "3ce0e30a2e51",
+    "detector": "fasttext_field_aware",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "exploratory_single_seed": true,
+    "gpu": "cpu",
+    "granularity": 6,
+    "max_records": null,
+    "metric": "mean_anomaly_score",
+    "mode": "unsupervised",
+    "n_test": 19646,
+    "score_summary": {
+      "max_score": 19.7606,
+      "mean_score": 7.376442,
+      "median_score": 7.172959,
+      "min_score": 5.598453,
+      "n": 19646,
+      "std_score": 0.969203
+    }
+  },
+  "row": "Proposed (FastText field-aware)",
+  "seed": 44,
+  "table": "table_03_rq1_baselines",
+  "value": 7.3764
+}

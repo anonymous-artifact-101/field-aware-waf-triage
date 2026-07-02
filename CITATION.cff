@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Field-Aware FastText Embeddings for CPU-Efficient Triage of Application-Layer Attacks in Reverse-Proxy Access Logs"
+authors:
+  - name: "Anonymous (under double-blind review)"
+abstract: "A field-aware FastText representation with a classical classifier for same-site CRS-derived subtype triage of preselected suspicious reverse-proxy access-log records, evaluated under a declared CPU comparison budget."
+keywords:
+  - "web application firewall"
+  - "reverse proxy"
+  - "FastText"
+  - "field-aware representation"
+  - "CPU-efficient triage"
+license: MIT

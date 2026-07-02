@@ -1,0 +1,16 @@
+# Raw / large / licensed inputs and trained models are not redistributed.
+data/raw/
+models/
+# Rebuildable intermediates.
+data/processed/
+data/splits/
+data/tokenized/
+# Python / tooling caches.
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+# This export folder itself.
+export/

@@ -1,0 +1,112 @@
+# OWASP ModSecurity 30-day dataset: paths, split definition, conventions.
+#
+# This is the single YAML consumed by scripts/02_make_splits.py. It describes
+# the time-ordered train/val/test split over the 30 daily directories and the
+# documented conventions for the parsed-record schema. Day directories on disk
+# are named "<DD-Mon-YYYY>" (e.g. "27-Jul-2025"); the parsed JSONL carries the
+# same string in its "day" key, and records also carry an ISO-8601 "timestamp".
+#
+# IMPORTANT: the real corpus spans 27-Jul-2025 .. 25-Aug-2025 (30 consecutive
+# days), NOT 01-Aug..30-Aug. The day list below is the actual on-disk set in
+# chronological (calendar, not lexicographic) order. Listing days explicitly
+# rather than globbing keeps the split deterministic and locale-independent.
+#
+# Split rule (time-ordered, NEVER shuffled): first 20 days train, next 4 val,
+# last 6 test. Within a split, records are sorted ascending by
+# (chronological day, timestamp, unique_id).
+
+dataset: owasp_modsec_30day
+source: "Zenodo 10.5281/zenodo.17178461"
+
+# Where the parser (scripts/01_parse_all.py) writes one JSONL file per day.
+# Relative paths are resolved against the repository root.
+processed_dir: data/processed/owasp_parsed
+
+# Where time-ordered splits are written by scripts/02_make_splits.py.
+splits_dir: data/splits
+output_prefix: owasp   # -> owasp_train.jsonl, owasp_val.jsonl, owasp_test.jsonl
+
+# The 30 day directories as they appear on disk, in chronological order.
+all_days:
+  - 27-Jul-2025
+  - 28-Jul-2025
+  - 29-Jul-2025
+  - 30-Jul-2025
+  - 31-Jul-2025
+  - 01-Aug-2025
+  - 02-Aug-2025
+  - 03-Aug-2025
+  - 04-Aug-2025
+  - 05-Aug-2025
+  - 06-Aug-2025
+  - 07-Aug-2025
+  - 08-Aug-2025
+  - 09-Aug-2025
+  - 10-Aug-2025
+  - 11-Aug-2025
+  - 12-Aug-2025
+  - 13-Aug-2025
+  - 14-Aug-2025
+  - 15-Aug-2025
+  - 16-Aug-2025
+  - 17-Aug-2025
+  - 18-Aug-2025
+  - 19-Aug-2025
+  - 20-Aug-2025
+  - 21-Aug-2025
+  - 22-Aug-2025
+  - 23-Aug-2025
+  - 24-Aug-2025
+  - 25-Aug-2025
+
+split:
+  # First 20 days.
+  train_days:
+    - 27-Jul-2025
+    - 28-Jul-2025
+    - 29-Jul-2025
+    - 30-Jul-2025
+    - 31-Jul-2025
+    - 01-Aug-2025
+    - 02-Aug-2025
+    - 03-Aug-2025
+    - 04-Aug-2025
+    - 05-Aug-2025
+    - 06-Aug-2025
+    - 07-Aug-2025
+    - 08-Aug-2025
+    - 09-Aug-2025
+    - 10-Aug-2025
+    - 11-Aug-2025
+    - 12-Aug-2025
+    - 13-Aug-2025
+    - 14-Aug-2025
+    - 15-Aug-2025
+  # Next 4 days.
+  val_days:
+    - 16-Aug-2025
+    - 17-Aug-2025
+    - 18-Aug-2025
+    - 19-Aug-2025
+  # Last 6 days.
+  test_days:
+    - 20-Aug-2025
+    - 21-Aug-2025
+    - 22-Aug-2025
+    - 23-Aug-2025
+    - 24-Aug-2025
+    - 25-Aug-2025
+
+# Documented conventions for the parsed-record schema (mirrors the parser).
+conventions:
+  # Section F (response headers) may be absent -> status unknown. The parser
+  # records 0 for unknown status; the leakage check treats 0 as "unknown".
+  unknown_status: 0
+  # The OWASP corpus is honeypot traffic: ~100% of records fire >=1 CRS rule, so
+  # every parsed record has label == "attack" (there is no benign class inside
+  # OWASP). Benign traffic for self-supervised pre-training comes from the Kaggle
+  # web-server access-log pretraining corpus (configs/data/web_access_logs.yaml).
+  # The discriminative per-class target is "attack_subtype" (paper Table 6), resolved
+  # from CRS tags via configs/labels/crs_tag_map.yaml.
+  label: attack
+  subtype_source: configs/labels/crs_tag_map.yaml

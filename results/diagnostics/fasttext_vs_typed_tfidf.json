@@ -1,0 +1,110 @@
+{
+  "accuracy_head_to_head": {
+    "5%": {
+      "available": true,
+      "delta_fasttext_minus_typed": {
+        "ci_95": [
+          -7.6212,
+          -7.6212
+        ],
+        "mean": -7.6212,
+        "per_seed": {
+          "42": -7.6212,
+          "43": -7.6212,
+          "44": -7.6212,
+          "45": -7.6212,
+          "46": -7.6212
+        }
+      },
+      "proposed_fasttext": {
+        "ci_95": [
+          65.1035,
+          65.1035
+        ],
+        "mean": 65.1035,
+        "per_seed": {
+          "42": 65.1035,
+          "43": 65.1035,
+          "44": 65.1035,
+          "45": 65.1035,
+          "46": 65.1035
+        }
+      },
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "typed_tfidf": {
+        "ci_95": [
+          72.7247,
+          72.7247
+        ],
+        "mean": 72.7247,
+        "per_seed": {
+          "42": 72.7247,
+          "43": 72.7247,
+          "44": 72.7247,
+          "45": 72.7247,
+          "46": 72.7247
+        }
+      }
+    }
+  },
+  "commit": "082f087",
+  "dataset_version": "3ce0e30a2e51",
+  "design": {
+    "interpretation": "the macro-F1 delta is exactly what FastText buys on the typed skeleton.",
+    "only_difference": "per-field FastText-embed+pool (proposed) vs per-field char-TF-IDF (this)",
+    "shared": "6-field typed-block skeleton + un-weighted LinearSVC head (class_weight=None)"
+  },
+  "diagnostic": "fasttext_vs_typed_tfidf",
+  "eval_capped": false,
+  "experiment": "Phase 1.2 -- FastText vs typed-block char-TF-IDF (decides Claim B: FastText is the lever)",
+  "hardware": "Intel desktop CPU, 1 pinned core (OMP/MKL/OPENBLAS=1)",
+  "headline_col": "5%",
+  "note": "DIAGNOSTIC only -- not a paper table, not wired into scripts/50. The 'TF-IDF typed + LinearSVC' Table-3 row it reads is a new ADDED baseline, not an edit to an existing cell. Changes no .tex.",
+  "protocol": {
+    "batch_size": 1,
+    "n_trials": 300,
+    "runs": 10,
+    "single_core": true,
+    "split": "owasp_test",
+    "thread_pins": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "warmup": 20
+  },
+  "reference_points": {
+    "proposed_end_to_end_mean_ms": 0.138
+  },
+  "typed_tfidf_latency": {
+    "available": true,
+    "end_to_end_b1_ms": {
+      "mean": 3.55966,
+      "p50": 3.1928,
+      "p95": 6.4257,
+      "p99": 7.4098
+    },
+    "end_to_end_b1_run_ci": {
+      "ci95": 0.115282,
+      "mean": 3.66794,
+      "n": 10.0,
+      "std": 0.161153
+    },
+    "feature_dim": 60177,
+    "featurize_b1_mean_ms": 3.477012,
+    "n_trials": 300,
+    "runs": 10,
+    "score_b1_mean_ms": 0.185441,
+    "warmup": 20
+  },
+  "verdict": {
+    "explanation": "Typed-TF-IDF is +7.62 macro-F1 ABOVE the proposed FastText detector (typed 7.62 higher; delta -7.62, 95% CI [-7.6212, -7.6212]), with the 6-field skeleton and un-weighted LinearSVC head held fixed. FastText is NOT the accuracy lever -- the typed-block representation is. BUT the proposed point keeps the deployment edge: FastText embed+score is ~10x cheaper per request than the high-dimensional sparse TF-IDF transform. So the honest reframe is a TRADE, not a loss: headline contribution = 'typed-block field-aware representation under a CPU budget'; FastText is the efficiency choice that makes the typed representation sub-ms, not the accuracy source. Field-awareness (the 6-field skeleton) is validated either way. Typed-TF-IDF per-request latency = 3.6679 ms vs proposed 0.138 ms (NOT comparable).",
+    "label": "reframe-to-typed-block-budget"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        0.6791,
+        0.6791
+      ],
+      "col": "roc_auc",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.6791
+    },
+    {
+      "ci_95": [
+        0.5314,
+        0.5314
+      ],
+      "col": "pr_auc",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.5314
+    },
+    {
+      "ci_95": [
+        0.8522,
+        0.8522
+      ],
+      "col": "tpr",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.8522
+    },
+    {
+      "ci_95": [
+        0.4722,
+        0.4722
+      ],
+      "col": "fpr",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.4722
+    },
+    {
+      "ci_95": [
+        0.5568,
+        0.5568
+      ],
+      "col": "precision",
+      "row": "Proposed (zero-shot transfer)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 0.5568
+    }
+  ],
+  "metadata": {
+    "base_rate_pos": 0.4105,
+    "ci_method": "student_t",
+    "commit": "c042449",
+    "dataset": "csic2010",
+    "dataset_version": "3ce0e30a2e51",
+    "date": "",
+    "embedding_version": "2c37c7f64455",
+    "gpu": "cpu",
+    "n_attack": 25065,
+    "n_benign": 36000,
+    "n_cell_files": 5,
+    "n_total": 61065,
+    "note": "Zero-shot OWASP->CSIC transfer, 5 seeds {42..46}; deterministic in seed (centroid fit on benign weblog_pretrain, no CSIC fit), hence zero-width CI. Aggregated by scripts/13 --aggregate.",
+    "youden_j_threshold": 4.2455
+  },
+  "table": "table_09_cross_dataset_csic"
+}

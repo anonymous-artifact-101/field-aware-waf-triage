@@ -1,0 +1,12 @@
+# label_1pct.yaml -- Table 3 column 2 (Low-label, 1% labels).
+#
+# Reveals the earliest contiguous 1% of the time-ordered train split (no
+# shuffling) and fits the FastText field-aware detector's supervised subtype
+# classifier. Inherits everything else from _base.yaml (-> fasttext_base.yaml).
+extends: configs/finetune/_base.yaml
+
+data:
+  label_budget: 0.01
+
+output_dir: models/detector/finetuned/label_1pct/
+results_path: results/table_03_rq1_baselines/proposed_fasttext.json

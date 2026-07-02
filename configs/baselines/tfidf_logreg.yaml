@@ -1,0 +1,38 @@
+# tfidf_logreg.yaml -- TF-IDF + Logistic Regression baseline (paper Table 3).
+#
+# Supervised classical baseline: word/char n-gram TF-IDF features over the
+# rendered access record, fed to a multinomial logistic-regression classifier
+# over the 8 attack subtypes (src.data.labels.SUBTYPES). Trained on the Low-label
+# label budget (earliest contiguous prefix of the time-ordered train split) so it
+# is directly comparable to the proposed Low-label columns of Table 3.
+#
+# Consumed by src/baselines/tfidf_logreg.py via scripts/20_run_baseline.py.
+baseline: tfidf_logreg
+family: classical_supervised
+
+data:
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+  # Low-label label budget; matches the proposed model's headline column.
+  label_budget: 0.05
+
+features:
+  representation: word_char_tfidf
+  ngram_range: [1, 2]
+  analyzer: char_wb
+  max_features: 50000
+  fields: [method, path, query, ua, status, timing]
+
+model:
+  # Inverse regularization strength for sklearn LogisticRegression.
+  C: 1.0
+  penalty: l2
+  solver: lbfgs
+  max_iter: 1000
+  class_weight: balanced
+  num_classes: 8   # len(SUBTYPES); documented for traceability.
+
+seed: 42
+results_path: results/table_03_rq1_baselines/tfidf_logreg.json
+output_dir: models/baselines/tfidf_logreg/

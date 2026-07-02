@@ -1,0 +1,115 @@
+{
+  "col": "5%",
+  "comparisons": {
+    "Char-CNN": {
+      "diff": 7.5855,
+      "direction": "proposed_higher",
+      "note": "seed-level summary only; the inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py)",
+      "other_mean": 57.518,
+      "other_sd": 2.089,
+      "p_value": null,
+      "proposed_mean": 65.1035,
+      "proposed_sd": 0.0,
+      "significant": null,
+      "test": "seed_descriptive (baseline varies, proposed constant)"
+    },
+    "FastText random-init (no pre-train)": {
+      "diff": 41.8495,
+      "direction": "proposed_higher",
+      "note": "seed-level summary only; the inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py)",
+      "other_mean": 23.254,
+      "other_sd": 0.2626,
+      "p_value": null,
+      "proposed_mean": 65.1035,
+      "proposed_sd": 0.0,
+      "significant": null,
+      "test": "seed_descriptive (baseline varies, proposed constant)"
+    },
+    "ModSec-AdvLearn": {
+      "diff": -11.0235,
+      "direction": "proposed_lower",
+      "note": "both deterministic in seed (sd=0); exact seed gap, descriptive only. seed-level summary only; the inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py)",
+      "other_mean": 76.127,
+      "other_sd": 0.0,
+      "p_value": null,
+      "proposed_mean": 65.1035,
+      "proposed_sd": 0.0,
+      "significant": null,
+      "test": "deterministic_gap_descriptive"
+    },
+    "ModSec-Learn": {
+      "diff": -25.8523,
+      "direction": "proposed_lower",
+      "note": "both deterministic in seed (sd=0); exact seed gap, descriptive only. seed-level summary only; the inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py)",
+      "other_mean": 90.9558,
+      "other_sd": 0.0,
+      "p_value": null,
+      "proposed_mean": 65.1035,
+      "proposed_sd": 0.0,
+      "significant": null,
+      "test": "deterministic_gap_descriptive"
+    },
+    "Status-only (shortcut)": {
+      "diff": 47.5424,
+      "direction": "proposed_higher",
+      "note": "both deterministic in seed (sd=0); exact seed gap, descriptive only. seed-level summary only; the inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py)",
+      "other_mean": 17.5611,
+      "other_sd": 0.0,
+      "p_value": null,
+      "proposed_mean": 65.1035,
+      "proposed_sd": 0.0,
+      "significant": null,
+      "test": "deterministic_gap_descriptive"
+    },
+    "TF-IDF + LogReg": {
+      "diff": 14.2981,
+      "direction": "proposed_higher",
+      "note": "both deterministic in seed (sd=0); exact seed gap, descriptive only. seed-level summary only; the inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py)",
+      "other_mean": 50.8054,
+      "other_sd": 0.0,
+      "p_value": null,
+      "proposed_mean": 65.1035,
+      "proposed_sd": 0.0,
+      "significant": null,
+      "test": "deterministic_gap_descriptive"
+    },
+    "TF-IDF + SVD + HGBDT": {
+      "diff": -2.6615,
+      "direction": "proposed_lower",
+      "note": "seed-level summary only; the inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py)",
+      "other_mean": 67.765,
+      "other_sd": 0.7777,
+      "p_value": null,
+      "proposed_mean": 65.1035,
+      "proposed_sd": 0.0,
+      "significant": null,
+      "test": "seed_descriptive (baseline varies, proposed constant)"
+    },
+    "TF-IDF flat + LinearSVC": {
+      "diff": -0.8819,
+      "direction": "proposed_lower",
+      "note": "both deterministic in seed (sd=0); exact seed gap, descriptive only. seed-level summary only; the inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py)",
+      "other_mean": 65.9854,
+      "other_sd": 0.0,
+      "p_value": null,
+      "proposed_mean": 65.1035,
+      "proposed_sd": 0.0,
+      "significant": null,
+      "test": "deterministic_gap_descriptive"
+    },
+    "TF-IDF typed + LinearSVC": {
+      "diff": -7.6212,
+      "direction": "proposed_lower",
+      "note": "both deterministic in seed (sd=0); exact seed gap, descriptive only. seed-level summary only; the inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py)",
+      "other_mean": 72.7247,
+      "other_sd": 0.0,
+      "p_value": null,
+      "proposed_mean": 65.1035,
+      "proposed_sd": 0.0,
+      "significant": null,
+      "test": "deterministic_gap_descriptive"
+    }
+  },
+  "note": "SEED-level descriptive summary only. The inferential proposed-vs-baseline significance (test-set sampling uncertainty) is in bootstrap_significance.json (scripts/55_paired_bootstrap.py). Deterministic-in-seed methods (sd=0) yield exact seed gaps; p-values only where a method has seed variance.",
+  "proposed": "Proposed (FastText field-aware)"
+}

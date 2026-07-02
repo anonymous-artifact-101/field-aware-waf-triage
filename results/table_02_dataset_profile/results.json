@@ -1,0 +1,542 @@
+{
+  "cells": [
+    {
+      "ci_95": null,
+      "col": "train",
+      "row": "OWASP split size",
+      "seeds": [],
+      "value": 110005
+    },
+    {
+      "ci_95": null,
+      "col": "train_first_year",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 2025
+    },
+    {
+      "ci_95": null,
+      "col": "train_first_month",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 7
+    },
+    {
+      "ci_95": null,
+      "col": "train_first_day",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 27
+    },
+    {
+      "ci_95": null,
+      "col": "train_last_year",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 2025
+    },
+    {
+      "ci_95": null,
+      "col": "train_last_month",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 8
+    },
+    {
+      "ci_95": null,
+      "col": "train_last_day",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 16
+    },
+    {
+      "ci_95": null,
+      "col": "train_count",
+      "row": "lfi",
+      "seeds": [],
+      "value": 34354
+    },
+    {
+      "ci_95": null,
+      "col": "train_pct",
+      "row": "lfi",
+      "seeds": [],
+      "value": 31.22948956865597
+    },
+    {
+      "ci_95": null,
+      "col": "train_count",
+      "row": "path_traversal",
+      "seeds": [],
+      "value": 189
+    },
+    {
+      "ci_95": null,
+      "col": "train_pct",
+      "row": "path_traversal",
+      "seeds": [],
+      "value": 0.17181037225580656
+    },
+    {
+      "ci_95": null,
+      "col": "train_count",
+      "row": "php_injection",
+      "seeds": [],
+      "value": 1193
+    },
+    {
+      "ci_95": null,
+      "col": "train_pct",
+      "row": "php_injection",
+      "seeds": [],
+      "value": 1.084496159265488
+    },
+    {
+      "ci_95": null,
+      "col": "train_count",
+      "row": "protocol",
+      "seeds": [],
+      "value": 69046
+    },
+    {
+      "ci_95": null,
+      "col": "train_pct",
+      "row": "protocol",
+      "seeds": [],
+      "value": 62.76623789827735
+    },
+    {
+      "ci_95": null,
+      "col": "train_count",
+      "row": "rce",
+      "seeds": [],
+      "value": 1395
+    },
+    {
+      "ci_95": null,
+      "col": "train_pct",
+      "row": "rce",
+      "seeds": [],
+      "value": 1.2681241761738102
+    },
+    {
+      "ci_95": null,
+      "col": "train_count",
+      "row": "scanner",
+      "seeds": [],
+      "value": 259
+    },
+    {
+      "ci_95": null,
+      "col": "train_pct",
+      "row": "scanner",
+      "seeds": [],
+      "value": 0.23544384346166083
+    },
+    {
+      "ci_95": null,
+      "col": "train_count",
+      "row": "sql_injection",
+      "seeds": [],
+      "value": 3528
+    },
+    {
+      "ci_95": null,
+      "col": "train_pct",
+      "row": "sql_injection",
+      "seeds": [],
+      "value": 3.2071269487750556
+    },
+    {
+      "ci_95": null,
+      "col": "train_count",
+      "row": "xss",
+      "seeds": [],
+      "value": 41
+    },
+    {
+      "ci_95": null,
+      "col": "train_pct",
+      "row": "xss",
+      "seeds": [],
+      "value": 0.03727103313485751
+    },
+    {
+      "ci_95": null,
+      "col": "val",
+      "row": "OWASP split size",
+      "seeds": [],
+      "value": 21360
+    },
+    {
+      "ci_95": null,
+      "col": "val_first_year",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 2025
+    },
+    {
+      "ci_95": null,
+      "col": "val_first_month",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 8
+    },
+    {
+      "ci_95": null,
+      "col": "val_first_day",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 16
+    },
+    {
+      "ci_95": null,
+      "col": "val_last_year",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 2025
+    },
+    {
+      "ci_95": null,
+      "col": "val_last_month",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 8
+    },
+    {
+      "ci_95": null,
+      "col": "val_last_day",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 19
+    },
+    {
+      "ci_95": null,
+      "col": "val_count",
+      "row": "lfi",
+      "seeds": [],
+      "value": 7697
+    },
+    {
+      "ci_95": null,
+      "col": "val_pct",
+      "row": "lfi",
+      "seeds": [],
+      "value": 36.03464419475655
+    },
+    {
+      "ci_95": null,
+      "col": "val_count",
+      "row": "path_traversal",
+      "seeds": [],
+      "value": 397
+    },
+    {
+      "ci_95": null,
+      "col": "val_pct",
+      "row": "path_traversal",
+      "seeds": [],
+      "value": 1.8586142322097379
+    },
+    {
+      "ci_95": null,
+      "col": "val_count",
+      "row": "php_injection",
+      "seeds": [],
+      "value": 304
+    },
+    {
+      "ci_95": null,
+      "col": "val_pct",
+      "row": "php_injection",
+      "seeds": [],
+      "value": 1.4232209737827715
+    },
+    {
+      "ci_95": null,
+      "col": "val_count",
+      "row": "protocol",
+      "seeds": [],
+      "value": 10765
+    },
+    {
+      "ci_95": null,
+      "col": "val_pct",
+      "row": "protocol",
+      "seeds": [],
+      "value": 50.397940074906366
+    },
+    {
+      "ci_95": null,
+      "col": "val_count",
+      "row": "rce",
+      "seeds": [],
+      "value": 1311
+    },
+    {
+      "ci_95": null,
+      "col": "val_pct",
+      "row": "rce",
+      "seeds": [],
+      "value": 6.137640449438202
+    },
+    {
+      "ci_95": null,
+      "col": "val_count",
+      "row": "scanner",
+      "seeds": [],
+      "value": 44
+    },
+    {
+      "ci_95": null,
+      "col": "val_pct",
+      "row": "scanner",
+      "seeds": [],
+      "value": 0.20599250936329588
+    },
+    {
+      "ci_95": null,
+      "col": "val_count",
+      "row": "sql_injection",
+      "seeds": [],
+      "value": 669
+    },
+    {
+      "ci_95": null,
+      "col": "val_pct",
+      "row": "sql_injection",
+      "seeds": [],
+      "value": 3.1320224719101124
+    },
+    {
+      "ci_95": null,
+      "col": "val_count",
+      "row": "xss",
+      "seeds": [],
+      "value": 173
+    },
+    {
+      "ci_95": null,
+      "col": "val_pct",
+      "row": "xss",
+      "seeds": [],
+      "value": 0.8099250936329588
+    },
+    {
+      "ci_95": null,
+      "col": "test",
+      "row": "OWASP split size",
+      "seeds": [],
+      "value": 19646
+    },
+    {
+      "ci_95": null,
+      "col": "test_first_year",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 2025
+    },
+    {
+      "ci_95": null,
+      "col": "test_first_month",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 8
+    },
+    {
+      "ci_95": null,
+      "col": "test_first_day",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 20
+    },
+    {
+      "ci_95": null,
+      "col": "test_last_year",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 2025
+    },
+    {
+      "ci_95": null,
+      "col": "test_last_month",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 8
+    },
+    {
+      "ci_95": null,
+      "col": "test_last_day",
+      "row": "OWASP split date",
+      "seeds": [],
+      "value": 25
+    },
+    {
+      "ci_95": null,
+      "col": "test_count",
+      "row": "lfi",
+      "seeds": [],
+      "value": 8790
+    },
+    {
+      "ci_95": null,
+      "col": "test_pct",
+      "row": "lfi",
+      "seeds": [],
+      "value": 44.741932199938915
+    },
+    {
+      "ci_95": null,
+      "col": "test_count",
+      "row": "path_traversal",
+      "seeds": [],
+      "value": 23
+    },
+    {
+      "ci_95": null,
+      "col": "test_pct",
+      "row": "path_traversal",
+      "seeds": [],
+      "value": 0.11707217754250229
+    },
+    {
+      "ci_95": null,
+      "col": "test_count",
+      "row": "php_injection",
+      "seeds": [],
+      "value": 182
+    },
+    {
+      "ci_95": null,
+      "col": "test_pct",
+      "row": "php_injection",
+      "seeds": [],
+      "value": 0.9263972309884964
+    },
+    {
+      "ci_95": null,
+      "col": "test_count",
+      "row": "protocol",
+      "seeds": [],
+      "value": 9879
+    },
+    {
+      "ci_95": null,
+      "col": "test_pct",
+      "row": "protocol",
+      "seeds": [],
+      "value": 50.285045301842615
+    },
+    {
+      "ci_95": null,
+      "col": "test_count",
+      "row": "rce",
+      "seeds": [],
+      "value": 546
+    },
+    {
+      "ci_95": null,
+      "col": "test_pct",
+      "row": "rce",
+      "seeds": [],
+      "value": 2.779191692965489
+    },
+    {
+      "ci_95": null,
+      "col": "test_count",
+      "row": "scanner",
+      "seeds": [],
+      "value": 63
+    },
+    {
+      "ci_95": null,
+      "col": "test_pct",
+      "row": "scanner",
+      "seeds": [],
+      "value": 0.32067596457294106
+    },
+    {
+      "ci_95": null,
+      "col": "test_count",
+      "row": "sql_injection",
+      "seeds": [],
+      "value": 141
+    },
+    {
+      "ci_95": null,
+      "col": "test_pct",
+      "row": "sql_injection",
+      "seeds": [],
+      "value": 0.7177033492822966
+    },
+    {
+      "ci_95": null,
+      "col": "test_count",
+      "row": "xss",
+      "seeds": [],
+      "value": 22
+    },
+    {
+      "ci_95": null,
+      "col": "test_pct",
+      "row": "xss",
+      "seeds": [],
+      "value": 0.11198208286674133
+    },
+    {
+      "ci_95": null,
+      "col": "total_records",
+      "row": "OWASP ModSec",
+      "seeds": [],
+      "value": 151011
+    },
+    {
+      "ci_95": null,
+      "col": "blocked_requests",
+      "row": "OWASP source descriptor",
+      "seeds": [],
+      "value": 147205
+    },
+    {
+      "ci_95": null,
+      "col": "records",
+      "row": "OWASP parser minus descriptor",
+      "seeds": [],
+      "value": 3806
+    },
+    {
+      "ci_95": null,
+      "col": "pretrain_records",
+      "row": "Benign weblog corpus",
+      "seeds": [],
+      "value": 1000000
+    }
+  ],
+  "metadata": {
+    "commit": "9bb51e5",
+    "date": "2026-07-01",
+    "note": "Backs manuscript dataset volumes and OWASP split subtype percentages; OWASP source-descriptor count is recorded separately from the parser output used for all experiments.",
+    "source": "data/splits/*.jsonl",
+    "split_ranges": {
+      "test": {
+        "first_day": "20-Aug-2025",
+        "first_timestamp": "2025-08-20T00:01:09+02:00",
+        "last_day": "25-Aug-2025",
+        "last_timestamp": "2025-08-25T23:59:41+02:00"
+      },
+      "train": {
+        "first_day": "27-Jul-2025",
+        "first_timestamp": "2025-07-27T00:00:22+02:00",
+        "last_day": "15-Aug-2025",
+        "last_timestamp": "2025-08-16T00:00:07+02:00"
+      },
+      "val": {
+        "first_day": "16-Aug-2025",
+        "first_timestamp": "2025-08-16T00:00:17+02:00",
+        "last_day": "19-Aug-2025",
+        "last_timestamp": "2025-08-19T23:58:37+02:00"
+      }
+    }
+  },
+  "table": "table_02_dataset_profile"
+}

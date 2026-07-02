@@ -1,0 +1,140 @@
+{
+  "cells": [
+    {
+      "ci_95": null,
+      "col": "macro_f1",
+      "row": "v128_n28",
+      "seeds": [
+        42
+      ],
+      "value": 65.1
+    },
+    {
+      "ci_95": null,
+      "col": "macro_f1",
+      "row": "v128_n36",
+      "seeds": [
+        42
+      ],
+      "value": 63.2
+    },
+    {
+      "ci_95": null,
+      "col": "macro_f1",
+      "row": "v256_n28",
+      "seeds": [
+        42
+      ],
+      "value": 65.8
+    },
+    {
+      "ci_95": null,
+      "col": "macro_f1",
+      "row": "v256_n36",
+      "seeds": [
+        42
+      ],
+      "value": 62.7
+    },
+    {
+      "ci_95": null,
+      "col": "macro_f1",
+      "row": "v64_n28",
+      "seeds": [
+        42
+      ],
+      "value": 63.0
+    },
+    {
+      "ci_95": null,
+      "col": "macro_f1",
+      "row": "v64_n36",
+      "seeds": [
+        42
+      ],
+      "value": 62.2
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "v128_n28 | macro_f1": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "footprint_mb": 131.401,
+        "latency_ms": 0.152103,
+        "max_n": 8,
+        "metric": "macro_f1",
+        "min_n": 2,
+        "single_run_measured": true,
+        "vector_size": 128,
+        "weighted_f1": 94.9402
+      },
+      "v128_n36 | macro_f1": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "footprint_mb": 131.401,
+        "latency_ms": 0.129267,
+        "max_n": 6,
+        "metric": "macro_f1",
+        "min_n": 3,
+        "single_run_measured": true,
+        "vector_size": 128,
+        "weighted_f1": 93.946
+      },
+      "v256_n28 | macro_f1": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "footprint_mb": 261.8532,
+        "latency_ms": 0.212909,
+        "max_n": 8,
+        "metric": "macro_f1",
+        "min_n": 2,
+        "single_run_measured": true,
+        "vector_size": 256,
+        "weighted_f1": 94.911
+      },
+      "v256_n36 | macro_f1": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "footprint_mb": 261.8532,
+        "latency_ms": 0.369766,
+        "max_n": 6,
+        "metric": "macro_f1",
+        "min_n": 3,
+        "single_run_measured": true,
+        "vector_size": 256,
+        "weighted_f1": 93.8548
+      },
+      "v64_n28 | macro_f1": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "footprint_mb": 66.175,
+        "latency_ms": 0.399961,
+        "max_n": 8,
+        "metric": "macro_f1",
+        "min_n": 2,
+        "single_run_measured": true,
+        "vector_size": 64,
+        "weighted_f1": 93.9764
+      },
+      "v64_n36 | macro_f1": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "footprint_mb": 66.175,
+        "latency_ms": 0.12388,
+        "max_n": 6,
+        "metric": "macro_f1",
+        "min_n": 3,
+        "single_run_measured": true,
+        "vector_size": 64,
+        "weighted_f1": 93.0479
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "c042449",
+    "date": "2026-06-07",
+    "gpu": "cpu",
+    "n_cell_files": 6
+  },
+  "table": "table_10_fasttext_sweep"
+}

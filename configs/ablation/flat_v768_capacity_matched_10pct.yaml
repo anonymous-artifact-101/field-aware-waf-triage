@@ -1,0 +1,27 @@
+# flat_v768_capacity_matched_10pct.yaml -- capacity-matched dense control @10%.
+#
+# The 10% (headline-budget) twin of flat_v768_capacity_matched.yaml. This is the
+# decisive control: at 10% the SPARSE family FLIPS sign (char-TF-IDF flat 76.7 >
+# typed 74.4), so before claiming the DENSE +17.3 lift is structural we must rule
+# out that it is merely the 128->768 capacity step. flat @768 @10% holds capacity
+# fixed at 768 dim and removes only typed structure; comparing it to the 6-field
+# proposed @10% (73.6) isolates structure from capacity at the headline budget.
+#
+# Inherits the 768-dim embedding from fasttext_v768.yaml and overrides granularity
+# (-> flat), the label budget (-> 10%), and the row label. Deterministic in seed.
+#
+# Prereq: train the 768-dim model first (shared with the 5% control) --
+#   python scripts/10_train_fasttext.py --config configs/detector/fasttext_v768.yaml --seed 42
+extends: configs/detector/fasttext_v768.yaml
+
+granularity: 1
+model:
+  num_fields: 1
+
+data:
+  label_budget: 0.10
+
+row: "Flat @768 (capacity-matched) @10%"
+
+results_path: results/table_05_field_granularity/flat_v768_capacity_matched_10pct.json
+output_dir: models/detector/ablation/flat_v768_capacity_matched_10pct/

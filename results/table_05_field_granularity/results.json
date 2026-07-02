@@ -1,0 +1,300 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        64.7,
+        64.7
+      ],
+      "col": "5%",
+      "row": "3-field (request/client/response)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 64.7
+    },
+    {
+      "ci_95": [
+        73.7,
+        73.7
+      ],
+      "col": "10%",
+      "row": "4-field, request-available (no status/timing)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 73.7
+    },
+    {
+      "ci_95": [
+        64.7,
+        64.7
+      ],
+      "col": "5%",
+      "row": "4-field, request-available (no status/timing)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 64.7
+    },
+    {
+      "ci_95": [
+        73.6,
+        73.6
+      ],
+      "col": "10%",
+      "row": "6-field (proposed)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 73.6
+    },
+    {
+      "ci_95": [
+        65.1,
+        65.1
+      ],
+      "col": "5%",
+      "row": "6-field (proposed)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 65.1
+    },
+    {
+      "ci_95": [
+        71.9,
+        71.9
+      ],
+      "col": "10%",
+      "row": "6-field, status masked",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 71.9
+    },
+    {
+      "ci_95": [
+        61.3,
+        61.3
+      ],
+      "col": "5%",
+      "row": "6-field, status masked",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 61.3
+    },
+    {
+      "ci_95": [
+        56.3,
+        56.3
+      ],
+      "col": "10%",
+      "row": "FastText flat @10% (no typed)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 56.3
+    },
+    {
+      "ci_95": [
+        59.0,
+        59.0
+      ],
+      "col": "10%",
+      "row": "Flat @768 (capacity-matched) @10%",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 59.0
+    },
+    {
+      "ci_95": [
+        56.0,
+        56.0
+      ],
+      "col": "5%",
+      "row": "Flat @768 (capacity-matched)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 56.0
+    },
+    {
+      "ci_95": [
+        57.2,
+        57.2
+      ],
+      "col": "5%",
+      "row": "Flat (no typed embedding)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 57.2
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "3-field (request/client/response) | 5%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 94.7176
+      },
+      "4-field, request-available (no status/timing) | 10%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 96.8168
+      },
+      "4-field, request-available (no status/timing) | 5%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 95.6782
+      },
+      "6-field (proposed) | 10%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 96.6088
+      },
+      "6-field (proposed) | 5%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 94.9402
+      },
+      "6-field, status masked | 10%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 96.7434
+      },
+      "6-field, status masked | 5%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 95.4607
+      },
+      "FastText flat @10% (no typed) | 10%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 91.7102
+      },
+      "Flat (no typed embedding) | 5%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 88.8398
+      },
+      "Flat @768 (capacity-matched) @10% | 10%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 92.06
+      },
+      "Flat @768 (capacity-matched) | 5%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 89.4402
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "9bb51e5",
+    "date": "2026-07-01",
+    "gpu": "cpu",
+    "n_cell_files": 55
+  },
+  "table": "table_05_field_granularity"
+}

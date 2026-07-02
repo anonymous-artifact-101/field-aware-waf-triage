@@ -1,0 +1,66 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        73.6,
+        73.6
+      ],
+      "col": "10%",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 73.6
+    },
+    {
+      "ci_95": [
+        65.1,
+        65.1
+      ],
+      "col": "5%",
+      "row": "Proposed (FastText field-aware)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 65.1
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "Proposed (FastText field-aware) | 10%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 96.6088
+      },
+      "Proposed (FastText field-aware) | 5%": {
+        "checkpoint_loaded": true,
+        "deterministic": true,
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "mode": "supervised",
+        "single_run_measured": false,
+        "weighted_f1": 94.9402
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "c042449",
+    "date": "2026-06-07",
+    "gpu": "cpu",
+    "n_cell_files": 10
+  },
+  "table": "table_06_per_class_owasp"
+}

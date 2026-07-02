@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "field-aware-waf-detector"
+version = "0.1.0"
+description = "Field-Aware FastText Embeddings for CPU-Efficient Triage of Application-Layer Attacks in Reverse-Proxy Access Logs (ECTI-CIT)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Anonymous (under double-blind review)" },
+]
+keywords = [
+    "anomaly-detection",
+    "self-supervised",
+    "fasttext",
+    "field-aware",
+    "cpu-efficient-triage",
+    "reverse-proxy",
+    "web-application-firewall",
+    "access-logs",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+# The PROPOSED detector (src/detector/: field-aware FastText embeddings + a
+# classical scikit-learn classifier) is CPU-only and TORCH-FREE. The CORE
+# dependencies below are exactly what the proposed detector needs -- `torch` and
+# `tokenizers` are NOT here. gensim provides the FastText representation learning.
+# `pip install -e .` therefore installs a torch-free environment; run the standalone
+# neural baselines (src/baselines/{deeplog,logbert,char_cnn}.py) with the optional
+# `baselines` extra: `pip install -e ".[baselines]"`.
+#
+# Versions are pinned (==) to the environment used to produce the reported results
+# (Python 3.13.13, CPU box); requirements.txt mirrors these.
+# pandas was removed -- it is imported nowhere (the ledger uses the stdlib csv).
+dependencies = [
+    "gensim==4.4.0",        # FastText -- the detector's self-supervised "pre-training"
+    "numpy==2.4.6",
+    "scikit-learn==1.8.0",  # LinearSVC / LogReg / HistGBDT head + IsolationForest scorer
+    "PyYAML==6.0.3",
+    "scipy==1.17.1",        # Student-t / bootstrap CIs + significance tests
+    "tqdm==4.67.3",
+]
+
+[project.optional-dependencies]
+# Standalone neural baselines (deeplog / logbert / char_cnn) and the retired-path
+# transformer BPE tokenizer are the ONLY consumers of torch/tokenizers. The
+# proposed detector never imports them, so they are kept out of core to preserve
+# the torch-free install: `pip install -e ".[baselines]"` adds them.
+baselines = [
+    "torch==2.12.0+cpu",    # neural baselines only (deeplog / logbert / char_cnn)
+    "tokenizers==0.23.1",   # transformer-era BPE; retired-path tokenizer code only
+]
+dev = [
+    "pytest==9.0.3",
+    "pytest-cov",
+]
+label-audit = [
+    "cleanlab==2.9.0",
+]
+efficiency = [
+    # Resident/peak memory (RSS) + process metrics for the Table 8 systems
+    # profile (src/eval/efficiency.py). Cross-platform; captures the native
+    # gensim/numpy buffers tracemalloc cannot see. Used only by the offline
+    # efficiency measurement, never by the proposed detector at serving time.
+    "psutil==7.2.2",
+]
+
+[tool.setuptools]
+# 'src' is itself the importable top-level package (it has __init__.py),
+# so we do NOT remap the package directory; packages are discovered from the
+# repository root and 'src' is imported as 'import src' / 'from src...'.
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["src", "tests"]
+addopts = "-ra"

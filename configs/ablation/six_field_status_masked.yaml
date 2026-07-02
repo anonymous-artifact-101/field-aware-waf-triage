@@ -1,0 +1,27 @@
+# six_field_status_masked.yaml -- Table 5 last row: 6-field minus the status block.
+#
+# Tests the "is the model just reading a 4xx/5xx => attack shortcut?" objection
+# directly: it fits the SAME proposed detector on the SAME 5% budget but with the
+# status field REMOVED from the field-aware encoding (the other five typed fields
+# -- method, path, query, ua, timing -- are embedded + pooled + concatenated as
+# usual). If macro-F1 stays well above the status-only floor (17.6), detection
+# rests on the request-content fields, not the status code.
+#
+# Implemented via an explicit `encoder.groups` partition (one block per remaining
+# field) that overrides `granularity`; everything else (FastText params, pooling,
+# classifier, label budget) inherits from fasttext_base.yaml so this row differs
+# from the 6-field proposed row in the status block ALONE.
+extends: configs/detector/fasttext_base.yaml
+
+encoder:
+  groups:
+    - [method]
+    - [path]
+    - [query]
+    - [ua]
+    - [timing]
+
+row: "6-field, status masked"
+
+results_path: results/table_05_field_granularity/six_field_status_masked.json
+output_dir: models/detector/ablation/six_field_status_masked/

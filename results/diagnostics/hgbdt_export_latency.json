@@ -1,0 +1,128 @@
+{
+  "accuracy": {
+    "onnx_macro_f1": 68.6023,
+    "onnx_vs_sklearn_agreement": 1.0,
+    "sklearn_macro_f1": 68.6023
+  },
+  "authoritative_sklearn_baseline": {
+    "note": "scripts/54 times HGBDT alone on a quiet pinned core; this is the paper number. This script's interleaved sklearn_predict figure is contention-inflated and is reported only as an internal anchor, not for the manuscript.",
+    "sklearn_predict_b1_ms": 11.05,
+    "source": "results/table_08_latency/results.json :: 'TF-IDF + SVD + HGBDT (latency)' / mean"
+  },
+  "commit": "082f087",
+  "compiled_single_request_ms": 2.028539,
+  "configs": {
+    "featurize_tfidf_svd_b1": {
+      "mean_ms": 1.840724,
+      "note": "char-TF-IDF transform + TruncatedSVD projection of one record."
+    },
+    "onnx_predict": {
+      "end_to_end_b1_ms": {
+        "mean": 2.139222,
+        "p50": 2.0655,
+        "p95": 2.8425,
+        "p99": 3.1523
+      },
+      "end_to_end_b1_run_ci": {
+        "ci95": 0.109805,
+        "mean": 2.028539,
+        "n": 10.0,
+        "std": 0.153496
+      },
+      "score_only_b1_run_ci": {
+        "ci95": 0.001563,
+        "mean": 0.188098,
+        "n": 10.0,
+        "std": 0.002186
+      }
+    },
+    "sklearn_decision": {
+      "end_to_end_b1_ms": {
+        "mean": 12.013776,
+        "p50": 11.6834,
+        "p95": 14.2469,
+        "p99": 14.7378
+      },
+      "end_to_end_b1_run_ci": {
+        "ci95": 0.126578,
+        "mean": 11.662385,
+        "n": 10.0,
+        "std": 0.176944
+      },
+      "score_only_b1_run_ci": {
+        "ci95": 0.089747,
+        "mean": 9.759961,
+        "n": 10.0,
+        "std": 0.125457
+      }
+    },
+    "sklearn_predict": {
+      "end_to_end_b1_ms": {
+        "mean": 12.059216,
+        "p50": 11.7379,
+        "p95": 14.2828,
+        "p99": 14.7149
+      },
+      "end_to_end_b1_run_ci": {
+        "ci95": 0.134715,
+        "mean": 11.654067,
+        "n": 10.0,
+        "std": 0.188319
+      },
+      "score_only_b1_run_ci": {
+        "ci95": 0.080621,
+        "mean": 9.852931,
+        "n": 10.0,
+        "std": 0.1127
+      }
+    }
+  },
+  "dataset_version": "3ce0e30a2e51",
+  "diagnostic": "hgbdt_export_latency",
+  "eval_capped": false,
+  "experiment": "Phase 1.1 -- compiled-HGBDT batch-1 latency (decides Claim A: non-dominated)",
+  "fastest_single_request_ms": 2.028539,
+  "hardware": "Intel desktop CPU, 1 pinned core (OMP/MKL/OPENBLAS=1)",
+  "note": "DIAGNOSTIC only -- not a paper table, not wired into scripts/50. Same batch=1 single-core protocol as Table 8. Changes no results/table_* cell and no .tex. The COMPILED (ONNX) end-to-end is this script's contribution; the authoritative sklearn-HGBDT latency is the Table-8 cell (11.05 ms), not this script's interleaved-loop sklearn figure.",
+  "onnx": {
+    "available": true,
+    "compat_patch": "skl2onnx make_node numpy-attr coercion applied (np.bool_/scalar/array -> native python) for onnx 1.21 + numpy 2.x compatibility",
+    "inter_op_num_threads": 1,
+    "intra_op_num_threads": 1,
+    "n_features": 256,
+    "onnxruntime_version": "1.26.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "scope": "hgbdt classifier only (featurizer stays sklearn; tree-predict is the timed step)"
+  },
+  "protocol": {
+    "batch_size": 1,
+    "label_budget": 0.05,
+    "n_trials": 300,
+    "runs": 10,
+    "single_core": true,
+    "split": "owasp_test",
+    "thread_pins": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "warmup": 20
+  },
+  "reference_points": {
+    "hgbdt_macro_f1_5pct": 67.8,
+    "proposed_end_to_end_mean_ms": 0.138,
+    "proposed_macro_f1_5pct": 65.1
+  },
+  "seed": 42,
+  "tree_math_floor": {
+    "batched_per_record_ms": 0.164,
+    "note": "Batched-per-record amortizes 300 records; it is the tree-math floor, NOT a per-request serving latency. Reported only to show how much of the ~11 ms batch-1 cell is sklearn per-call dispatch overhead.",
+    "source": "results/diagnostics/baseline_latency_decomposition.json (tfidf_svd_hgbdt.hgbdt_predict_batched_ms_per_record, commit d2dd164)"
+  },
+  "verdict": {
+    "explanation": "Fastest defensible single-request HGBDT latency is 2.0285 ms >= proposed 0.138 ms, so the proposed point remains non-dominated. A supplementary note on the compiled-runtime bound can be added.",
+    "label": "non-dominated-preserved"
+  }
+}

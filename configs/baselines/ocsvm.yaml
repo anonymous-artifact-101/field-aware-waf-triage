@@ -1,0 +1,38 @@
+# ocsvm.yaml -- One-Class SVM anomaly-detection baseline (paper Table 3).
+#
+# Unsupervised One-Class SVM over the same char-n-gram TF-IDF featurization as
+# the Isolation Forest baseline, so the two classical anomaly detectors differ
+# only in the density model. The honest setup fits on the Kaggle weblog benign
+# pretrain corpus (normal_train_split below); decision_function on OWASP
+# val/test gives the anomaly score (higher == more anomalous after sign flip).
+# If the weblog corpus is absent the runner falls back to the OWASP train split
+# as a proxy and records the limitation in metadata.
+#
+# Consumed by src/baselines/ocsvm.py via scripts/20_run_baseline.py.
+baseline: ocsvm
+family: classical_unsupervised
+
+data:
+  # Benign reference to fit the unsupervised detector on: the Kaggle weblog
+  # benign pretrain corpus (label == benign). Score OWASP attacks against it.
+  normal_train_split: weblog_pretrain
+  train_split: owasp_train
+  val_split: owasp_val
+  test_split: owasp_test
+
+features:
+  representation: char_ngram_tfidf
+  ngram_range: [3, 5]
+  max_features: 20000
+  fields: [method, path, query, ua, status, timing]
+
+model:
+  # nu upper-bounds the training-error fraction / lower-bounds the support-vector
+  # fraction; it is the OC-SVM analogue of contamination.
+  nu: 0.1
+  kernel: rbf
+  gamma: scale
+
+seed: 42
+results_path: results/table_03_rq1_baselines/ocsvm.json
+output_dir: models/baselines/ocsvm/

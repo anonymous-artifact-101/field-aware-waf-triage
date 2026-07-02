@@ -1,0 +1,71 @@
+{
+  "B": 10000,
+  "artifact": "bootstrap_block_size_sensitivity_10pct_hgbdt",
+  "cluster_key": "day",
+  "col": "10%",
+  "comparison": "Proposed (FastText field-aware) vs TF-IDF + SVD + HGBDT",
+  "labels_sha256": "5b5ba305a1e86aa99b5725ef86fad4645c8d1f11439413c91a144204e9629775",
+  "metadata": {
+    "commit": "9bb51e5",
+    "note": "Sensitivity for temporal-block cap; does not alter canonical bootstrap_significance_10pct.json."
+  },
+  "n": 19646,
+  "results": [
+    {
+      "block_size": 250,
+      "block_size_summary": {
+        "max": 250,
+        "median": 250.0,
+        "min": 1
+      },
+      "delta": 4.0555,
+      "delta_ci": [
+        1.4948,
+        7.2838
+      ],
+      "macro_f1_hgbdt": 69.5536,
+      "macro_f1_proposed": 73.6091,
+      "n_blocks": 82,
+      "p_value": 0.0016,
+      "significant": true
+    },
+    {
+      "block_size": 500,
+      "block_size_summary": {
+        "max": 500,
+        "median": 500,
+        "min": 251
+      },
+      "delta": 4.0555,
+      "delta_ci": [
+        1.1859,
+        8.0672
+      ],
+      "macro_f1_hgbdt": 69.5536,
+      "macro_f1_proposed": 73.6091,
+      "n_blocks": 41,
+      "p_value": 0.0042,
+      "significant": true
+    },
+    {
+      "block_size": 1000,
+      "block_size_summary": {
+        "max": 1000,
+        "median": 1000,
+        "min": 425
+      },
+      "delta": 4.0555,
+      "delta_ci": [
+        1.1268,
+        8.298
+      ],
+      "macro_f1_hgbdt": 69.5536,
+      "macro_f1_proposed": 73.6091,
+      "n_blocks": 21,
+      "p_value": 0.0082,
+      "significant": true
+    }
+  ],
+  "rng_seed": 42,
+  "table": "table_03_rq1_baselines"
+}
