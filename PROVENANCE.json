@@ -1,5 +1,5 @@
 {
-  "anonymous_snapshot_commit": "<PUBLIC_ANON_SHA -- fill in after creating the public repo>",
+  "anonymous_snapshot_commit": "$sha",
   "internal_commits": [
     {
       "commit": "11b9822",
