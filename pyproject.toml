@@ -65,6 +65,7 @@ dev = [
 ]
 label-audit = [
     "cleanlab==2.9.0",
+    "openpyxl==3.1.5",      # reads the expert-audit worksheet (scripts/46)
 ]
 efficiency = [
     # Resident/peak memory (RSS) + process metrics for the Table 8 systems

@@ -1,0 +1,224 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        73.6,
+        73.6
+      ],
+      "col": "10%",
+      "row": "Proposed (test)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 73.6
+    },
+    {
+      "ci_95": [
+        38.2,
+        38.2
+      ],
+      "col": "1%",
+      "row": "Proposed (test)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 38.2
+    },
+    {
+      "ci_95": [
+        72.2,
+        72.2
+      ],
+      "col": "20%",
+      "row": "Proposed (test)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 72.2
+    },
+    {
+      "ci_95": [
+        78.2,
+        78.2
+      ],
+      "col": "50%",
+      "row": "Proposed (test)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 78.2
+    },
+    {
+      "ci_95": [
+        65.1,
+        65.1
+      ],
+      "col": "5%",
+      "row": "Proposed (test)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 65.1
+    },
+    {
+      "ci_95": [
+        51.4,
+        51.4
+      ],
+      "col": "10%",
+      "row": "Proposed (val)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 51.4
+    },
+    {
+      "ci_95": [
+        37.3,
+        37.3
+      ],
+      "col": "1%",
+      "row": "Proposed (val)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 37.3
+    },
+    {
+      "ci_95": [
+        51.6,
+        51.6
+      ],
+      "col": "20%",
+      "row": "Proposed (val)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 51.6
+    },
+    {
+      "ci_95": [
+        54.8,
+        54.8
+      ],
+      "col": "50%",
+      "row": "Proposed (val)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 54.8
+    },
+    {
+      "ci_95": [
+        48.4,
+        48.4
+      ],
+      "col": "5%",
+      "row": "Proposed (val)",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 48.4
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "Proposed (test) | 1%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Proposed (test) | 10%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Proposed (test) | 20%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Proposed (test) | 5%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Proposed (test) | 50%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Proposed (val) | 1%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Proposed (val) | 10%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Proposed (val) | 20%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Proposed (val) | 5%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Proposed (val) | 50%": {
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "d39fd4e",
+    "date": "2026-09-24",
+    "gpu": "cpu",
+    "n_cell_files": 50
+  },
+  "table": "table_21_budget_selection_val"
+}

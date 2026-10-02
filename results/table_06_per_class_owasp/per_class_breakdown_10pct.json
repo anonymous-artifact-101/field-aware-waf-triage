@@ -11,10 +11,8 @@
     "xss": 22
   },
   "col": "10%",
-  "commit": "3843f64",
-  "deterministic": true,
+  "commit": "dcf4fc8",
   "macro_f1": 73.6091,
-  "note": "per-class at 10% budget; backs the rare-class recovery claim (path_traversal 0->14.8, SQLi 26->61.5)",
   "per_class_f1": {
     "lfi": 97.3627,
     "path_traversal": 14.8148,
@@ -37,5 +35,6 @@
   },
   "row": "Proposed (FastText field-aware)",
   "seed": 42,
+  "unit": "percent",
   "weighted_f1": 96.6088
 }

@@ -1,0 +1,20 @@
+{
+  "col": "Total",
+  "metadata": {
+    "commit": "d39fd4e",
+    "component": "Total",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "gpu": "cpu",
+    "metric": "footprint_mb",
+    "mode": "supervised",
+    "num_threads": 1,
+    "single_run_measured": true,
+    "unit": "megabytes"
+  },
+  "row": "Footprint (MB)",
+  "seed": 42,
+  "table": "table_22_request_time_latency_4field",
+  "value": 131.433
+}

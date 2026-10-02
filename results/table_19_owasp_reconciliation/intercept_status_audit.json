@@ -1,0 +1,74 @@
+{
+  "intercept_by_custom_rule_444444": {
+    "intercepted=False,only_444444=False": 101559,
+    "intercepted=True,only_444444=False": 25,
+    "intercepted=True,only_444444=True": 49427
+  },
+  "intercepted": 49452,
+  "intercepted_share": 0.3275,
+  "intercepted_share_among_status_403": 0.9194,
+  "metadata": {
+    "commit": "d39fd4e",
+    "note": "Action: Intercepted in audit section H = ModSecurity disrupted the transaction; other records were logged by rule matches but served."
+  },
+  "status_403": 48493,
+  "status_403_share": 0.3211,
+  "status_403_share_among_intercepted": 0.9015,
+  "top_status_intercepted": [
+    [
+      403,
+      44583
+    ],
+    [
+      404,
+      4053
+    ],
+    [
+      301,
+      654
+    ],
+    [
+      500,
+      137
+    ],
+    [
+      400,
+      25
+    ]
+  ],
+  "top_status_not_intercepted": [
+    [
+      404,
+      60955
+    ],
+    [
+      301,
+      22021
+    ],
+    [
+      503,
+      9375
+    ],
+    [
+      403,
+      3910
+    ],
+    [
+      500,
+      1965
+    ],
+    [
+      304,
+      1709
+    ],
+    [
+      302,
+      927
+    ],
+    [
+      405,
+      348
+    ]
+  ],
+  "transactions": 151011
+}

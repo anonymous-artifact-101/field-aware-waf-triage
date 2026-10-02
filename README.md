@@ -59,16 +59,21 @@ filenames, where each must be placed, and the resulting `data/raw/` tree.
 
 ## Reproduce the paper numbers
 
-The paper's numbers are 5-seed means/CIs over the seed set {42,43,44,45,46}. Only
-the full pipeline reproduces them:
+The paper's numbers are 5-seed means/CIs over the seed set {42,43,44,45,46}. Two
+targets reproduce them:
 
 ```bash
 # 0) stage the raw data you obtained per DATASET.md, then build splits
 make stage-data      # unzip download/*.zip -> data/raw/   (you provide the zips)
 make data            # stage-data + parse + splits
 
-# 1) FULL rebuild: loops all 5 seeds across every table and aggregates
-make paper           # == bash scripts/99_run_full_pipeline.sh   (the paper artifact)
+# 1) FULL rebuild: loops all 5 seeds across the main tables and figures
+make paper           # == bash scripts/99_run_full_pipeline.sh
+
+# 2) Revision-1 analyses: record counts (Table 2), per-budget class counts and
+#    validation results (Tables 4-5), embedding-corpus control (Table 8, lower
+#    block), confusion matrix at 10% (Fig. 2), label/count audits
+make p1-artifacts
 ```
 
 A single-table target runs **one** seed and does **not** reproduce the paper's

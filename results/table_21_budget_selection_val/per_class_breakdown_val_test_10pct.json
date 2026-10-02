@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "commit": "d39fd4e",
+    "dataset_version": "3ce0e30a2e51",
+    "label_budget": 0.1,
+    "seed": 42
+  },
+  "test": {
+    "macro_f1": 73.6091,
+    "per_class_f1": {
+      "lfi": 97.36,
+      "path_traversal": 14.81,
+      "php_injection": 69.78,
+      "protocol": 97.12,
+      "rce": 98.44,
+      "scanner": 96.92,
+      "sql_injection": 61.49,
+      "xss": 52.94
+    },
+    "support": {
+      "lfi": 8790,
+      "path_traversal": 23,
+      "php_injection": 182,
+      "protocol": 9879,
+      "rce": 546,
+      "scanner": 63,
+      "sql_injection": 141,
+      "xss": 22
+    }
+  },
+  "val": {
+    "macro_f1": 51.435,
+    "per_class_f1": {
+      "lfi": 96.73,
+      "path_traversal": 10.22,
+      "php_injection": 41.79,
+      "protocol": 91.53,
+      "rce": 35.08,
+      "scanner": 96.7,
+      "sql_injection": 36.29,
+      "xss": 3.12
+    },
+    "support": {
+      "lfi": 7697,
+      "path_traversal": 397,
+      "php_injection": 304,
+      "protocol": 10765,
+      "rce": 1311,
+      "scanner": 44,
+      "sql_injection": 669,
+      "xss": 173
+    }
+  }
+}

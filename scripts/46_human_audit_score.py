@@ -113,10 +113,10 @@ def _score_one_column(rows, col: str, weight: dict) -> dict:
         }
 
     n_decidable = n_total - n_undecidable
-    acc_w = round(100 * num_w / den_w, 2) if den_w else 0.0
-    benign_w_pct = round(100 * benign_w / total_w, 2) if total_w else 0.0
-    undec_w_pct = round(100 * undec_w / total_w, 2) if total_w else 0.0
-    raw_acc = round(100 * sum(v[0] for v in by_crs.values()) / n_decidable, 2) if n_decidable else 0.0
+    acc_w = round(100 * num_w / den_w, 4) if den_w else 0.0
+    benign_w_pct = round(100 * benign_w / total_w, 4) if total_w else 0.0
+    undec_w_pct = round(100 * undec_w / total_w, 4) if total_w else 0.0
+    raw_acc = round(100 * sum(v[0] for v in by_crs.values()) / n_decidable, 4) if n_decidable else 0.0
 
     return {
         "column": col,

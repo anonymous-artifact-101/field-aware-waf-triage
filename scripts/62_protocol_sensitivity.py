@@ -31,6 +31,8 @@ _DEFAULT_ROWS: Tuple[str, ...] = (
     "TF-IDF typed + LinearSVC",
     "TF-IDF flat + LinearSVC",
     "Char-CNN",
+    "Field-prefixed FastText + LinearSVC",
+    "Hashing char-ngram + SGD",
     "Proposed (FastText field-aware)",
     "ModSec-AdvLearn",
     "ModSec-Learn",

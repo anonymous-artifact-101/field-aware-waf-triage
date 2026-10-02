@@ -1,0 +1,23 @@
+{
+  "argmax_val_budget": "50%",
+  "knee_budget": "10%",
+  "metadata": {
+    "commit": "d39fd4e",
+    "dataset_version": "3ce0e30a2e51"
+  },
+  "rule": "smallest budget whose next budget adds < 1.0 val macro-F1",
+  "status": "rule stated after test results were seen; test significance at the knee budget is exploratory / post-selection",
+  "val_gain_to_next_budget": {
+    "1%->5%": 11.1612,
+    "10%->20%": 0.1994,
+    "20%->50%": 3.1786,
+    "5%->10%": 2.9995
+  },
+  "val_mean_macro_f1": {
+    "1%": 37.2743,
+    "10%": 51.435,
+    "20%": 51.6344,
+    "5%": 48.4355,
+    "50%": 54.813
+  }
+}

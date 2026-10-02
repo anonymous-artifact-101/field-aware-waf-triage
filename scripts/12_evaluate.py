@@ -130,9 +130,21 @@ def main(argv: "list[str] | None" = None) -> int:
         print(f"[12_evaluate] WARN: ledger append failed: {exc}")
 
     if mode == "supervised":
-        dump_json(table_dir / "per_class_breakdown.json", {
-            "row": row, "col": col, "seed": int(seed),
-            "per_class_f1": result["per_class_f1"],
+        budget_pct = int(round(100 * float(cfg.get("data", {}).get("label_budget", 0.05))))
+        breakdown_name = (
+            "per_class_breakdown.json" if budget_pct == 5
+            else f"per_class_breakdown_{budget_pct}pct.json"
+        )
+
+        dump_json(table_dir / breakdown_name, {
+            "row": row, "col": col, "seed": int(seed), "commit": metadata["commit"],
+            "unit": "percent",
+            "macro_f1": value,
+            "weighted_f1": result.get("weighted_f1"),
+            "accuracy": result.get("accuracy"),
+            "per_class_f1": {k: round(100.0 * float(v), 4) for k, v in result["per_class_f1"].items()},
+            "per_class_recall": result.get("per_class_recall"),
+            "class_support": metadata.get("class_support"),
         })
 
     if mode == "supervised" and args.max_records is None:

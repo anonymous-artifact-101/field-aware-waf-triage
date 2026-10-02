@@ -1,0 +1,473 @@
+{
+  "cells": [
+    {
+      "ci_95": null,
+      "col": "mean",
+      "row": "encode",
+      "seeds": [
+        42
+      ],
+      "value": 0.08617
+    },
+    {
+      "ci_95": null,
+      "col": "p50",
+      "row": "encode",
+      "seeds": [
+        42
+      ],
+      "value": 0.0758
+    },
+    {
+      "ci_95": null,
+      "col": "p95",
+      "row": "encode",
+      "seeds": [
+        42
+      ],
+      "value": 0.1708
+    },
+    {
+      "ci_95": null,
+      "col": "p99",
+      "row": "encode",
+      "seeds": [
+        42
+      ],
+      "value": 0.2672
+    },
+    {
+      "ci_95": null,
+      "col": "mean",
+      "row": "end_to_end",
+      "seeds": [
+        42
+      ],
+      "value": 0.14029
+    },
+    {
+      "ci_95": null,
+      "col": "p50",
+      "row": "end_to_end",
+      "seeds": [
+        42
+      ],
+      "value": 0.1226
+    },
+    {
+      "ci_95": null,
+      "col": "p95",
+      "row": "end_to_end",
+      "seeds": [
+        42
+      ],
+      "value": 0.2485
+    },
+    {
+      "ci_95": null,
+      "col": "p99",
+      "row": "end_to_end",
+      "seeds": [
+        42
+      ],
+      "value": 0.3902
+    },
+    {
+      "ci_95": null,
+      "col": "Classifier head",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 0.0476
+    },
+    {
+      "ci_95": null,
+      "col": "FastText model",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 131.401
+    },
+    {
+      "ci_95": null,
+      "col": "Total",
+      "row": "Footprint (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 131.4486
+    },
+    {
+      "ci_95": [
+        988.187,
+        1047.421
+      ],
+      "col": "mean",
+      "row": "Model load time (ms)",
+      "seeds": [
+        42
+      ],
+      "value": 1017.804
+    },
+    {
+      "ci_95": [
+        0.130951,
+        0.13572700000000001
+      ],
+      "col": "mean",
+      "row": "Proposed end-to-end (10-run)",
+      "seeds": [
+        42
+      ],
+      "value": 0.133339
+    },
+    {
+      "ci_95": [
+        0.225361,
+        0.260419
+      ],
+      "col": "p95",
+      "row": "Proposed end-to-end (10-run)",
+      "seeds": [
+        42
+      ],
+      "value": 0.24289
+    },
+    {
+      "ci_95": [
+        0.377458,
+        0.395742
+      ],
+      "col": "p99",
+      "row": "Proposed end-to-end (10-run)",
+      "seeds": [
+        42
+      ],
+      "value": 0.3866
+    },
+    {
+      "ci_95": null,
+      "col": "baseline",
+      "row": "Resident memory (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 17.016
+    },
+    {
+      "ci_95": null,
+      "col": "loaded",
+      "row": "Resident memory (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 260.762
+    },
+    {
+      "ci_95": null,
+      "col": "model delta",
+      "row": "Resident memory (MB)",
+      "seeds": [
+        42
+      ],
+      "value": 243.746
+    },
+    {
+      "ci_95": null,
+      "col": "mean",
+      "row": "score",
+      "seeds": [
+        42
+      ],
+      "value": 0.046312
+    },
+    {
+      "ci_95": null,
+      "col": "p50",
+      "row": "score",
+      "seeds": [
+        42
+      ],
+      "value": 0.0402
+    },
+    {
+      "ci_95": null,
+      "col": "p95",
+      "row": "score",
+      "seeds": [
+        42
+      ],
+      "value": 0.0725
+    },
+    {
+      "ci_95": null,
+      "col": "p99",
+      "row": "score",
+      "seeds": [
+        42
+      ],
+      "value": 0.1178
+    },
+    {
+      "ci_95": null,
+      "col": "batch=1",
+      "row": "Throughput (req/s/core)",
+      "seeds": [
+        42
+      ],
+      "value": 6505.45
+    },
+    {
+      "ci_95": null,
+      "col": "batch=32",
+      "row": "Throughput (req/s/core)",
+      "seeds": [
+        42
+      ],
+      "value": 9334.74
+    },
+    {
+      "ci_95": null,
+      "col": "mean",
+      "row": "tokenize",
+      "seeds": [
+        42
+      ],
+      "value": 0.006468
+    },
+    {
+      "ci_95": null,
+      "col": "p50",
+      "row": "tokenize",
+      "seeds": [
+        42
+      ],
+      "value": 0.0063
+    },
+    {
+      "ci_95": null,
+      "col": "p95",
+      "row": "tokenize",
+      "seeds": [
+        42
+      ],
+      "value": 0.0089
+    },
+    {
+      "ci_95": null,
+      "col": "p99",
+      "row": "tokenize",
+      "seeds": [
+        42
+      ],
+      "value": 0.0121
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "Footprint (MB) | Classifier head": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | FastText model": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "Footprint (MB) | Total": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "footprint_mb",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "Model load time (ms) | mean": {
+        "ci95_halfwidth": 29.617,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "load_time_ms",
+        "n_runs": 5,
+        "single_run_measured": false
+      },
+      "Proposed end-to-end (10-run) | mean": {
+        "ci95_halfwidth": 0.002388,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms_multirun",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Proposed end-to-end (10-run) | p95": {
+        "ci95_halfwidth": 0.017529,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms_multirun",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Proposed end-to-end (10-run) | p99": {
+        "ci95_halfwidth": 0.009142,
+        "eval_capped": false,
+        "exploratory_single_seed": true,
+        "metric": "latency_ms_multirun",
+        "n_runs": 10,
+        "single_run_measured": false
+      },
+      "Resident memory (MB) | baseline": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "rss_mb",
+        "single_run_measured": true
+      },
+      "Resident memory (MB) | loaded": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "rss_mb",
+        "single_run_measured": true
+      },
+      "Resident memory (MB) | model delta": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "rss_mb",
+        "single_run_measured": true
+      },
+      "Throughput (req/s/core) | batch=1": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "throughput_rps",
+        "single_run_measured": true
+      },
+      "Throughput (req/s/core) | batch=32": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "throughput_rps",
+        "single_run_measured": true
+      },
+      "encode | mean": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "encode | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "encode | p95": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "encode | p99": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "end_to_end | mean": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "end_to_end | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "end_to_end | p95": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "end_to_end | p99": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "score | mean": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "score | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "score | p95": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "score | p99": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "tokenize | mean": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "tokenize | p50": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "tokenize | p95": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      },
+      "tokenize | p99": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "latency_ms",
+        "mode": "supervised",
+        "single_run_measured": true
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "d39fd4e",
+    "date": "2026-09-24",
+    "gpu": "cpu",
+    "n_cell_files": 28
+  },
+  "table": "table_22_request_time_latency_6field_ref"
+}

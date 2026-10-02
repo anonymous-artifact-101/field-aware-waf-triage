@@ -1,0 +1,65 @@
+{
+  "counts": {
+    "1%": {
+      "lfi": 579,
+      "n_labeled": 1100,
+      "path_traversal": 1,
+      "php_injection": 23,
+      "protocol": 481,
+      "rce": 2,
+      "scanner": 8,
+      "sql_injection": 6,
+      "xss": 0
+    },
+    "10%": {
+      "lfi": 3514,
+      "n_labeled": 11000,
+      "path_traversal": 5,
+      "php_injection": 250,
+      "protocol": 3711,
+      "rce": 80,
+      "scanner": 29,
+      "sql_injection": 3405,
+      "xss": 6
+    },
+    "20%": {
+      "lfi": 7294,
+      "n_labeled": 22001,
+      "path_traversal": 42,
+      "php_injection": 487,
+      "protocol": 10480,
+      "rce": 189,
+      "scanner": 66,
+      "sql_injection": 3431,
+      "xss": 12
+    },
+    "5%": {
+      "lfi": 2030,
+      "n_labeled": 5500,
+      "path_traversal": 2,
+      "php_injection": 179,
+      "protocol": 1962,
+      "rce": 20,
+      "scanner": 23,
+      "sql_injection": 1282,
+      "xss": 2
+    },
+    "50%": {
+      "lfi": 17090,
+      "n_labeled": 55002,
+      "path_traversal": 65,
+      "php_injection": 890,
+      "protocol": 32711,
+      "rce": 629,
+      "scanner": 132,
+      "sql_injection": 3461,
+      "xss": 24
+    }
+  },
+  "metadata": {
+    "commit": "d39fd4e",
+    "dataset_version": "3ce0e30a2e51",
+    "selector": "src.baselines._common.select_label_budget",
+    "source": "owasp_train earliest prefix"
+  }
+}

@@ -1,25 +1,11 @@
 {
-  "anonymous_snapshot_commit": "1593d848d0d8c15f8344b84e6f3c71175d7524d0",
+  "anonymous_snapshot_commit": "036efa46a4b8cecc157953a4fc777feb919de70a",
   "internal_commits": [
-    {
-      "commit": "11b9822",
-      "date": "2026-06-04",
-      "tables": [
-        "manual_verification"
-      ]
-    },
     {
       "commit": "3843f64",
       "date": "2026-06-04",
       "tables": [
         "table_09_cross_dataset_biblio_us17"
-      ]
-    },
-    {
-      "commit": "9bb51e5",
-      "date": "",
-      "tables": [
-        "table_15_protocol_sensitivity"
       ]
     },
     {
@@ -33,8 +19,7 @@
         "table_08_latency",
         "table_16_rare_class_ci",
         "table_17_no_custom_444444",
-        "table_18_deployment_workload",
-        "table_19_owasp_reconciliation"
+        "table_18_deployment_workload"
       ]
     },
     {
@@ -62,6 +47,32 @@
       "tables": [
         "table_12_label_noise_cleanlab"
       ]
+    },
+    {
+      "commit": "d39fd4e",
+      "date": "",
+      "tables": [
+        "table_15_protocol_sensitivity"
+      ]
+    },
+    {
+      "commit": "d39fd4e",
+      "date": "2026-09-24",
+      "tables": [
+        "table_19_owasp_reconciliation",
+        "table_20_pretrain_corpus_control",
+        "table_21_budget_selection_val",
+        "table_22_request_time_latency_4field",
+        "table_22_request_time_latency_6field_ref",
+        "table_22_request_time_latency_6field_ref_after"
+      ]
+    },
+    {
+      "commit": "d39fd4e",
+      "date": "2026-09-28",
+      "tables": [
+        "manual_verification"
+      ]
     }
   ],
   "note": "Results were produced in a private working repository at the internal commits listed below; this public artifact is an anonymized snapshot. The internal SHAs do not exist in the public repo by construction. Verify code integrity with verify_provenance.py (artifact root), which recomputes source_content_hash over src/, scripts/, and configs/. Any commit ending in '-dirty' was produced from an uncommitted working tree and is reproducible only up to the recorded source hash, not a clean commit.",
@@ -78,13 +89,13 @@
       ".yaml",
       ".yml"
     ],
-    "file_count": 136,
+    "file_count": 146,
     "over": [
       "src",
       "scripts",
       "configs"
     ],
-    "value": "ba68948e972065252c98d55c55ba931614945a281c1fc6d86e9c962e90486890"
+    "value": "7faa48533975c4c8b61c72665701b25bc3d88343a34ab905a28d2de1c41dbee2"
   },
   "source_equivalence_verified": true
 }

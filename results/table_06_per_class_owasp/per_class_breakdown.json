@@ -1,15 +1,40 @@
 {
+  "accuracy": 94.3856,
+  "class_support": {
+    "lfi": 8790,
+    "path_traversal": 23,
+    "php_injection": 182,
+    "protocol": 9879,
+    "rce": 546,
+    "scanner": 63,
+    "sql_injection": 141,
+    "xss": 22
+  },
   "col": "5%",
+  "commit": "dcf4fc8",
+  "macro_f1": 65.1035,
   "per_class_f1": {
-    "lfi": 0.9708870875670739,
+    "lfi": 97.0887,
     "path_traversal": 0.0,
-    "php_injection": 0.6395348837209301,
-    "protocol": 0.9475411517358084,
-    "rce": 0.9772105742935278,
-    "scanner": 0.9618320610687023,
-    "sql_injection": 0.2596599690880989,
-    "xss": 0.45161290322580644
+    "php_injection": 63.9535,
+    "protocol": 94.7541,
+    "rce": 97.7211,
+    "scanner": 96.1832,
+    "sql_injection": 25.966,
+    "xss": 45.1613
+  },
+  "per_class_recall": {
+    "lfi": 96.7463,
+    "path_traversal": 0.0,
+    "php_injection": 60.4396,
+    "protocol": 93.5216,
+    "rce": 98.1685,
+    "scanner": 100.0,
+    "sql_injection": 59.5745,
+    "xss": 31.8182
   },
   "row": "Proposed (FastText field-aware)",
-  "seed": 46
+  "seed": 46,
+  "unit": "percent",
+  "weighted_f1": 94.9402
 }

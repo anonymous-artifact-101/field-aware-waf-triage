@@ -1,0 +1,220 @@
+{
+  "descriptor_count": 147205,
+  "descriptor_filters_full_archive": {
+    "exact_match_found": false,
+    "filters": {
+      "all raw entries": {
+        "count": 151845,
+        "minus_descriptor": 4640
+      },
+      "not fired only by custom rule 444444": {
+        "count": 102413,
+        "minus_descriptor": -44792
+      },
+      "severity includes CRITICAL": {
+        "count": 131860,
+        "minus_descriptor": -15345
+      },
+      "status == 403": {
+        "count": 48498,
+        "minus_descriptor": -98707
+      },
+      "status >= 400": {
+        "count": 125873,
+        "minus_descriptor": -21332
+      },
+      "status >= 400 and != 404": {
+        "count": 60672,
+        "minus_descriptor": -86533
+      },
+      "unique (client_ip, timestamp, path, query)": {
+        "count": 146046,
+        "minus_descriptor": -1159
+      },
+      "unique (method, path, query, ua, timestamp)": {
+        "count": 146090,
+        "minus_descriptor": -1115
+      }
+    }
+  },
+  "excluded_by_split": {
+    "test": 72,
+    "train": 736,
+    "val": 26
+  },
+  "excluded_by_split_subtype": {
+    "test": {
+      "php_injection": 1,
+      "protocol": 69,
+      "rce": 2
+    },
+    "train": {
+      "lfi": 80,
+      "php_injection": 2,
+      "protocol": 638,
+      "rce": 16
+    },
+    "val": {
+      "lfi": 1,
+      "protocol": 25
+    }
+  },
+  "excluded_by_status": {
+    "301": 631,
+    "403": 5,
+    "404": 193,
+    "500": 5
+  },
+  "excluded_by_subtype": {
+    "lfi": 81,
+    "php_injection": 3,
+    "protocol": 732,
+    "rce": 18
+  },
+  "excluded_non_hex_boundary": 834,
+  "excluded_share_pct": 0.55,
+  "metadata": {
+    "commit": "d39fd4e",
+    "note": "Excluded entries are well-formed transactions with unique IDs whose boundary ID is not hexadecimal; the released corpus is unchanged. 'released' rows are a control and must equal the published values."
+  },
+  "raw_boundaries": {
+    "a_boundaries_alphanumeric": 151845,
+    "a_boundaries_hexadecimal": 151011,
+    "a_boundaries_non_hexadecimal": 834
+  },
+  "raw_entries": 151845,
+  "raw_minus_descriptor": 4640,
+  "raw_unique_ids": 151845,
+  "released_minus_descriptor": 3806,
+  "released_records": 151011,
+  "sensitivity_seed42": {
+    "proposed": {
+      "0.01": {
+        "delta_test_macro_f1": -0.91,
+        "delta_test_macro_f1_1dp": -0.9,
+        "delta_val_macro_f1": -1.24,
+        "delta_val_macro_f1_1dp": -1.2,
+        "full_archive": {
+          "test_macro_f1": 37.33,
+          "val_macro_f1": 36.03
+        },
+        "released": {
+          "test_macro_f1": 38.24,
+          "val_macro_f1": 37.27
+        }
+      },
+      "0.05": {
+        "delta_test_macro_f1": -0.31,
+        "delta_test_macro_f1_1dp": -0.3,
+        "delta_val_macro_f1": -0.21,
+        "delta_val_macro_f1_1dp": -0.2,
+        "full_archive": {
+          "test_macro_f1": 64.79,
+          "val_macro_f1": 48.23
+        },
+        "released": {
+          "test_macro_f1": 65.1,
+          "val_macro_f1": 48.44
+        }
+      },
+      "0.1": {
+        "delta_test_macro_f1": -0.33,
+        "delta_test_macro_f1_1dp": -0.3,
+        "delta_val_macro_f1": -0.19,
+        "delta_val_macro_f1_1dp": -0.2,
+        "full_archive": {
+          "test_macro_f1": 73.28,
+          "val_macro_f1": 51.25
+        },
+        "released": {
+          "test_macro_f1": 73.61,
+          "val_macro_f1": 51.44
+        }
+      },
+      "0.2": {
+        "delta_test_macro_f1": -0.8,
+        "delta_test_macro_f1_1dp": -0.8,
+        "delta_val_macro_f1": -0.08,
+        "delta_val_macro_f1_1dp": -0.1,
+        "full_archive": {
+          "test_macro_f1": 71.36,
+          "val_macro_f1": 51.55
+        },
+        "released": {
+          "test_macro_f1": 72.16,
+          "val_macro_f1": 51.63
+        }
+      },
+      "0.5": {
+        "delta_test_macro_f1": 0.02,
+        "delta_test_macro_f1_1dp": 0.0,
+        "delta_val_macro_f1": 0.29,
+        "delta_val_macro_f1_1dp": 0.3,
+        "full_archive": {
+          "test_macro_f1": 78.21,
+          "val_macro_f1": 55.1
+        },
+        "released": {
+          "test_macro_f1": 78.19,
+          "val_macro_f1": 54.81
+        }
+      }
+    },
+    "tfidf_flat_linearsvc": {
+      "0.05": {
+        "delta_test_macro_f1": 0.26,
+        "delta_test_macro_f1_1dp": 0.3,
+        "full_archive": {
+          "test_macro_f1": 66.25
+        },
+        "released": {
+          "test_macro_f1": 65.99
+        }
+      },
+      "0.1": {
+        "delta_test_macro_f1": 0.21,
+        "delta_test_macro_f1_1dp": 0.2,
+        "full_archive": {
+          "test_macro_f1": 76.92
+        },
+        "released": {
+          "test_macro_f1": 76.71
+        }
+      }
+    },
+    "tfidf_typed_linearsvc": {
+      "0.05": {
+        "delta_test_macro_f1": 0.03,
+        "delta_test_macro_f1_1dp": 0.0,
+        "full_archive": {
+          "test_macro_f1": 72.75
+        },
+        "released": {
+          "test_macro_f1": 72.72
+        }
+      },
+      "0.1": {
+        "delta_test_macro_f1": -0.02,
+        "delta_test_macro_f1_1dp": -0.0,
+        "full_archive": {
+          "test_macro_f1": 74.41
+        },
+        "released": {
+          "test_macro_f1": 74.43
+        }
+      }
+    }
+  },
+  "split_sizes": {
+    "full_archive": {
+      "test": 19718,
+      "train": 110741,
+      "val": 21386
+    },
+    "released": {
+      "test": 19646,
+      "train": 110005,
+      "val": 21360
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "cells": {
+    "Benign weblog / 6-field | 10% test": {
+      "max": 73.6091,
+      "mean": 73.6091,
+      "min": 73.6091,
+      "n_seeds": 5,
+      "std": 0.0
+    },
+    "Benign weblog / 6-field | 10% val": {
+      "max": 51.435,
+      "mean": 51.435,
+      "min": 51.435,
+      "n_seeds": 5,
+      "std": 0.0
+    },
+    "Benign weblog / 6-field | 5% test": {
+      "max": 65.1035,
+      "mean": 65.1035,
+      "min": 65.1035,
+      "n_seeds": 5,
+      "std": 0.0
+    },
+    "Benign weblog / 6-field | 5% val": {
+      "max": 48.4355,
+      "mean": 48.4355,
+      "min": 48.4355,
+      "n_seeds": 5,
+      "std": 0.0
+    },
+    "Benign weblog / flat | 10% test": {
+      "max": 56.3375,
+      "mean": 56.3375,
+      "min": 56.3375,
+      "n_seeds": 5,
+      "std": 0.0
+    },
+    "Benign weblog / flat | 10% val": {
+      "max": 47.4467,
+      "mean": 47.4467,
+      "min": 47.4467,
+      "n_seeds": 5,
+      "std": 0.0
+    },
+    "Benign weblog / flat | 5% test": {
+      "max": 57.2177,
+      "mean": 57.2177,
+      "min": 57.2177,
+      "n_seeds": 5,
+      "std": 0.0
+    },
+    "Benign weblog / flat | 5% val": {
+      "max": 46.3662,
+      "mean": 46.3662,
+      "min": 46.3662,
+      "n_seeds": 5,
+      "std": 0.0
+    },
+    "Labeled prefix / 6-field | 10% test": {
+      "max": 75.1225,
+      "mean": 74.6235,
+      "min": 74.2215,
+      "n_seeds": 5,
+      "std": 0.3507
+    },
+    "Labeled prefix / 6-field | 10% val": {
+      "max": 52.3317,
+      "mean": 51.6102,
+      "min": 51.085,
+      "n_seeds": 5,
+      "std": 0.4517
+    },
+    "Labeled prefix / 6-field | 5% test": {
+      "max": 68.6613,
+      "mean": 67.4518,
+      "min": 65.4079,
+      "n_seeds": 5,
+      "std": 1.3529
+    },
+    "Labeled prefix / 6-field | 5% val": {
+      "max": 49.1272,
+      "mean": 49.0336,
+      "min": 48.8643,
+      "n_seeds": 5,
+      "std": 0.1106
+    },
+    "Labeled prefix / flat | 10% test": {
+      "max": 57.1314,
+      "mean": 55.542,
+      "min": 54.3498,
+      "n_seeds": 5,
+      "std": 1.147
+    },
+    "Labeled prefix / flat | 10% val": {
+      "max": 45.6314,
+      "mean": 44.7712,
+      "min": 43.9933,
+      "n_seeds": 5,
+      "std": 0.6173
+    },
+    "Labeled prefix / flat | 5% test": {
+      "max": 56.2593,
+      "mean": 54.7068,
+      "min": 52.4232,
+      "n_seeds": 5,
+      "std": 1.4229
+    },
+    "Labeled prefix / flat | 5% val": {
+      "max": 43.7569,
+      "mean": 42.9805,
+      "min": 41.5047,
+      "n_seeds": 5,
+      "std": 0.8824
+    }
+  },
+  "metadata": {
+    "commit": "d39fd4e",
+    "note": "Benign-weblog rows use the single deployed embedding (std 0); labeled-prefix rows re-fit FastText per seed (seed controls the FastText fit; the LinearSVC head and prefix are deterministic)."
+  }
+}

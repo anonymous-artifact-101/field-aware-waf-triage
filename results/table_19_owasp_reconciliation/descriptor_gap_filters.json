@@ -1,0 +1,61 @@
+{
+  "descriptor_count": 147205,
+  "exact_match_found": false,
+  "filters": {
+    "all parsed records": {
+      "count": 151011,
+      "minus_descriptor": 3806
+    },
+    "not fired only by custom rule 444444": {
+      "count": 101584,
+      "minus_descriptor": -45621
+    },
+    "severity includes CRITICAL": {
+      "count": 131030,
+      "minus_descriptor": -16175
+    },
+    "status == 403": {
+      "count": 48493,
+      "minus_descriptor": -98712
+    },
+    "status >= 400": {
+      "count": 125670,
+      "minus_descriptor": -21535
+    },
+    "status >= 400 and != 404": {
+      "count": 60662,
+      "minus_descriptor": -86543
+    },
+    "unique (client_ip, timestamp, path, query)": {
+      "count": 145250,
+      "minus_descriptor": -1955
+    },
+    "unique (method, path, query, ua, timestamp)": {
+      "count": 145293,
+      "minus_descriptor": -1912
+    }
+  },
+  "metadata": {
+    "commit": "d39fd4e",
+    "dataset_version": "3ce0e30a2e51",
+    "note": "No tested filter reproduces the descriptor count; gap unresolved."
+  },
+  "protocol_class": {
+    "fired_only_by_custom_rule_444444": 49427,
+    "n": 89690,
+    "share_only_444444": 0.5511
+  },
+  "status_counts": {
+    "301": 22675,
+    "302": 927,
+    "304": 1709,
+    "307": 30,
+    "400": 270,
+    "401": 74,
+    "403": 48493,
+    "404": 65008,
+    "405": 348,
+    "500": 2102,
+    "503": 9375
+  }
+}

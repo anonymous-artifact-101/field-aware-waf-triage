@@ -1,0 +1,20 @@
+{
+  "col": "5% test",
+  "metadata": {
+    "commit": "d39fd4e",
+    "dataset_version": "3ce0e30a2e51",
+    "date": null,
+    "embedding_corpus": "owasp_train labeled prefix text (no labels), seeded",
+    "eval_capped": false,
+    "eval_split": "owasp_test",
+    "gpu": "cpu",
+    "granularity": 1,
+    "label_budget": 0.05,
+    "labeled_prefix_vocab": 2198,
+    "metric": "macro_f1"
+  },
+  "row": "Labeled prefix / flat",
+  "seed": 43,
+  "table": "table_20_pretrain_corpus_control",
+  "value": 54.5172
+}

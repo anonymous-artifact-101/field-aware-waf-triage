@@ -1,0 +1,4 @@
+# Optional dependencies for the standalone Optuna hyperparameter study.
+# Install alongside the main project deps:
+#   pip install -r requirements.txt -r requirements-optuna.txt
+optuna>=3.6.0,<4.0.0

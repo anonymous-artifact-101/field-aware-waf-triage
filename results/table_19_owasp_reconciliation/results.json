@@ -61,49 +61,49 @@
       "col": "count",
       "row": "Available raw day files",
       "seeds": [],
-      "value": 29
+      "value": 30
     },
     {
       "ci_95": null,
       "col": "count",
       "row": "Missing raw day files",
       "seeds": [],
-      "value": 1
+      "value": 0
     },
     {
       "ci_95": null,
       "col": "count",
       "row": "Missing raw day processed records",
       "seeds": [],
-      "value": 4874
+      "value": 0
     },
     {
       "ci_95": null,
       "col": "count",
       "row": "Available raw parser output",
       "seeds": [],
-      "value": 146137
+      "value": 151011
     },
     {
       "ci_95": null,
       "col": "count",
       "row": "Current staged raw shortfall vs split output",
       "seeds": [],
-      "value": 4874
+      "value": 0
     },
     {
       "ci_95": null,
       "col": "count",
       "row": "Available raw transaction chunks",
       "seeds": [],
-      "value": 146137
+      "value": 151011
     },
     {
       "ci_95": null,
       "col": "count",
       "row": "Available raw unique transaction IDs",
       "seeds": [],
-      "value": 146137
+      "value": 151011
     },
     {
       "ci_95": null,
@@ -124,21 +124,21 @@
       "col": "count",
       "row": "Available raw multi-message transactions",
       "seeds": [],
-      "value": 14688
+      "value": 15024
     },
     {
       "ci_95": null,
       "col": "count",
       "row": "Available raw message lines",
       "seeds": [],
-      "value": 169635
+      "value": 174899
     },
     {
       "ci_95": null,
       "col": "count",
       "row": "Available raw transactions with multiple audit sections",
       "seeds": [],
-      "value": 146137
+      "value": 151011
     },
     {
       "ci_95": null,
@@ -208,7 +208,7 @@
       "col": "count",
       "row": "Empty trailing chunks ignored",
       "seeds": [],
-      "value": 29
+      "value": 30
     },
     {
       "ci_95": null,
@@ -219,8 +219,8 @@
     }
   ],
   "metadata": {
-    "commit": "9bb51e5",
-    "date": "2026-07-01",
+    "commit": "d39fd4e",
+    "date": "2026-09-24",
     "definition": {
       "malformed_unusable_chunks_skipped": "Raw chunks for which parse_transaction returns None.",
       "multi_message_transactions": "Raw chunks with more than one Section-H line beginning with 'Message:'.",
@@ -228,10 +228,8 @@
       "transactions_with_multiple_audit_sections": "Raw chunks containing more than one distinct ModSecurity audit section letter.",
       "truncated_chunks_missing_z": "Raw chunks with no Z terminator section."
     },
-    "interpretation": "The released split/parser output has one unique transaction ID per record. The currently staged raw directory is missing the 03-Aug-2025 audit file, whose 4,874 processed records account for the shortfall between available raw parsing and split output. On available raw days, no duplicate IDs, skipped malformed chunks, or missing-Z chunks explain the 3,806-record difference from the source descriptor; the descriptor discrepancy remains unresolved.",
-    "missing_raw_days": [
-      "03-Aug-2025"
-    ],
+    "interpretation": "The released split/parser output has one unique transaction ID per record. All 30 raw audit day files are staged; parsing them yields 151,011 records, a shortfall of 0 against the split output. On available raw days, no duplicate IDs, skipped malformed chunks, or missing-Z chunks explain the 3,806-record difference from the source descriptor; the descriptor discrepancy remains unresolved.",
+    "missing_raw_days": [],
     "per_day": [
       {
         "day": "27-Jul-2025",
@@ -295,6 +293,15 @@
         "parsed_records_from_raw": 6034,
         "raw_transaction_chunks": 6034,
         "transactions_with_multiple_audit_sections": 6034
+      },
+      {
+        "day": "03-Aug-2025",
+        "empty_trailing_chunks_ignored": 1,
+        "message_lines": 5264,
+        "multi_message_transactions": 336,
+        "parsed_records_from_raw": 4874,
+        "raw_transaction_chunks": 4874,
+        "transactions_with_multiple_audit_sections": 4874
       },
       {
         "day": "04-Aug-2025",

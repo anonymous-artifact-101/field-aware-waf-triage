@@ -1,0 +1,93 @@
+{
+  "cells": [
+    {
+      "abs_diff": 0.0256,
+      "budget": "1%",
+      "rounded_1dp_changes": false,
+      "split": "val",
+      "this_platform": 37.2999,
+      "windows_reference": 37.2743
+    },
+    {
+      "abs_diff": 0.0055,
+      "budget": "1%",
+      "rounded_1dp_changes": false,
+      "split": "test",
+      "this_platform": 38.2477,
+      "windows_reference": 38.2422
+    },
+    {
+      "abs_diff": 0.0638,
+      "budget": "5%",
+      "rounded_1dp_changes": false,
+      "split": "val",
+      "this_platform": 48.3717,
+      "windows_reference": 48.4355
+    },
+    {
+      "abs_diff": 0.0433,
+      "budget": "5%",
+      "rounded_1dp_changes": false,
+      "split": "test",
+      "this_platform": 65.0602,
+      "windows_reference": 65.1035
+    },
+    {
+      "abs_diff": 0.0672,
+      "budget": "10%",
+      "rounded_1dp_changes": true,
+      "split": "val",
+      "this_platform": 51.5022,
+      "windows_reference": 51.435
+    },
+    {
+      "abs_diff": 0.047,
+      "budget": "10%",
+      "rounded_1dp_changes": true,
+      "split": "test",
+      "this_platform": 73.6561,
+      "windows_reference": 73.6091
+    },
+    {
+      "abs_diff": 0.0257,
+      "budget": "20%",
+      "rounded_1dp_changes": false,
+      "split": "val",
+      "this_platform": 51.6087,
+      "windows_reference": 51.6344
+    },
+    {
+      "abs_diff": 0.041,
+      "budget": "20%",
+      "rounded_1dp_changes": true,
+      "split": "test",
+      "this_platform": 72.1158,
+      "windows_reference": 72.1568
+    },
+    {
+      "abs_diff": 0.0267,
+      "budget": "50%",
+      "rounded_1dp_changes": false,
+      "split": "val",
+      "this_platform": 54.8397,
+      "windows_reference": 54.813
+    },
+    {
+      "abs_diff": 0.0,
+      "budget": "50%",
+      "rounded_1dp_changes": false,
+      "split": "test",
+      "this_platform": 78.189,
+      "windows_reference": 78.189
+    }
+  ],
+  "max_abs_diff": 0.0672,
+  "metadata": {
+    "commit": "d39fd4e",
+    "reference": "results/table_21_budget_selection_val/cells (Windows 11)",
+    "seed": 42
+  },
+  "n_rounding_changes": 3,
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.13.15"
+}

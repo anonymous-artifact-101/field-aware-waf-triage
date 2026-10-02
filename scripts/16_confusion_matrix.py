@@ -1,6 +1,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from collections import Counter
 from pathlib import Path
@@ -12,11 +13,15 @@ CLASSES = [
 
 REPO = Path(__file__).resolve().parents[1]
 PRED_DIR = REPO / "results" / "table_03_rq1_baselines" / "predictions"
-PRED_FILE = PRED_DIR / "proposed-fasttext-field-aware__5__seed42.json"
 LABELS_FILE = PRED_DIR / "labels__owasp_test.json"
-OUT_FILE = REPO / "results" / "table_06_per_class_owasp" / "confusion_matrix.json"
+OUT_DIR = REPO / "results" / "table_06_per_class_owasp"
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--budget", type=int, default=5, choices=(5, 10))
+    budget = parser.parse_args().budget
+    PRED_FILE = PRED_DIR / f"proposed-fasttext-field-aware__{budget}__seed42.json"
+    OUT_FILE = OUT_DIR / ("confusion_matrix.json" if budget == 5 else f"confusion_matrix_{budget}pct.json")
     pred_doc = json.loads(PRED_FILE.read_text())
     lab_doc = json.loads(LABELS_FILE.read_text())
     preds = pred_doc["preds"]
@@ -47,9 +52,9 @@ def main() -> None:
             "seed": pred_doc.get("seed"),
             "macro_f1": pred_doc.get("macro_f1"),
             "commit": pred_doc.get("metadata", {}).get("commit"),
-            "date": "2026-06-03",
+            "date": "2026-06-03" if budget == 5 else "2026-09-24",
             "note": "Derived from released prediction sidecars; no model re-run. "
-                    "Seed-deterministic proposed detector at the 5% budget.",
+                    f"Seed-deterministic proposed detector at the {budget}% budget.",
         },
     }
     OUT_FILE.write_text(json.dumps(out, indent=2, sort_keys=True) + "\n")

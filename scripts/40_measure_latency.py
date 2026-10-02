@@ -90,6 +90,9 @@ def main(argv: "Optional[List[str]]" = None) -> int:
                         help="Cap records per split (fast SMOKE only; never paper numbers).")
     parser.add_argument("--no-aggregate", action="store_true",
                         help="Skip rebuilding results.json after writing cells.")
+    parser.add_argument("--table", default=_TABLE,
+                        help="Results table directory to write (default: table_08_latency). "
+                             "Use a separate table for non-headline configs so Table 8 is not overwritten.")
     args = parser.parse_args(argv)
 
     cfg = dict(load_config(args.config))
@@ -133,7 +136,8 @@ def main(argv: "Optional[List[str]]" = None) -> int:
           f"+/-{e2e_ci['end_to_end_mean']['ci95']:.4f} (95% CI, std "
           f"{e2e_ci['end_to_end_mean']['std']:.4f})")
 
-    table_dir = RESULTS_DIR / _TABLE
+    table = str(args.table)
+    table_dir = RESULTS_DIR / table
     commit = git_commit()
     data_ver, emb_ver = dataset_version(), embedding_version()
 
@@ -167,7 +171,7 @@ def main(argv: "Optional[List[str]]" = None) -> int:
 
                 "hardware": os.environ.get("PECTI_HARDWARE", "CPU (unspecified; set $PECTI_HARDWARE)"),
             }
-            write_cell_file(table_dir, table=_TABLE, row=stage, col=stat,
+            write_cell_file(table_dir, table=table, row=stage, col=stat,
                             seed=int(seed), value=round(float(val), 6), metadata=metadata)
             n_written += 1
 
@@ -186,7 +190,7 @@ def main(argv: "Optional[List[str]]" = None) -> int:
             "component": col,
             "num_threads": num_threads,
         }
-        write_cell_file(table_dir, table=_TABLE, row=_FOOTPRINT_ROW, col=col,
+        write_cell_file(table_dir, table=table, row=_FOOTPRINT_ROW, col=col,
                         seed=int(seed), value=mb, metadata=metadata)
         n_written += 1
 
@@ -194,7 +198,7 @@ def main(argv: "Optional[List[str]]" = None) -> int:
     for col, key in _CI_STAT.items():
         agg = e2e_ci[key]
         write_cell_file(
-            table_dir, table=_TABLE, row=_E2E_CI_ROW, col=col,
+            table_dir, table=table, row=_E2E_CI_ROW, col=col,
             seed=int(seed), value=round(float(agg["mean"]), 6),
             metadata={
                 "commit": commit, "gpu": "cpu", "dataset_version": data_ver,
@@ -231,7 +235,7 @@ def main(argv: "Optional[List[str]]" = None) -> int:
         if tp.get(key) is None:
             continue
         write_cell_file(
-            table_dir, table=_TABLE, row=_THROUGHPUT_ROW, col=col,
+            table_dir, table=table, row=_THROUGHPUT_ROW, col=col,
             seed=int(seed), value=round(float(tp[key]), 2),
             metadata={
                 "commit": commit, "gpu": "cpu", "dataset_version": data_ver,
@@ -257,7 +261,7 @@ def main(argv: "Optional[List[str]]" = None) -> int:
     if ft_path.is_file():
         lt = measure_load_time(_load_artifact, runs=5)
         write_cell_file(
-            table_dir, table=_TABLE, row=_LOADTIME_ROW, col="mean",
+            table_dir, table=table, row=_LOADTIME_ROW, col="mean",
             seed=int(seed), value=round(float(lt["mean"]), 3),
             metadata={
                 "commit": commit, "gpu": "cpu", "dataset_version": data_ver,
@@ -292,7 +296,7 @@ def main(argv: "Optional[List[str]]" = None) -> int:
             if mem.get(key) is None:
                 continue
             write_cell_file(
-                table_dir, table=_TABLE, row=_MEMORY_ROW, col=col,
+                table_dir, table=table, row=_MEMORY_ROW, col=col,
                 seed=int(seed), value=round(float(mem[key]), 3),
                 metadata={
                     "commit": commit, "gpu": "cpu", "dataset_version": data_ver,
@@ -327,7 +331,7 @@ def main(argv: "Optional[List[str]]" = None) -> int:
 
     try:
         append_run(
-            stage="latency_table8", config_path=args.config, seed=int(seed),
+            stage="latency_table8" if table == _TABLE else f"latency_{table}", config_path=args.config, seed=int(seed),
             artifact=str(table_dir / "results.json"),
             notes=f"end_to_end_mean_ms={stages['end_to_end'].get('mean'):.4f}|"
                   f"footprint_mb={fp['Total']}|single_run_measured",

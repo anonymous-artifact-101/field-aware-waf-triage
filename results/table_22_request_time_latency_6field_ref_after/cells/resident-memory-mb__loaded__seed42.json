@@ -1,0 +1,23 @@
+{
+  "col": "loaded",
+  "metadata": {
+    "commit": "d39fd4e",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "gpu": "cpu",
+    "hardware": "12th Gen Intel(R) Core(TM) i7-12700",
+    "inproc_peak_rss_mb": 662.383,
+    "inproc_steadystate_rss_mb": 661.961,
+    "measurement": "clean subprocess (fresh interpreter + shipped FastText artifact only); excludes the corpus held in memory for timing",
+    "metric": "rss_mb",
+    "num_threads": 1,
+    "single_run_measured": true,
+    "tool": "psutil 7.2.2",
+    "unit": "megabytes"
+  },
+  "row": "Resident memory (MB)",
+  "seed": 42,
+  "table": "table_22_request_time_latency_6field_ref_after",
+  "value": 260.676
+}

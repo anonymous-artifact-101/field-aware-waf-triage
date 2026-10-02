@@ -1,0 +1,1050 @@
+{
+  "calculation": {
+    "test": {
+      "confusion_rows_true_cols_pred": [
+        [
+          91,
+          0,
+          5,
+          1,
+          0,
+          0,
+          0,
+          44
+        ],
+        [
+          2,
+          538,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          22,
+          7,
+          112,
+          0,
+          0,
+          6,
+          0,
+          35
+        ],
+        [
+          7,
+          0,
+          1,
+          9,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          18
+        ],
+        [
+          15,
+          1,
+          2,
+          0,
+          2,
+          8491,
+          0,
+          279
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          63,
+          0
+        ],
+        [
+          17,
+          1,
+          17,
+          0,
+          0,
+          153,
+          4,
+          9687
+        ]
+      ],
+      "labels_match_split_order": true,
+      "ours_macro_f1": 73.6091,
+      "sklearn_macro_f1": 73.6091,
+      "sklearn_per_class_f1": {
+        "lfi": 97.36,
+        "path_traversal": 14.81,
+        "php_injection": 69.78,
+        "protocol": 97.12,
+        "rce": 98.44,
+        "scanner": 96.92,
+        "sql_injection": 61.49,
+        "xss": 52.94
+      }
+    },
+    "val": {
+      "confusion_rows_true_cols_pred": [
+        [
+          319,
+          15,
+          26,
+          7,
+          2,
+          6,
+          1,
+          293
+        ],
+        [
+          299,
+          291,
+          53,
+          3,
+          61,
+          40,
+          1,
+          563
+        ],
+        [
+          78,
+          15,
+          112,
+          4,
+          0,
+          1,
+          0,
+          94
+        ],
+        [
+          86,
+          0,
+          4,
+          3,
+          0,
+          2,
+          0,
+          78
+        ],
+        [
+          136,
+          1,
+          6,
+          0,
+          25,
+          10,
+          0,
+          219
+        ],
+        [
+          4,
+          0,
+          4,
+          0,
+          3,
+          7481,
+          0,
+          205
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0
+        ],
+        [
+          167,
+          26,
+          27,
+          2,
+          1,
+          231,
+          1,
+          10310
+        ]
+      ],
+      "labels_match_split_order": true,
+      "ours_macro_f1": 51.435,
+      "sklearn_macro_f1": 51.435,
+      "sklearn_per_class_f1": {
+        "lfi": 96.73,
+        "path_traversal": 10.22,
+        "php_injection": 41.79,
+        "protocol": 91.53,
+        "rce": 35.08,
+        "scanner": 96.7,
+        "sql_injection": 36.29,
+        "xss": 3.12
+      }
+    }
+  },
+  "label_mapping": {
+    "test": {
+      "examples": [],
+      "mismatches": 0,
+      "n": 19646
+    },
+    "train": {
+      "examples": [],
+      "mismatches": 0,
+      "n": 110005
+    },
+    "val": {
+      "examples": [],
+      "mismatches": 0,
+      "n": 21360
+    }
+  },
+  "metadata": {
+    "commit": "d39fd4e",
+    "dataset_version": "3ce0e30a2e51",
+    "label_budget": 0.1,
+    "seed": 42
+  },
+  "prefix_rce": {
+    "n": 80,
+    "top_path_heads": [
+      [
+        "/wp-plain.php",
+        13
+      ],
+      [
+        "/d_42a4d7a0/d_3e6ca509",
+        8
+      ],
+      [
+        "/d_e6bf6bfb/d_253a0127",
+        8
+      ],
+      [
+        "/d_873adb73/d_e6bf6bfb",
+        8
+      ],
+      [
+        "/d_873adb73/d_42a4d7a0",
+        8
+      ],
+      [
+        "/cmd.php",
+        2
+      ],
+      [
+        "/exec.php",
+        2
+      ],
+      [
+        "/d_eda37985/d_3487ae30",
+        2
+      ]
+    ],
+    "top_rule_ids": [
+      [
+        "932150",
+        78
+      ],
+      [
+        "932130",
+        54
+      ],
+      [
+        "944100",
+        1
+      ],
+      [
+        "944110",
+        1
+      ],
+      [
+        "944130",
+        1
+      ],
+      [
+        "932105",
+        1
+      ]
+    ]
+  },
+  "rce_anatomy": {
+    "test": {
+      "cofiring": {
+        "missed_share_with_930xxx_lfi_rule": 0.625,
+        "missed_share_with_prefix_family_932150_or_932130": 0.125,
+        "share_with_930xxx_lfi_rule": 0.0092,
+        "share_with_prefix_family_932150_or_932130": 0.9872,
+        "tags_of_missed": [
+          [
+            "application-multi",
+            8
+          ],
+          [
+            "language-shell",
+            8
+          ],
+          [
+            "platform-unix",
+            8
+          ],
+          [
+            "attack-rce",
+            8
+          ],
+          [
+            "OWASP_CRS",
+            7
+          ],
+          [
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            7
+          ],
+          [
+            "WASCTC/WASC-31",
+            7
+          ],
+          [
+            "OWASP_TOP_10/A1",
+            7
+          ]
+        ]
+      },
+      "false_rce_true_class": {
+        "lfi": 1,
+        "php_injection": 7,
+        "protocol": 1
+      },
+      "missed_examples": [
+        {
+          "crs_rule_ids": [
+            "932150"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2"
+          ],
+          "day": "21-Aug-2025",
+          "method": "GET",
+          "path": "/hzinnrem.php",
+          "query": "Fox=d3wL7",
+          "status": 301
+        },
+        {
+          "crs_rule_ids": [
+            "932105"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP"
+          ],
+          "day": "21-Aug-2025",
+          "method": "POST",
+          "path": "/wp-comments-post.php",
+          "query": "",
+          "status": 302
+        },
+        {
+          "crs_rule_ids": [
+            "930120",
+            "932160",
+            "933160"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2",
+            "language-php",
+            "attack-injection-php",
+            "OWASP_CRS/WEB_ATTACK/PHP_INJECTION"
+          ],
+          "day": "22-Aug-2025",
+          "method": "POST",
+          "path": "/d_24b512b7/d_5d5c8804/d_ff655218/d_b058285e",
+          "query": "",
+          "status": 404
+        },
+        {
+          "crs_rule_ids": [
+            "930120",
+            "932160",
+            "933160"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2",
+            "language-php",
+            "attack-injection-php",
+            "OWASP_CRS/WEB_ATTACK/PHP_INJECTION"
+          ],
+          "day": "22-Aug-2025",
+          "method": "POST",
+          "path": "/d_24b512b7/d_5d5c8804/d_ff655218/d_b058285e",
+          "query": "",
+          "status": 404
+        },
+        {
+          "crs_rule_ids": [
+            "930120",
+            "932160",
+            "933160"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2",
+            "language-php",
+            "attack-injection-php",
+            "OWASP_CRS/WEB_ATTACK/PHP_INJECTION"
+          ],
+          "day": "22-Aug-2025",
+          "method": "POST",
+          "path": "/d_24b512b7/d_5d5c8804/d_ff655218/d_b058285e",
+          "query": "",
+          "status": 404
+        },
+        {
+          "crs_rule_ids": [
+            "930120",
+            "932160",
+            "933160"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2",
+            "language-php",
+            "attack-injection-php",
+            "OWASP_CRS/WEB_ATTACK/PHP_INJECTION"
+          ],
+          "day": "22-Aug-2025",
+          "method": "POST",
+          "path": "/d_24b512b7/d_5d5c8804/d_ff655218/d_b058285e",
+          "query": "",
+          "status": 404
+        }
+      ],
+      "missed_predicted_as": {
+        "php_injection": 2,
+        "protocol": 2,
+        "sql_injection": 2,
+        "xss": 2
+      },
+      "missed_query_empty_share": 0.875,
+      "missed_top_path_heads": [
+        [
+          "/d_24b512b7/d_5d5c8804",
+          5
+        ],
+        [
+          "/wp-comments-post.php",
+          2
+        ],
+        [
+          "/hzinnrem.php",
+          1
+        ]
+      ],
+      "n_rce": 546,
+      "per_day_n_and_recall": {
+        "20-Aug-2025": [
+          19,
+          100.0
+        ],
+        "21-Aug-2025": [
+          22,
+          90.9
+        ],
+        "22-Aug-2025": [
+          166,
+          97.0
+        ],
+        "23-Aug-2025": [
+          78,
+          100.0
+        ],
+        "24-Aug-2025": [
+          228,
+          99.6
+        ],
+        "25-Aug-2025": [
+          33,
+          100.0
+        ]
+      },
+      "recall": 98.53,
+      "share_with_path_head_seen_in_prefix_rce": 0.8645,
+      "share_with_rule_seen_in_prefix_rce": 0.9908,
+      "top_path_heads": [
+        [
+          "/wp-plain.php",
+          69
+        ],
+        [
+          "/d_42a4d7a0/d_3e6ca509",
+          36
+        ],
+        [
+          "/d_873adb73/d_e6bf6bfb",
+          34
+        ],
+        [
+          "/d_873adb73/d_42a4d7a0",
+          34
+        ],
+        [
+          "/d_e6bf6bfb/d_253a0127",
+          33
+        ],
+        [
+          "/cmd.php",
+          24
+        ],
+        [
+          "/exec.php",
+          24
+        ],
+        [
+          "/d_eda37985/d_3487ae30",
+          24
+        ]
+      ],
+      "top_rule_ids": [
+        [
+          "932150",
+          539
+        ],
+        [
+          "932130",
+          393
+        ],
+        [
+          "930120",
+          5
+        ],
+        [
+          "932160",
+          5
+        ],
+        [
+          "933160",
+          5
+        ],
+        [
+          "932105",
+          2
+        ]
+      ]
+    },
+    "val": {
+      "cofiring": {
+        "missed_share_with_930xxx_lfi_rule": 0.6608,
+        "missed_share_with_prefix_family_932150_or_932130": 0.2137,
+        "share_with_930xxx_lfi_rule": 0.524,
+        "share_with_prefix_family_932150_or_932130": 0.3768,
+        "tags_of_missed": [
+          [
+            "application-multi",
+            1020
+          ],
+          [
+            "OWASP_CRS",
+            1020
+          ],
+          [
+            "attack-rce",
+            1012
+          ],
+          [
+            "OWASP_TOP_10/A1",
+            1008
+          ],
+          [
+            "WASCTC/WASC-31",
+            1003
+          ],
+          [
+            "PCI/6.5.2",
+            998
+          ],
+          [
+            "language-shell",
+            942
+          ],
+          [
+            "platform-unix",
+            940
+          ]
+        ]
+      },
+      "false_rce_true_class": {
+        "path_traversal": 1,
+        "php_injection": 15,
+        "protocol": 26,
+        "sql_injection": 15
+      },
+      "missed_examples": [
+        {
+          "crs_rule_ids": [
+            "930100",
+            "930110",
+            "930120",
+            "932160"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/DIR_TRAVERSAL",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2"
+          ],
+          "day": "16-Aug-2025",
+          "method": "GET",
+          "path": "/d_dc68e1b7/d_81470ed4",
+          "query": "fileNames[]=../../../../../../../etc/passwd",
+          "status": 403
+        },
+        {
+          "crs_rule_ids": [
+            "930120",
+            "932160",
+            "933170"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2",
+            "language-php",
+            "attack-injection-php",
+            "OWASP_CRS/WEB_ATTACK/PHP_INJECTION"
+          ],
+          "day": "16-Aug-2025",
+          "method": "POST",
+          "path": "/d_4c9e7c6a/setup.php",
+          "query": "",
+          "status": 403
+        },
+        {
+          "crs_rule_ids": [
+            "930120",
+            "932160",
+            "933160"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2",
+            "language-php",
+            "attack-injection-php",
+            "OWASP_CRS/WEB_ATTACK/PHP_INJECTION"
+          ],
+          "day": "16-Aug-2025",
+          "method": "POST",
+          "path": "/bsh.servlet.BshServlet",
+          "query": "",
+          "status": 404
+        },
+        {
+          "crs_rule_ids": [
+            "930120",
+            "932150",
+            "932160",
+            "932170"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2"
+          ],
+          "day": "16-Aug-2025",
+          "method": "GET",
+          "path": "/d_c93247f7/d_5ea4b139",
+          "query": "",
+          "status": 404
+        },
+        {
+          "crs_rule_ids": [
+            "930100",
+            "930110",
+            "930120",
+            "932160"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/DIR_TRAVERSAL",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2"
+          ],
+          "day": "16-Aug-2025",
+          "method": "GET",
+          "path": "/d_55d89d22/d_6bc96a7f/d_aa07e113/d_05ea2860",
+          "query": "ostype=../../../../../../../../../etc/passwd",
+          "status": 403
+        },
+        {
+          "crs_rule_ids": [
+            "930120",
+            "932105",
+            "932160"
+          ],
+          "crs_tags": [
+            "application-multi",
+            "language-multi",
+            "platform-multi",
+            "attack-lfi",
+            "OWASP_CRS",
+            "OWASP_CRS/WEB_ATTACK/FILE_INJECTION",
+            "WASCTC/WASC-33",
+            "OWASP_TOP_10/A4",
+            "PCI/6.5.4",
+            "language-shell",
+            "platform-unix",
+            "attack-rce",
+            "OWASP_CRS/WEB_ATTACK/COMMAND_INJECTION",
+            "WASCTC/WASC-31",
+            "OWASP_TOP_10/A1",
+            "PCI/6.5.2"
+          ],
+          "day": "16-Aug-2025",
+          "method": "POST",
+          "path": "/d_88590dce/org.apache.xmlrpc.webserver.XmlRpcServlet",
+          "query": "",
+          "status": 404
+        }
+      ],
+      "missed_predicted_as": {
+        "lfi": 40,
+        "path_traversal": 61,
+        "php_injection": 53,
+        "protocol": 563,
+        "scanner": 1,
+        "sql_injection": 299,
+        "xss": 3
+      },
+      "missed_query_empty_share": 0.299,
+      "missed_top_path_heads": [
+        [
+          "/index.php",
+          126
+        ],
+        [
+          "/",
+          57
+        ],
+        [
+          "/d_26833b49/d_06c4c830",
+          46
+        ],
+        [
+          "/d_21316fde/admin-ajax.php",
+          10
+        ],
+        [
+          "/d_c93247f7/cgiServer.exx",
+          6
+        ],
+        [
+          "/d_b721959b/d_ff655218",
+          6
+        ],
+        [
+          "/d_b721959b/d_5d1b9c58",
+          6
+        ],
+        [
+          "/d_79190768/d_f0cb7d79",
+          5
+        ]
+      ],
+      "n_rce": 1311,
+      "per_day_n_and_recall": {
+        "16-Aug-2025": [
+          580,
+          11.2
+        ],
+        "17-Aug-2025": [
+          588,
+          14.3
+        ],
+        "18-Aug-2025": [
+          48,
+          100.0
+        ],
+        "19-Aug-2025": [
+          95,
+          98.9
+        ]
+      },
+      "recall": 22.2,
+      "share_with_path_head_seen_in_prefix_rce": 0.1808,
+      "share_with_rule_seen_in_prefix_rce": 0.5034,
+      "top_path_heads": [
+        [
+          "/index.php",
+          126
+        ],
+        [
+          "/",
+          57
+        ],
+        [
+          "/d_26833b49/d_06c4c830",
+          46
+        ],
+        [
+          "/wp-plain.php",
+          35
+        ],
+        [
+          "/d_42a4d7a0/d_3e6ca509",
+          16
+        ],
+        [
+          "/cmd.php",
+          14
+        ],
+        [
+          "/exec.php",
+          14
+        ],
+        [
+          "/d_eda37985/d_3487ae30",
+          14
+        ]
+      ],
+      "top_rule_ids": [
+        [
+          "932160",
+          776
+        ],
+        [
+          "930120",
+          681
+        ],
+        [
+          "930100",
+          384
+        ],
+        [
+          "930110",
+          384
+        ],
+        [
+          "932130",
+          359
+        ],
+        [
+          "932150",
+          343
+        ],
+        [
+          "920270",
+          114
+        ],
+        [
+          "932105",
+          106
+        ]
+      ]
+    }
+  },
+  "split": {
+    "boundaries_ok": true,
+    "id_overlap": {
+      "train&test": 0,
+      "train&val": 0,
+      "val&test": 0
+    },
+    "test": {
+      "days": [
+        "20-Aug-2025",
+        "21-Aug-2025",
+        "22-Aug-2025",
+        "23-Aug-2025",
+        "24-Aug-2025",
+        "25-Aug-2025"
+      ],
+      "first": "2025-08-20T00:01:09+02:00",
+      "last": "2025-08-25T23:59:41+02:00",
+      "time_ordered": true
+    },
+    "train": {
+      "days": [
+        "01-Aug-2025",
+        "02-Aug-2025",
+        "03-Aug-2025",
+        "04-Aug-2025",
+        "05-Aug-2025",
+        "06-Aug-2025",
+        "07-Aug-2025",
+        "08-Aug-2025",
+        "09-Aug-2025",
+        "10-Aug-2025",
+        "11-Aug-2025",
+        "12-Aug-2025",
+        "13-Aug-2025",
+        "14-Aug-2025",
+        "15-Aug-2025",
+        "27-Jul-2025",
+        "28-Jul-2025",
+        "29-Jul-2025",
+        "30-Jul-2025",
+        "31-Jul-2025"
+      ],
+      "first": "2025-07-27T00:00:22+02:00",
+      "last": "2025-08-16T00:00:07+02:00",
+      "time_ordered": true
+    },
+    "val": {
+      "days": [
+        "16-Aug-2025",
+        "17-Aug-2025",
+        "18-Aug-2025",
+        "19-Aug-2025"
+      ],
+      "first": "2025-08-16T00:00:17+02:00",
+      "last": "2025-08-19T23:58:37+02:00",
+      "time_ordered": true
+    }
+  }
+}

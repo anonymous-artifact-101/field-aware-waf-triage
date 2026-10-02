@@ -1,0 +1,62 @@
+[
+  {
+    "default": {
+      "test_macro_f1": 73.6091,
+      "val_macro_f1": 51.435
+    },
+    "delta_test_macro_f1": -0.1849,
+    "optuna_best": {
+      "test_macro_f1": 73.4242,
+      "val_macro_f1": 51.7054
+    },
+    "seed": 42
+  },
+  {
+    "default": {
+      "test_macro_f1": 73.6091,
+      "val_macro_f1": 51.435
+    },
+    "delta_test_macro_f1": -0.1849,
+    "optuna_best": {
+      "test_macro_f1": 73.4242,
+      "val_macro_f1": 51.7054
+    },
+    "seed": 43
+  },
+  {
+    "default": {
+      "test_macro_f1": 73.6091,
+      "val_macro_f1": 51.435
+    },
+    "delta_test_macro_f1": -0.1849,
+    "optuna_best": {
+      "test_macro_f1": 73.4242,
+      "val_macro_f1": 51.7054
+    },
+    "seed": 44
+  },
+  {
+    "default": {
+      "test_macro_f1": 73.6091,
+      "val_macro_f1": 51.435
+    },
+    "delta_test_macro_f1": -0.1849,
+    "optuna_best": {
+      "test_macro_f1": 73.4242,
+      "val_macro_f1": 51.7054
+    },
+    "seed": 45
+  },
+  {
+    "default": {
+      "test_macro_f1": 73.6091,
+      "val_macro_f1": 51.435
+    },
+    "delta_test_macro_f1": -0.1849,
+    "optuna_best": {
+      "test_macro_f1": 73.4242,
+      "val_macro_f1": 51.7054
+    },
+    "seed": 46
+  }
+]

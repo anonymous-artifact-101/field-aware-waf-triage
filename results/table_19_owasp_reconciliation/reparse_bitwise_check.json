@@ -1,0 +1,193 @@
+{
+  "all_identical": true,
+  "files": {
+    "day_01.jsonl": {
+      "identical": true,
+      "processed_sha256": "8208c518bcf5528525682484513941c445f9742e117018a9d4c9966a416e9e08",
+      "records": 3020,
+      "reparsed_sha256": "8208c518bcf5528525682484513941c445f9742e117018a9d4c9966a416e9e08"
+    },
+    "day_02.jsonl": {
+      "identical": true,
+      "processed_sha256": "bc228a858205baca54bb873a951528bef34b07aa8ea2dadee2543843f208e5f2",
+      "records": 7100,
+      "reparsed_sha256": "bc228a858205baca54bb873a951528bef34b07aa8ea2dadee2543843f208e5f2"
+    },
+    "day_03.jsonl": {
+      "identical": true,
+      "processed_sha256": "f80cc3cce575fdcbd9e4653a0178594298a2376582cc884c94711336fccc9ede",
+      "records": 3036,
+      "reparsed_sha256": "f80cc3cce575fdcbd9e4653a0178594298a2376582cc884c94711336fccc9ede"
+    },
+    "day_04.jsonl": {
+      "identical": true,
+      "processed_sha256": "3b24e31b7bd3170e3962a89b5ee070cf9644c980857954118e1511c66b63f912",
+      "records": 2991,
+      "reparsed_sha256": "3b24e31b7bd3170e3962a89b5ee070cf9644c980857954118e1511c66b63f912"
+    },
+    "day_05.jsonl": {
+      "identical": true,
+      "processed_sha256": "a3fd7c81a389bc4971b4c65ce52f0894d7d0922b07831b85aa3466090d1454e6",
+      "records": 4163,
+      "reparsed_sha256": "a3fd7c81a389bc4971b4c65ce52f0894d7d0922b07831b85aa3466090d1454e6"
+    },
+    "day_06.jsonl": {
+      "identical": true,
+      "processed_sha256": "62f418df2dc8f6366e1278f838ead338a6619572411e3b2f614ddb4e2b2dc44d",
+      "records": 5909,
+      "reparsed_sha256": "62f418df2dc8f6366e1278f838ead338a6619572411e3b2f614ddb4e2b2dc44d"
+    },
+    "day_07.jsonl": {
+      "identical": true,
+      "processed_sha256": "ec836561f0feb5dd48ad8da64a098a93d1b81e42171641455a673576555b1c90",
+      "records": 6034,
+      "reparsed_sha256": "ec836561f0feb5dd48ad8da64a098a93d1b81e42171641455a673576555b1c90"
+    },
+    "day_08.jsonl": {
+      "identical": true,
+      "processed_sha256": "1b7511f2059335b501ae5361cc970b0187936193079f4680e11ef2d5b6f5471e",
+      "records": 4874,
+      "reparsed_sha256": "1b7511f2059335b501ae5361cc970b0187936193079f4680e11ef2d5b6f5471e"
+    },
+    "day_09.jsonl": {
+      "identical": true,
+      "processed_sha256": "1bcfe5be96929ae6f3bab1b50a515f303f10edb6b684f72bf15d4ca3bff4dbd2",
+      "records": 8752,
+      "reparsed_sha256": "1bcfe5be96929ae6f3bab1b50a515f303f10edb6b684f72bf15d4ca3bff4dbd2"
+    },
+    "day_10.jsonl": {
+      "identical": true,
+      "processed_sha256": "0de85ef62151b4fdc8ce9222a8eabf68e5725f2b6c7d18e0a5be7bb926d0d7e4",
+      "records": 5487,
+      "reparsed_sha256": "0de85ef62151b4fdc8ce9222a8eabf68e5725f2b6c7d18e0a5be7bb926d0d7e4"
+    },
+    "day_11.jsonl": {
+      "identical": true,
+      "processed_sha256": "3466aecf62e509bb48135a4fa83146bf4f06ea86132788164d2709fb7d16cae8",
+      "records": 3685,
+      "reparsed_sha256": "3466aecf62e509bb48135a4fa83146bf4f06ea86132788164d2709fb7d16cae8"
+    },
+    "day_12.jsonl": {
+      "identical": true,
+      "processed_sha256": "c957a9bfbb9360da2867bea163bc6ee07b63340b26b04036541446c451503fcf",
+      "records": 2093,
+      "reparsed_sha256": "c957a9bfbb9360da2867bea163bc6ee07b63340b26b04036541446c451503fcf"
+    },
+    "day_13.jsonl": {
+      "identical": true,
+      "processed_sha256": "acc60b8a90c6a1cf3281113cc6b4b09fd2d88addccde36c0d883a778b0eb1723",
+      "records": 2684,
+      "reparsed_sha256": "acc60b8a90c6a1cf3281113cc6b4b09fd2d88addccde36c0d883a778b0eb1723"
+    },
+    "day_14.jsonl": {
+      "identical": true,
+      "processed_sha256": "0f7af5d5336c3f8fc2059d2a2b17a19399fbb4d9be52c9193c6a50814afcac23",
+      "records": 3419,
+      "reparsed_sha256": "0f7af5d5336c3f8fc2059d2a2b17a19399fbb4d9be52c9193c6a50814afcac23"
+    },
+    "day_15.jsonl": {
+      "identical": true,
+      "processed_sha256": "18f2a9cdd0db595f8883f0c8a7ba48843c8080a12c2f578e094ec3138b8f6562",
+      "records": 7752,
+      "reparsed_sha256": "18f2a9cdd0db595f8883f0c8a7ba48843c8080a12c2f578e094ec3138b8f6562"
+    },
+    "day_16.jsonl": {
+      "identical": true,
+      "processed_sha256": "729912541626d858c77f9a0a02e801fc0e134253d6d8c95d67ef41f73879a909",
+      "records": 3358,
+      "reparsed_sha256": "729912541626d858c77f9a0a02e801fc0e134253d6d8c95d67ef41f73879a909"
+    },
+    "day_17.jsonl": {
+      "identical": true,
+      "processed_sha256": "f5773f75ab0a7ce432485e2517e822f32706d6269c0bc46dce1af864e3a509cf",
+      "records": 2586,
+      "reparsed_sha256": "f5773f75ab0a7ce432485e2517e822f32706d6269c0bc46dce1af864e3a509cf"
+    },
+    "day_18.jsonl": {
+      "identical": true,
+      "processed_sha256": "5d1bb24cb8a24c078321f9a5720e26edc734177d4d200c66068f88987d4019be",
+      "records": 5081,
+      "reparsed_sha256": "5d1bb24cb8a24c078321f9a5720e26edc734177d4d200c66068f88987d4019be"
+    },
+    "day_19.jsonl": {
+      "identical": true,
+      "processed_sha256": "217976dcf666020c3e18755c33df8c7a2861ccdda94a99b3da8b4bf93ae0f25b",
+      "records": 12384,
+      "reparsed_sha256": "217976dcf666020c3e18755c33df8c7a2861ccdda94a99b3da8b4bf93ae0f25b"
+    },
+    "day_20.jsonl": {
+      "identical": true,
+      "processed_sha256": "0776cf1954afd04cb6c0abdf0a170b795e4491b1ec1c12f49550d0c5a2374071",
+      "records": 15597,
+      "reparsed_sha256": "0776cf1954afd04cb6c0abdf0a170b795e4491b1ec1c12f49550d0c5a2374071"
+    },
+    "day_21.jsonl": {
+      "identical": true,
+      "processed_sha256": "4c1c80c06fa8921599c93d3f62ed977a19bc901944e0ffdf0c32160709d2964b",
+      "records": 9276,
+      "reparsed_sha256": "4c1c80c06fa8921599c93d3f62ed977a19bc901944e0ffdf0c32160709d2964b"
+    },
+    "day_22.jsonl": {
+      "identical": true,
+      "processed_sha256": "a739152a6ea11c9bf9503e8da4edacdb0de85b52ec9c9a53c73265e121f55018",
+      "records": 4567,
+      "reparsed_sha256": "a739152a6ea11c9bf9503e8da4edacdb0de85b52ec9c9a53c73265e121f55018"
+    },
+    "day_23.jsonl": {
+      "identical": true,
+      "processed_sha256": "f633270eb0a83b8c0338799c66f85d89f57271b30395d3600d602454d6b75a02",
+      "records": 3463,
+      "reparsed_sha256": "f633270eb0a83b8c0338799c66f85d89f57271b30395d3600d602454d6b75a02"
+    },
+    "day_24.jsonl": {
+      "identical": true,
+      "processed_sha256": "bf69eaf48e3c733e0068b576ce712a319d54bff99088772420fcca892c914a6e",
+      "records": 4054,
+      "reparsed_sha256": "bf69eaf48e3c733e0068b576ce712a319d54bff99088772420fcca892c914a6e"
+    },
+    "day_25.jsonl": {
+      "identical": true,
+      "processed_sha256": "db15deb3206eb506cd5794dc6f1dc5e3fad5a06f2e54007160a43913ba46ea0a",
+      "records": 2914,
+      "reparsed_sha256": "db15deb3206eb506cd5794dc6f1dc5e3fad5a06f2e54007160a43913ba46ea0a"
+    },
+    "day_26.jsonl": {
+      "identical": true,
+      "processed_sha256": "f5bf4c64124667b1b7fdd9b53350a0abdb6322822711e34887ee0ba7d5df4a73",
+      "records": 2893,
+      "reparsed_sha256": "f5bf4c64124667b1b7fdd9b53350a0abdb6322822711e34887ee0ba7d5df4a73"
+    },
+    "day_27.jsonl": {
+      "identical": true,
+      "processed_sha256": "fbb83700eed0a1ceaf3253177892fd28214abffa03c0b7f2a1e65d77f983f619",
+      "records": 2751,
+      "reparsed_sha256": "fbb83700eed0a1ceaf3253177892fd28214abffa03c0b7f2a1e65d77f983f619"
+    },
+    "day_28.jsonl": {
+      "identical": true,
+      "processed_sha256": "454254329750119f5b9b0b79add9c4ff69a8ceb27f093e8c38c1ae82c12af9a4",
+      "records": 3801,
+      "reparsed_sha256": "454254329750119f5b9b0b79add9c4ff69a8ceb27f093e8c38c1ae82c12af9a4"
+    },
+    "day_29.jsonl": {
+      "identical": true,
+      "processed_sha256": "fed5ad4ccb11bd5f5fdb117b47fe98e5bf6f26435f5a63f5efeb9c34d2485ebc",
+      "records": 3425,
+      "reparsed_sha256": "fed5ad4ccb11bd5f5fdb117b47fe98e5bf6f26435f5a63f5efeb9c34d2485ebc"
+    },
+    "day_30.jsonl": {
+      "identical": true,
+      "processed_sha256": "b70fe5a906114aaf91c032ce44018202a5b901b4a024abbbb11594b067992bec",
+      "records": 3862,
+      "reparsed_sha256": "b70fe5a906114aaf91c032ce44018202a5b901b4a024abbbb11594b067992bec"
+    }
+  },
+  "identical_day_files": 30,
+  "metadata": {
+    "commit": "d39fd4e",
+    "note": "Independent re-parse of all staged raw days vs processed JSONL (SHA-256)."
+  },
+  "processed_day_files": 30,
+  "raw_days_staged": 30,
+  "total_records": 151011
+}

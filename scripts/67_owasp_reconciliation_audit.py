@@ -243,6 +243,19 @@ def main() -> int:
         for row, value in rows.items()
     ]
 
+    if missing_raw_days:
+        missing_records = rows["Missing raw day processed records"]
+        coverage = (
+            f"The currently staged raw directory is missing {len(missing_raw_days)} audit day file(s) "
+            f"({', '.join(missing_raw_days)}), whose {missing_records:,} processed records account for "
+            f"the {current_raw_shortfall:,}-record shortfall between available raw parsing and split output."
+        )
+    else:
+        coverage = (
+            f"All {len(raw_days)} raw audit day files are staged; parsing them yields {parser_output:,} "
+            f"records, a shortfall of {current_raw_shortfall:,} against the split output."
+        )
+
     out = {
         "table": "table_19_owasp_reconciliation",
         "cells": cells,
@@ -259,11 +272,10 @@ def main() -> int:
                 "truncated_chunks_missing_z": "Raw chunks with no Z terminator section.",
             },
             "interpretation": (
-                "The released split/parser output has one unique transaction ID per record. The currently "
-                "staged raw directory is missing the 03-Aug-2025 audit file, whose 4,874 processed records "
-                "account for the shortfall between available raw parsing and split output. On available raw "
-                "days, no duplicate IDs, skipped malformed chunks, or missing-Z chunks explain the 3,806-record "
-                "difference from the source descriptor; the descriptor discrepancy remains unresolved."
+                "The released split/parser output has one unique transaction ID per record. "
+                f"{coverage} On available raw days, no duplicate IDs, skipped malformed chunks, or "
+                f"missing-Z chunks explain the {descriptor_difference:,}-record difference from the source "
+                "descriptor; the descriptor discrepancy remains unresolved."
             ),
             "per_day": per_day,
         },

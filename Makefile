@@ -18,15 +18,16 @@ help:
 	@echo "  make parse           - parse raw/ -> processed/ (6 typed fields)"
 	@echo "  make splits          - time-ordered splits -> data/splits/"
 	@echo "Rebuild the paper from raw data:"
-	@echo "  make paper           - FULL 5-seed rebuild {42..46} of every table (the paper numbers)"
+	@echo "  make paper           - 5-seed rebuild {42..46} of the main tables and figures"
 	@echo "  make train-fasttext  - train the FastText embedding on the benign weblog corpus"
 	@echo "  make table-03 SEED=42 - reproduce ONE seed's cells (NOT the 5-seed paper table)"
 	@echo "  make table-05 / table-06 / table-07 / table-08 - one-seed cells for a table"
-	@echo "  make p1-artifacts    - reviewer sensitivity/workload artifacts"
+	@echo "  make p1-artifacts    - Revision-1 analyses (Tables 2, 4, 5, Table 8 lower block, Fig. 2, audits)"
 	@echo "  make significance    - significance tests for the Table 3 claims"
 	@echo ""
 	@echo "NOTE: the single-table targets run ONE seed (SEED=$(SEED)). The paper's"
-	@echo "      5-seed means/CIs come only from 'make paper' (scripts/99_run_full_pipeline.sh)."
+	@echo "      5-seed means/CIs come from 'make paper' (scripts/99_run_full_pipeline.sh)"
+	@echo "      plus 'make p1-artifacts' for the Revision-1 analyses."
 
 # ---------------------------------------------------------------------------
 # Data pipeline
@@ -128,7 +129,8 @@ table-05: train-fasttext
 # Table 6: per-class subtype breakdown of the proposed detector.
 .PHONY: table-06
 table-06: train-fasttext
-	$(PYTHON) scripts/12_evaluate.py --config configs/finetune/label_5pct.yaml --seed $(SEED) --table 6 --aggregate
+	$(PYTHON) scripts/12_evaluate.py --config configs/finetune/label_5pct.yaml --seed $(SEED) --table 6
+	$(PYTHON) scripts/12_evaluate.py --config configs/finetune/label_10pct.yaml --seed $(SEED) --table 6 --aggregate
 	$(PYTHON) scripts/50_make_paper_tables.py --table 6
 
 # Table 7: per-field attribution agreement (6-field detector). --allow-exploratory
@@ -153,6 +155,18 @@ table-08: train-fasttext
 p1-artifacts:
 	$(PYTHON) scripts/61_make_dataset_profile.py
 	$(PYTHON) scripts/67_owasp_reconciliation_audit.py
+	$(PYTHON) scripts/70_descriptor_gap_filters.py
+	$(PYTHON) scripts/69_budget_selection_val.py --aggregate
+	$(PYTHON) scripts/69_budget_selection_val.py --per-class-only
+	$(PYTHON) scripts/71_val_rce_diagnostic.py
+	$(PYTHON) scripts/68_pretrain_corpus_control.py --seed-summary
+	$(PYTHON) scripts/72_reparse_bitwise_check.py
+	$(PYTHON) scripts/74_intercept_status_audit.py
+	$(PYTHON) scripts/75_fpr_wilson_bound.py
+	$(PYTHON) scripts/76_audit_weighting_check.py
+	$(PYTHON) scripts/77_boundary_id_audit.py
+	$(PYTHON) scripts/68_pretrain_corpus_control.py --aggregate
+	$(PYTHON) scripts/16_confusion_matrix.py --budget 10
 	$(PYTHON) scripts/62_protocol_sensitivity.py --cols 5% 10%
 	$(PYTHON) scripts/63_rare_class_ci.py --cols 5% 10%
 	$(PYTHON) scripts/66_no_custom_rule_444444.py --cols 5% 10%

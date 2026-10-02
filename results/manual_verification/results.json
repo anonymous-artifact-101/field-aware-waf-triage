@@ -3,8 +3,8 @@
   "crs_label_audit": {
     "benign_by_crs_stratum": {},
     "benign_fp_rate_weighted_pct": 0.0,
-    "crs_accuracy_raw_pct": 97.83,
-    "crs_accuracy_weighted_pct": 97.98,
+    "crs_accuracy_raw_pct": 97.8328,
+    "crs_accuracy_weighted_pct": 97.9829,
     "per_class_crs_precision": {
       "lfi": {
         "ci95": [
@@ -91,7 +91,7 @@
       "protocol": 354
     },
     "undecidable_rate_raw_pct": 35.4,
-    "undecidable_rate_weighted_pct": 49.45
+    "undecidable_rate_weighted_pct": 49.447
   },
   "human_label_distribution": {
     "lfi": 333,
@@ -104,9 +104,10 @@
     "xss": 22
   },
   "metadata": {
-    "commit": "11b9822",
-    "date": "2026-06-04",
-    "note": "Single web-application security reviewer hand-labelled all 1000 records. 'normal'/'unsure' = undecidable from the anonymized log (payload hashed); excluded from the CRS-precision denominator and reported as the evidence-availability ceiling. Weighted figures use sample_weight to undo rare-class over-sampling.",
+    "commit": "d39fd4e",
+    "date": "2026-09-28",
+    "expert_column": "label_human",
+    "note": "Expert hand-labels compared to CRS subtypes. 'normal'/'unsure' = undecidable from the anonymized log; excluded from CRS-precision denominator. Weighted figures use sample_weight to undo rare-class over-sampling.",
     "single_run_measured": true,
     "worksheet": "<REPO>/data/manual_verification/owasp_1k_subset_human.xlsx"
   },

@@ -1,0 +1,103 @@
+{
+  "formulas": {
+    "agreement_weighted_on_decidable": "sum_c w_c*agree_c / sum_c w_c*decidable_c",
+    "undecidable_weighted": "sum_c w_c*undecidable_c / sum_c w_c*n_c"
+  },
+  "metadata": {
+    "column": "label_human",
+    "commit": "d39fd4e",
+    "manifest": "data/manual_verification/sample_manifest.json",
+    "undecidable_vocabulary": [
+      "",
+      "normal",
+      "undecidable",
+      "unsure"
+    ],
+    "worksheet": "data/manual_verification/owasp_1k_subset_human.xlsx"
+  },
+  "per_stratum": {
+    "lfi": {
+      "agree": 326,
+      "decidable": 327,
+      "sampled": 327,
+      "test_count": 8790,
+      "undecidable": 0,
+      "weight": 26.880733944954127
+    },
+    "path_traversal": {
+      "agree": 17,
+      "decidable": 23,
+      "sampled": 23,
+      "test_count": 23,
+      "undecidable": 0,
+      "weight": 1.0
+    },
+    "php_injection": {
+      "agree": 64,
+      "decidable": 65,
+      "sampled": 65,
+      "test_count": 182,
+      "undecidable": 0,
+      "weight": 2.8
+    },
+    "protocol": {
+      "agree": 0,
+      "decidable": 6,
+      "sampled": 360,
+      "test_count": 9879,
+      "undecidable": 354,
+      "weight": 27.441666666666666
+    },
+    "rce": {
+      "agree": 77,
+      "decidable": 77,
+      "sampled": 77,
+      "test_count": 546,
+      "undecidable": 0,
+      "weight": 7.090909090909091
+    },
+    "scanner": {
+      "agree": 62,
+      "decidable": 62,
+      "sampled": 62,
+      "test_count": 63,
+      "undecidable": 0,
+      "weight": 1.0161290322580645
+    },
+    "sql_injection": {
+      "agree": 64,
+      "decidable": 64,
+      "sampled": 64,
+      "test_count": 141,
+      "undecidable": 0,
+      "weight": 2.203125
+    },
+    "xss": {
+      "agree": 22,
+      "decidable": 22,
+      "sampled": 22,
+      "test_count": 22,
+      "undecidable": 0,
+      "weight": 1.0
+    }
+  },
+  "population": {
+    "n_total": 19646,
+    "note": "stratified sample of the TEST split; weights = test_count / sampled_count",
+    "split": "owasp_test"
+  },
+  "rates_unrounded_pct": {
+    "agreement_raw_on_decidable": 97.83281733746131,
+    "agreement_weighted_on_decidable": 97.98290582184276,
+    "undecidable_raw": 35.4,
+    "undecidable_weighted": 49.44696121347857
+  },
+  "table": "manual_verification",
+  "totals": {
+    "agree": 632,
+    "decidable": 646,
+    "sampled": 1000,
+    "sum_weight_x_sampled": 19646.0,
+    "undecidable": 354
+  }
+}

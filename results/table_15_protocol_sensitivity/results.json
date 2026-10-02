@@ -99,6 +99,190 @@
           ]
         }
       },
+      "Field-prefixed FastText + LinearSVC": {
+        "10%": {
+          "by_seed": {
+            "42": {
+              "macro_f1_7_class_excluding_protocol": 58.4238,
+              "macro_f1_8_class": 56.5131
+            },
+            "43": {
+              "macro_f1_7_class_excluding_protocol": 58.5632,
+              "macro_f1_8_class": 56.6526
+            },
+            "44": {
+              "macro_f1_7_class_excluding_protocol": 57.6847,
+              "macro_f1_8_class": 56.1719
+            },
+            "45": {
+              "macro_f1_7_class_excluding_protocol": 58.7362,
+              "macro_f1_8_class": 56.7535
+            },
+            "46": {
+              "macro_f1_7_class_excluding_protocol": 59.015,
+              "macro_f1_8_class": 58.3792
+            }
+          },
+          "macro_f1_7_class_excluding_protocol": {
+            "ci_95": [
+              57.8656,
+              59.1036
+            ],
+            "mean": 58.4846
+          },
+          "macro_f1_8_class": {
+            "ci_95": [
+              55.8279,
+              57.9603
+            ],
+            "mean": 56.8941
+          },
+          "seeds": [
+            42,
+            43,
+            44,
+            45,
+            46
+          ]
+        },
+        "5%": {
+          "by_seed": {
+            "42": {
+              "macro_f1_7_class_excluding_protocol": 31.9475,
+              "macro_f1_8_class": 36.3752
+            },
+            "43": {
+              "macro_f1_7_class_excluding_protocol": 31.8096,
+              "macro_f1_8_class": 35.916
+            },
+            "44": {
+              "macro_f1_7_class_excluding_protocol": 31.9582,
+              "macro_f1_8_class": 35.5866
+            },
+            "45": {
+              "macro_f1_7_class_excluding_protocol": 32.7302,
+              "macro_f1_8_class": 36.2326
+            },
+            "46": {
+              "macro_f1_7_class_excluding_protocol": 31.51,
+              "macro_f1_8_class": 35.4556
+            }
+          },
+          "macro_f1_7_class_excluding_protocol": {
+            "ci_95": [
+              31.4312,
+              32.551
+            ],
+            "mean": 31.9911
+          },
+          "macro_f1_8_class": {
+            "ci_95": [
+              35.4199,
+              36.4065
+            ],
+            "mean": 35.9132
+          },
+          "seeds": [
+            42,
+            43,
+            44,
+            45,
+            46
+          ]
+        }
+      },
+      "Hashing char-ngram + SGD": {
+        "10%": {
+          "by_seed": {
+            "42": {
+              "macro_f1_7_class_excluding_protocol": 69.6763,
+              "macro_f1_8_class": 70.8684
+            },
+            "43": {
+              "macro_f1_7_class_excluding_protocol": 68.179,
+              "macro_f1_8_class": 69.8048
+            },
+            "44": {
+              "macro_f1_7_class_excluding_protocol": 69.6529,
+              "macro_f1_8_class": 70.8318
+            },
+            "45": {
+              "macro_f1_7_class_excluding_protocol": 69.2771,
+              "macro_f1_8_class": 70.785
+            },
+            "46": {
+              "macro_f1_7_class_excluding_protocol": 74.0403,
+              "macro_f1_8_class": 75.5357
+            }
+          },
+          "macro_f1_7_class_excluding_protocol": {
+            "ci_95": [
+              67.3717,
+              72.9585
+            ],
+            "mean": 70.1651
+          },
+          "macro_f1_8_class": {
+            "ci_95": [
+              68.7549,
+              74.3754
+            ],
+            "mean": 71.5651
+          },
+          "seeds": [
+            42,
+            43,
+            44,
+            45,
+            46
+          ]
+        },
+        "5%": {
+          "by_seed": {
+            "42": {
+              "macro_f1_7_class_excluding_protocol": 62.6212,
+              "macro_f1_8_class": 66.0631
+            },
+            "43": {
+              "macro_f1_7_class_excluding_protocol": 65.4308,
+              "macro_f1_8_class": 68.4822
+            },
+            "44": {
+              "macro_f1_7_class_excluding_protocol": 66.5386,
+              "macro_f1_8_class": 69.4855
+            },
+            "45": {
+              "macro_f1_7_class_excluding_protocol": 67.9029,
+              "macro_f1_8_class": 70.7238
+            },
+            "46": {
+              "macro_f1_7_class_excluding_protocol": 58.2716,
+              "macro_f1_8_class": 62.2439
+            }
+          },
+          "macro_f1_7_class_excluding_protocol": {
+            "ci_95": [
+              59.4125,
+              68.8936
+            ],
+            "mean": 64.153
+          },
+          "macro_f1_8_class": {
+            "ci_95": [
+              63.2384,
+              71.561
+            ],
+            "mean": 67.3997
+          },
+          "seeds": [
+            42,
+            43,
+            44,
+            45,
+            46
+          ]
+        }
+      },
       "ModSec-AdvLearn": {
         "10%": {
           "by_seed": {
@@ -1048,6 +1232,70 @@
     },
     {
       "ci_95": [
+        35.4199,
+        36.4065
+      ],
+      "col": "5% 8-class",
+      "row": "Field-prefixed FastText + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 35.9132
+    },
+    {
+      "ci_95": [
+        31.4312,
+        32.551
+      ],
+      "col": "5% 7-class excl. protocol",
+      "row": "Field-prefixed FastText + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 31.9911
+    },
+    {
+      "ci_95": [
+        63.2384,
+        71.561
+      ],
+      "col": "5% 8-class",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 67.3997
+    },
+    {
+      "ci_95": [
+        59.4125,
+        68.8936
+      ],
+      "col": "5% 7-class excl. protocol",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 64.153
+    },
+    {
+      "ci_95": [
         65.1035,
         65.1035
       ],
@@ -1336,6 +1584,70 @@
     },
     {
       "ci_95": [
+        55.8279,
+        57.9603
+      ],
+      "col": "10% 8-class",
+      "row": "Field-prefixed FastText + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 56.8941
+    },
+    {
+      "ci_95": [
+        57.8656,
+        59.1036
+      ],
+      "col": "10% 7-class excl. protocol",
+      "row": "Field-prefixed FastText + LinearSVC",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 58.4846
+    },
+    {
+      "ci_95": [
+        68.7549,
+        74.3754
+      ],
+      "col": "10% 8-class",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 71.5651
+    },
+    {
+      "ci_95": [
+        67.3717,
+        72.9585
+      ],
+      "col": "10% 7-class excl. protocol",
+      "row": "Hashing char-ngram + SGD",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 70.1651
+    },
+    {
+      "ci_95": [
         73.6091,
         73.6091
       ],
@@ -1432,7 +1744,7 @@
     }
   ],
   "metadata": {
-    "commit": "9bb51e5",
+    "commit": "d39fd4e",
     "dataset_version": "3ce0e30a2e51",
     "labels_sha256": "5b5ba305a1e86aa99b5725ef86fad4645c8d1f11439413c91a144204e9629775",
     "metric": "macro_f1_protocol_sensitivity",

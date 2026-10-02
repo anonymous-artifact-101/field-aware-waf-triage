@@ -157,11 +157,12 @@ done
 aggregate "table_05_field_granularity"
 
 # --------------------------------------------------------------------------
-# 4. Table 6 -- per-class subtype breakdown (5 seeds, 5% budget).
+# 4. Table 6 -- per-class subtype breakdown (5 seeds, 5% and 10% budgets).
 # --------------------------------------------------------------------------
 step "4. Table 6 -- per-class breakdown (5 seeds)"
 for seed in ${SEEDS}; do
   run "${PYTHON}" scripts/12_evaluate.py --config configs/finetune/label_5pct.yaml --seed "${seed}" --table 6
+  run "${PYTHON}" scripts/12_evaluate.py --config configs/finetune/label_10pct.yaml --seed "${seed}" --table 6   # Fig. 3 / Table 9 10% column
 done
 aggregate "table_06_per_class_owasp"
 
@@ -260,7 +261,8 @@ run "${PYTHON}" scripts/53_significance_test.py --col 5%
 # 12. Figures -- confusion matrix (reads Table 3 seed-42 predictions) + Pareto.
 # --------------------------------------------------------------------------
 step "12. Figures -- confusion matrix + latency-accuracy Pareto"
-run "${PYTHON}" scripts/16_confusion_matrix.py
+run "${PYTHON}" scripts/16_confusion_matrix.py --budget 5    # 5% matrix cited in the per-class text
+run "${PYTHON}" scripts/16_confusion_matrix.py --budget 10   # Fig. 2 (10% budget)
 run "${PYTHON}" scripts/52_make_pareto_figure.py --acc-col 10%
 
 # --------------------------------------------------------------------------

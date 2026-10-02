@@ -1,0 +1,116 @@
+{
+  "classes": [
+    "sql_injection",
+    "rce",
+    "php_injection",
+    "xss",
+    "path_traversal",
+    "lfi",
+    "scanner",
+    "protocol"
+  ],
+  "matrix": [
+    [
+      91,
+      0,
+      5,
+      1,
+      0,
+      0,
+      0,
+      44
+    ],
+    [
+      2,
+      538,
+      2,
+      2,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      22,
+      7,
+      112,
+      0,
+      0,
+      6,
+      0,
+      35
+    ],
+    [
+      7,
+      0,
+      1,
+      9,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      2,
+      2,
+      0,
+      18
+    ],
+    [
+      15,
+      1,
+      2,
+      0,
+      2,
+      8491,
+      0,
+      279
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      63,
+      0
+    ],
+    [
+      17,
+      1,
+      17,
+      0,
+      0,
+      153,
+      4,
+      9687
+    ]
+  ],
+  "metadata": {
+    "budget": "10%",
+    "commit": "5940f5a",
+    "date": "2026-09-24",
+    "labels_sha256": "5b5ba305a1e86aa99b5725ef86fad4645c8d1f11439413c91a144204e9629775",
+    "macro_f1": 73.6091,
+    "note": "Derived from released prediction sidecars; no model re-run. Seed-deterministic proposed detector at the 10% budget.",
+    "seed": 42,
+    "source_predictions": "results/table_03_rq1_baselines/predictions/proposed-fasttext-field-aware__10__seed42.json"
+  },
+  "n": 19646,
+  "orientation": "rows=true, cols=predicted",
+  "support": [
+    141,
+    546,
+    182,
+    22,
+    23,
+    8790,
+    63,
+    9879
+  ]
+}

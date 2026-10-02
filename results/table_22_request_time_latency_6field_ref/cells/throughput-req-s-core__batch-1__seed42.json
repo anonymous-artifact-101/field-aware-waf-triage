@@ -1,0 +1,21 @@
+{
+  "col": "batch=1",
+  "metadata": {
+    "commit": "d39fd4e",
+    "dataset_version": "3ce0e30a2e51",
+    "embedding_version": "2c37c7f64455",
+    "eval_capped": false,
+    "gpu": "cpu",
+    "hardware": "12th Gen Intel(R) Core(TM) i7-12700",
+    "metric": "throughput_rps",
+    "n_records": 2000,
+    "num_threads": 1,
+    "single_run_measured": true,
+    "split": "owasp_test",
+    "unit": "records_per_second"
+  },
+  "row": "Throughput (req/s/core)",
+  "seed": 42,
+  "table": "table_22_request_time_latency_6field_ref",
+  "value": 6505.45
+}

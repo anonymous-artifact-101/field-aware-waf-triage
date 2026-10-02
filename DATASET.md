@@ -6,12 +6,20 @@ and/or licensed). To rebuild from raw data you must obtain each dataset yourself
 place its archive under `download/`, then run `make stage-data` (which unzips into
 `data/raw/`) followed by `make data`. Staging does NOT download anything.
 
+The one exception is `data/manual_verification/`: the filled expert label-audit
+worksheet (`owasp_1k_subset_human.xlsx`: 1,000 stratified OWASP test records,
+each with request ID, method, path, query, user-agent, status, CRS rule IDs/tags
+and subtype, and the expert label; no client IPs, timestamps, or timing), its sampling
+manifest, and a README. It is redistributed from the OWASP dataset (Zenodo
+10.5281/zenodo.17178461) so that `scripts/46_human_audit_score.py` and
+`scripts/76_audit_weighting_check.py` can be re-run without the raw logs.
+
 | Dataset | Role | Source |
 |---|---|---|
 | OWASP ModSecurity 30-day | Primary train/val/test (application-layer attacks) | Zenodo 10.5281/zenodo.17178461 |
 | Kaggle web-server access logs (zanbil.ir, Jan 2019) | Benign self-supervised pre-training corpus | Kaggle eliasdabbas/web-server-access-logs |
-| CSIC 2010 | Cross-dataset transfer / stress probe only | CSIC / Gimenez et al. 2010 |
-| Biblio-US17 | Cross-dataset stress probe | University of Seville, 2017 |
+| CSIC 2010 | Out-of-domain stress probe only | CSIC / Gimenez et al. 2010 |
+| Biblio-US17 | Out-of-domain stress probe | University of Seville, 2017 |
 | Apache-Indo | Zero-shot benign false-positive-rate probe | public benign Apache access logs |
 
 ## Staging: exact archive names and placement
@@ -53,6 +61,10 @@ data/raw/
   sorted keys, fixed float formatting).
 - Splits are time-ordered (e.g. OWASP days 1-20 train, 21-24 val, 25-30 test);
   they are never shuffled.
+- The OWASP archive holds 151,845 audit-log entries. The parser reads hexadecimal
+  boundary IDs only, so 834 well-formed entries whose boundary IDs contain other
+  characters are not in the evaluated corpus of 151,011 records (paper Table 2);
+  `scripts/77_boundary_id_audit.py` documents them.
 - Every number in the paper traces to a `results/<table>/results.json`; absolute
   paths inside those artifacts were rewritten to `<REPO>`.
 - The proposed detector is CPU-only and torch-free; `torch` is needed only for

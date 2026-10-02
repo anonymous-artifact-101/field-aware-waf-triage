@@ -1,0 +1,16 @@
+{
+  "col": "20%",
+  "metadata": {
+    "commit": "d39fd4e",
+    "dataset_version": "3ce0e30a2e51",
+    "date": null,
+    "eval_split": "owasp_val",
+    "gpu": "cpu",
+    "label_budget": 0.2,
+    "metric": "macro_f1"
+  },
+  "row": "Proposed (val)",
+  "seed": 45,
+  "table": "table_21_budget_selection_val",
+  "value": 51.6344
+}

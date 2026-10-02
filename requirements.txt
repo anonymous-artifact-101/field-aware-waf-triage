@@ -38,6 +38,11 @@ tqdm==4.67.3
 # (the ledger is written with the stdlib csv module). It was transformer/data-
 # exploration-era residue. Re-add (pinned) only if a future analysis needs it.
 
+# --- expert label audit only (optional; not used by the proposed detector) ---
+# openpyxl reads the filled worksheet data/manual_verification/owasp_1k_subset_human.xlsx
+# in scripts/46_human_audit_score.py. Mirrors the 'label-audit' extra.
+openpyxl==3.1.5
+
 # --- efficiency profiling only (optional; not used by the proposed detector) ---
 # psutil measures resident/peak RSS for the Table 8 systems profile
 # (src/eval/efficiency.py). It captures the native gensim/numpy buffers that

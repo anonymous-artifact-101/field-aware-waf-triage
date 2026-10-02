@@ -1,0 +1,171 @@
+{
+  "aggregated": {
+    "default": {
+      "test_macro_f1": {
+        "ci_95": [
+          73.6091,
+          73.6091
+        ],
+        "ci_method": "student_t",
+        "mean": 73.6091,
+        "metric": "test_macro_f1",
+        "per_seed": {
+          "42": 73.6091,
+          "43": 73.6091,
+          "44": 73.6091,
+          "45": 73.6091,
+          "46": 73.6091
+        },
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "val_macro_f1": {
+        "ci_95": [
+          51.435,
+          51.435
+        ],
+        "ci_method": "student_t",
+        "mean": 51.435,
+        "metric": "val_macro_f1",
+        "per_seed": {
+          "42": 51.435,
+          "43": 51.435,
+          "44": 51.435,
+          "45": 51.435,
+          "46": 51.435
+        },
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      }
+    },
+    "optuna_best": {
+      "test_macro_f1": {
+        "ci_95": [
+          73.4242,
+          73.4242
+        ],
+        "ci_method": "student_t",
+        "mean": 73.4242,
+        "metric": "test_macro_f1",
+        "per_seed": {
+          "42": 73.4242,
+          "43": 73.4242,
+          "44": 73.4242,
+          "45": 73.4242,
+          "46": 73.4242
+        },
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "val_macro_f1": {
+        "ci_95": [
+          51.7054,
+          51.7054
+        ],
+        "ci_method": "student_t",
+        "mean": 51.7054,
+        "metric": "val_macro_f1",
+        "per_seed": {
+          "42": 51.7054,
+          "43": 51.7054,
+          "44": 51.7054,
+          "45": 51.7054,
+          "46": 51.7054
+        },
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      }
+    }
+  },
+  "best_params": {
+    "C": 0.4920667786177922,
+    "class_weight": "null",
+    "estimator": "linear_svc",
+    "max_iter": 1000
+  },
+  "best_params_source": "results\\optuna\\study_20260618T043530Z\\best_params.json",
+  "comparison": {
+    "default_mean_test_macro_f1": 73.6091,
+    "label_budget": 0.1,
+    "optuna_ci_excludes_baseline": null,
+    "optuna_mean_test_macro_f1": 73.4242,
+    "optuna_minus_baseline_test_delta_mean": null,
+    "optuna_minus_default_test_delta_mean": -0.1849,
+    "paired_bootstrap_test": {
+      "B": 10000,
+      "ci_a": [
+        69.5189,
+        76.9437
+      ],
+      "ci_b": [
+        69.7127,
+        77.1661
+      ],
+      "confidence": 0.95,
+      "delta": -0.1848,
+      "delta_boot_mean": -0.1889,
+      "delta_ci": [
+        -0.5175,
+        0.1143
+      ],
+      "macro_f1_a": 73.4242,
+      "macro_f1_b": 73.6091,
+      "n": 19646,
+      "name_a": "optuna_best",
+      "name_b": "default",
+      "num_classes": 8,
+      "p_value": 0.238,
+      "seed": 42,
+      "significant": false,
+      "zero_support_convention": "count absent/zero-TP class as F1=0 over a fixed denominator of 8 classes (matches src.baselines._common.macro_f1)"
+    },
+    "paper_baseline_test_macro_f1": null,
+    "significant_vs_default": false
+  },
+  "config_path": "configs/finetune/label_10pct.yaml",
+  "default_params": {
+    "C": 1.0,
+    "class_weight": "null",
+    "estimator": "linear_svc",
+    "max_iter": 2000
+  },
+  "git_commit": "d39fd4e",
+  "n_records": {
+    "test": 19646,
+    "train": 110005,
+    "val": 21360
+  },
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "splits": {
+    "test": "owasp_test",
+    "train": "owasp_train",
+    "val": "owasp_val"
+  },
+  "timestamp_utc": "20260928T083756Z"
+}

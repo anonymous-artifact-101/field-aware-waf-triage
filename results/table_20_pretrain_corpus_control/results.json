@@ -1,0 +1,366 @@
+{
+  "cells": [
+    {
+      "ci_95": [
+        73.6,
+        73.6
+      ],
+      "col": "10% test",
+      "row": "Benign weblog / 6-field",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 73.6
+    },
+    {
+      "ci_95": [
+        51.4,
+        51.4
+      ],
+      "col": "10% val",
+      "row": "Benign weblog / 6-field",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 51.4
+    },
+    {
+      "ci_95": [
+        65.1,
+        65.1
+      ],
+      "col": "5% test",
+      "row": "Benign weblog / 6-field",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 65.1
+    },
+    {
+      "ci_95": [
+        48.4,
+        48.4
+      ],
+      "col": "5% val",
+      "row": "Benign weblog / 6-field",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 48.4
+    },
+    {
+      "ci_95": [
+        56.3,
+        56.3
+      ],
+      "col": "10% test",
+      "row": "Benign weblog / flat",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 56.3
+    },
+    {
+      "ci_95": [
+        47.4,
+        47.4
+      ],
+      "col": "10% val",
+      "row": "Benign weblog / flat",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 47.4
+    },
+    {
+      "ci_95": [
+        57.2,
+        57.2
+      ],
+      "col": "5% test",
+      "row": "Benign weblog / flat",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 57.2
+    },
+    {
+      "ci_95": [
+        46.4,
+        46.4
+      ],
+      "col": "5% val",
+      "row": "Benign weblog / flat",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 46.4
+    },
+    {
+      "ci_95": [
+        74.2,
+        75.1
+      ],
+      "col": "10% test",
+      "row": "Labeled prefix / 6-field",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 74.6
+    },
+    {
+      "ci_95": [
+        51.0,
+        52.2
+      ],
+      "col": "10% val",
+      "row": "Labeled prefix / 6-field",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 51.6
+    },
+    {
+      "ci_95": [
+        65.8,
+        69.1
+      ],
+      "col": "5% test",
+      "row": "Labeled prefix / 6-field",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 67.5
+    },
+    {
+      "ci_95": [
+        48.9,
+        49.2
+      ],
+      "col": "5% val",
+      "row": "Labeled prefix / 6-field",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 49.0
+    },
+    {
+      "ci_95": [
+        54.1,
+        57.0
+      ],
+      "col": "10% test",
+      "row": "Labeled prefix / flat",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 55.5
+    },
+    {
+      "ci_95": [
+        44.0,
+        45.5
+      ],
+      "col": "10% val",
+      "row": "Labeled prefix / flat",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 44.8
+    },
+    {
+      "ci_95": [
+        52.9,
+        56.5
+      ],
+      "col": "5% test",
+      "row": "Labeled prefix / flat",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 54.7
+    },
+    {
+      "ci_95": [
+        41.9,
+        44.1
+      ],
+      "col": "5% val",
+      "row": "Labeled prefix / flat",
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "value": 43.0
+    }
+  ],
+  "metadata": {
+    "cell_flags": {
+      "Benign weblog / 6-field | 10% test": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Benign weblog / 6-field | 10% val": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Benign weblog / 6-field | 5% test": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Benign weblog / 6-field | 5% val": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Benign weblog / flat | 10% test": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Benign weblog / flat | 10% val": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Benign weblog / flat | 5% test": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Benign weblog / flat | 5% val": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Labeled prefix / 6-field | 10% test": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Labeled prefix / 6-field | 10% val": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Labeled prefix / 6-field | 5% test": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Labeled prefix / 6-field | 5% val": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Labeled prefix / flat | 10% test": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Labeled prefix / flat | 10% val": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Labeled prefix / flat | 5% test": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      },
+      "Labeled prefix / flat | 5% val": {
+        "eval_capped": false,
+        "exploratory_single_seed": false,
+        "metric": "macro_f1",
+        "single_run_measured": false
+      }
+    },
+    "ci_method": "student_t",
+    "commit": "d39fd4e",
+    "date": "2026-09-24",
+    "gpu": "cpu",
+    "n_cell_files": 80
+  },
+  "table": "table_20_pretrain_corpus_control"
+}

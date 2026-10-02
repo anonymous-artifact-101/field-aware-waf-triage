@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "commit": "d39fd4e",
+    "method": "Wilson score interval; false positives = round(observed FPR x n_benign)",
+    "source": "results/table_11_benign_fpr_apache_indo/results.json",
+    "z_one_sided_95": 1.6448536269514722,
+    "z_two_sided_95": 1.959963984540054
+  },
+  "rows": [
+    {
+      "count_exact": false,
+      "false_positives": 8570,
+      "n_benign": 29778,
+      "observed_fpr_pct": 28.7796,
+      "threshold": "FPR@p95",
+      "wilson95_one_sided_upper_pct": 29.2131,
+      "wilson95_two_sided_upper_pct": 29.2966
+    },
+    {
+      "count_exact": false,
+      "false_positives": 2501,
+      "n_benign": 29778,
+      "observed_fpr_pct": 8.3988,
+      "threshold": "FPR@p99",
+      "wilson95_one_sided_upper_pct": 8.667,
+      "wilson95_two_sided_upper_pct": 8.7192
+    },
+    {
+      "count_exact": true,
+      "false_positives": 0,
+      "n_benign": 29778,
+      "observed_fpr_pct": 0.0,
+      "threshold": "FPR@p99.9",
+      "wilson95_one_sided_upper_pct": 0.0091,
+      "wilson95_two_sided_upper_pct": 0.0129
+    }
+  ],
+  "table": "table_11_benign_fpr_apache_indo"
+}

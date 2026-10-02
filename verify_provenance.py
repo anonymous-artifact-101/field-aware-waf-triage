@@ -27,7 +27,8 @@ def source_content_hash(root: Path) -> "tuple[str, int]":
             rel = f.relative_to(root).as_posix()
             h.update(rel.encode("utf-8"))
             h.update(b"\0")
-            h.update(f.read_bytes())
+
+            h.update(f.read_bytes().replace(b"\r\n", b"\n"))
             h.update(b"\0")
             n += 1
     return h.hexdigest(), n
